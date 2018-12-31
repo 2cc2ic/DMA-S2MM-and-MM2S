@@ -107,20 +107,22 @@
 	    end
 	  endfunction
 
-	 localparam integer C_TRANSACTIONS_NUM = clogb2(C_M_AXI_BURST_LEN-1);
-
-	 localparam integer C_MASTER_LENGTH	= 12;
-	 localparam integer C_NO_BURSTS_REQ = C_MASTER_LENGTH-clogb2((C_M_AXI_BURST_LEN*C_M_AXI_DATA_WIDTH/8)-1);
-
+	reg all_done;
+	reg [3:0] state_ctrl;
+	reg [23:0] burst_count;
+	wire init_state_signal;
+    reg [23:0] len_r_ff,len_r_state;
+    reg [31:0] addr_r_ff,addr_r_state;
+    
 	reg [C_M_AXI_ADDR_WIDTH-1 : 0] 	axi_araddr;
 	reg  	axi_arvalid;
 	reg  	axi_rready;
 
-	reg [C_TRANSACTIONS_NUM : 0] 	read_index;
+	reg [4 : 0] 	read_index;
 
-	wire [C_TRANSACTIONS_NUM+2 : 0] 	burst_size_bytes;
+	wire [6 : 0] 	burst_size_bytes;
 
-	reg [C_NO_BURSTS_REQ : 0] 	read_burst_counter;
+	reg [23 : 0] 	read_burst_counter;
 
 	reg  	start_single_burst_read;
 
@@ -138,7 +140,7 @@
 	reg [7:0] burst_len;
 
 	assign M_AXI_ARID	= 'b0;
-	assign M_AXI_ARADDR	= C_M_TARGET_SLAVE_BASE_ADDR + axi_araddr;
+	assign M_AXI_ARADDR	= addr_r_state + axi_araddr;
 	assign M_AXI_ARLEN	= burst_len - 1;
 	assign M_AXI_ARSIZE	= clogb2((C_M_AXI_DATA_WIDTH/8)-1);
 	assign M_AXI_ARBURST	= 2'b01;
@@ -149,8 +151,8 @@
 	assign M_AXI_ARUSER	= 'b1;
 	assign M_AXI_ARVALID	= axi_arvalid;
 	assign M_AXI_RREADY	= axi_rready;
-	assign TXN_DONE	= ;
-	assign burst_size_bytes	= C_M_AXI_BURST_LEN * C_M_AXI_DATA_WIDTH/8;
+	assign TXN_DONE	= all_done;
+	assign burst_size_bytes	= burst_len << 2; //C_M_AXI_DATA_WIDTH/8
 
 	  always @(posedge M_AXI_ACLK)
 	  begin
@@ -193,7 +195,7 @@
 	      begin
 	        read_index <= 0;
 	      end
-	    else if (rnext && (read_index != C_M_AXI_BURST_LEN-1))
+	    else if (rnext && (read_index != (burst_len-1) ))
 	      begin
 	        read_index <= read_index + 1;
 	      end
@@ -228,7 +230,7 @@
 	      end
 	    else if (M_AXI_ARREADY && axi_arvalid)
 	      begin
-	        if (read_burst_counter[C_NO_BURSTS_REQ] == 1'b0)
+	        if (burst_count != read_burst_counter)
 	          begin
 	            read_burst_counter <= read_burst_counter + 1'b1;
 	          end
@@ -251,7 +253,7 @@
 	  begin
 	    if (M_AXI_ARESETN == 0 || init_txn_pulse == 1'b1)
 	      reads_done <= 1'b0;
-	    else if (M_AXI_RVALID && axi_rready && (read_index == C_M_AXI_BURST_LEN-1) && (read_burst_counter[C_NO_BURSTS_REQ]))
+	    else if (M_AXI_RVALID && axi_rready && (read_index == burst_len-1) && (burst_count == read_burst_counter) )
 	      reads_done <= 1'b1;
 	    else
 	      reads_done <= reads_done;
@@ -274,13 +276,7 @@
 	      end
 	  end
 
-	wire init_state_signal;
-
 	assign init_state_signal	= (!init_txn_ff2) && init_txn_ff;
-
-
-	reg [23:0] len_r_ff,len_r_state;
-	reg [31:0] addr_r_ff,addr_r_state;
 
 	always @(posedge M_AXI_ACLK)
 	  begin
@@ -319,9 +315,7 @@
 */
 
 
-	reg all_done;
-	reg [3:0] state_ctrl;
-	reg [23:0] burst_count;
+
 
 	always @(posedge M_AXI_ACLK)
 	  begin
@@ -571,7 +565,7 @@
 	      end
 	  end
 
-
+reg state_read;
 
 	always @ ( posedge M_AXI_ACLK)
 	begin

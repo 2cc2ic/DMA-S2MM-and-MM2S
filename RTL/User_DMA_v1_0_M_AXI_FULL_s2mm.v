@@ -1,7 +1,7 @@
 
 `timescale 1 ns / 1 ps
 
-	module User_DMA_v1_0_M_AXI_FULL #
+	module User_DMA_v1_0_M_AXI_FULL_s2mm #
 	(
 		// Users to add parameters here
 
@@ -106,7 +106,7 @@
 		input wire  M_AXI_BVALID,
 		// Response ready. This signal indicates that the master
     // can accept a write response.
-		output wire  M_AXI_BREADY,
+		output wire  M_AXI_BREADY
 	);
 
 	  function integer clogb2 (input integer bit_depth);
@@ -116,13 +116,15 @@
 	    end
 	  endfunction
 
-	 localparam integer C_TRANSACTIONS_NUM = clogb2(C_M_AXI_BURST_LEN-1);
 
-	 localparam integer C_MASTER_LENGTH	= 12;
-	 localparam integer C_NO_BURSTS_REQ = C_MASTER_LENGTH-clogb2((C_M_AXI_BURST_LEN*C_M_AXI_DATA_WIDTH/8)-1);
-
-	 reg [1:0] state_write;
-
+    reg all_done;
+    reg [3:0] state_ctrl;
+    reg [23:0] burst_count;
+	reg state_write;
+	wire init_state_signal;
+    reg [23:0] len_r_ff,len_r_state;
+    reg [31:0] addr_r_ff,addr_r_state;
+    
 	reg [C_M_AXI_ADDR_WIDTH-1 : 0] 	axi_awaddr;
 	reg  	axi_awvalid;
 	reg [C_M_AXI_DATA_WIDTH-1 : 0] 	axi_wdata;
@@ -130,10 +132,10 @@
 	reg  	axi_wvalid;
 	reg  	axi_bready;
 
-	reg [C_TRANSACTIONS_NUM : 0] 	write_index;
+	reg [4 : 0] 	write_index;
 
-	wire [C_TRANSACTIONS_NUM+2 : 0] 	burst_size_bytes;
-	reg [C_NO_BURSTS_REQ : 0] 	write_burst_counter;
+	wire [6 : 0] 	burst_size_bytes;
+	reg [23 : 0] 	write_burst_counter;
 
 	reg  	start_single_burst_write;
 
@@ -153,7 +155,7 @@
 	reg [7:0] burst_len;
 
 	assign M_AXI_AWID	= 'b0;
-	assign M_AXI_AWADDR	= C_M_TARGET_SLAVE_BASE_ADDR + axi_awaddr;
+	assign M_AXI_AWADDR	= addr_r_state + axi_awaddr;
 	assign M_AXI_AWLEN	= burst_len - 1;
 	assign M_AXI_AWSIZE	= clogb2((C_M_AXI_DATA_WIDTH/8)-1);
 	assign M_AXI_AWBURST	= 2'b01;
@@ -169,8 +171,8 @@
 	assign M_AXI_WUSER	= 'b0;
 	assign M_AXI_WVALID	= axi_wvalid;
 	assign M_AXI_BREADY	= axi_bready;
-	assign TXN_DONE	= compare_done;
-	assign burst_size_bytes	= C_M_AXI_BURST_LEN * C_M_AXI_DATA_WIDTH/8;
+	assign TXN_DONE	= all_done;
+	assign burst_size_bytes	= burst_len << 2; //C_M_AXI_DATA_WIDTH/8
 
 	  always @(posedge M_AXI_ACLK)
 	  begin
@@ -229,13 +231,13 @@
 	      begin
 	        axi_wlast <= 1'b0;
 	      end
-	    else if (((write_index == C_M_AXI_BURST_LEN-2 && C_M_AXI_BURST_LEN >= 2) && wnext) || (C_M_AXI_BURST_LEN == 1 ))
+	    else if (((write_index == burst_len-2 && write_index >= 2) && wnext) || (write_index == 1 ))
 	      begin
 	        axi_wlast <= 1'b1;
 	      end
 	    else if (wnext)
 	      axi_wlast <= 1'b0;
-	    else if (axi_wlast && C_M_AXI_BURST_LEN == 1)
+	    else if (axi_wlast && burst_len == 1)
 	      axi_wlast <= 1'b0;
 	    else
 	      axi_wlast <= axi_wlast;
@@ -247,7 +249,7 @@
 	      begin
 	        write_index <= 0;
 	      end
-	    else if (wnext && (write_index != C_M_AXI_BURST_LEN-1))
+	    else if (wnext && (write_index != burst_len-1))
 	      begin
 	        write_index <= write_index + 1;
 	      end
@@ -283,8 +285,6 @@
 	      axi_bready <= axi_bready;
 	  end
 
-	  assign write_resp_error = axi_bready & M_AXI_BVALID & M_AXI_BRESP[1];
-
 	  always @(posedge M_AXI_ACLK)
 	  begin
 	    if (M_AXI_ARESETN == 0 || init_txn_pulse == 1'b1 )
@@ -293,7 +293,7 @@
 	      end
 	    else if (M_AXI_AWREADY && axi_awvalid)
 	      begin
-	        if (write_burst_counter[C_NO_BURSTS_REQ] == 1'b0)
+	        if ( burst_count != write_burst_counter )
 	          begin
 	            write_burst_counter <= write_burst_counter + 1'b1;
 	          end
@@ -316,7 +316,7 @@
 	  begin
 	    if (M_AXI_ARESETN == 0 || init_txn_pulse == 1'b1)
 	      writes_done <= 1'b0;
-	    else if (M_AXI_BVALID && (write_burst_counter[C_NO_BURSTS_REQ]) && axi_bready)
+	    else if (M_AXI_BVALID && (burst_count == write_burst_counter) && axi_bready)
 	      writes_done <= 1'b1;
 	    else
 	      writes_done <= writes_done;
@@ -338,13 +338,11 @@
 	      end
 	  end
 
-	wire init_state_signal;
+
 
 	assign init_state_signal	= (!init_txn_ff2) && init_txn_ff;
 
 
-	reg [23:0] len_r_ff,len_r_state;
-	reg [31:0] addr_r_ff,addr_r_state;
 
 	always @(posedge M_AXI_ACLK)
 	  begin
@@ -361,26 +359,6 @@
 	  end
 
 
-
-		always @(posedge M_AXI_ACLK)
-		  begin
-		    if (M_AXI_ARESETN == 0 )
-		      begin
-						len_r_state <= 0;
-						start_single_burst_read <= 0;
-						burst_done <= ;
-						all_done <= ;
-		      end
-		    else
-		      begin
-						state_c <= state_n;
-		      end
-		  end
-
-
-			reg all_done;
-			reg [3:0] state_ctrl;
-			reg [23:0] burst_count;
 
 			always @(posedge M_AXI_ACLK)
 			  begin
@@ -451,7 +429,7 @@
 
 								3:
 								begin
-									if(reads_done)
+									if(writes_done)
 										begin
 											state_ctrl <= state_ctrl + 1;
 										end
@@ -491,7 +469,7 @@
 
 								6:
 								begin
-									if(reads_done)
+									if(writes_done)
 										begin
 											state_ctrl <= state_ctrl + 1;
 										end
@@ -531,7 +509,7 @@
 
 								9:
 								begin
-									if(reads_done)
+									if(writes_done)
 										begin
 											state_ctrl <= state_ctrl + 1;
 										end
@@ -571,7 +549,7 @@
 
 								12:
 								begin
-									if(reads_done)
+									if(writes_done)
 										begin
 											state_ctrl <= state_ctrl + 1;
 										end
@@ -611,7 +589,7 @@
 
 								15:
 								begin
-									if(reads_done)
+									if(writes_done)
 										begin
 											state_ctrl <= 0;
 											all_done <= 1;

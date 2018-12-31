@@ -137,8 +137,8 @@
 	wire [C_S_AXI_LITE_DATA_WIDTH-1:0] ctrl_mm2s_init_len;
 
 	wire init_s2mm_signal,init_mm2s_signal;
-	wire [C_S_AXI_LITE_DATA_WIDTH-2:0] s2mm_length_register;
-	wire [C_S_AXI_LITE_DATA_WIDTH-2:0] mm2s_length_register;
+	wire [C_S_AXI_LITE_DATA_WIDTH-9:0] s2mm_length_register;
+	wire [C_S_AXI_LITE_DATA_WIDTH-9:0] mm2s_length_register;
 
 	assign init_s2mm_signal = ctrl_s2mm_init_len[C_S_AXI_LITE_DATA_WIDTH-1];
 	assign init_mm2s_signal = ctrl_mm2s_init_len[C_S_AXI_LITE_DATA_WIDTH-1];
@@ -225,7 +225,7 @@
 		.M_AXI_BRESP(m_axi_full_bresp),
 		.M_AXI_BUSER(m_axi_full_buser),
 		.M_AXI_BVALID(m_axi_full_bvalid),
-		.M_AXI_BREADY(m_axi_full_bready),
+		.M_AXI_BREADY(m_axi_full_bready)
 	);
 
 
