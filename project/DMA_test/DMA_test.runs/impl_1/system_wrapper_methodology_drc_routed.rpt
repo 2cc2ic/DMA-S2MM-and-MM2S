@@ -1,0 +1,40 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (lin64) Build 2086221 Fri Dec 15 20:54:30 MST 2017
+| Date         : Thu Jan  3 22:49:03 2019
+| Host         : hubbery-Lenovo-G480 running 64-bit Ubuntu 16.04.5 LTS
+| Command      : report_methodology -file system_wrapper_methodology_drc_routed.rpt -pb system_wrapper_methodology_drc_routed.pb -rpx system_wrapper_methodology_drc_routed.rpx
+| Design       : system_wrapper
+| Device       : xc7z010clg400-1
+| Speed File   : -1
+| Design State : Routed
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 1
++----------+----------+-------------------------------------------------+------------+
+| Rule     | Severity | Description                                     | Violations |
++----------+----------+-------------------------------------------------+------------+
+| PDRC-190 | Warning  | Suboptimally placed synchronized register chain | 1          |
++----------+----------+-------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+PDRC-190#1 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell system_i/axis_data_fifo_0/inst/gen_fifo_generator.fifo_generator_inst/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d2_reg in site SLICE_X30Y7 is part of a synchronized register chain that is suboptimally placed as the load FDSE cell system_i/axis_data_fifo_0/inst/gen_fifo_generator.fifo_generator_inst/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d3_reg is not placed in the same (SLICE) site.
+Related violations: <none>
+
+

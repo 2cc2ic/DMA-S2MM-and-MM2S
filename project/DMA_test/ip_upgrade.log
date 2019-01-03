@@ -1,0 +1,116 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (lin64) Build 2086221 Fri Dec 15 20:54:30 MST 2017
+| Date         : Thu Jan  3 22:38:11 2019
+| Host         : hubbery-Lenovo-G480 running 64-bit Ubuntu 16.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'system_User_DMA_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of system_User_DMA_0_0 (user.org:user:User_DMA:1.0) from (Rev. 6) to (Rev. 7)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'system_User_DMA_0_0'. These changes may impact your design.
+
+
+-Upgrade has removed port 'm_axi_full_txn_done'
+
+-Upgrade has added port 'm_axi_full_mm2s_done'
+
+-Upgrade has added port 'm_axi_full_s2mm_done'
+
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (lin64) Build 2086221 Fri Dec 15 20:54:30 MST 2017
+| Date         : Thu Jan  3 21:38:16 2019
+| Host         : hubbery-Lenovo-G480 running 64-bit Ubuntu 16.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'system_User_DMA_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of system_User_DMA_0_0 (user.org:user:User_DMA:1.0) from (Rev. 5) to (Rev. 6)
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (lin64) Build 2086221 Fri Dec 15 20:54:30 MST 2017
+| Date         : Thu Jan  3 19:35:03 2019
+| Host         : hubbery-Lenovo-G480 running 64-bit Ubuntu 16.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'system_User_DMA_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of system_User_DMA_0_0 (user.org:user:User_DMA:1.0) from (Rev. 4) to (Rev. 5)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'system_User_DMA_0_0'. These changes may impact your design.
+
+
+-Upgrade has removed port 'm_axi_full_init_axi_txn'
+
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (lin64) Build 2086221 Fri Dec 15 20:54:30 MST 2017
+| Date         : Thu Jan  3 19:17:34 2019
+| Host         : hubbery-Lenovo-G480 running 64-bit Ubuntu 16.04.5 LTS
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'system_User_DMA_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of system_User_DMA_0_0 (user.org:user:User_DMA:1.0) from (Rev. 3) to (Rev. 4)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'system_User_DMA_0_0'. These changes may impact your design.
+
+
+-Upgrade has removed port 'm_axi_full_error'
+
+

@@ -1,0 +1,423 @@
+#include <string.h>
+#include "stdlib.h"
+#include <stdio.h>
+
+#include"xil_printf.h"
+#include "xparameters.h"
+#include "xil_io.h"
+
+#include "xdevcfg.h"
+#include "xgpiops.h"
+
+#define DDR_BASEARDDR  0x01000000
+
+void disablecache()
+{
+	Xil_DCacheDisable();
+	Xil_ICacheDisable();
+}
+
+int main()
+{
+
+		static XGpioPs psGpioInstancePtr;
+		XGpioPs_Config* GpioConfigPtr;
+		int xStatus;
+		GpioConfigPtr = XGpioPs_LookupConfig(XPAR_PS7_GPIO_0_DEVICE_ID);
+		xStatus = XGpioPs_CfgInitialize(&psGpioInstancePtr,GpioConfigPtr, GpioConfigPtr->BaseAddr);
+		if(XST_SUCCESS != xStatus)
+			print(" PS GPIO INIT FAILED \n\r");
+		XGpioPs_SetDirectionPin(&psGpioInstancePtr, 54,1);
+		XGpioPs_SetOutputEnablePin(&psGpioInstancePtr, 54,1);
+		XGpioPs_SetDirectionPin(&psGpioInstancePtr, 55,0);
+		XGpioPs_SetOutputEnablePin(&psGpioInstancePtr, 55,0);
+
+		disablecache();
+	    SD_Init();
+
+		float ff;
+		int ff_fixed;
+		char dest_str[12];
+		int number=0,j,k;
+		float max_tmp=0.0;
+		float store_exp=0;
+		float sum=0;
+		float fixed_result;
+		float c_model_fixed;
+		char *file_name;
+		u8 fixed_q;
+		int counter_0=0,counter_1=0,counter_2=0,counter_more=0;
+
+
+		file_name=FILE_0;
+		fixed_q=124;
+	/*	Start read  FILE_0 */
+		printf("Start read %s.\n\n",file_name);
+		counter_0=0;
+		counter_1=0;
+		counter_2=0;
+		counter_more=0;
+		sum=0;
+		for(j=0,number=0;j<4096;j++)
+		{
+			SD_Transfer_read(file_name,(u32)dest_str,12,number);
+			for(k=0;k<12;k++)
+			{
+				if(((int)dest_str[k])==10)
+					number+=k+1;
+			}
+
+			ff=atof(dest_str);
+
+			max_tmp=(ff>max_tmp) ? ff : max_tmp ;
+			ff_fixed=ff*pow(2,15-(fixed_q-128));
+			if(ff_fixed<0)
+				ff_fixed=-ff_fixed+pow(2,15);
+	//		printf("start read sd file:%d\n",j);
+			Xil_Out16(DDR_BASEARDDR+j*2,(u16)ff_fixed);
+		}
+		printf("start exp,and max:%f\n",max_tmp);
+		Xil_Out16(DDR_BASEARDDR-8,(u16)0);
+		Xil_Out8(DDR_BASEARDDR-6,(u8)fixed_q);
+		Xil_Out8(DDR_BASEARDDR-5,(u8)0);
+		Xil_Out8(DDR_BASEARDDR-4,(u8)0);
+		Xil_Out8(DDR_BASEARDDR-3,(u8)1);
+		Xil_Out16(DDR_BASEARDDR-2,(u16)0);
+
+
+	    XGpioPs_WritePin(&psGpioInstancePtr, 54, 1);
+	    while(XGpioPs_ReadPin(&psGpioInstancePtr,55)==0) {;}
+	    XGpioPs_WritePin(&psGpioInstancePtr, 54, 0);
+
+		for(j=0,number=0;j<4096;j++)
+			{
+				SD_Transfer_read(file_name,(u32)dest_str,12,number);
+				for(k=0;k<12;k++)
+				{
+					if(((int)dest_str[k])==10)
+						number+=k+1;
+				}
+
+				ff=atof(dest_str);
+
+				store_exp=expf(ff-max_tmp);
+				sum=sum+store_exp;
+			}
+
+
+
+
+		for(j=0,number=0;j<4096;j++)
+		{
+
+			SD_Transfer_read(file_name,(u32)dest_str,12,number);
+			for(k=0;k<12;k++)
+			{
+				if(((int)dest_str[k])==10)
+					number+=k+1;
+			}
+
+			ff=atof(dest_str);
+
+			fixed_result = Xil_In16(DDR_BASEARDDR+j*2);
+			ff=(expf(ff-max_tmp))/sum;
+			c_model_fixed=ff*pow(2,16);
+			fixed_result=fabs(fixed_result-c_model_fixed);
+	//		printf("show sub error(fixed):%f\n",fixed_result);
+			if(fixed_result<1)
+				counter_0++;
+			else if(fixed_result<2)
+				counter_1++;
+			else if(fixed_result<3)
+				counter_2++;
+			else
+				counter_more++;
+		}
+
+	    printf("Success! Complete %s.\n",file_name);
+
+	    printf("show the error counter:\n");
+	    printf("0 to 1:%d\n1 to 2:%d\n2 to 3:%d\nmore :%d\n",counter_0,counter_1,counter_2,counter_more);
+	    printf("%s error total:%d\n",file_name,counter_0 + counter_1 + counter_2 + counter_more);
+
+
+		file_name=FILE_1;
+		fixed_q=129;
+	/*	Start read  FILE_1 */
+		printf("Start read %s.\n\n",file_name);
+		counter_0=0;
+		counter_1=0;
+		counter_2=0;
+		counter_more=0;
+		sum=0;
+		for(j=0,number=0;j<4096;j++)
+		{
+			SD_Transfer_read(file_name,(u32)dest_str,12,number);
+			for(k=0;k<12;k++)
+			{
+				if(((int)dest_str[k])==10)
+					number+=k+1;
+			}
+
+			ff=atof(dest_str);
+
+			max_tmp=(ff>max_tmp) ? ff : max_tmp ;
+			ff_fixed=ff*pow(2,15-(fixed_q-128));
+			if(ff_fixed<0)
+				ff_fixed=-ff_fixed+pow(2,15);
+	//		printf("start read sd file:%d\n",j);
+			Xil_Out16(DDR_BASEARDDR+j*2,(u16)ff_fixed);
+		}
+		printf("start exp,and max:%f\n",max_tmp);
+		Xil_Out16(DDR_BASEARDDR-8,(u16)0);
+		Xil_Out8(DDR_BASEARDDR-6,(u8)fixed_q);
+		Xil_Out8(DDR_BASEARDDR-5,(u8)0);
+		Xil_Out8(DDR_BASEARDDR-4,(u8)0);
+		Xil_Out8(DDR_BASEARDDR-3,(u8)1);
+		Xil_Out16(DDR_BASEARDDR-2,(u16)0);
+
+
+	    XGpioPs_WritePin(&psGpioInstancePtr, 54, 1);
+	    while(XGpioPs_ReadPin(&psGpioInstancePtr,55)==0) {;}
+	    XGpioPs_WritePin(&psGpioInstancePtr, 54, 0);
+
+		for(j=0,number=0;j<4096;j++)
+			{
+				SD_Transfer_read(file_name,(u32)dest_str,12,number);
+				for(k=0;k<12;k++)
+				{
+					if(((int)dest_str[k])==10)
+						number+=k+1;
+				}
+
+				ff=atof(dest_str);
+
+				store_exp=expf(ff-max_tmp);
+				sum=sum+store_exp;
+			}
+
+
+
+
+		for(j=0,number=0;j<4096;j++)
+		{
+
+			SD_Transfer_read(file_name,(u32)dest_str,12,number);
+			for(k=0;k<12;k++)
+			{
+				if(((int)dest_str[k])==10)
+					number+=k+1;
+			}
+
+			ff=atof(dest_str);
+
+			fixed_result = Xil_In16(DDR_BASEARDDR+j*2);
+			ff=(expf(ff-max_tmp))/sum;
+			c_model_fixed=ff*pow(2,16);
+			fixed_result=fabs(fixed_result-c_model_fixed);
+	//		printf("show sub error(fixed):%f\n",fixed_result);
+			if(fixed_result<1)
+				counter_0++;
+			else if(fixed_result<2)
+				counter_1++;
+			else if(fixed_result<3)
+				counter_2++;
+			else
+				counter_more++;
+		}
+
+	    printf("Success! Complete %s.\n",file_name);
+
+	    printf("show the error counter:\n");
+	    printf("0 to 1:%d\n1 to 2:%d\n2 to 3:%d\nmore :%d\n",counter_0,counter_1,counter_2,counter_more);
+	    printf("%s error total:%d\n",file_name,counter_0 + counter_1 + counter_2 + counter_more);
+
+
+
+
+
+		file_name=FILE_5;
+		fixed_q=131;
+	/*	Start read  FILE_5 */
+		printf("Start read %s.\n\n",file_name);
+		counter_0=0;
+		counter_1=0;
+		counter_2=0;
+		counter_more=0;
+		sum=0;
+		for(j=0,number=0;j<4096;j++)
+		{
+			SD_Transfer_read(file_name,(u32)dest_str,12,number);
+			for(k=0;k<12;k++)
+			{
+				if(((int)dest_str[k])==10)
+					number+=k+1;
+			}
+
+			ff=atof(dest_str);
+
+			max_tmp=(ff>max_tmp) ? ff : max_tmp ;
+			ff_fixed=ff*pow(2,15-(fixed_q-128));
+			if(ff_fixed<0)
+				ff_fixed=-ff_fixed+pow(2,15);
+	//		printf("start read sd file:%d\n",j);
+			Xil_Out16(DDR_BASEARDDR+j*2,(u16)ff_fixed);
+		}
+		printf("start exp,and max:%f\n",max_tmp);
+		Xil_Out16(DDR_BASEARDDR-8,(u16)0);
+		Xil_Out8(DDR_BASEARDDR-6,(u8)fixed_q);
+		Xil_Out8(DDR_BASEARDDR-5,(u8)0);
+		Xil_Out8(DDR_BASEARDDR-4,(u8)0);
+		Xil_Out8(DDR_BASEARDDR-3,(u8)1);
+		Xil_Out16(DDR_BASEARDDR-2,(u16)0);
+
+
+	    XGpioPs_WritePin(&psGpioInstancePtr, 54, 1);
+	    while(XGpioPs_ReadPin(&psGpioInstancePtr,55)==0) {;}
+	    XGpioPs_WritePin(&psGpioInstancePtr, 54, 0);
+
+		for(j=0,number=0;j<4096;j++)
+			{
+				SD_Transfer_read(file_name,(u32)dest_str,12,number);
+				for(k=0;k<12;k++)
+				{
+					if(((int)dest_str[k])==10)
+						number+=k+1;
+				}
+
+				ff=atof(dest_str);
+
+				store_exp=expf(ff-max_tmp);
+				sum=sum+store_exp;
+			}
+
+
+
+
+		for(j=0,number=0;j<4096;j++)
+		{
+
+			SD_Transfer_read(file_name,(u32)dest_str,12,number);
+			for(k=0;k<12;k++)
+			{
+				if(((int)dest_str[k])==10)
+					number+=k+1;
+			}
+
+			ff=atof(dest_str);
+
+			fixed_result = Xil_In16(DDR_BASEARDDR+j*2);
+			ff=(expf(ff-max_tmp))/sum;
+			c_model_fixed=ff*pow(2,16);
+			fixed_result=fabs(fixed_result-c_model_fixed);
+	//		printf("show sub error(fixed):%f\n",fixed_result);
+			if(fixed_result<1)
+				counter_0++;
+			else if(fixed_result<2)
+				counter_1++;
+			else if(fixed_result<3)
+				counter_2++;
+			else
+				counter_more++;
+		}
+
+	    printf("Success! Complete %s.\n",file_name);
+
+	    printf("show the error counter:\n");
+	    printf("0 to 1:%d\n1 to 2:%d\n2 to 3:%d\nmore :%d\n",counter_0,counter_1,counter_2,counter_more);
+	    printf("%s error total:%d\n\n\n",file_name,counter_0 + counter_1 + counter_2 + counter_more);
+
+
+		file_name=FILE_10;
+		fixed_q=132;
+	/*	Start read  FILE_10 */
+		printf("Start read %s.\n\n",file_name);
+		counter_0=0;
+		counter_1=0;
+		counter_2=0;
+		counter_more=0;
+		sum=0;
+		for(j=0,number=0;j<4096;j++)
+		{
+			SD_Transfer_read(file_name,(u32)dest_str,12,number);
+			for(k=0;k<12;k++)
+			{
+				if(((int)dest_str[k])==10)
+					number+=k+1;
+			}
+
+			ff=atof(dest_str);
+
+			max_tmp=(ff>max_tmp) ? ff : max_tmp ;
+			ff_fixed=ff*pow(2,15-(fixed_q-128));
+			if(ff_fixed<0)
+				ff_fixed=-ff_fixed+pow(2,15);
+	//		printf("start read sd file:%d\n",j);
+			Xil_Out16(DDR_BASEARDDR+j*2,(u16)ff_fixed);
+		}
+		printf("start exp,and max:%f\n",max_tmp);
+		Xil_Out16(DDR_BASEARDDR-8,(u16)0);
+		Xil_Out8(DDR_BASEARDDR-6,(u8)fixed_q);
+		Xil_Out8(DDR_BASEARDDR-5,(u8)0);
+		Xil_Out8(DDR_BASEARDDR-4,(u8)0);
+		Xil_Out8(DDR_BASEARDDR-3,(u8)1);
+		Xil_Out16(DDR_BASEARDDR-2,(u16)0);
+
+
+	    XGpioPs_WritePin(&psGpioInstancePtr, 54, 1);
+	    while(XGpioPs_ReadPin(&psGpioInstancePtr,55)==0) {;}
+	    XGpioPs_WritePin(&psGpioInstancePtr, 54, 0);
+
+		for(j=0,number=0;j<4096;j++)
+			{
+				SD_Transfer_read(file_name,(u32)dest_str,12,number);
+				for(k=0;k<12;k++)
+				{
+					if(((int)dest_str[k])==10)
+						number+=k+1;
+				}
+
+				ff=atof(dest_str);
+
+				store_exp=expf(ff-max_tmp);
+				sum=sum+store_exp;
+			}
+
+
+
+
+		for(j=0,number=0;j<4096;j++)
+		{
+
+			SD_Transfer_read(file_name,(u32)dest_str,12,number);
+			for(k=0;k<12;k++)
+			{
+				if(((int)dest_str[k])==10)
+					number+=k+1;
+			}
+
+			ff=atof(dest_str);
+
+			fixed_result = Xil_In16(DDR_BASEARDDR+j*2);
+			ff=(expf(ff-max_tmp))/sum;
+			c_model_fixed=ff*pow(2,16);
+			fixed_result=fabs(fixed_result-c_model_fixed);
+	//		printf("show sub error(fixed):%f\n",fixed_result);
+			if(fixed_result<1)
+				counter_0++;
+			else if(fixed_result<2)
+				counter_1++;
+			else if(fixed_result<3)
+				counter_2++;
+			else
+				counter_more++;
+		}
+
+	    printf("Success! Complete %s.\n",file_name);
+
+	    printf("show the error counter:\n");
+	    printf("0 to 1:%d\n1 to 2:%d\n2 to 3:%d\nmore :%d\n",counter_0,counter_1,counter_2,counter_more);
+	    printf("%s error total:%d\n",file_name,counter_0 + counter_1 + counter_2 + counter_more);
+
+    return 0;
+  }

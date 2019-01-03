@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:54:30 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Thu Jan  3 19:39:46 2019
+# Process ID: 22707
+# Current directory: /home/hubbery/DMA/project/DMA_test/DMA_test.runs/system_axi_smc_0_synth_1
+# Command line: vivado -log system_axi_smc_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source system_axi_smc_0.tcl
+# Log file: /home/hubbery/DMA/project/DMA_test/DMA_test.runs/system_axi_smc_0_synth_1/system_axi_smc_0.vds
+# Journal file: /home/hubbery/DMA/project/DMA_test/DMA_test.runs/system_axi_smc_0_synth_1/vivado.jou
+#-----------------------------------------------------------
+source system_axi_smc_0.tcl -notrace
