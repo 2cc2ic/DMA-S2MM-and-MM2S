@@ -72,9 +72,9 @@
 		input wire  s_axis_s2mm_tvalid,
 
 		// Ports of Axi Master Bus Interface M_AXI_FULL
-		input wire  m_axi_full_init_axi_txn,
-		output wire  m_axi_full_txn_done,
-		output wire  m_axi_full_error,
+		output wire  m_axi_full_s2mm_done,
+		output wire  m_axi_full_mm2s_done,
+
 		input wire  m_axi_full_aclk,
 		input wire  m_axi_full_aresetn,
 		output wire [C_M_AXI_FULL_ID_WIDTH-1 : 0] m_axi_full_awid,
@@ -140,10 +140,13 @@
 	wire [C_S_AXI_LITE_DATA_WIDTH-9:0] s2mm_length_register;
 	wire [C_S_AXI_LITE_DATA_WIDTH-9:0] mm2s_length_register;
 
+    wire fifo_mm2s_full,fifo_mm2s_almost_full;
+    wire fifo_s2mm_empty,fifo_s2mm_almost_empty;
+
 	assign init_s2mm_signal = ctrl_s2mm_init_len[C_S_AXI_LITE_DATA_WIDTH-1];
 	assign init_mm2s_signal = ctrl_mm2s_init_len[C_S_AXI_LITE_DATA_WIDTH-1];
-	assign s2mm_length_register = ctrl_s2mm_init_len[C_S_AXI_LITE_DATA_WIDTH-2 : 0];
-	assign mm2s_length_register = ctrl_mm2s_init_len[C_S_AXI_LITE_DATA_WIDTH-2 : 0];
+	assign s2mm_length_register = ctrl_s2mm_init_len[C_S_AXI_LITE_DATA_WIDTH-9 : 0];
+	assign mm2s_length_register = ctrl_mm2s_init_len[C_S_AXI_LITE_DATA_WIDTH-9 : 0];
 
 
 	User_DMA_v1_0_S_AXI_LITE # (
@@ -192,12 +195,15 @@
 		.C_M_AXI_BUSER_WIDTH(C_M_AXI_FULL_BUSER_WIDTH)
 	) User_DMA_v1_0_M_AXI_FULL_s2mm_inst (
 
+		.fifo_s2mm_empty(fifo_s2mm_empty),
+		.fifo_s2mm_almost_empty(fifo_s2mm_almost_empty),
+
 		.length_register(s2mm_length_register),
 		.addr_register(ctrl_s2mm_addr),
 
 		.INIT_AXI_TXN(init_s2mm_signal),
-		.TXN_DONE(m_axi_full_txn_done),
-		//.ERROR(m_axi_full_error),
+		.TXN_DONE(m_axi_full_s2mm_done),
+
 
 		.M_AXI_ACLK(m_axi_full_aclk),
 		.M_AXI_ARESETN(m_axi_full_aresetn),
@@ -215,7 +221,7 @@
 		.M_AXI_AWUSER(m_axi_full_awuser),
 		.M_AXI_AWVALID(m_axi_full_awvalid),
 		.M_AXI_AWREADY(m_axi_full_awready),
-		.M_AXI_WDATA(m_axi_full_wdata),
+		// .M_AXI_WDATA(m_axi_full_wdata),
 		.M_AXI_WSTRB(m_axi_full_wstrb),
 		.M_AXI_WLAST(m_axi_full_wlast),
 		.M_AXI_WUSER(m_axi_full_wuser),
@@ -243,12 +249,14 @@
 		.C_M_AXI_BUSER_WIDTH(C_M_AXI_FULL_BUSER_WIDTH)
 	) User_DMA_v1_0_M_AXI_FULL_mm2s_inst (
 
+		.fifo_mm2s_full(fifo_mm2s_full),
+		.fifo_mm2s_almost_full(fifo_mm2s_almost_full),
+
 		.length_register(mm2s_length_register),
 		.addr_register(ctrl_mm2s_addr),
 
 		.INIT_AXI_TXN(init_mm2s_signal),
-		.TXN_DONE(m_axi_full_txn_done),
-		//.ERROR(m_axi_full_error),
+		.TXN_DONE(m_axi_full_mm2s_done),
 
 		.M_AXI_ACLK(m_axi_full_aclk),
 		.M_AXI_ARESETN(m_axi_full_aresetn),
@@ -266,7 +274,7 @@
 		.M_AXI_ARVALID(m_axi_full_arvalid),
 		.M_AXI_ARREADY(m_axi_full_arready),
 		.M_AXI_RID(m_axi_full_rid),
-		.M_AXI_RDATA(m_axi_full_rdata),
+		// .M_AXI_RDATA(m_axi_full_rdata),
 		.M_AXI_RRESP(m_axi_full_rresp),
 		.M_AXI_RLAST(m_axi_full_rlast),
 		.M_AXI_RUSER(m_axi_full_ruser),
@@ -274,15 +282,25 @@
 		.M_AXI_RREADY(m_axi_full_rready)
 	);
 
+wire rnext,wnext;
 
+assign rnext = m_axi_full_rvalid && m_axi_full_rready;
+assign wnext = m_axi_full_wvalid && m_axi_full_wready;
 
 
 
 // Instantiation of Axi Bus Interface M_AXIS_MM2S
 	User_DMA_v1_0_M_AXIS_MM2S # (
-		.C_M_AXIS_TDATA_WIDTH(C_M_AXIS_MM2S_TDATA_WIDTH),
-		.C_M_START_COUNT(C_M_AXIS_MM2S_START_COUNT)
+		.C_M_AXIS_TDATA_WIDTH(C_M_AXIS_MM2S_TDATA_WIDTH)
 	) User_DMA_v1_0_M_AXIS_MM2S_inst (
+
+		.MM_count(),
+
+		.MM_data(m_axi_full_rdata),
+		.rnext(rnext),
+		.fifo_mm2s_full(fifo_mm2s_full),
+		.fifo_mm2s_almost_full(fifo_mm2s_almost_full),
+
 		.M_AXIS_ACLK(m_axis_mm2s_aclk),
 		.M_AXIS_ARESETN(m_axis_mm2s_aresetn),
 		.M_AXIS_TVALID(m_axis_mm2s_tvalid),
@@ -296,6 +314,12 @@
 	User_DMA_v1_0_S_AXIS_S2MM # (
 		.C_S_AXIS_TDATA_WIDTH(C_S_AXIS_S2MM_TDATA_WIDTH)
 	) User_DMA_v1_0_S_AXIS_S2MM_inst (
+
+		.MM_data(m_axi_full_wdata),
+		.wnext(wnext),
+		.fifo_s2mm_empty(fifo_s2mm_empty),
+		.fifo_s2mm_almost_empty(fifo_s2mm_almost_empty),
+
 		.S_AXIS_ACLK(s_axis_s2mm_aclk),
 		.S_AXIS_ARESETN(s_axis_s2mm_aresetn),
 		.S_AXIS_TREADY(s_axis_s2mm_tready),

@@ -104,14 +104,8 @@
 	// ADDR_LSB = 3 for 64 bits (n downto 3)
 	localparam integer ADDR_LSB = (C_S_AXI_DATA_WIDTH/32) + 1;
 	localparam integer OPT_MEM_ADDR_BITS = 1;
-	//----------------------------------------------
-	//-- Signals for user logic register space example
-	//------------------------------------------------
-	//-- Number of Slave Registers 4
-	reg [C_S_AXI_DATA_WIDTH-1:0]	slv_reg0;
-	reg [C_S_AXI_DATA_WIDTH-1:0]	slv_reg1;
-	reg [C_S_AXI_DATA_WIDTH-1:0]	slv_reg2;
-	reg [C_S_AXI_DATA_WIDTH-1:0]	slv_reg3;
+
+
 	wire	 slv_reg_rden;
 	wire	 slv_reg_wren;
 	reg [C_S_AXI_DATA_WIDTH-1:0]	 reg_data_out;

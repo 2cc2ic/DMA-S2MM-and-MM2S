@@ -32,6 +32,9 @@
 	(
 		// Users to add ports here
 
+		input fifo_s2mm_empty,
+		input fifo_s2mm_almost_empty,
+
 		input [23:0] length_register,
 		input [31:0] addr_register,
 
@@ -80,7 +83,7 @@
     // the slave is ready to accept an address and associated control signals
 		input wire  M_AXI_AWREADY,
 		// Master Interface Write Data.
-		output wire [C_M_AXI_DATA_WIDTH-1 : 0] M_AXI_WDATA,
+		// output wire [C_M_AXI_DATA_WIDTH-1 : 0] M_AXI_WDATA,
 		// Write strobes. This signal indicates which byte
     // lanes hold valid data. There is one write strobe
     // bit for each eight bits of the write data bus.
@@ -124,10 +127,9 @@
 	wire init_state_signal;
     reg [23:0] len_r_ff,len_r_state;
     reg [31:0] addr_r_ff,addr_r_state;
-    
+
 	reg [C_M_AXI_ADDR_WIDTH-1 : 0] 	axi_awaddr;
 	reg  	axi_awvalid;
-	reg [C_M_AXI_DATA_WIDTH-1 : 0] 	axi_wdata;
 	reg  	axi_wlast;
 	reg  	axi_wvalid;
 	reg  	axi_bready;
@@ -145,7 +147,6 @@
 
 
 	wire  	wnext;
-	wire  	rnext;
 
 	reg  	init_txn_ff;
 	reg  	init_txn_ff2;
@@ -165,7 +166,7 @@
 	assign M_AXI_AWQOS	= 4'h0;
 	assign M_AXI_AWUSER	= 'b1;
 	assign M_AXI_AWVALID	= axi_awvalid;
-	assign M_AXI_WDATA	= axi_wdata;
+	// assign M_AXI_WDATA	= axi_wdata;
 	assign M_AXI_WSTRB	= {(C_M_AXI_DATA_WIDTH/8){1'b1}};
 	assign M_AXI_WLAST	= axi_wlast;
 	assign M_AXI_WUSER	= 'b0;
@@ -215,6 +216,14 @@
 	      begin
 	        axi_wvalid <= 1'b0;
 	      end
+			else if (fifo_s2mm_empty)
+				begin
+					axi_wvalid <= 1'b0;
+				end
+			else if (fifo_s2mm_almost_empty && wnext)
+				begin
+					axi_wvalid <= 1'b0;
+				end
 	    else if (~axi_wvalid && start_single_burst_write)
 	      begin
 	        axi_wvalid <= 1'b1;
@@ -256,16 +265,6 @@
 	    else
 	      write_index <= write_index;
 	  end
-
-	  always @(posedge M_AXI_ACLK)
-	  begin
-	    if (M_AXI_ARESETN == 0 || init_txn_pulse == 1'b1)
-	      axi_wdata <= 'b1;
-	    else if (wnext)
-	      axi_wdata <= axi_wdata + 1;
-	    else
-	      axi_wdata <= axi_wdata;
-	    end
 
 	  always @(posedge M_AXI_ACLK)
 	  begin
@@ -570,6 +569,7 @@
 									else
 										begin
 											state_ctrl <= 0;
+											all_done   <= 1;
 										end
 								end
 
@@ -602,7 +602,7 @@
 
 							default:
 								begin
-
+                                    state_ctrl<=0;
 								end
 							endcase
 			      end
