@@ -1726,11 +1726,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Thu Jan 03 14:38:22 UTC 2019</spirit:value>
+            <spirit:value>Fri Jan 04 04:23:11 UTC 2019</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>7:e56aca0b</spirit:value>
+            <spirit:value>7:092acb1f</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1745,11 +1745,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Thu Jan 03 14:38:22 UTC 2019</spirit:value>
+            <spirit:value>Fri Jan 04 04:23:11 UTC 2019</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>7:e56aca0b</spirit:value>
+            <spirit:value>7:092acb1f</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1764,11 +1764,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Thu Jan 03 14:38:22 UTC 2019</spirit:value>
+            <spirit:value>Fri Jan 04 04:23:11 UTC 2019</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>7:cf04742c</spirit:value>
+            <spirit:value>7:c6c4dfde</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1783,11 +1783,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Thu Jan 03 14:38:22 UTC 2019</spirit:value>
+            <spirit:value>Fri Jan 04 04:23:11 UTC 2019</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>7:cf04742c</spirit:value>
+            <spirit:value>7:c6c4dfde</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1801,11 +1801,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Thu Jan 03 14:39:48 UTC 2019</spirit:value>
+            <spirit:value>Fri Jan 04 04:24:54 UTC 2019</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>7:e56aca0b</spirit:value>
+            <spirit:value>7:092acb1f</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -3239,31 +3239,31 @@
     <spirit:fileSet>
       <spirit:name>xilinx_verilogsynthesis_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>../../ipshared/2038/hdl/User_DMA_v1_0_S_AXI_LITE.v</spirit:name>
+        <spirit:name>../../ipshared/3524/hdl/User_DMA_v1_0_S_AXI_LITE.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/2038/src/User_DMA_v1_0_M_AXI_FULL_mm2s.v</spirit:name>
+        <spirit:name>../../ipshared/3524/src/User_DMA_v1_0_M_AXI_FULL_mm2s.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/2038/src/User_DMA_v1_0_M_AXI_FULL_s2mm.v</spirit:name>
+        <spirit:name>../../ipshared/3524/src/User_DMA_v1_0_M_AXI_FULL_s2mm.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/2038/hdl/User_DMA_v1_0_S_AXIS_S2MM.v</spirit:name>
+        <spirit:name>../../ipshared/3524/hdl/User_DMA_v1_0_S_AXIS_S2MM.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/2038/hdl/User_DMA_v1_0_M_AXIS_MM2S.v</spirit:name>
+        <spirit:name>../../ipshared/3524/hdl/User_DMA_v1_0_M_AXIS_MM2S.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/2038/src/fifo.v</spirit:name>
+        <spirit:name>../../ipshared/3524/src/fifo.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/2038/hdl/User_DMA_v1_0.v</spirit:name>
+        <spirit:name>../../ipshared/3524/hdl/User_DMA_v1_0.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
     </spirit:fileSet>
@@ -3278,31 +3278,31 @@
     <spirit:fileSet>
       <spirit:name>xilinx_verilogbehavioralsimulation_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>../../ipshared/2038/hdl/User_DMA_v1_0_S_AXI_LITE.v</spirit:name>
+        <spirit:name>../../ipshared/3524/hdl/User_DMA_v1_0_S_AXI_LITE.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/2038/src/User_DMA_v1_0_M_AXI_FULL_mm2s.v</spirit:name>
+        <spirit:name>../../ipshared/3524/src/User_DMA_v1_0_M_AXI_FULL_mm2s.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/2038/src/User_DMA_v1_0_M_AXI_FULL_s2mm.v</spirit:name>
+        <spirit:name>../../ipshared/3524/src/User_DMA_v1_0_M_AXI_FULL_s2mm.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/2038/hdl/User_DMA_v1_0_S_AXIS_S2MM.v</spirit:name>
+        <spirit:name>../../ipshared/3524/hdl/User_DMA_v1_0_S_AXIS_S2MM.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/2038/hdl/User_DMA_v1_0_M_AXIS_MM2S.v</spirit:name>
+        <spirit:name>../../ipshared/3524/hdl/User_DMA_v1_0_M_AXIS_MM2S.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/2038/src/fifo.v</spirit:name>
+        <spirit:name>../../ipshared/3524/src/fifo.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>../../ipshared/2038/hdl/User_DMA_v1_0.v</spirit:name>
+        <spirit:name>../../ipshared/3524/hdl/User_DMA_v1_0.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
     </spirit:fileSet>
@@ -3517,9 +3517,9 @@
   <spirit:vendorExtensions>
     <xilinx:coreExtensions>
       <xilinx:displayName>User_DMA_v1.0</xilinx:displayName>
-      <xilinx:coreRevision>7</xilinx:coreRevision>
+      <xilinx:coreRevision>8</xilinx:coreRevision>
       <xilinx:tags>
-        <xilinx:tag xilinx:name="user.org:user:User_DMA:1.0_ARCHIVE_LOCATION">/home/hubbery/DMA/project/ip_repo/User_DMA_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="user.org:user:User_DMA:1.0_ARCHIVE_LOCATION">d:/git/DMA-S2MM-and-MM2S-/project/ip_repo/User_DMA_1.0</xilinx:tag>
       </xilinx:tags>
       <xilinx:configElementInfos>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.M_AXIS_MM2S.CLK_DOMAIN" xilinx:valueSource="default_prop" xilinx:valuePermission="bd"/>
@@ -3607,7 +3607,7 @@
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="c8cdb5f8"/>
       <xilinx:checksum xilinx:scope="addressSpaces" xilinx:value="92f692d2"/>
       <xilinx:checksum xilinx:scope="memoryMaps" xilinx:value="a8980953"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="22f51188"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="f6c7607c"/>
       <xilinx:checksum xilinx:scope="ports" xilinx:value="db498ccf"/>
       <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="96887df5"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="bfb3f530"/>

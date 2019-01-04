@@ -1,8 +1,8 @@
 //Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
-//Tool Version: Vivado v.2017.4 (lin64) Build 2086221 Fri Dec 15 20:54:30 MST 2017
-//Date        : Thu Jan  3 22:42:59 2019
-//Host        : hubbery-Lenovo-G480 running 64-bit Ubuntu 16.04.5 LTS
+//Tool Version: Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+//Date        : Fri Jan  4 12:23:10 2019
+//Host        : hubbery running 64-bit major release  (build 9200)
 //Command     : generate_target system.bd
 //Design      : system
 //Purpose     : IP block netlist

@@ -1,10 +1,10 @@
 -- Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
--- Tool Version: Vivado v.2017.4 (lin64) Build 2086221 Fri Dec 15 20:54:30 MST 2017
--- Date        : Thu Jan  3 22:39:48 2019
--- Host        : hubbery-Lenovo-G480 running 64-bit Ubuntu 16.04.5 LTS
+-- Tool Version: Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+-- Date        : Fri Jan  4 12:24:54 2019
+-- Host        : hubbery running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode funcsim
---               /home/hubbery/DMA/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ip/system_User_DMA_0_0/system_User_DMA_0_0_sim_netlist.vhdl
+--               D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ip/system_User_DMA_0_0/system_User_DMA_0_0_sim_netlist.vhdl
 -- Design      : system_User_DMA_0_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -2056,14 +2056,14 @@ all_done_i_1: unisim.vcomponents.LUT1
     );
 \all_done_i_1__0\: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"FFDFDFDFFF000000"
+      INIT => X"FFFF8F8FF8FF8888"
     )
         port map (
-      I0 => init_txn_ff,
-      I1 => init_txn_ff2,
-      I2 => \FSM_onehot_state_ctrl_reg_n_0_[0]\,
-      I3 => reads_done,
-      I4 => \FSM_onehot_state_ctrl_reg_n_0_[14]\,
+      I0 => \FSM_onehot_state_ctrl_reg_n_0_[14]\,
+      I1 => reads_done,
+      I2 => len_r_state,
+      I3 => \len_r_state_reg_n_0_[0]\,
+      I4 => \burst_len__0\(0),
       I5 => \^m_axi_full_mm2s_done\,
       O => \all_done_i_1__0_n_0\
     );
@@ -6567,14 +6567,14 @@ M_AXI_AWADDR_carry_i_4: unisim.vcomponents.LUT2
     );
 all_done_i_2: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"FFDFDFDFFF000000"
+      INIT => X"FFFF8F8FF8FF8888"
     )
         port map (
-      I0 => init_txn_ff,
-      I1 => init_txn_ff2,
-      I2 => \FSM_onehot_state_ctrl_reg_n_0_[0]\,
-      I3 => writes_done,
-      I4 => \FSM_onehot_state_ctrl_reg_n_0_[14]\,
+      I0 => \FSM_onehot_state_ctrl_reg_n_0_[14]\,
+      I1 => writes_done,
+      I2 => len_r_state,
+      I3 => \len_r_state_reg_n_0_[0]\,
+      I4 => \burst_len__0\(0),
       I5 => \^m_axi_full_s2mm_done\,
       O => all_done_i_2_n_0
     );

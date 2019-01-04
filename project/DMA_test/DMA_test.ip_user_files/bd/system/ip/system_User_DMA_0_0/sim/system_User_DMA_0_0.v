@@ -48,7 +48,7 @@
 
 
 // IP VLNV: user.org:user:User_DMA:1.0
-// IP Revision: 7
+// IP Revision: 8
 
 `timescale 1ns/1ps
 

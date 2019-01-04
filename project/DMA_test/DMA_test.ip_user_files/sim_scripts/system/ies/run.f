@@ -1,19 +1,19 @@
 -makelib ies_lib/xil_defaultlib -sv \
-  "/opt/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv" \
-  "/opt/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv" \
-  "/opt/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv" \
+  "D:/xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv" \
+  "D:/xilinx/Vivado/2017.4/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv" \
+  "D:/xilinx/Vivado/2017.4/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv" \
 -endlib
 -makelib ies_lib/xpm \
-  "/opt/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_VCOMP.vhd" \
+  "D:/xilinx/Vivado/2017.4/data/ip/xpm/xpm_VCOMP.vhd" \
 -endlib
 -makelib ies_lib/xil_defaultlib \
-  "../../../bd/system/ipshared/2038/hdl/User_DMA_v1_0_S_AXI_LITE.v" \
-  "../../../bd/system/ipshared/2038/src/User_DMA_v1_0_M_AXI_FULL_mm2s.v" \
-  "../../../bd/system/ipshared/2038/src/User_DMA_v1_0_M_AXI_FULL_s2mm.v" \
-  "../../../bd/system/ipshared/2038/hdl/User_DMA_v1_0_S_AXIS_S2MM.v" \
-  "../../../bd/system/ipshared/2038/hdl/User_DMA_v1_0_M_AXIS_MM2S.v" \
-  "../../../bd/system/ipshared/2038/src/fifo.v" \
-  "../../../bd/system/ipshared/2038/hdl/User_DMA_v1_0.v" \
+  "../../../bd/system/ipshared/3524/hdl/User_DMA_v1_0_S_AXI_LITE.v" \
+  "../../../bd/system/ipshared/3524/src/User_DMA_v1_0_M_AXI_FULL_mm2s.v" \
+  "../../../bd/system/ipshared/3524/src/User_DMA_v1_0_M_AXI_FULL_s2mm.v" \
+  "../../../bd/system/ipshared/3524/hdl/User_DMA_v1_0_S_AXIS_S2MM.v" \
+  "../../../bd/system/ipshared/3524/hdl/User_DMA_v1_0_M_AXIS_MM2S.v" \
+  "../../../bd/system/ipshared/3524/src/fifo.v" \
+  "../../../bd/system/ipshared/3524/hdl/User_DMA_v1_0.v" \
   "../../../bd/system/ip/system_User_DMA_0_0/sim/system_User_DMA_0_0.v" \
 -endlib
 -makelib ies_lib/axi_infrastructure_v1_1_0 \

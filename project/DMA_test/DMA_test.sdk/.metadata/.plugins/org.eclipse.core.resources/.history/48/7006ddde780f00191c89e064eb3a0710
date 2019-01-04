@@ -1,0 +1,52 @@
+#include <string.h>
+#include "stdlib.h"
+#include <stdio.h>
+
+#include"xil_printf.h"
+#include "xparameters.h"
+#include "xil_io.h"
+#include "xil_types.h"
+#include "xdevcfg.h"
+#include "xgpiops.h"
+
+#define DDR_BASEARDDR  0x01000000
+#define XGpio_axi_WriteReg(BaseAddr, RegOffset, Data)	\
+		Xil_Out32((BaseAddr) + (u32)(RegOffset), (u32)(Data))
+#define XPAR_GPIO_LITE_ML_0 XPAR_USER_DMA_0_S_AXI_LITE_BASEADDR
+#define GPIO_LITE_ML_REG0 0
+
+void disablecache()
+{
+	Xil_DCacheDisable();
+	Xil_ICacheDisable();
+}
+
+int main()
+{
+
+		static XGpioPs psGpioInstancePtr;
+		XGpioPs_Config* GpioConfigPtr;
+		int xStatus;
+		GpioConfigPtr = XGpioPs_LookupConfig(XPAR_PS7_GPIO_0_DEVICE_ID);
+		xStatus = XGpioPs_CfgInitialize(&psGpioInstancePtr,GpioConfigPtr, GpioConfigPtr->BaseAddr);
+
+		if(XST_SUCCESS != xStatus)
+			print(" PS GPIO INIT FAILED \n\r");
+
+		XGpioPs_SetDirectionPin(&psGpioInstancePtr, 54,0);
+		XGpioPs_SetOutputEnablePin(&psGpioInstancePtr, 54,0);
+
+		XGpioPs_SetDirectionPin(&psGpioInstancePtr, 55,0);
+		XGpioPs_SetOutputEnablePin(&psGpioInstancePtr, 55,0);
+
+		disablecache();
+
+
+		XGpio_axi_WriteReg(XPAR_GPIO_LITE_ML_0,GPIO_LITE_ML_REG0,0X00);
+		XGpio_axi_WriteReg(XPAR_GPIO_LITE_ML_0,GPIO_LITE_ML_REG0,1<<i);
+
+		sleep(1);
+
+
+    return 0;
+  }

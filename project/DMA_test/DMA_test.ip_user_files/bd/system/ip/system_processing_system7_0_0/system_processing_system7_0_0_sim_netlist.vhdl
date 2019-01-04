@@ -1,7 +1,7 @@
 -- Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2017.4 (lin64) Build 2086221 Fri Dec 15 20:54:30 MST 2017
--- Date        : Thu Jan  3 21:27:47 2019
+-- Date        : Thu Jan  3 22:45:22 2019
 -- Host        : hubbery-Lenovo-G480 running 64-bit Ubuntu 16.04.5 LTS
 -- Command     : write_vhdl -force -mode funcsim
 --               /home/hubbery/DMA/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/system_processing_system7_0_0_sim_netlist.vhdl
@@ -70,9 +70,9 @@ entity system_processing_system7_0_0_processing_system7_v5_5_processing_system7 
     ENET1_MDIO_I : in STD_LOGIC;
     ENET1_EXT_INTIN : in STD_LOGIC;
     ENET1_GMII_RXD : in STD_LOGIC_VECTOR ( 7 downto 0 );
-    GPIO_I : in STD_LOGIC_VECTOR ( 0 to 0 );
-    GPIO_O : out STD_LOGIC_VECTOR ( 0 to 0 );
-    GPIO_T : out STD_LOGIC_VECTOR ( 0 to 0 );
+    GPIO_I : in STD_LOGIC_VECTOR ( 1 downto 0 );
+    GPIO_O : out STD_LOGIC_VECTOR ( 1 downto 0 );
+    GPIO_T : out STD_LOGIC_VECTOR ( 1 downto 0 );
     I2C0_SDA_I : in STD_LOGIC;
     I2C0_SDA_O : out STD_LOGIC;
     I2C0_SDA_T : out STD_LOGIC;
@@ -709,7 +709,7 @@ entity system_processing_system7_0_0_processing_system7_v5_5_processing_system7 
   attribute C_DQ_WIDTH : integer;
   attribute C_DQ_WIDTH of system_processing_system7_0_0_processing_system7_v5_5_processing_system7 : entity is 32;
   attribute C_EMIO_GPIO_WIDTH : integer;
-  attribute C_EMIO_GPIO_WIDTH of system_processing_system7_0_0_processing_system7_v5_5_processing_system7 : entity is 1;
+  attribute C_EMIO_GPIO_WIDTH of system_processing_system7_0_0_processing_system7_v5_5_processing_system7 : entity is 2;
   attribute C_EN_EMIO_ENET0 : integer;
   attribute C_EN_EMIO_ENET0 of system_processing_system7_0_0_processing_system7_v5_5_processing_system7 : entity is 0;
   attribute C_EN_EMIO_ENET1 : integer;
@@ -906,7 +906,7 @@ architecture STRUCTURE of system_processing_system7_0_0_processing_system7_v5_5_
   signal buffered_PS_CLK : STD_LOGIC;
   signal buffered_PS_PORB : STD_LOGIC;
   signal buffered_PS_SRSTB : STD_LOGIC;
-  signal gpio_out_t_n : STD_LOGIC;
+  signal gpio_out_t_n : STD_LOGIC_VECTOR ( 1 downto 0 );
   signal NLW_PS7_i_EMIOENET0GMIITXEN_UNCONNECTED : STD_LOGIC;
   signal NLW_PS7_i_EMIOENET0GMIITXER_UNCONNECTED : STD_LOGIC;
   signal NLW_PS7_i_EMIOENET1GMIITXEN_UNCONNECTED : STD_LOGIC;
@@ -916,8 +916,8 @@ architecture STRUCTURE of system_processing_system7_0_0_processing_system7_v5_5_
   signal NLW_PS7_i_EMIOTRACECTL_UNCONNECTED : STD_LOGIC;
   signal NLW_PS7_i_EMIOENET0GMIITXD_UNCONNECTED : STD_LOGIC_VECTOR ( 7 downto 0 );
   signal NLW_PS7_i_EMIOENET1GMIITXD_UNCONNECTED : STD_LOGIC_VECTOR ( 7 downto 0 );
-  signal NLW_PS7_i_EMIOGPIOO_UNCONNECTED : STD_LOGIC_VECTOR ( 63 downto 1 );
-  signal NLW_PS7_i_EMIOGPIOTN_UNCONNECTED : STD_LOGIC_VECTOR ( 63 downto 1 );
+  signal NLW_PS7_i_EMIOGPIOO_UNCONNECTED : STD_LOGIC_VECTOR ( 63 downto 2 );
+  signal NLW_PS7_i_EMIOGPIOTN_UNCONNECTED : STD_LOGIC_VECTOR ( 63 downto 2 );
   signal NLW_PS7_i_EMIOTRACEDATA_UNCONNECTED : STD_LOGIC_VECTOR ( 31 downto 0 );
   signal NLW_PS7_i_MAXIGP0ARCACHE_UNCONNECTED : STD_LOGIC_VECTOR ( 1 to 1 );
   signal NLW_PS7_i_MAXIGP0AWCACHE_UNCONNECTED : STD_LOGIC_VECTOR ( 1 to 1 );
@@ -1181,8 +1181,16 @@ GND: unisim.vcomponents.GND
       INIT => X"1"
     )
         port map (
-      I0 => gpio_out_t_n,
+      I0 => gpio_out_t_n(0),
       O => GPIO_T(0)
+    );
+\GPIO_T[1]_INST_0\: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"1"
+    )
+        port map (
+      I0 => gpio_out_t_n(1),
+      O => GPIO_T(1)
     );
 I2C0_SCL_T_INST_0: unisim.vcomponents.LUT1
     generic map(
@@ -1326,12 +1334,12 @@ PS7_i: unisim.vcomponents.PS7
       EMIOENET1PTPSYNCFRAMETX => ENET1_PTP_SYNC_FRAME_TX,
       EMIOENET1SOFRX => ENET1_SOF_RX,
       EMIOENET1SOFTX => ENET1_SOF_TX,
-      EMIOGPIOI(63 downto 1) => B"000000000000000000000000000000000000000000000000000000000000000",
-      EMIOGPIOI(0) => GPIO_I(0),
-      EMIOGPIOO(63 downto 1) => NLW_PS7_i_EMIOGPIOO_UNCONNECTED(63 downto 1),
-      EMIOGPIOO(0) => GPIO_O(0),
-      EMIOGPIOTN(63 downto 1) => NLW_PS7_i_EMIOGPIOTN_UNCONNECTED(63 downto 1),
-      EMIOGPIOTN(0) => gpio_out_t_n,
+      EMIOGPIOI(63 downto 2) => B"00000000000000000000000000000000000000000000000000000000000000",
+      EMIOGPIOI(1 downto 0) => GPIO_I(1 downto 0),
+      EMIOGPIOO(63 downto 2) => NLW_PS7_i_EMIOGPIOO_UNCONNECTED(63 downto 2),
+      EMIOGPIOO(1 downto 0) => GPIO_O(1 downto 0),
+      EMIOGPIOTN(63 downto 2) => NLW_PS7_i_EMIOGPIOTN_UNCONNECTED(63 downto 2),
+      EMIOGPIOTN(1 downto 0) => gpio_out_t_n(1 downto 0),
       EMIOI2C0SCLI => I2C0_SCL_I,
       EMIOI2C0SCLO => I2C0_SCL_O,
       EMIOI2C0SCLTN => I2C0_SCL_T_n,
@@ -2860,9 +2868,9 @@ library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
 entity system_processing_system7_0_0 is
   port (
-    GPIO_I : in STD_LOGIC_VECTOR ( 0 to 0 );
-    GPIO_O : out STD_LOGIC_VECTOR ( 0 to 0 );
-    GPIO_T : out STD_LOGIC_VECTOR ( 0 to 0 );
+    GPIO_I : in STD_LOGIC_VECTOR ( 1 downto 0 );
+    GPIO_O : out STD_LOGIC_VECTOR ( 1 downto 0 );
+    GPIO_T : out STD_LOGIC_VECTOR ( 1 downto 0 );
     M_AXI_GP0_ARVALID : out STD_LOGIC;
     M_AXI_GP0_AWVALID : out STD_LOGIC;
     M_AXI_GP0_BREADY : out STD_LOGIC;
@@ -3265,7 +3273,7 @@ architecture STRUCTURE of system_processing_system7_0_0 is
   attribute C_DQ_WIDTH : integer;
   attribute C_DQ_WIDTH of inst : label is 32;
   attribute C_EMIO_GPIO_WIDTH : integer;
-  attribute C_EMIO_GPIO_WIDTH of inst : label is 1;
+  attribute C_EMIO_GPIO_WIDTH of inst : label is 2;
   attribute C_EN_EMIO_ENET0 : integer;
   attribute C_EN_EMIO_ENET0 of inst : label is 0;
   attribute C_EN_EMIO_ENET1 : integer;
@@ -3648,9 +3656,9 @@ inst: entity work.system_processing_system7_0_0_processing_system7_v5_5_processi
       FTMT_P2F_TRIG_1 => NLW_inst_FTMT_P2F_TRIG_1_UNCONNECTED,
       FTMT_P2F_TRIG_2 => NLW_inst_FTMT_P2F_TRIG_2_UNCONNECTED,
       FTMT_P2F_TRIG_3 => NLW_inst_FTMT_P2F_TRIG_3_UNCONNECTED,
-      GPIO_I(0) => GPIO_I(0),
-      GPIO_O(0) => GPIO_O(0),
-      GPIO_T(0) => GPIO_T(0),
+      GPIO_I(1 downto 0) => GPIO_I(1 downto 0),
+      GPIO_O(1 downto 0) => GPIO_O(1 downto 0),
+      GPIO_T(1 downto 0) => GPIO_T(1 downto 0),
       I2C0_SCL_I => '0',
       I2C0_SCL_O => NLW_inst_I2C0_SCL_O_UNCONNECTED,
       I2C0_SCL_T => NLW_inst_I2C0_SCL_T_UNCONNECTED,

@@ -1,13 +1,13 @@
 #-----------------------------------------------------------
 # Vivado v2017.4 (64-bit)
-# SW Build 2086221 on Fri Dec 15 20:54:30 MST 2017
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
 # IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
-# Start of session at: Thu Jan  3 22:38:29 2019
-# Process ID: 19839
-# Current directory: /home/hubbery/DMA/project/DMA_test/DMA_test.runs/system_User_DMA_0_0_synth_1
-# Command line: vivado -log system_User_DMA_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source system_User_DMA_0_0.tcl
-# Log file: /home/hubbery/DMA/project/DMA_test/DMA_test.runs/system_User_DMA_0_0_synth_1/system_User_DMA_0_0.vds
-# Journal file: /home/hubbery/DMA/project/DMA_test/DMA_test.runs/system_User_DMA_0_0_synth_1/vivado.jou
+# Start of session at: Fri Jan  4 12:23:32 2019
+# Process ID: 25156
+# Current directory: D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.runs/system_User_DMA_0_0_synth_1
+# Command line: vivado.exe -log system_User_DMA_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source system_User_DMA_0_0.tcl
+# Log file: D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.runs/system_User_DMA_0_0_synth_1/system_User_DMA_0_0.vds
+# Journal file: D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.runs/system_User_DMA_0_0_synth_1\vivado.jou
 #-----------------------------------------------------------
 source system_User_DMA_0_0.tcl -notrace
 Command: synth_design -top system_User_DMA_0_0 -part xc7z010clg400-1 -mode out_of_context
@@ -15,12 +15,12 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 19856 
+INFO: Helper process launched with PID 22844 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1264.477 ; gain = 84.996 ; free physical = 1282 ; free virtual = 6470
+Starting RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 406.027 ; gain = 99.656
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'system_User_DMA_0_0' [/home/hubbery/DMA/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ip/system_User_DMA_0_0/synth/system_User_DMA_0_0.v:56]
-INFO: [Synth 8-638] synthesizing module 'User_DMA_v1_0' [/home/hubbery/DMA/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ipshared/2038/hdl/User_DMA_v1_0.v:4]
+INFO: [Synth 8-638] synthesizing module 'system_User_DMA_0_0' [d:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ip/system_User_DMA_0_0/synth/system_User_DMA_0_0.v:56]
+INFO: [Synth 8-638] synthesizing module 'User_DMA_v1_0' [d:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ipshared/3524/hdl/User_DMA_v1_0.v:4]
 	Parameter C_S_AXI_LITE_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S_AXI_LITE_ADDR_WIDTH bound to: 4 - type: integer 
 	Parameter C_S_AXIS_S2MM_TDATA_WIDTH bound to: 32 - type: integer 
@@ -36,15 +36,15 @@ INFO: [Synth 8-638] synthesizing module 'User_DMA_v1_0' [/home/hubbery/DMA/proje
 	Parameter C_M_AXI_FULL_BUSER_WIDTH bound to: 1 - type: integer 
 	Parameter C_M_AXIS_MM2S_TDATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_M_AXIS_MM2S_START_COUNT bound to: 32 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'User_DMA_v1_0_S_AXI_LITE' [/home/hubbery/DMA/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ipshared/2038/hdl/User_DMA_v1_0_S_AXI_LITE.v:4]
+INFO: [Synth 8-638] synthesizing module 'User_DMA_v1_0_S_AXI_LITE' [d:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ipshared/3524/hdl/User_DMA_v1_0_S_AXI_LITE.v:4]
 	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S_AXI_ADDR_WIDTH bound to: 4 - type: integer 
 	Parameter ADDR_LSB bound to: 2 - type: integer 
 	Parameter OPT_MEM_ADDR_BITS bound to: 1 - type: integer 
-INFO: [Synth 8-226] default block is never used [/home/hubbery/DMA/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ipshared/2038/hdl/User_DMA_v1_0_S_AXI_LITE.v:229]
-INFO: [Synth 8-226] default block is never used [/home/hubbery/DMA/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ipshared/2038/hdl/User_DMA_v1_0_S_AXI_LITE.v:370]
-INFO: [Synth 8-256] done synthesizing module 'User_DMA_v1_0_S_AXI_LITE' (1#1) [/home/hubbery/DMA/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ipshared/2038/hdl/User_DMA_v1_0_S_AXI_LITE.v:4]
-INFO: [Synth 8-638] synthesizing module 'User_DMA_v1_0_M_AXI_FULL_s2mm' [/home/hubbery/DMA/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ipshared/2038/src/User_DMA_v1_0_M_AXI_FULL_s2mm.v:4]
+INFO: [Synth 8-226] default block is never used [d:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ipshared/3524/hdl/User_DMA_v1_0_S_AXI_LITE.v:229]
+INFO: [Synth 8-226] default block is never used [d:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ipshared/3524/hdl/User_DMA_v1_0_S_AXI_LITE.v:370]
+INFO: [Synth 8-256] done synthesizing module 'User_DMA_v1_0_S_AXI_LITE' (1#1) [d:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ipshared/3524/hdl/User_DMA_v1_0_S_AXI_LITE.v:4]
+INFO: [Synth 8-638] synthesizing module 'User_DMA_v1_0_M_AXI_FULL_s2mm' [d:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ipshared/3524/src/User_DMA_v1_0_M_AXI_FULL_s2mm.v:4]
 	Parameter C_M_TARGET_SLAVE_BASE_ADDR bound to: 1073741824 - type: integer 
 	Parameter C_M_AXI_BURST_LEN bound to: 16 - type: integer 
 	Parameter C_M_AXI_ID_WIDTH bound to: 1 - type: integer 
@@ -55,10 +55,10 @@ INFO: [Synth 8-638] synthesizing module 'User_DMA_v1_0_M_AXI_FULL_s2mm' [/home/h
 	Parameter C_M_AXI_WUSER_WIDTH bound to: 1 - type: integer 
 	Parameter C_M_AXI_RUSER_WIDTH bound to: 1 - type: integer 
 	Parameter C_M_AXI_BUSER_WIDTH bound to: 1 - type: integer 
-INFO: [Synth 8-226] default block is never used [/home/hubbery/DMA/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ipshared/2038/src/User_DMA_v1_0_M_AXI_FULL_s2mm.v:380]
-INFO: [Synth 8-226] default block is never used [/home/hubbery/DMA/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ipshared/2038/src/User_DMA_v1_0_M_AXI_FULL_s2mm.v:620]
-INFO: [Synth 8-256] done synthesizing module 'User_DMA_v1_0_M_AXI_FULL_s2mm' (2#1) [/home/hubbery/DMA/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ipshared/2038/src/User_DMA_v1_0_M_AXI_FULL_s2mm.v:4]
-INFO: [Synth 8-638] synthesizing module 'User_DMA_v1_0_M_AXI_FULL_mm2s' [/home/hubbery/DMA/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ipshared/2038/src/User_DMA_v1_0_M_AXI_FULL_mm2s.v:4]
+INFO: [Synth 8-226] default block is never used [d:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ipshared/3524/src/User_DMA_v1_0_M_AXI_FULL_s2mm.v:380]
+INFO: [Synth 8-226] default block is never used [d:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ipshared/3524/src/User_DMA_v1_0_M_AXI_FULL_s2mm.v:621]
+INFO: [Synth 8-256] done synthesizing module 'User_DMA_v1_0_M_AXI_FULL_s2mm' (2#1) [d:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ipshared/3524/src/User_DMA_v1_0_M_AXI_FULL_s2mm.v:4]
+INFO: [Synth 8-638] synthesizing module 'User_DMA_v1_0_M_AXI_FULL_mm2s' [d:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ipshared/3524/src/User_DMA_v1_0_M_AXI_FULL_mm2s.v:4]
 	Parameter C_M_TARGET_SLAVE_BASE_ADDR bound to: 1073741824 - type: integer 
 	Parameter C_M_AXI_BURST_LEN bound to: 16 - type: integer 
 	Parameter C_M_AXI_ID_WIDTH bound to: 1 - type: integer 
@@ -69,20 +69,20 @@ INFO: [Synth 8-638] synthesizing module 'User_DMA_v1_0_M_AXI_FULL_mm2s' [/home/h
 	Parameter C_M_AXI_WUSER_WIDTH bound to: 1 - type: integer 
 	Parameter C_M_AXI_RUSER_WIDTH bound to: 1 - type: integer 
 	Parameter C_M_AXI_BUSER_WIDTH bound to: 1 - type: integer 
-INFO: [Synth 8-226] default block is never used [/home/hubbery/DMA/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ipshared/2038/src/User_DMA_v1_0_M_AXI_FULL_mm2s.v:349]
-INFO: [Synth 8-226] default block is never used [/home/hubbery/DMA/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ipshared/2038/src/User_DMA_v1_0_M_AXI_FULL_mm2s.v:590]
-INFO: [Synth 8-256] done synthesizing module 'User_DMA_v1_0_M_AXI_FULL_mm2s' (3#1) [/home/hubbery/DMA/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ipshared/2038/src/User_DMA_v1_0_M_AXI_FULL_mm2s.v:4]
-INFO: [Synth 8-638] synthesizing module 'User_DMA_v1_0_M_AXIS_MM2S' [/home/hubbery/DMA/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ipshared/2038/hdl/User_DMA_v1_0_M_AXIS_MM2S.v:4]
+INFO: [Synth 8-226] default block is never used [d:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ipshared/3524/src/User_DMA_v1_0_M_AXI_FULL_mm2s.v:349]
+INFO: [Synth 8-226] default block is never used [d:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ipshared/3524/src/User_DMA_v1_0_M_AXI_FULL_mm2s.v:591]
+INFO: [Synth 8-256] done synthesizing module 'User_DMA_v1_0_M_AXI_FULL_mm2s' (3#1) [d:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ipshared/3524/src/User_DMA_v1_0_M_AXI_FULL_mm2s.v:4]
+INFO: [Synth 8-638] synthesizing module 'User_DMA_v1_0_M_AXIS_MM2S' [d:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ipshared/3524/hdl/User_DMA_v1_0_M_AXIS_MM2S.v:4]
 	Parameter C_M_AXIS_TDATA_WIDTH bound to: 32 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'fifo' [/home/hubbery/DMA/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ipshared/2038/src/fifo.v:3]
+INFO: [Synth 8-638] synthesizing module 'fifo' [d:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ipshared/3524/src/fifo.v:3]
 	Parameter data_width bound to: 32 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'fifo' (4#1) [/home/hubbery/DMA/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ipshared/2038/src/fifo.v:3]
-INFO: [Synth 8-256] done synthesizing module 'User_DMA_v1_0_M_AXIS_MM2S' (5#1) [/home/hubbery/DMA/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ipshared/2038/hdl/User_DMA_v1_0_M_AXIS_MM2S.v:4]
-INFO: [Synth 8-638] synthesizing module 'User_DMA_v1_0_S_AXIS_S2MM' [/home/hubbery/DMA/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ipshared/2038/hdl/User_DMA_v1_0_S_AXIS_S2MM.v:4]
+INFO: [Synth 8-256] done synthesizing module 'fifo' (4#1) [d:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ipshared/3524/src/fifo.v:3]
+INFO: [Synth 8-256] done synthesizing module 'User_DMA_v1_0_M_AXIS_MM2S' (5#1) [d:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ipshared/3524/hdl/User_DMA_v1_0_M_AXIS_MM2S.v:4]
+INFO: [Synth 8-638] synthesizing module 'User_DMA_v1_0_S_AXIS_S2MM' [d:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ipshared/3524/hdl/User_DMA_v1_0_S_AXIS_S2MM.v:4]
 	Parameter C_S_AXIS_TDATA_WIDTH bound to: 32 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'User_DMA_v1_0_S_AXIS_S2MM' (6#1) [/home/hubbery/DMA/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ipshared/2038/hdl/User_DMA_v1_0_S_AXIS_S2MM.v:4]
-INFO: [Synth 8-256] done synthesizing module 'User_DMA_v1_0' (7#1) [/home/hubbery/DMA/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ipshared/2038/hdl/User_DMA_v1_0.v:4]
-INFO: [Synth 8-256] done synthesizing module 'system_User_DMA_0_0' (8#1) [/home/hubbery/DMA/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ip/system_User_DMA_0_0/synth/system_User_DMA_0_0.v:56]
+INFO: [Synth 8-256] done synthesizing module 'User_DMA_v1_0_S_AXIS_S2MM' (6#1) [d:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ipshared/3524/hdl/User_DMA_v1_0_S_AXIS_S2MM.v:4]
+INFO: [Synth 8-256] done synthesizing module 'User_DMA_v1_0' (7#1) [d:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ipshared/3524/hdl/User_DMA_v1_0.v:4]
+INFO: [Synth 8-256] done synthesizing module 'system_User_DMA_0_0' (8#1) [d:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ip/system_User_DMA_0_0/synth/system_User_DMA_0_0.v:56]
 WARNING: [Synth 8-3331] design User_DMA_v1_0_S_AXIS_S2MM has unconnected port S_AXIS_TSTRB[3]
 WARNING: [Synth 8-3331] design User_DMA_v1_0_S_AXIS_S2MM has unconnected port S_AXIS_TSTRB[2]
 WARNING: [Synth 8-3331] design User_DMA_v1_0_S_AXIS_S2MM has unconnected port S_AXIS_TSTRB[1]
@@ -103,7 +103,7 @@ WARNING: [Synth 8-3331] design User_DMA_v1_0_S_AXI_LITE has unconnected port S_A
 WARNING: [Synth 8-3331] design User_DMA_v1_0_S_AXI_LITE has unconnected port S_AXI_ARPROT[1]
 WARNING: [Synth 8-3331] design User_DMA_v1_0_S_AXI_LITE has unconnected port S_AXI_ARPROT[0]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1307.008 ; gain = 127.527 ; free physical = 1293 ; free virtual = 6482
+Finished RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 458.109 ; gain = 151.738
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -112,32 +112,32 @@ Report Check Netlist:
 +------+------------------+-------+---------+-------+------------------+
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
-WARNING: [Synth 8-3295] tying undriven pin User_DMA_v1_0_M_AXIS_MM2S_inst:MM_count[23] to constant 0 [/home/hubbery/DMA/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ipshared/2038/hdl/User_DMA_v1_0.v:295]
-WARNING: [Synth 8-3295] tying undriven pin User_DMA_v1_0_M_AXIS_MM2S_inst:MM_count[22] to constant 0 [/home/hubbery/DMA/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ipshared/2038/hdl/User_DMA_v1_0.v:295]
-WARNING: [Synth 8-3295] tying undriven pin User_DMA_v1_0_M_AXIS_MM2S_inst:MM_count[21] to constant 0 [/home/hubbery/DMA/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ipshared/2038/hdl/User_DMA_v1_0.v:295]
-WARNING: [Synth 8-3295] tying undriven pin User_DMA_v1_0_M_AXIS_MM2S_inst:MM_count[20] to constant 0 [/home/hubbery/DMA/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ipshared/2038/hdl/User_DMA_v1_0.v:295]
-WARNING: [Synth 8-3295] tying undriven pin User_DMA_v1_0_M_AXIS_MM2S_inst:MM_count[19] to constant 0 [/home/hubbery/DMA/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ipshared/2038/hdl/User_DMA_v1_0.v:295]
-WARNING: [Synth 8-3295] tying undriven pin User_DMA_v1_0_M_AXIS_MM2S_inst:MM_count[18] to constant 0 [/home/hubbery/DMA/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ipshared/2038/hdl/User_DMA_v1_0.v:295]
-WARNING: [Synth 8-3295] tying undriven pin User_DMA_v1_0_M_AXIS_MM2S_inst:MM_count[17] to constant 0 [/home/hubbery/DMA/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ipshared/2038/hdl/User_DMA_v1_0.v:295]
-WARNING: [Synth 8-3295] tying undriven pin User_DMA_v1_0_M_AXIS_MM2S_inst:MM_count[16] to constant 0 [/home/hubbery/DMA/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ipshared/2038/hdl/User_DMA_v1_0.v:295]
-WARNING: [Synth 8-3295] tying undriven pin User_DMA_v1_0_M_AXIS_MM2S_inst:MM_count[15] to constant 0 [/home/hubbery/DMA/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ipshared/2038/hdl/User_DMA_v1_0.v:295]
-WARNING: [Synth 8-3295] tying undriven pin User_DMA_v1_0_M_AXIS_MM2S_inst:MM_count[14] to constant 0 [/home/hubbery/DMA/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ipshared/2038/hdl/User_DMA_v1_0.v:295]
-WARNING: [Synth 8-3295] tying undriven pin User_DMA_v1_0_M_AXIS_MM2S_inst:MM_count[13] to constant 0 [/home/hubbery/DMA/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ipshared/2038/hdl/User_DMA_v1_0.v:295]
-WARNING: [Synth 8-3295] tying undriven pin User_DMA_v1_0_M_AXIS_MM2S_inst:MM_count[12] to constant 0 [/home/hubbery/DMA/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ipshared/2038/hdl/User_DMA_v1_0.v:295]
-WARNING: [Synth 8-3295] tying undriven pin User_DMA_v1_0_M_AXIS_MM2S_inst:MM_count[11] to constant 0 [/home/hubbery/DMA/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ipshared/2038/hdl/User_DMA_v1_0.v:295]
-WARNING: [Synth 8-3295] tying undriven pin User_DMA_v1_0_M_AXIS_MM2S_inst:MM_count[10] to constant 0 [/home/hubbery/DMA/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ipshared/2038/hdl/User_DMA_v1_0.v:295]
-WARNING: [Synth 8-3295] tying undriven pin User_DMA_v1_0_M_AXIS_MM2S_inst:MM_count[9] to constant 0 [/home/hubbery/DMA/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ipshared/2038/hdl/User_DMA_v1_0.v:295]
-WARNING: [Synth 8-3295] tying undriven pin User_DMA_v1_0_M_AXIS_MM2S_inst:MM_count[8] to constant 0 [/home/hubbery/DMA/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ipshared/2038/hdl/User_DMA_v1_0.v:295]
-WARNING: [Synth 8-3295] tying undriven pin User_DMA_v1_0_M_AXIS_MM2S_inst:MM_count[7] to constant 0 [/home/hubbery/DMA/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ipshared/2038/hdl/User_DMA_v1_0.v:295]
-WARNING: [Synth 8-3295] tying undriven pin User_DMA_v1_0_M_AXIS_MM2S_inst:MM_count[6] to constant 0 [/home/hubbery/DMA/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ipshared/2038/hdl/User_DMA_v1_0.v:295]
-WARNING: [Synth 8-3295] tying undriven pin User_DMA_v1_0_M_AXIS_MM2S_inst:MM_count[5] to constant 0 [/home/hubbery/DMA/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ipshared/2038/hdl/User_DMA_v1_0.v:295]
-WARNING: [Synth 8-3295] tying undriven pin User_DMA_v1_0_M_AXIS_MM2S_inst:MM_count[4] to constant 0 [/home/hubbery/DMA/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ipshared/2038/hdl/User_DMA_v1_0.v:295]
-WARNING: [Synth 8-3295] tying undriven pin User_DMA_v1_0_M_AXIS_MM2S_inst:MM_count[3] to constant 0 [/home/hubbery/DMA/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ipshared/2038/hdl/User_DMA_v1_0.v:295]
-WARNING: [Synth 8-3295] tying undriven pin User_DMA_v1_0_M_AXIS_MM2S_inst:MM_count[2] to constant 0 [/home/hubbery/DMA/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ipshared/2038/hdl/User_DMA_v1_0.v:295]
-WARNING: [Synth 8-3295] tying undriven pin User_DMA_v1_0_M_AXIS_MM2S_inst:MM_count[1] to constant 0 [/home/hubbery/DMA/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ipshared/2038/hdl/User_DMA_v1_0.v:295]
-WARNING: [Synth 8-3295] tying undriven pin User_DMA_v1_0_M_AXIS_MM2S_inst:MM_count[0] to constant 0 [/home/hubbery/DMA/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ipshared/2038/hdl/User_DMA_v1_0.v:295]
+WARNING: [Synth 8-3295] tying undriven pin User_DMA_v1_0_M_AXIS_MM2S_inst:MM_count[23] to constant 0 [d:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ipshared/3524/hdl/User_DMA_v1_0.v:295]
+WARNING: [Synth 8-3295] tying undriven pin User_DMA_v1_0_M_AXIS_MM2S_inst:MM_count[22] to constant 0 [d:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ipshared/3524/hdl/User_DMA_v1_0.v:295]
+WARNING: [Synth 8-3295] tying undriven pin User_DMA_v1_0_M_AXIS_MM2S_inst:MM_count[21] to constant 0 [d:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ipshared/3524/hdl/User_DMA_v1_0.v:295]
+WARNING: [Synth 8-3295] tying undriven pin User_DMA_v1_0_M_AXIS_MM2S_inst:MM_count[20] to constant 0 [d:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ipshared/3524/hdl/User_DMA_v1_0.v:295]
+WARNING: [Synth 8-3295] tying undriven pin User_DMA_v1_0_M_AXIS_MM2S_inst:MM_count[19] to constant 0 [d:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ipshared/3524/hdl/User_DMA_v1_0.v:295]
+WARNING: [Synth 8-3295] tying undriven pin User_DMA_v1_0_M_AXIS_MM2S_inst:MM_count[18] to constant 0 [d:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ipshared/3524/hdl/User_DMA_v1_0.v:295]
+WARNING: [Synth 8-3295] tying undriven pin User_DMA_v1_0_M_AXIS_MM2S_inst:MM_count[17] to constant 0 [d:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ipshared/3524/hdl/User_DMA_v1_0.v:295]
+WARNING: [Synth 8-3295] tying undriven pin User_DMA_v1_0_M_AXIS_MM2S_inst:MM_count[16] to constant 0 [d:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ipshared/3524/hdl/User_DMA_v1_0.v:295]
+WARNING: [Synth 8-3295] tying undriven pin User_DMA_v1_0_M_AXIS_MM2S_inst:MM_count[15] to constant 0 [d:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ipshared/3524/hdl/User_DMA_v1_0.v:295]
+WARNING: [Synth 8-3295] tying undriven pin User_DMA_v1_0_M_AXIS_MM2S_inst:MM_count[14] to constant 0 [d:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ipshared/3524/hdl/User_DMA_v1_0.v:295]
+WARNING: [Synth 8-3295] tying undriven pin User_DMA_v1_0_M_AXIS_MM2S_inst:MM_count[13] to constant 0 [d:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ipshared/3524/hdl/User_DMA_v1_0.v:295]
+WARNING: [Synth 8-3295] tying undriven pin User_DMA_v1_0_M_AXIS_MM2S_inst:MM_count[12] to constant 0 [d:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ipshared/3524/hdl/User_DMA_v1_0.v:295]
+WARNING: [Synth 8-3295] tying undriven pin User_DMA_v1_0_M_AXIS_MM2S_inst:MM_count[11] to constant 0 [d:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ipshared/3524/hdl/User_DMA_v1_0.v:295]
+WARNING: [Synth 8-3295] tying undriven pin User_DMA_v1_0_M_AXIS_MM2S_inst:MM_count[10] to constant 0 [d:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ipshared/3524/hdl/User_DMA_v1_0.v:295]
+WARNING: [Synth 8-3295] tying undriven pin User_DMA_v1_0_M_AXIS_MM2S_inst:MM_count[9] to constant 0 [d:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ipshared/3524/hdl/User_DMA_v1_0.v:295]
+WARNING: [Synth 8-3295] tying undriven pin User_DMA_v1_0_M_AXIS_MM2S_inst:MM_count[8] to constant 0 [d:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ipshared/3524/hdl/User_DMA_v1_0.v:295]
+WARNING: [Synth 8-3295] tying undriven pin User_DMA_v1_0_M_AXIS_MM2S_inst:MM_count[7] to constant 0 [d:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ipshared/3524/hdl/User_DMA_v1_0.v:295]
+WARNING: [Synth 8-3295] tying undriven pin User_DMA_v1_0_M_AXIS_MM2S_inst:MM_count[6] to constant 0 [d:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ipshared/3524/hdl/User_DMA_v1_0.v:295]
+WARNING: [Synth 8-3295] tying undriven pin User_DMA_v1_0_M_AXIS_MM2S_inst:MM_count[5] to constant 0 [d:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ipshared/3524/hdl/User_DMA_v1_0.v:295]
+WARNING: [Synth 8-3295] tying undriven pin User_DMA_v1_0_M_AXIS_MM2S_inst:MM_count[4] to constant 0 [d:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ipshared/3524/hdl/User_DMA_v1_0.v:295]
+WARNING: [Synth 8-3295] tying undriven pin User_DMA_v1_0_M_AXIS_MM2S_inst:MM_count[3] to constant 0 [d:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ipshared/3524/hdl/User_DMA_v1_0.v:295]
+WARNING: [Synth 8-3295] tying undriven pin User_DMA_v1_0_M_AXIS_MM2S_inst:MM_count[2] to constant 0 [d:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ipshared/3524/hdl/User_DMA_v1_0.v:295]
+WARNING: [Synth 8-3295] tying undriven pin User_DMA_v1_0_M_AXIS_MM2S_inst:MM_count[1] to constant 0 [d:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ipshared/3524/hdl/User_DMA_v1_0.v:295]
+WARNING: [Synth 8-3295] tying undriven pin User_DMA_v1_0_M_AXIS_MM2S_inst:MM_count[0] to constant 0 [d:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ipshared/3524/hdl/User_DMA_v1_0.v:295]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1307.008 ; gain = 127.527 ; free physical = 1294 ; free virtual = 6482
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 458.109 ; gain = 151.738
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7z010clg400-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -149,22 +149,22 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.03 . Memory (MB): peak = 1624.602 ; gain = 1.000 ; free physical = 1049 ; free virtual = 6238
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.057 . Memory (MB): peak = 797.566 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:30 ; elapsed = 00:00:48 . Memory (MB): peak = 1624.602 ; gain = 445.121 ; free physical = 1121 ; free virtual = 6310
+Finished Constraint Validation : Time (s): cpu = 00:00:36 ; elapsed = 00:00:41 . Memory (MB): peak = 797.566 ; gain = 491.195
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z010clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:30 ; elapsed = 00:00:48 . Memory (MB): peak = 1624.602 ; gain = 445.121 ; free physical = 1121 ; free virtual = 6310
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:36 ; elapsed = 00:00:41 . Memory (MB): peak = 797.566 ; gain = 491.195
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:30 ; elapsed = 00:00:48 . Memory (MB): peak = 1624.602 ; gain = 445.121 ; free physical = 1124 ; free virtual = 6312
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:36 ; elapsed = 00:00:41 . Memory (MB): peak = 797.566 ; gain = 491.195
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'state_ctrl_reg' in module 'User_DMA_v1_0_M_AXI_FULL_s2mm'
 INFO: [Synth 8-5546] ROM "burst_len" won't be mapped to RAM because it is too sparse
@@ -184,9 +184,9 @@ INFO: [Synth 8-5544] ROM "state_ctrl" won't be mapped to Block RAM because addre
 INFO: [Synth 8-5544] ROM "state_ctrl" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "state_ctrl" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "state_ctrl" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
-WARNING: [Synth 8-6014] Unused sequential element axi_awaddr_reg was removed.  [/home/hubbery/DMA/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ipshared/2038/src/User_DMA_v1_0_M_AXI_FULL_s2mm.v:159]
-WARNING: [Synth 8-6014] Unused sequential element write_index_reg was removed.  [/home/hubbery/DMA/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ipshared/2038/src/User_DMA_v1_0_M_AXI_FULL_s2mm.v:259]
-WARNING: [Synth 8-6014] Unused sequential element write_burst_counter_reg was removed.  [/home/hubbery/DMA/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ipshared/2038/src/User_DMA_v1_0_M_AXI_FULL_s2mm.v:291]
+WARNING: [Synth 8-6014] Unused sequential element axi_awaddr_reg was removed.  [d:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ipshared/3524/src/User_DMA_v1_0_M_AXI_FULL_s2mm.v:159]
+WARNING: [Synth 8-6014] Unused sequential element write_index_reg was removed.  [d:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ipshared/3524/src/User_DMA_v1_0_M_AXI_FULL_s2mm.v:259]
+WARNING: [Synth 8-6014] Unused sequential element write_burst_counter_reg was removed.  [d:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ipshared/3524/src/User_DMA_v1_0_M_AXI_FULL_s2mm.v:291]
 INFO: [Synth 8-802] inferred FSM for state register 'state_ctrl_reg' in module 'User_DMA_v1_0_M_AXI_FULL_mm2s'
 INFO: [Synth 8-5546] ROM "burst_len" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5544] ROM "init_txn_pulse" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
@@ -205,18 +205,18 @@ INFO: [Synth 8-5544] ROM "state_ctrl" won't be mapped to Block RAM because addre
 INFO: [Synth 8-5544] ROM "state_ctrl" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "state_ctrl" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "state_ctrl" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
-WARNING: [Synth 8-6014] Unused sequential element axi_araddr_reg was removed.  [/home/hubbery/DMA/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ipshared/2038/src/User_DMA_v1_0_M_AXI_FULL_mm2s.v:146]
-WARNING: [Synth 8-6014] Unused sequential element read_index_reg was removed.  [/home/hubbery/DMA/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ipshared/2038/src/User_DMA_v1_0_M_AXI_FULL_mm2s.v:199]
-WARNING: [Synth 8-6014] Unused sequential element read_burst_counter_reg was removed.  [/home/hubbery/DMA/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ipshared/2038/src/User_DMA_v1_0_M_AXI_FULL_mm2s.v:240]
-INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/home/hubbery/DMA/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ipshared/2038/src/fifo.v:37]
+WARNING: [Synth 8-6014] Unused sequential element axi_araddr_reg was removed.  [d:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ipshared/3524/src/User_DMA_v1_0_M_AXI_FULL_mm2s.v:146]
+WARNING: [Synth 8-6014] Unused sequential element read_index_reg was removed.  [d:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ipshared/3524/src/User_DMA_v1_0_M_AXI_FULL_mm2s.v:199]
+WARNING: [Synth 8-6014] Unused sequential element read_burst_counter_reg was removed.  [d:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ipshared/3524/src/User_DMA_v1_0_M_AXI_FULL_mm2s.v:240]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [d:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ipshared/3524/src/fifo.v:37]
 INFO: [Synth 8-5546] ROM "full" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "empty" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "almost_full" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "almost_empty" won't be mapped to RAM because it is too sparse
-WARNING: [Synth 8-6014] Unused sequential element fifo_cnt_reg was removed.  [/home/hubbery/DMA/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ipshared/2038/src/fifo.v:26]
-WARNING: [Synth 8-6014] Unused sequential element wr_p_reg was removed.  [/home/hubbery/DMA/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ipshared/2038/src/fifo.v:56]
-WARNING: [Synth 8-6014] Unused sequential element rd_p_reg was removed.  [/home/hubbery/DMA/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ipshared/2038/src/fifo.v:45]
-WARNING: [Synth 8-6014] Unused sequential element read_pointer_reg was removed.  [/home/hubbery/DMA/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ipshared/2038/hdl/User_DMA_v1_0_M_AXIS_MM2S.v:41]
+WARNING: [Synth 8-6014] Unused sequential element fifo_cnt_reg was removed.  [d:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ipshared/3524/src/fifo.v:26]
+WARNING: [Synth 8-6014] Unused sequential element wr_p_reg was removed.  [d:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ipshared/3524/src/fifo.v:56]
+WARNING: [Synth 8-6014] Unused sequential element rd_p_reg was removed.  [d:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ipshared/3524/src/fifo.v:45]
+WARNING: [Synth 8-6014] Unused sequential element read_pointer_reg was removed.  [d:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ipshared/3524/hdl/User_DMA_v1_0_M_AXIS_MM2S.v:41]
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
@@ -258,7 +258,7 @@ INFO: [Synth 8-3354] encoded FSM with state register 'state_ctrl_reg' using enco
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_ctrl_reg' using encoding 'one-hot' in module 'User_DMA_v1_0_M_AXI_FULL_mm2s'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:31 ; elapsed = 00:00:48 . Memory (MB): peak = 1624.602 ; gain = 445.121 ; free physical = 1114 ; free virtual = 6303
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:38 ; elapsed = 00:00:42 . Memory (MB): peak = 797.566 ; gain = 491.195
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -390,19 +390,19 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5546] ROM "inst/User_DMA_v1_0_M_AXI_FULL_s2mm_inst/burst_len" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "inst/User_DMA_v1_0_M_AXI_FULL_mm2s_inst/burst_len" won't be mapped to RAM because it is too sparse
-WARNING: [Synth 8-6014] Unused sequential element inst/User_DMA_v1_0_M_AXI_FULL_s2mm_inst/write_burst_counter_reg was removed.  [/home/hubbery/DMA/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ipshared/2038/src/User_DMA_v1_0_M_AXI_FULL_s2mm.v:291]
-WARNING: [Synth 8-6014] Unused sequential element inst/User_DMA_v1_0_M_AXI_FULL_s2mm_inst/axi_awaddr_reg was removed.  [/home/hubbery/DMA/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ipshared/2038/src/User_DMA_v1_0_M_AXI_FULL_s2mm.v:159]
-WARNING: [Synth 8-6014] Unused sequential element inst/User_DMA_v1_0_M_AXI_FULL_s2mm_inst/write_index_reg was removed.  [/home/hubbery/DMA/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ipshared/2038/src/User_DMA_v1_0_M_AXI_FULL_s2mm.v:259]
-WARNING: [Synth 8-6014] Unused sequential element inst/User_DMA_v1_0_M_AXI_FULL_mm2s_inst/read_index_reg was removed.  [/home/hubbery/DMA/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ipshared/2038/src/User_DMA_v1_0_M_AXI_FULL_mm2s.v:199]
-WARNING: [Synth 8-6014] Unused sequential element inst/User_DMA_v1_0_M_AXI_FULL_mm2s_inst/read_burst_counter_reg was removed.  [/home/hubbery/DMA/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ipshared/2038/src/User_DMA_v1_0_M_AXI_FULL_mm2s.v:240]
-WARNING: [Synth 8-6014] Unused sequential element inst/User_DMA_v1_0_M_AXI_FULL_mm2s_inst/axi_araddr_reg was removed.  [/home/hubbery/DMA/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ipshared/2038/src/User_DMA_v1_0_M_AXI_FULL_mm2s.v:146]
-WARNING: [Synth 8-6014] Unused sequential element inst/User_DMA_v1_0_M_AXIS_MM2S_inst/fifo_mm2s_inst/fifo_cnt_reg was removed.  [/home/hubbery/DMA/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ipshared/2038/src/fifo.v:26]
-WARNING: [Synth 8-6014] Unused sequential element inst/User_DMA_v1_0_M_AXIS_MM2S_inst/fifo_mm2s_inst/wr_p_reg was removed.  [/home/hubbery/DMA/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ipshared/2038/src/fifo.v:56]
-WARNING: [Synth 8-6014] Unused sequential element inst/User_DMA_v1_0_M_AXIS_MM2S_inst/fifo_mm2s_inst/rd_p_reg was removed.  [/home/hubbery/DMA/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ipshared/2038/src/fifo.v:45]
-WARNING: [Synth 8-6014] Unused sequential element inst/User_DMA_v1_0_M_AXIS_MM2S_inst/read_pointer_reg was removed.  [/home/hubbery/DMA/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ipshared/2038/hdl/User_DMA_v1_0_M_AXIS_MM2S.v:41]
-WARNING: [Synth 8-6014] Unused sequential element inst/User_DMA_v1_0_S_AXIS_S2MM_inst/fifo_s2mm_inst/fifo_cnt_reg was removed.  [/home/hubbery/DMA/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ipshared/2038/src/fifo.v:26]
-WARNING: [Synth 8-6014] Unused sequential element inst/User_DMA_v1_0_S_AXIS_S2MM_inst/fifo_s2mm_inst/wr_p_reg was removed.  [/home/hubbery/DMA/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ipshared/2038/src/fifo.v:56]
-WARNING: [Synth 8-6014] Unused sequential element inst/User_DMA_v1_0_S_AXIS_S2MM_inst/fifo_s2mm_inst/rd_p_reg was removed.  [/home/hubbery/DMA/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ipshared/2038/src/fifo.v:45]
+WARNING: [Synth 8-6014] Unused sequential element inst/User_DMA_v1_0_M_AXI_FULL_s2mm_inst/write_burst_counter_reg was removed.  [d:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ipshared/3524/src/User_DMA_v1_0_M_AXI_FULL_s2mm.v:291]
+WARNING: [Synth 8-6014] Unused sequential element inst/User_DMA_v1_0_M_AXI_FULL_s2mm_inst/axi_awaddr_reg was removed.  [d:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ipshared/3524/src/User_DMA_v1_0_M_AXI_FULL_s2mm.v:159]
+WARNING: [Synth 8-6014] Unused sequential element inst/User_DMA_v1_0_M_AXI_FULL_s2mm_inst/write_index_reg was removed.  [d:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ipshared/3524/src/User_DMA_v1_0_M_AXI_FULL_s2mm.v:259]
+WARNING: [Synth 8-6014] Unused sequential element inst/User_DMA_v1_0_M_AXI_FULL_mm2s_inst/read_index_reg was removed.  [d:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ipshared/3524/src/User_DMA_v1_0_M_AXI_FULL_mm2s.v:199]
+WARNING: [Synth 8-6014] Unused sequential element inst/User_DMA_v1_0_M_AXI_FULL_mm2s_inst/read_burst_counter_reg was removed.  [d:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ipshared/3524/src/User_DMA_v1_0_M_AXI_FULL_mm2s.v:240]
+WARNING: [Synth 8-6014] Unused sequential element inst/User_DMA_v1_0_M_AXI_FULL_mm2s_inst/axi_araddr_reg was removed.  [d:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ipshared/3524/src/User_DMA_v1_0_M_AXI_FULL_mm2s.v:146]
+WARNING: [Synth 8-6014] Unused sequential element inst/User_DMA_v1_0_M_AXIS_MM2S_inst/fifo_mm2s_inst/fifo_cnt_reg was removed.  [d:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ipshared/3524/src/fifo.v:26]
+WARNING: [Synth 8-6014] Unused sequential element inst/User_DMA_v1_0_M_AXIS_MM2S_inst/fifo_mm2s_inst/wr_p_reg was removed.  [d:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ipshared/3524/src/fifo.v:56]
+WARNING: [Synth 8-6014] Unused sequential element inst/User_DMA_v1_0_M_AXIS_MM2S_inst/fifo_mm2s_inst/rd_p_reg was removed.  [d:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ipshared/3524/src/fifo.v:45]
+WARNING: [Synth 8-6014] Unused sequential element inst/User_DMA_v1_0_M_AXIS_MM2S_inst/read_pointer_reg was removed.  [d:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ipshared/3524/hdl/User_DMA_v1_0_M_AXIS_MM2S.v:41]
+WARNING: [Synth 8-6014] Unused sequential element inst/User_DMA_v1_0_S_AXIS_S2MM_inst/fifo_s2mm_inst/fifo_cnt_reg was removed.  [d:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ipshared/3524/src/fifo.v:26]
+WARNING: [Synth 8-6014] Unused sequential element inst/User_DMA_v1_0_S_AXIS_S2MM_inst/fifo_s2mm_inst/wr_p_reg was removed.  [d:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ipshared/3524/src/fifo.v:56]
+WARNING: [Synth 8-6014] Unused sequential element inst/User_DMA_v1_0_S_AXIS_S2MM_inst/fifo_s2mm_inst/rd_p_reg was removed.  [d:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ipshared/3524/src/fifo.v:45]
 INFO: [Synth 8-3917] design system_User_DMA_0_0 has port m_axi_full_awid[0] driven by constant 0
 INFO: [Synth 8-3917] design system_User_DMA_0_0 has port m_axi_full_awsize[2] driven by constant 0
 INFO: [Synth 8-3917] design system_User_DMA_0_0 has port m_axi_full_awsize[1] driven by constant 1
@@ -526,7 +526,7 @@ INFO: [Synth 8-3332] Sequential element (inst/User_DMA_v1_0_M_AXIS_MM2S_inst/rea
 INFO: [Synth 8-3332] Sequential element (inst/User_DMA_v1_0_M_AXIS_MM2S_inst/read_pointer_reg[22]) is unused and will be removed from module system_User_DMA_0_0.
 INFO: [Synth 8-3332] Sequential element (inst/User_DMA_v1_0_M_AXIS_MM2S_inst/read_pointer_reg[23]) is unused and will be removed from module system_User_DMA_0_0.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:00:50 . Memory (MB): peak = 1624.602 ; gain = 445.121 ; free physical = 1101 ; free virtual = 6290
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:40 ; elapsed = 00:00:45 . Memory (MB): peak = 797.566 ; gain = 491.195
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -554,13 +554,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:40 ; elapsed = 00:01:02 . Memory (MB): peak = 1624.602 ; gain = 445.121 ; free physical = 972 ; free virtual = 6161
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:56 ; elapsed = 00:01:00 . Memory (MB): peak = 802.004 ; gain = 495.633
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:41 ; elapsed = 00:01:02 . Memory (MB): peak = 1624.602 ; gain = 445.121 ; free physical = 972 ; free virtual = 6161
+Finished Timing Optimization : Time (s): cpu = 00:00:56 ; elapsed = 00:01:01 . Memory (MB): peak = 802.820 ; gain = 496.449
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -597,7 +597,7 @@ INFO: [Synth 8-3886] merging instance 'inst/User_DMA_v1_0_S_AXIS_S2MM_inst/fifo_
 INFO: [Synth 8-3886] merging instance 'inst/User_DMA_v1_0_S_AXIS_S2MM_inst/fifo_s2mm_inst/rd_p_reg_rep[0]' (FDRE) to 'inst/User_DMA_v1_0_S_AXIS_S2MM_inst/fifo_s2mm_inst/rd_p_reg[0]'
 INFO: [Synth 8-3886] merging instance 'inst/User_DMA_v1_0_S_AXIS_S2MM_inst/fifo_s2mm_inst/rd_p_reg_rep[4]' (FDRE) to 'inst/User_DMA_v1_0_S_AXIS_S2MM_inst/fifo_s2mm_inst/rd_p_reg[4]'
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:41 ; elapsed = 00:01:02 . Memory (MB): peak = 1632.609 ; gain = 453.129 ; free physical = 968 ; free virtual = 6157
+Finished Technology Mapping : Time (s): cpu = 00:00:56 ; elapsed = 00:01:01 . Memory (MB): peak = 827.941 ; gain = 521.570
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -621,7 +621,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:42 ; elapsed = 00:01:03 . Memory (MB): peak = 1632.609 ; gain = 453.129 ; free physical = 968 ; free virtual = 6156
+Finished IO Insertion : Time (s): cpu = 00:00:58 ; elapsed = 00:01:03 . Memory (MB): peak = 827.941 ; gain = 521.570
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -634,7 +634,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:42 ; elapsed = 00:01:03 . Memory (MB): peak = 1632.609 ; gain = 453.129 ; free physical = 968 ; free virtual = 6156
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:58 ; elapsed = 00:01:03 . Memory (MB): peak = 827.941 ; gain = 521.570
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -646,25 +646,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:42 ; elapsed = 00:01:03 . Memory (MB): peak = 1632.609 ; gain = 453.129 ; free physical = 968 ; free virtual = 6156
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:58 ; elapsed = 00:01:03 . Memory (MB): peak = 827.941 ; gain = 521.570
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:42 ; elapsed = 00:01:03 . Memory (MB): peak = 1632.609 ; gain = 453.129 ; free physical = 968 ; free virtual = 6156
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:58 ; elapsed = 00:01:03 . Memory (MB): peak = 827.941 ; gain = 521.570
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:42 ; elapsed = 00:01:03 . Memory (MB): peak = 1632.609 ; gain = 453.129 ; free physical = 968 ; free virtual = 6156
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:58 ; elapsed = 00:01:03 . Memory (MB): peak = 827.941 ; gain = 521.570
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:42 ; elapsed = 00:01:03 . Memory (MB): peak = 1632.609 ; gain = 453.129 ; free physical = 968 ; free virtual = 6156
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:58 ; elapsed = 00:01:03 . Memory (MB): peak = 827.941 ; gain = 521.570
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -707,11 +707,11 @@ Report Instance Areas:
 |9     |    User_DMA_v1_0_S_AXI_LITE_inst      |User_DMA_v1_0_S_AXI_LITE      |   231|
 +------+---------------------------------------+------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:42 ; elapsed = 00:01:03 . Memory (MB): peak = 1632.609 ; gain = 453.129 ; free physical = 968 ; free virtual = 6156
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:58 ; elapsed = 00:01:03 . Memory (MB): peak = 827.941 ; gain = 521.570
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 42 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:30 ; elapsed = 00:00:35 . Memory (MB): peak = 1632.609 ; gain = 135.535 ; free physical = 1024 ; free virtual = 6213
-Synthesis Optimization Complete : Time (s): cpu = 00:00:42 ; elapsed = 00:01:03 . Memory (MB): peak = 1632.617 ; gain = 453.129 ; free physical = 1024 ; free virtual = 6213
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:30 ; elapsed = 00:00:45 . Memory (MB): peak = 827.941 ; gain = 182.113
+Synthesis Optimization Complete : Time (s): cpu = 00:00:58 ; elapsed = 00:01:03 . Memory (MB): peak = 827.941 ; gain = 521.570
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 76 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -724,11 +724,11 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 INFO: [Common 17-83] Releasing license: Synthesis
 191 Infos, 85 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:44 ; elapsed = 00:01:04 . Memory (MB): peak = 1632.617 ; gain = 466.512 ; free physical = 1018 ; free virtual = 6206
-INFO: [Common 17-1381] The checkpoint '/home/hubbery/DMA/project/DMA_test/DMA_test.runs/system_User_DMA_0_0_synth_1/system_User_DMA_0_0.dcp' has been generated.
-INFO: [Coretcl 2-1482] Added synthesis output to IP cache for IP /home/hubbery/DMA/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ip/system_User_DMA_0_0/system_User_DMA_0_0.xci
+synth_design: Time (s): cpu = 00:01:01 ; elapsed = 00:01:07 . Memory (MB): peak = 827.941 ; gain = 533.043
+INFO: [Common 17-1381] The checkpoint 'D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.runs/system_User_DMA_0_0_synth_1/system_User_DMA_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1482] Added synthesis output to IP cache for IP d:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ip/system_User_DMA_0_0/system_User_DMA_0_0.xci
 INFO: [Coretcl 2-1174] Renamed 8 cell refs.
-INFO: [Common 17-1381] The checkpoint '/home/hubbery/DMA/project/DMA_test/DMA_test.runs/system_User_DMA_0_0_synth_1/system_User_DMA_0_0.dcp' has been generated.
+INFO: [Common 17-1381] The checkpoint 'D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.runs/system_User_DMA_0_0_synth_1/system_User_DMA_0_0.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file system_User_DMA_0_0_utilization_synth.rpt -pb system_User_DMA_0_0_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00.12 ; elapsed = 00:00:00.15 . Memory (MB): peak = 1656.621 ; gain = 0.000 ; free physical = 1017 ; free virtual = 6207
-INFO: [Common 17-206] Exiting Vivado at Thu Jan  3 22:39:48 2019...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.054 . Memory (MB): peak = 827.941 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Fri Jan  4 12:24:54 2019...
