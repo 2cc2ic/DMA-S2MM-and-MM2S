@@ -1,0 +1,421 @@
+
+*** Running vivado
+    with args -log myip_v1_0_bfm_1_myip_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source myip_v1_0_bfm_1_myip_0_0.tcl
+
+
+****** Vivado v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source myip_v1_0_bfm_1_myip_0_0.tcl -notrace
+Command: synth_design -top myip_v1_0_bfm_1_myip_0_0 -part xc7z010clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 21916 
+WARNING: [Synth 8-2507] parameter declaration becomes local in myip_v1_0_M00_AXI with formal parameter declaration list [e:/git/DMA-S2MM-and-MM2S-/project/DMA_simulation/DMA_simulation.srcs/sources_1/bd/myip_v1_0_bfm_1/ipshared/df43/hdl/myip_v1_0_M00_AXI.v:192]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 415.563 ; gain = 111.418
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'myip_v1_0_bfm_1_myip_0_0' [e:/git/DMA-S2MM-and-MM2S-/project/DMA_simulation/DMA_simulation.srcs/sources_1/bd/myip_v1_0_bfm_1/ip/myip_v1_0_bfm_1_myip_0_0/synth/myip_v1_0_bfm_1_myip_0_0.v:57]
+INFO: [Synth 8-638] synthesizing module 'myip_v1_0' [e:/git/DMA-S2MM-and-MM2S-/project/DMA_simulation/DMA_simulation.srcs/sources_1/bd/myip_v1_0_bfm_1/ipshared/df43/hdl/myip_v1_0.v:4]
+	Parameter C_M00_AXI_TARGET_SLAVE_BASE_ADDR bound to: 1151336448 - type: integer 
+	Parameter C_M00_AXI_BURST_LEN bound to: 16 - type: integer 
+	Parameter C_M00_AXI_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_M00_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_M00_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M00_AXI_AWUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M00_AXI_ARUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M00_AXI_WUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M00_AXI_RUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M00_AXI_BUSER_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'myip_v1_0_M00_AXI' [e:/git/DMA-S2MM-and-MM2S-/project/DMA_simulation/DMA_simulation.srcs/sources_1/bd/myip_v1_0_bfm_1/ipshared/df43/hdl/myip_v1_0_M00_AXI.v:4]
+	Parameter C_M_TARGET_SLAVE_BASE_ADDR bound to: 1151336448 - type: integer 
+	Parameter C_M_AXI_BURST_LEN bound to: 16 - type: integer 
+	Parameter C_M_AXI_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_M_AXI_AWUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_ARUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_WUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_RUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXI_BUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_TRANSACTIONS_NUM bound to: 4 - type: integer 
+	Parameter C_MASTER_LENGTH bound to: 12 - type: integer 
+	Parameter C_NO_BURSTS_REQ bound to: 6 - type: integer 
+	Parameter IDLE bound to: 2'b00 
+	Parameter INIT_WRITE bound to: 2'b01 
+	Parameter INIT_READ bound to: 2'b10 
+	Parameter INIT_COMPARE bound to: 2'b11 
+INFO: [Synth 8-226] default block is never used [e:/git/DMA-S2MM-and-MM2S-/project/DMA_simulation/DMA_simulation.srcs/sources_1/bd/myip_v1_0_bfm_1/ipshared/df43/hdl/myip_v1_0_M00_AXI.v:753]
+INFO: [Synth 8-256] done synthesizing module 'myip_v1_0_M00_AXI' (1#1) [e:/git/DMA-S2MM-and-MM2S-/project/DMA_simulation/DMA_simulation.srcs/sources_1/bd/myip_v1_0_bfm_1/ipshared/df43/hdl/myip_v1_0_M00_AXI.v:4]
+INFO: [Synth 8-256] done synthesizing module 'myip_v1_0' (2#1) [e:/git/DMA-S2MM-and-MM2S-/project/DMA_simulation/DMA_simulation.srcs/sources_1/bd/myip_v1_0_bfm_1/ipshared/df43/hdl/myip_v1_0.v:4]
+INFO: [Synth 8-256] done synthesizing module 'myip_v1_0_bfm_1_myip_0_0' (3#1) [e:/git/DMA-S2MM-and-MM2S-/project/DMA_simulation/DMA_simulation.srcs/sources_1/bd/myip_v1_0_bfm_1/ip/myip_v1_0_bfm_1_myip_0_0/synth/myip_v1_0_bfm_1_myip_0_0.v:57]
+WARNING: [Synth 8-3331] design myip_v1_0_M00_AXI has unconnected port M_AXI_BID[0]
+WARNING: [Synth 8-3331] design myip_v1_0_M00_AXI has unconnected port M_AXI_BRESP[0]
+WARNING: [Synth 8-3331] design myip_v1_0_M00_AXI has unconnected port M_AXI_BUSER[0]
+WARNING: [Synth 8-3331] design myip_v1_0_M00_AXI has unconnected port M_AXI_RID[0]
+WARNING: [Synth 8-3331] design myip_v1_0_M00_AXI has unconnected port M_AXI_RRESP[0]
+WARNING: [Synth 8-3331] design myip_v1_0_M00_AXI has unconnected port M_AXI_RUSER[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 447.684 ; gain = 143.539
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 447.684 ; gain = 143.539
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:03 . Memory (MB): peak = 777.824 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:28 ; elapsed = 00:00:58 . Memory (MB): peak = 777.824 ; gain = 473.680
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:28 ; elapsed = 00:00:58 . Memory (MB): peak = 777.824 ; gain = 473.680
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:28 ; elapsed = 00:00:58 . Memory (MB): peak = 777.824 ; gain = 473.680
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6014] Unused sequential element axi_awaddr_reg was removed.  [e:/git/DMA-S2MM-and-MM2S-/project/DMA_simulation/DMA_simulation.srcs/sources_1/bd/myip_v1_0_bfm_1/ipshared/df43/hdl/myip_v1_0_M00_AXI.v:243]
+WARNING: [Synth 8-6014] Unused sequential element write_index_reg was removed.  [e:/git/DMA-S2MM-and-MM2S-/project/DMA_simulation/DMA_simulation.srcs/sources_1/bd/myip_v1_0_bfm_1/ipshared/df43/hdl/myip_v1_0_M00_AXI.v:441]
+WARNING: [Synth 8-6014] Unused sequential element axi_wdata_reg was removed.  [e:/git/DMA-S2MM-and-MM2S-/project/DMA_simulation/DMA_simulation.srcs/sources_1/bd/myip_v1_0_bfm_1/ipshared/df43/hdl/myip_v1_0_M00_AXI.v:258]
+WARNING: [Synth 8-6014] Unused sequential element axi_araddr_reg was removed.  [e:/git/DMA-S2MM-and-MM2S-/project/DMA_simulation/DMA_simulation.srcs/sources_1/bd/myip_v1_0_bfm_1/ipshared/df43/hdl/myip_v1_0_M00_AXI.v:268]
+WARNING: [Synth 8-6014] Unused sequential element read_index_reg was removed.  [e:/git/DMA-S2MM-and-MM2S-/project/DMA_simulation/DMA_simulation.srcs/sources_1/bd/myip_v1_0_bfm_1/ipshared/df43/hdl/myip_v1_0_M00_AXI.v:573]
+WARNING: [Synth 8-6014] Unused sequential element expected_rdata_reg was removed.  [e:/git/DMA-S2MM-and-MM2S-/project/DMA_simulation/DMA_simulation.srcs/sources_1/bd/myip_v1_0_bfm_1/ipshared/df43/hdl/myip_v1_0_M00_AXI.v:641]
+WARNING: [Synth 8-6014] Unused sequential element write_burst_counter_reg was removed.  [e:/git/DMA-S2MM-and-MM2S-/project/DMA_simulation/DMA_simulation.srcs/sources_1/bd/myip_v1_0_bfm_1/ipshared/df43/hdl/myip_v1_0_M00_AXI.v:700]
+WARNING: [Synth 8-6014] Unused sequential element read_burst_counter_reg was removed.  [e:/git/DMA-S2MM-and-MM2S-/project/DMA_simulation/DMA_simulation.srcs/sources_1/bd/myip_v1_0_bfm_1/ipshared/df43/hdl/myip_v1_0_M00_AXI.v:720]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:29 ; elapsed = 00:01:00 . Memory (MB): peak = 777.824 ; gain = 473.680
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input      7 Bit       Adders := 2     
+	   2 Input      5 Bit       Adders := 2     
++---Registers : 
+	                7 Bit    Registers := 2     
+	                5 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 18    
++---Muxes : 
+	   6 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 7     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module myip_v1_0_M00_AXI 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input      7 Bit       Adders := 2     
+	   2 Input      5 Bit       Adders := 2     
++---Registers : 
+	                7 Bit    Registers := 2     
+	                5 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 18    
++---Muxes : 
+	   6 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 7     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6014] Unused sequential element inst/myip_v1_0_M00_AXI_inst/write_burst_counter_reg was removed.  [e:/git/DMA-S2MM-and-MM2S-/project/DMA_simulation/DMA_simulation.srcs/sources_1/bd/myip_v1_0_bfm_1/ipshared/df43/hdl/myip_v1_0_M00_AXI.v:700]
+WARNING: [Synth 8-6014] Unused sequential element inst/myip_v1_0_M00_AXI_inst/read_index_reg was removed.  [e:/git/DMA-S2MM-and-MM2S-/project/DMA_simulation/DMA_simulation.srcs/sources_1/bd/myip_v1_0_bfm_1/ipshared/df43/hdl/myip_v1_0_M00_AXI.v:573]
+WARNING: [Synth 8-6014] Unused sequential element inst/myip_v1_0_M00_AXI_inst/read_burst_counter_reg was removed.  [e:/git/DMA-S2MM-and-MM2S-/project/DMA_simulation/DMA_simulation.srcs/sources_1/bd/myip_v1_0_bfm_1/ipshared/df43/hdl/myip_v1_0_M00_AXI.v:720]
+WARNING: [Synth 8-6014] Unused sequential element inst/myip_v1_0_M00_AXI_inst/expected_rdata_reg was removed.  [e:/git/DMA-S2MM-and-MM2S-/project/DMA_simulation/DMA_simulation.srcs/sources_1/bd/myip_v1_0_bfm_1/ipshared/df43/hdl/myip_v1_0_M00_AXI.v:641]
+WARNING: [Synth 8-6014] Unused sequential element inst/myip_v1_0_M00_AXI_inst/axi_awaddr_reg was removed.  [e:/git/DMA-S2MM-and-MM2S-/project/DMA_simulation/DMA_simulation.srcs/sources_1/bd/myip_v1_0_bfm_1/ipshared/df43/hdl/myip_v1_0_M00_AXI.v:243]
+WARNING: [Synth 8-6014] Unused sequential element inst/myip_v1_0_M00_AXI_inst/write_index_reg was removed.  [e:/git/DMA-S2MM-and-MM2S-/project/DMA_simulation/DMA_simulation.srcs/sources_1/bd/myip_v1_0_bfm_1/ipshared/df43/hdl/myip_v1_0_M00_AXI.v:441]
+WARNING: [Synth 8-6014] Unused sequential element inst/myip_v1_0_M00_AXI_inst/axi_wdata_reg was removed.  [e:/git/DMA-S2MM-and-MM2S-/project/DMA_simulation/DMA_simulation.srcs/sources_1/bd/myip_v1_0_bfm_1/ipshared/df43/hdl/myip_v1_0_M00_AXI.v:258]
+WARNING: [Synth 8-6014] Unused sequential element inst/myip_v1_0_M00_AXI_inst/axi_araddr_reg was removed.  [e:/git/DMA-S2MM-and-MM2S-/project/DMA_simulation/DMA_simulation.srcs/sources_1/bd/myip_v1_0_bfm_1/ipshared/df43/hdl/myip_v1_0_M00_AXI.v:268]
+INFO: [Synth 8-3917] design myip_v1_0_bfm_1_myip_0_0 has port m00_axi_awid[0] driven by constant 0
+INFO: [Synth 8-3917] design myip_v1_0_bfm_1_myip_0_0 has port m00_axi_awlen[7] driven by constant 0
+INFO: [Synth 8-3917] design myip_v1_0_bfm_1_myip_0_0 has port m00_axi_awlen[6] driven by constant 0
+INFO: [Synth 8-3917] design myip_v1_0_bfm_1_myip_0_0 has port m00_axi_awlen[5] driven by constant 0
+INFO: [Synth 8-3917] design myip_v1_0_bfm_1_myip_0_0 has port m00_axi_awlen[4] driven by constant 0
+INFO: [Synth 8-3917] design myip_v1_0_bfm_1_myip_0_0 has port m00_axi_awlen[3] driven by constant 1
+INFO: [Synth 8-3917] design myip_v1_0_bfm_1_myip_0_0 has port m00_axi_awlen[2] driven by constant 1
+INFO: [Synth 8-3917] design myip_v1_0_bfm_1_myip_0_0 has port m00_axi_awlen[1] driven by constant 1
+INFO: [Synth 8-3917] design myip_v1_0_bfm_1_myip_0_0 has port m00_axi_awlen[0] driven by constant 1
+INFO: [Synth 8-3917] design myip_v1_0_bfm_1_myip_0_0 has port m00_axi_awsize[2] driven by constant 0
+INFO: [Synth 8-3917] design myip_v1_0_bfm_1_myip_0_0 has port m00_axi_awsize[1] driven by constant 1
+INFO: [Synth 8-3917] design myip_v1_0_bfm_1_myip_0_0 has port m00_axi_awsize[0] driven by constant 0
+INFO: [Synth 8-3917] design myip_v1_0_bfm_1_myip_0_0 has port m00_axi_awburst[1] driven by constant 0
+INFO: [Synth 8-3917] design myip_v1_0_bfm_1_myip_0_0 has port m00_axi_awburst[0] driven by constant 1
+INFO: [Synth 8-3917] design myip_v1_0_bfm_1_myip_0_0 has port m00_axi_awlock driven by constant 0
+INFO: [Synth 8-3917] design myip_v1_0_bfm_1_myip_0_0 has port m00_axi_awcache[3] driven by constant 0
+INFO: [Synth 8-3917] design myip_v1_0_bfm_1_myip_0_0 has port m00_axi_awcache[2] driven by constant 0
+INFO: [Synth 8-3917] design myip_v1_0_bfm_1_myip_0_0 has port m00_axi_awcache[1] driven by constant 1
+INFO: [Synth 8-3917] design myip_v1_0_bfm_1_myip_0_0 has port m00_axi_awcache[0] driven by constant 0
+INFO: [Synth 8-3917] design myip_v1_0_bfm_1_myip_0_0 has port m00_axi_awprot[2] driven by constant 0
+INFO: [Synth 8-3917] design myip_v1_0_bfm_1_myip_0_0 has port m00_axi_awprot[1] driven by constant 0
+INFO: [Synth 8-3917] design myip_v1_0_bfm_1_myip_0_0 has port m00_axi_awprot[0] driven by constant 0
+INFO: [Synth 8-3917] design myip_v1_0_bfm_1_myip_0_0 has port m00_axi_awqos[3] driven by constant 0
+INFO: [Synth 8-3917] design myip_v1_0_bfm_1_myip_0_0 has port m00_axi_awqos[2] driven by constant 0
+INFO: [Synth 8-3917] design myip_v1_0_bfm_1_myip_0_0 has port m00_axi_awqos[1] driven by constant 0
+INFO: [Synth 8-3917] design myip_v1_0_bfm_1_myip_0_0 has port m00_axi_awqos[0] driven by constant 0
+INFO: [Synth 8-3917] design myip_v1_0_bfm_1_myip_0_0 has port m00_axi_awuser[0] driven by constant 1
+INFO: [Synth 8-3917] design myip_v1_0_bfm_1_myip_0_0 has port m00_axi_wstrb[3] driven by constant 1
+INFO: [Synth 8-3917] design myip_v1_0_bfm_1_myip_0_0 has port m00_axi_wstrb[2] driven by constant 1
+INFO: [Synth 8-3917] design myip_v1_0_bfm_1_myip_0_0 has port m00_axi_wstrb[1] driven by constant 1
+INFO: [Synth 8-3917] design myip_v1_0_bfm_1_myip_0_0 has port m00_axi_wstrb[0] driven by constant 1
+INFO: [Synth 8-3917] design myip_v1_0_bfm_1_myip_0_0 has port m00_axi_wuser[0] driven by constant 0
+INFO: [Synth 8-3917] design myip_v1_0_bfm_1_myip_0_0 has port m00_axi_arid[0] driven by constant 0
+INFO: [Synth 8-3917] design myip_v1_0_bfm_1_myip_0_0 has port m00_axi_arlen[7] driven by constant 0
+INFO: [Synth 8-3917] design myip_v1_0_bfm_1_myip_0_0 has port m00_axi_arlen[6] driven by constant 0
+INFO: [Synth 8-3917] design myip_v1_0_bfm_1_myip_0_0 has port m00_axi_arlen[5] driven by constant 0
+INFO: [Synth 8-3917] design myip_v1_0_bfm_1_myip_0_0 has port m00_axi_arlen[4] driven by constant 0
+INFO: [Synth 8-3917] design myip_v1_0_bfm_1_myip_0_0 has port m00_axi_arlen[3] driven by constant 1
+INFO: [Synth 8-3917] design myip_v1_0_bfm_1_myip_0_0 has port m00_axi_arlen[2] driven by constant 1
+INFO: [Synth 8-3917] design myip_v1_0_bfm_1_myip_0_0 has port m00_axi_arlen[1] driven by constant 1
+INFO: [Synth 8-3917] design myip_v1_0_bfm_1_myip_0_0 has port m00_axi_arlen[0] driven by constant 1
+INFO: [Synth 8-3917] design myip_v1_0_bfm_1_myip_0_0 has port m00_axi_arsize[2] driven by constant 0
+INFO: [Synth 8-3917] design myip_v1_0_bfm_1_myip_0_0 has port m00_axi_arsize[1] driven by constant 1
+INFO: [Synth 8-3917] design myip_v1_0_bfm_1_myip_0_0 has port m00_axi_arsize[0] driven by constant 0
+INFO: [Synth 8-3917] design myip_v1_0_bfm_1_myip_0_0 has port m00_axi_arburst[1] driven by constant 0
+INFO: [Synth 8-3917] design myip_v1_0_bfm_1_myip_0_0 has port m00_axi_arburst[0] driven by constant 1
+INFO: [Synth 8-3917] design myip_v1_0_bfm_1_myip_0_0 has port m00_axi_arlock driven by constant 0
+INFO: [Synth 8-3917] design myip_v1_0_bfm_1_myip_0_0 has port m00_axi_arcache[3] driven by constant 0
+INFO: [Synth 8-3917] design myip_v1_0_bfm_1_myip_0_0 has port m00_axi_arcache[2] driven by constant 0
+INFO: [Synth 8-3917] design myip_v1_0_bfm_1_myip_0_0 has port m00_axi_arcache[1] driven by constant 1
+INFO: [Synth 8-3917] design myip_v1_0_bfm_1_myip_0_0 has port m00_axi_arcache[0] driven by constant 0
+INFO: [Synth 8-3917] design myip_v1_0_bfm_1_myip_0_0 has port m00_axi_arprot[2] driven by constant 0
+INFO: [Synth 8-3917] design myip_v1_0_bfm_1_myip_0_0 has port m00_axi_arprot[1] driven by constant 0
+INFO: [Synth 8-3917] design myip_v1_0_bfm_1_myip_0_0 has port m00_axi_arprot[0] driven by constant 0
+INFO: [Synth 8-3917] design myip_v1_0_bfm_1_myip_0_0 has port m00_axi_arqos[3] driven by constant 0
+INFO: [Synth 8-3917] design myip_v1_0_bfm_1_myip_0_0 has port m00_axi_arqos[2] driven by constant 0
+INFO: [Synth 8-3917] design myip_v1_0_bfm_1_myip_0_0 has port m00_axi_arqos[1] driven by constant 0
+INFO: [Synth 8-3917] design myip_v1_0_bfm_1_myip_0_0 has port m00_axi_arqos[0] driven by constant 0
+INFO: [Synth 8-3917] design myip_v1_0_bfm_1_myip_0_0 has port m00_axi_aruser[0] driven by constant 1
+WARNING: [Synth 8-3331] design myip_v1_0_bfm_1_myip_0_0 has unconnected port m00_axi_bid[0]
+WARNING: [Synth 8-3331] design myip_v1_0_bfm_1_myip_0_0 has unconnected port m00_axi_bresp[0]
+WARNING: [Synth 8-3331] design myip_v1_0_bfm_1_myip_0_0 has unconnected port m00_axi_buser[0]
+WARNING: [Synth 8-3331] design myip_v1_0_bfm_1_myip_0_0 has unconnected port m00_axi_rid[0]
+WARNING: [Synth 8-3331] design myip_v1_0_bfm_1_myip_0_0 has unconnected port m00_axi_rresp[0]
+WARNING: [Synth 8-3331] design myip_v1_0_bfm_1_myip_0_0 has unconnected port m00_axi_ruser[0]
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_11/\inst/myip_v1_0_M00_AXI_inst/axi_araddr_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_11/\inst/myip_v1_0_M00_AXI_inst/axi_araddr_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_11/\inst/myip_v1_0_M00_AXI_inst/axi_araddr_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_11/\inst/myip_v1_0_M00_AXI_inst/axi_araddr_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_11/\inst/myip_v1_0_M00_AXI_inst/axi_araddr_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_11/\inst/myip_v1_0_M00_AXI_inst/axi_araddr_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_9/\inst/myip_v1_0_M00_AXI_inst/axi_awaddr_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_9/\inst/myip_v1_0_M00_AXI_inst/axi_awaddr_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_9/\inst/myip_v1_0_M00_AXI_inst/axi_awaddr_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_9/\inst/myip_v1_0_M00_AXI_inst/axi_awaddr_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_9/\inst/myip_v1_0_M00_AXI_inst/axi_awaddr_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_9/\inst/myip_v1_0_M00_AXI_inst/axi_awaddr_reg[5] )
+INFO: [Synth 8-3332] Sequential element (inst/myip_v1_0_M00_AXI_inst/axi_awaddr_reg[0]) is unused and will be removed from module myip_v1_0_bfm_1_myip_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/myip_v1_0_M00_AXI_inst/axi_awaddr_reg[1]) is unused and will be removed from module myip_v1_0_bfm_1_myip_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/myip_v1_0_M00_AXI_inst/axi_awaddr_reg[2]) is unused and will be removed from module myip_v1_0_bfm_1_myip_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/myip_v1_0_M00_AXI_inst/axi_awaddr_reg[3]) is unused and will be removed from module myip_v1_0_bfm_1_myip_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/myip_v1_0_M00_AXI_inst/axi_awaddr_reg[4]) is unused and will be removed from module myip_v1_0_bfm_1_myip_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/myip_v1_0_M00_AXI_inst/axi_awaddr_reg[5]) is unused and will be removed from module myip_v1_0_bfm_1_myip_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/myip_v1_0_M00_AXI_inst/axi_araddr_reg[0]) is unused and will be removed from module myip_v1_0_bfm_1_myip_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/myip_v1_0_M00_AXI_inst/axi_araddr_reg[1]) is unused and will be removed from module myip_v1_0_bfm_1_myip_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/myip_v1_0_M00_AXI_inst/axi_araddr_reg[2]) is unused and will be removed from module myip_v1_0_bfm_1_myip_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/myip_v1_0_M00_AXI_inst/axi_araddr_reg[3]) is unused and will be removed from module myip_v1_0_bfm_1_myip_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/myip_v1_0_M00_AXI_inst/axi_araddr_reg[4]) is unused and will be removed from module myip_v1_0_bfm_1_myip_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/myip_v1_0_M00_AXI_inst/axi_araddr_reg[5]) is unused and will be removed from module myip_v1_0_bfm_1_myip_0_0.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:01:02 . Memory (MB): peak = 777.824 ; gain = 473.680
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:51 ; elapsed = 00:01:23 . Memory (MB): peak = 783.352 ; gain = 479.207
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:51 ; elapsed = 00:01:23 . Memory (MB): peak = 783.500 ; gain = 479.355
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:51 ; elapsed = 00:01:23 . Memory (MB): peak = 803.445 ; gain = 499.301
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:53 ; elapsed = 00:01:25 . Memory (MB): peak = 803.445 ; gain = 499.301
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:53 ; elapsed = 00:01:25 . Memory (MB): peak = 803.445 ; gain = 499.301
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:53 ; elapsed = 00:01:25 . Memory (MB): peak = 803.445 ; gain = 499.301
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:53 ; elapsed = 00:01:25 . Memory (MB): peak = 803.445 ; gain = 499.301
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:53 ; elapsed = 00:01:25 . Memory (MB): peak = 803.445 ; gain = 499.301
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:53 ; elapsed = 00:01:25 . Memory (MB): peak = 803.445 ; gain = 499.301
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |    39|
+|2     |LUT1   |    17|
+|3     |LUT2   |    10|
+|4     |LUT3   |    11|
+|5     |LUT4   |    11|
+|6     |LUT5   |     8|
+|7     |LUT6   |    23|
+|8     |FDRE   |   158|
+|9     |FDSE   |     2|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------------------------+------------------+------+
+|      |Instance                   |Module            |Cells |
++------+---------------------------+------------------+------+
+|1     |top                        |                  |   279|
+|2     |  inst                     |myip_v1_0         |   279|
+|3     |    myip_v1_0_M00_AXI_inst |myip_v1_0_M00_AXI |   279|
++------+---------------------------+------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:53 ; elapsed = 00:01:25 . Memory (MB): peak = 803.445 ; gain = 499.301
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 22 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:35 ; elapsed = 00:00:50 . Memory (MB): peak = 803.445 ; gain = 169.160
+Synthesis Optimization Complete : Time (s): cpu = 00:00:53 ; elapsed = 00:01:25 . Memory (MB): peak = 803.445 ; gain = 499.301
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 39 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+101 Infos, 29 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:56 ; elapsed = 00:01:32 . Memory (MB): peak = 805.805 ; gain = 513.129
+INFO: [Common 17-1381] The checkpoint 'E:/git/DMA-S2MM-and-MM2S-/project/DMA_simulation/DMA_simulation.runs/myip_v1_0_bfm_1_myip_0_0_synth_1/myip_v1_0_bfm_1_myip_0_0.dcp' has been generated.

@@ -1,0 +1,39 @@
+{
+   ExpandedHierarchyInLayout: "",
+   guistr: "# # String gsaved with Nlview 6.6.11  2017-06-12 bk=1.3860 VDI=40 GEI=35 GUI=JA:1.6
+#  -string -flagsOSRD
+preplace port ACLK -pg 1 -y 290 -defaultsOSRD
+preplace port ARESETN -pg 1 -y 310 -defaultsOSRD
+preplace port M00_AXI_ERROR -pg 1 -y 650 -defaultsOSRD
+preplace port M00_AXI_INIT_AXI_TXN -pg 1 -y 390 -defaultsOSRD
+preplace port M00_AXI_TXN_DONE -pg 1 -y 670 -defaultsOSRD
+preplace inst AXI_LITE_master_IP_1 -pg 1 -lvl 1 -y -140 -defaultsOSRD
+preplace inst User_DMA_0 -pg 1 -lvl 3 -y -100 -defaultsOSRD
+preplace inst myip_0 -pg 1 -lvl 2 -y 370 -defaultsOSRD
+preplace inst slave_0 -pg 1 -lvl 4 -y 470 -defaultsOSRD
+preplace inst axi_interconnect_0 -pg 1 -lvl 3 -y 460 -defaultsOSRD
+preplace inst axi_interconnect_1 -pg 1 -lvl 2 -y -110 -defaultsOSRD
+preplace inst AXI_LITE_master_IP_0 -pg 1 -lvl 1 -y -270 -defaultsOSRD
+preplace inst axis_data_fifo_0 -pg 1 -lvl 4 -y 150 -defaultsOSRD
+preplace netloc AXI_LITE_master_IP_1_M00_AXI 1 1 1 210
+preplace netloc User_DMA_0_m_axi_full_mm2s_done 1 0 4 -140 40 NJ 40 N 40 990
+preplace netloc AXI_LITE_master_IP_0_M00_AXI 1 1 1 210
+preplace netloc error_00 1 2 3 580J 290 NJ 290 1340J
+preplace netloc init_axi_txn_00 1 0 2 NJ 390 N
+preplace netloc aclk_net 1 0 4 -150 -340 220 -260 590 170 990
+preplace netloc User_DMA_0_M_AXIS_MM2S 1 3 1 1000
+preplace netloc myip_0_M00_AXI 1 2 1 N
+preplace netloc txn_done_00 1 0 3 -140 -360 N -360 570J
+preplace netloc User_DMA_0_M_AXI_FULL 1 2 2 620 -240 1000
+preplace netloc axi_interconnect_0_M00_AXI 1 3 1 N
+preplace netloc axis_data_fifo_0_M_AXIS 1 2 3 610 -260 N -260 1340J
+preplace netloc User_DMA_0_m_axi_full_s2mm_done 1 3 2 N -90 1350J
+preplace netloc axi_interconnect_1_M00_AXI 1 2 1 580
+preplace netloc aresetn_net 1 0 4 -160 -350 230 -280 600 150 1000
+levelinfo -pg 1 -180 50 410 810 1180 1380 -top -410 -bot 900
+",
+}
+{
+   da_axi4_cnt: "1",
+   da_clkrst_cnt: "3",
+}

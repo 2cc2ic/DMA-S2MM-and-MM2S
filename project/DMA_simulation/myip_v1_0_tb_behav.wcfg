@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="myip_v1_0_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="axi_vip_pkg" />
+            <top_module name="glbl" />
+            <top_module name="myip_v1_0_tb" />
+            <top_module name="xil_common_vip_pkg" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="54763800000fs"></ZoomStartTime>
+      <ZoomEndTime time="54841500001fs"></ZoomEndTime>
+      <Cursor1Time time="54785000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="175"></NameColumnWidth>
+      <ValueColumnWidth column_width="88"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="39" />
+   <wvobject fp_name="/myip_v1_0_tb/clock" type="logic">
+      <obj_property name="ElementShortName">clock</obj_property>
+      <obj_property name="ObjectShortName">clock</obj_property>
+   </wvobject>
+   <wvobject fp_name="/myip_v1_0_tb/reset" type="logic">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/myip_v1_0_tb/DUT/myip_v1_0_bfm_1_i/User_DMA_0/inst/User_DMA_v1_0_S_AXI_LITE_inst/slv_reg0" type="array">
+      <obj_property name="ElementShortName">slv_reg0[31:0]</obj_property>
+      <obj_property name="ObjectShortName">slv_reg0[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/myip_v1_0_tb/DUT/myip_v1_0_bfm_1_i/User_DMA_0/inst/User_DMA_v1_0_S_AXI_LITE_inst/slv_reg1" type="array">
+      <obj_property name="ElementShortName">slv_reg1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">slv_reg1[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/myip_v1_0_tb/DUT/myip_v1_0_bfm_1_i/User_DMA_0/inst/User_DMA_v1_0_S_AXI_LITE_inst/slv_reg2" type="array">
+      <obj_property name="ElementShortName">slv_reg2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">slv_reg2[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/myip_v1_0_tb/DUT/myip_v1_0_bfm_1_i/User_DMA_0/inst/User_DMA_v1_0_S_AXI_LITE_inst/slv_reg3" type="array">
+      <obj_property name="ElementShortName">slv_reg3[31:0]</obj_property>
+      <obj_property name="ObjectShortName">slv_reg3[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/myip_v1_0_tb/DUT/myip_v1_0_bfm_1_i/axis_data_fifo_0/s_axis_tvalid" type="logic">
+      <obj_property name="ElementShortName">s_axis_tvalid</obj_property>
+      <obj_property name="ObjectShortName">s_axis_tvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/myip_v1_0_tb/DUT/myip_v1_0_bfm_1_i/axis_data_fifo_0/s_axis_tready" type="logic">
+      <obj_property name="ElementShortName">s_axis_tready</obj_property>
+      <obj_property name="ObjectShortName">s_axis_tready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/myip_v1_0_tb/DUT/myip_v1_0_bfm_1_i/axis_data_fifo_0/s_axis_tdata" type="array">
+      <obj_property name="ElementShortName">s_axis_tdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axis_tdata[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/myip_v1_0_tb/DUT/myip_v1_0_bfm_1_i/axis_data_fifo_0/m_axis_tvalid" type="logic">
+      <obj_property name="ElementShortName">m_axis_tvalid</obj_property>
+      <obj_property name="ObjectShortName">m_axis_tvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/myip_v1_0_tb/DUT/myip_v1_0_bfm_1_i/axis_data_fifo_0/m_axis_tready" type="logic">
+      <obj_property name="ElementShortName">m_axis_tready</obj_property>
+      <obj_property name="ObjectShortName">m_axis_tready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/myip_v1_0_tb/DUT/myip_v1_0_bfm_1_i/axis_data_fifo_0/m_axis_tdata" type="array">
+      <obj_property name="ElementShortName">m_axis_tdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">m_axis_tdata[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/myip_v1_0_tb/DUT/myip_v1_0_bfm_1_i/axis_data_fifo_0/axis_data_count" type="array">
+      <obj_property name="ElementShortName">axis_data_count[31:0]</obj_property>
+      <obj_property name="ObjectShortName">axis_data_count[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/myip_v1_0_tb/DUT/myip_v1_0_bfm_1_i/axis_data_fifo_0/axis_wr_data_count" type="array">
+      <obj_property name="ElementShortName">axis_wr_data_count[31:0]</obj_property>
+      <obj_property name="ObjectShortName">axis_wr_data_count[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/myip_v1_0_tb/DUT/myip_v1_0_bfm_1_i/axis_data_fifo_0/axis_rd_data_count" type="array">
+      <obj_property name="ElementShortName">axis_rd_data_count[31:0]</obj_property>
+      <obj_property name="ObjectShortName">axis_rd_data_count[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/myip_v1_0_tb/DUT/myip_v1_0_bfm_1_i/User_DMA_0/inst/User_DMA_v1_0_M_AXI_FULL_s2mm_inst/state_ctrl" type="array">
+      <obj_property name="ElementShortName">state_ctrl[3:0]</obj_property>
+      <obj_property name="ObjectShortName">state_ctrl[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/myip_v1_0_tb/DUT/myip_v1_0_bfm_1_i/User_DMA_0/inst/User_DMA_v1_0_M_AXI_FULL_s2mm_inst/M_AXI_WREADY" type="logic">
+      <obj_property name="ElementShortName">M_AXI_WREADY</obj_property>
+      <obj_property name="ObjectShortName">M_AXI_WREADY</obj_property>
+   </wvobject>
+   <wvobject fp_name="/myip_v1_0_tb/DUT/myip_v1_0_bfm_1_i/User_DMA_0/inst/User_DMA_v1_0_M_AXI_FULL_s2mm_inst/axi_wvalid" type="logic">
+      <obj_property name="ElementShortName">axi_wvalid</obj_property>
+      <obj_property name="ObjectShortName">axi_wvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/myip_v1_0_tb/DUT/myip_v1_0_bfm_1_i/User_DMA_0/inst/User_DMA_v1_0_M_AXI_FULL_s2mm_inst/all_done" type="logic">
+      <obj_property name="ElementShortName">all_done</obj_property>
+      <obj_property name="ObjectShortName">all_done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/myip_v1_0_tb/DUT/myip_v1_0_bfm_1_i/User_DMA_0/inst/User_DMA_v1_0_M_AXI_FULL_s2mm_inst/burst_count" type="array">
+      <obj_property name="ElementShortName">burst_count[23:0]</obj_property>
+      <obj_property name="ObjectShortName">burst_count[23:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/myip_v1_0_tb/DUT/myip_v1_0_bfm_1_i/User_DMA_0/inst/User_DMA_v1_0_M_AXI_FULL_s2mm_inst/state_write" type="logic">
+      <obj_property name="ElementShortName">state_write</obj_property>
+      <obj_property name="ObjectShortName">state_write</obj_property>
+   </wvobject>
+   <wvobject fp_name="/myip_v1_0_tb/DUT/myip_v1_0_bfm_1_i/User_DMA_0/inst/User_DMA_v1_0_M_AXI_FULL_s2mm_inst/init_state_signal" type="logic">
+      <obj_property name="ElementShortName">init_state_signal</obj_property>
+      <obj_property name="ObjectShortName">init_state_signal</obj_property>
+   </wvobject>
+   <wvobject fp_name="/myip_v1_0_tb/DUT/myip_v1_0_bfm_1_i/User_DMA_0/inst/User_DMA_v1_0_M_AXI_FULL_s2mm_inst/axi_awaddr" type="array">
+      <obj_property name="ElementShortName">axi_awaddr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">axi_awaddr[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/myip_v1_0_tb/DUT/myip_v1_0_bfm_1_i/User_DMA_0/inst/User_DMA_v1_0_M_AXI_FULL_s2mm_inst/axi_awvalid" type="logic">
+      <obj_property name="ElementShortName">axi_awvalid</obj_property>
+      <obj_property name="ObjectShortName">axi_awvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/myip_v1_0_tb/DUT/myip_v1_0_bfm_1_i/User_DMA_0/inst/User_DMA_v1_0_M_AXI_FULL_s2mm_inst/writes_done" type="logic">
+      <obj_property name="ElementShortName">writes_done</obj_property>
+      <obj_property name="ObjectShortName">writes_done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/myip_v1_0_tb/DUT/myip_v1_0_bfm_1_i/User_DMA_0/inst/User_DMA_v1_0_M_AXI_FULL_s2mm_inst/init_txn_pulse" type="logic">
+      <obj_property name="ElementShortName">init_txn_pulse</obj_property>
+      <obj_property name="ObjectShortName">init_txn_pulse</obj_property>
+   </wvobject>
+   <wvobject fp_name="/myip_v1_0_tb/DUT/myip_v1_0_bfm_1_i/User_DMA_0/inst/User_DMA_v1_0_M_AXI_FULL_s2mm_inst/burst_len" type="array">
+      <obj_property name="ElementShortName">burst_len[7:0]</obj_property>
+      <obj_property name="ObjectShortName">burst_len[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/myip_v1_0_tb/DUT/myip_v1_0_bfm_1_i/User_DMA_0/inst/User_DMA_v1_0_M_AXI_FULL_mm2s_inst/M_AXI_ARADDR" type="array">
+      <obj_property name="ElementShortName">M_AXI_ARADDR[31:0]</obj_property>
+      <obj_property name="ObjectShortName">M_AXI_ARADDR[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/myip_v1_0_tb/DUT/myip_v1_0_bfm_1_i/User_DMA_0/inst/User_DMA_v1_0_M_AXI_FULL_mm2s_inst/M_AXI_ARVALID" type="logic">
+      <obj_property name="ElementShortName">M_AXI_ARVALID</obj_property>
+      <obj_property name="ObjectShortName">M_AXI_ARVALID</obj_property>
+   </wvobject>
+   <wvobject fp_name="/myip_v1_0_tb/DUT/myip_v1_0_bfm_1_i/User_DMA_0/inst/User_DMA_v1_0_M_AXI_FULL_mm2s_inst/M_AXI_ARREADY" type="logic">
+      <obj_property name="ElementShortName">M_AXI_ARREADY</obj_property>
+      <obj_property name="ObjectShortName">M_AXI_ARREADY</obj_property>
+   </wvobject>
+   <wvobject fp_name="/myip_v1_0_tb/DUT/myip_v1_0_bfm_1_i/User_DMA_0/inst/User_DMA_v1_0_M_AXI_FULL_mm2s_inst/M_AXI_RVALID" type="logic">
+      <obj_property name="ElementShortName">M_AXI_RVALID</obj_property>
+      <obj_property name="ObjectShortName">M_AXI_RVALID</obj_property>
+   </wvobject>
+   <wvobject fp_name="/myip_v1_0_tb/DUT/myip_v1_0_bfm_1_i/User_DMA_0/inst/User_DMA_v1_0_M_AXI_FULL_mm2s_inst/M_AXI_RREADY" type="logic">
+      <obj_property name="ElementShortName">M_AXI_RREADY</obj_property>
+      <obj_property name="ObjectShortName">M_AXI_RREADY</obj_property>
+   </wvobject>
+   <wvobject fp_name="/myip_v1_0_tb/DUT/myip_v1_0_bfm_1_i/User_DMA_0/inst/User_DMA_v1_0_M_AXI_FULL_mm2s_inst/state_ctrl" type="array">
+      <obj_property name="ElementShortName">state_ctrl[3:0]</obj_property>
+      <obj_property name="ObjectShortName">state_ctrl[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/myip_v1_0_tb/DUT/myip_v1_0_bfm_1_i/User_DMA_0/inst/User_DMA_v1_0_M_AXI_FULL_mm2s_inst/burst_count" type="array">
+      <obj_property name="ElementShortName">burst_count[23:0]</obj_property>
+      <obj_property name="ObjectShortName">burst_count[23:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/myip_v1_0_tb/DUT/myip_v1_0_bfm_1_i/User_DMA_0/inst/User_DMA_v1_0_M_AXI_FULL_mm2s_inst/start_single_burst_read" type="logic">
+      <obj_property name="ElementShortName">start_single_burst_read</obj_property>
+      <obj_property name="ObjectShortName">start_single_burst_read</obj_property>
+   </wvobject>
+   <wvobject fp_name="/myip_v1_0_tb/DUT/myip_v1_0_bfm_1_i/User_DMA_0/inst/User_DMA_v1_0_M_AXI_FULL_mm2s_inst/reads_done" type="logic">
+      <obj_property name="ElementShortName">reads_done</obj_property>
+      <obj_property name="ObjectShortName">reads_done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/myip_v1_0_tb/DUT/myip_v1_0_bfm_1_i/User_DMA_0/inst/User_DMA_v1_0_M_AXI_FULL_mm2s_inst/burst_read_active" type="logic">
+      <obj_property name="ElementShortName">burst_read_active</obj_property>
+      <obj_property name="ObjectShortName">burst_read_active</obj_property>
+   </wvobject>
+   <wvobject fp_name="/myip_v1_0_tb/DUT/myip_v1_0_bfm_1_i/User_DMA_0/inst/User_DMA_v1_0_M_AXI_FULL_mm2s_inst/rnext" type="logic">
+      <obj_property name="ElementShortName">rnext</obj_property>
+      <obj_property name="ObjectShortName">rnext</obj_property>
+   </wvobject>
+   <wvobject fp_name="/myip_v1_0_tb/DUT/myip_v1_0_bfm_1_i/User_DMA_0/inst/User_DMA_v1_0_M_AXI_FULL_mm2s_inst/state_read" type="logic">
+      <obj_property name="ElementShortName">state_read</obj_property>
+      <obj_property name="ObjectShortName">state_read</obj_property>
+   </wvobject>
+</wave_config>
