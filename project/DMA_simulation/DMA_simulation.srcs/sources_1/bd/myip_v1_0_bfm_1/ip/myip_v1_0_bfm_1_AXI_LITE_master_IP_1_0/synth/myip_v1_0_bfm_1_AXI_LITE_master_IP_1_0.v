@@ -52,7 +52,7 @@
 
 (* X_CORE_INFO = "AXI_LITE_master_IP_v1_0,Vivado 2017.4" *)
 (* CHECK_LICENSE_TYPE = "myip_v1_0_bfm_1_AXI_LITE_master_IP_1_0,AXI_LITE_master_IP_v1_0,{}" *)
-(* CORE_GENERATION_INFO = "myip_v1_0_bfm_1_AXI_LITE_master_IP_1_0,AXI_LITE_master_IP_v1_0,{x_ipProduct=Vivado 2017.4,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=AXI_LITE_master_IP,x_ipVersion=1.0,x_ipCoreRevision=3,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,C_M00_AXI_START_DATA_VALUE=0x00000000,C_M00_AXI_TARGET_SLAVE_BASE_ADDR=0x44A10000,C_M00_AXI_ADDR_WIDTH=32,C_M00_AXI_DATA_WIDTH=32,C_M00_AXI_TRANSACTIONS_NUM=4,REG_DATA_VALUE_0=0x44A01000,REG_DATA_VALUE_1=0xFF000060,REG_DATA_VALUE_2=0x00000000,REG_DATA_VALUE_3=0x000\
+(* CORE_GENERATION_INFO = "myip_v1_0_bfm_1_AXI_LITE_master_IP_1_0,AXI_LITE_master_IP_v1_0,{x_ipProduct=Vivado 2017.4,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=AXI_LITE_master_IP,x_ipVersion=1.0,x_ipCoreRevision=3,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,C_M00_AXI_START_DATA_VALUE=0x00000000,C_M00_AXI_TARGET_SLAVE_BASE_ADDR=0x44A10000,C_M00_AXI_ADDR_WIDTH=32,C_M00_AXI_DATA_WIDTH=32,C_M00_AXI_TRANSACTIONS_NUM=4,REG_DATA_VALUE_0=0x44A01000,REG_DATA_VALUE_1=0xFF00006F,REG_DATA_VALUE_2=0x00000000,REG_DATA_VALUE_3=0x000\
 00000}" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module myip_v1_0_bfm_1_AXI_LITE_master_IP_1_0 (
@@ -142,7 +142,7 @@ output wire m00_axi_txn_done;
     .C_M00_AXI_TRANSACTIONS_NUM(4),  // Transaction number is the number of write 
     // and read transactions the master will perform as a part of this example memory test.
     .REG_DATA_VALUE_0('H44A01000),
-    .REG_DATA_VALUE_1('HFF000060),
+    .REG_DATA_VALUE_1('HFF00006F),
     .REG_DATA_VALUE_2('H00000000),
     .REG_DATA_VALUE_3('H00000000)
   ) inst (

@@ -4264,3 +4264,1543 @@ make pre-build main-build
 a9-linaro-pre-build-step
 ' '
 make: Nothing to be done for `main-build'.
+00:49:24 **** Auto Build of project hello_bsp ****
+make -k all 
+"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_5/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scugic_v3_8/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_8/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/standalone_v6_5/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v6_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/User_DMA_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/User_DMA_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling coresightps_dcc"
+arm-none-eabi-ar: creating ../../../lib/libxil.a
+"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_5/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling cpu_cortexa9"
+"Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling ddrps"
+"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling devcfg"
+"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling dmaps"
+"Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling gpiops"
+"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v3_8/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_8/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling scugic"
+"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling scutimer"
+"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling scuwdt"
+"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v6_5/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v6_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling standalone"
+"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling uartps"
+"Running Make libs in ps7_cortexa9_0/libsrc/User_DMA_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/User_DMA_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling User_DMA..."
+User_DMA_selftest.c: In function 'USER_DMA_Reg_SelfTest':
+User_DMA_selftest.c:52:57: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    if ( USER_DMA_mReadReg (baseaddr, read_loop_index*4) != (read_loop_index+1)*READ_WRITE_MUL_FACTOR){
+                                                         ^~
+User_DMA_selftest.c:36:6: warning: unused variable 'Index' [-Wunused-variable]
+  int Index;
+      ^~~~~
+"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling xadcps"
+'Finished building libraries'
+00:50:17 **** Auto Build of configuration Debug for project hello ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../hello_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../hello_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: hello.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../hello_bsp/ps7_cortexa9_0/lib -o "hello.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: hello.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size hello.elf  |tee "hello.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  19384	   1148	  22568	  43100	   a85c	hello.elf
+'Finished building: hello.elf.size'
+' '
+00:54:36 **** Auto Build of configuration Debug for project dma_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../dma_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c:5:23: fatal error: xil_printf.h: No such file or directory
+ #include"xil_printf.h"
+                       ^
+compilation terminated.
+make: *** [src/helloworld.o] ´íÎó 1
+00:54:49 **** Auto Build of project dma_test_bsp ****
+make -k all 
+"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_5/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scugic_v3_8/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_8/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/standalone_v6_5/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v6_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/User_DMA_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/User_DMA_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling coresightps_dcc"
+arm-none-eabi-ar: creating ../../../lib/libxil.a
+"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_5/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling cpu_cortexa9"
+"Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling ddrps"
+"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling devcfg"
+"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling dmaps"
+"Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling gpiops"
+"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v3_8/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_8/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling scugic"
+"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling scutimer"
+"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling scuwdt"
+"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v6_5/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v6_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling standalone"
+"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling uartps"
+"Running Make libs in ps7_cortexa9_0/libsrc/User_DMA_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/User_DMA_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling User_DMA..."
+User_DMA_selftest.c: In function 'USER_DMA_Reg_SelfTest':
+User_DMA_selftest.c:52:57: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    if ( USER_DMA_mReadReg (baseaddr, read_loop_index*4) != (read_loop_index+1)*READ_WRITE_MUL_FACTOR){
+                                                         ^~
+User_DMA_selftest.c:36:6: warning: unused variable 'Index' [-Wunused-variable]
+  int Index;
+      ^~~~~
+"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling xadcps"
+'Finished building libraries'
+00:55:48 **** Auto Build of configuration Debug for project dma_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../dma_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'disablecache':
+../src/helloworld.c:24:2: warning: implicit declaration of function 'Xil_DCacheDisable' [-Wimplicit-function-declaration]
+  Xil_DCacheDisable();
+  ^~~~~~~~~~~~~~~~~
+../src/helloworld.c:25:2: warning: implicit declaration of function 'Xil_ICacheDisable' [-Wimplicit-function-declaration]
+  Xil_ICacheDisable();
+  ^~~~~~~~~~~~~~~~~
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:49:19: warning: format '%u' expects argument of type 'unsigned int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+   printf("pin0 = %u\n",x);
+                   ^
+../src/helloworld.c:51:19: warning: format '%u' expects argument of type 'unsigned int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+   printf("pin1 = %u\n",x);
+                   ^
+../src/helloworld.c:52:3: warning: implicit declaration of function 'sleep' [-Wimplicit-function-declaration]
+   sleep(20);
+   ^~~~~
+../src/helloworld.c:70:27: warning: format '%u' expects argument of type 'unsigned int', but argument 3 has type 'u32 {aka long unsigned int}' [-Wformat=]
+    printf("register %d : %u \n",i,x);
+                           ^
+../src/helloworld.c:78:31: warning: format '%u' expects argument of type 'unsigned int', but argument 3 has type 'u32 {aka long unsigned int}' [-Wformat=]
+    printf("data changed %d : %u \n",i,x);
+                               ^
+../src/helloworld.c:83:19: warning: format '%u' expects argument of type 'unsigned int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+   printf("pin0 = %u\n",x);
+                   ^
+../src/helloworld.c:85:19: warning: format '%u' expects argument of type 'unsigned int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+   printf("pin1 = %u\n",x);
+                   ^
+../src/helloworld.c:89:32: warning: format '%u' expects argument of type 'unsigned int', but argument 3 has type 'u32 {aka long unsigned int}' [-Wformat=]
+    printf("data original %d : %u \n",i,x);
+                                ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../dma_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: dma_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../dma_test_bsp/ps7_cortexa9_0/lib -o "dma_test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: dma_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size dma_test.elf  |tee "dma_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  81892	   2592	  23376	 107860	  1a554	dma_test.elf
+'Finished building: dma_test.elf.size'
+' '
+00:56:16 **** Auto Build of configuration Debug for project dma_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../dma_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'disablecache':
+../src/helloworld.c:24:2: warning: implicit declaration of function 'Xil_DCacheDisable' [-Wimplicit-function-declaration]
+  Xil_DCacheDisable();
+  ^~~~~~~~~~~~~~~~~
+../src/helloworld.c:25:2: warning: implicit declaration of function 'Xil_ICacheDisable' [-Wimplicit-function-declaration]
+  Xil_ICacheDisable();
+  ^~~~~~~~~~~~~~~~~
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:49:19: warning: format '%u' expects argument of type 'unsigned int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+   printf("pin0 = %u\n",x);
+                   ^
+../src/helloworld.c:51:19: warning: format '%u' expects argument of type 'unsigned int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+   printf("pin1 = %u\n",x);
+                   ^
+../src/helloworld.c:52:3: warning: implicit declaration of function 'sleep' [-Wimplicit-function-declaration]
+   sleep(20);
+   ^~~~~
+../src/helloworld.c:70:27: warning: format '%u' expects argument of type 'unsigned int', but argument 3 has type 'u32 {aka long unsigned int}' [-Wformat=]
+    printf("register %d : %u \n",i,x);
+                           ^
+../src/helloworld.c:78:31: warning: format '%u' expects argument of type 'unsigned int', but argument 3 has type 'u32 {aka long unsigned int}' [-Wformat=]
+    printf("data changed %d : %u \n",i,x);
+                               ^
+../src/helloworld.c:83:19: warning: format '%u' expects argument of type 'unsigned int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+   printf("pin0 = %u\n",x);
+                   ^
+../src/helloworld.c:85:19: warning: format '%u' expects argument of type 'unsigned int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+   printf("pin1 = %u\n",x);
+                   ^
+../src/helloworld.c:89:32: warning: format '%u' expects argument of type 'unsigned int', but argument 3 has type 'u32 {aka long unsigned int}' [-Wformat=]
+    printf("data original %d : %u \n",i,x);
+                                ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: dma_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../dma_test_bsp/ps7_cortexa9_0/lib -o "dma_test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: dma_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size dma_test.elf  |tee "dma_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  81892	   2592	  23376	 107860	  1a554	dma_test.elf
+'Finished building: dma_test.elf.size'
+' '
+00:56:19 **** Incremental Build of configuration Debug for project dma_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+00:56:46 **** Incremental Build of configuration Debug for project dma_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+00:57:18 **** Incremental Build of configuration Debug for project dma_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+00:57:57 **** Incremental Build of configuration Debug for project dma_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+00:59:41 **** Auto Build of project hello_bsp ****
+make -k all 
+"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_5/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scugic_v3_8/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_8/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/standalone_v6_5/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v6_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/User_DMA_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/User_DMA_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling coresightps_dcc"
+arm-none-eabi-ar: creating ../../../lib/libxil.a
+"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_5/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling cpu_cortexa9"
+"Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling ddrps"
+"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling devcfg"
+"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling dmaps"
+"Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling gpiops"
+"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v3_8/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_8/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling scugic"
+"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling scutimer"
+"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling scuwdt"
+"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v6_5/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v6_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling standalone"
+"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling uartps"
+"Running Make libs in ps7_cortexa9_0/libsrc/User_DMA_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/User_DMA_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling User_DMA..."
+User_DMA_selftest.c: In function 'USER_DMA_Reg_SelfTest':
+User_DMA_selftest.c:52:57: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    if ( USER_DMA_mReadReg (baseaddr, read_loop_index*4) != (read_loop_index+1)*READ_WRITE_MUL_FACTOR){
+                                                         ^~
+User_DMA_selftest.c:36:6: warning: unused variable 'Index' [-Wunused-variable]
+  int Index;
+      ^~~~~
+"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling xadcps"
+'Finished building libraries'
+01:00:42 **** Auto Build of configuration Debug for project hello ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../hello_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../hello_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: hello.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../hello_bsp/ps7_cortexa9_0/lib -o "hello.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: hello.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size hello.elf  |tee "hello.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  19384	   1148	  22568	  43100	   a85c	hello.elf
+'Finished building: hello.elf.size'
+' '
+01:01:24 **** Auto Build of configuration Debug for project dma_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../dma_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'disablecache':
+../src/helloworld.c:24:2: warning: implicit declaration of function 'Xil_DCacheDisable' [-Wimplicit-function-declaration]
+  Xil_DCacheDisable();
+  ^~~~~~~~~~~~~~~~~
+../src/helloworld.c:25:2: warning: implicit declaration of function 'Xil_ICacheDisable' [-Wimplicit-function-declaration]
+  Xil_ICacheDisable();
+  ^~~~~~~~~~~~~~~~~
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:49:19: warning: format '%u' expects argument of type 'unsigned int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+   printf("pin0 = %u\n",x);
+                   ^
+../src/helloworld.c:51:19: warning: format '%u' expects argument of type 'unsigned int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+   printf("pin1 = %u\n",x);
+                   ^
+../src/helloworld.c:52:3: warning: implicit declaration of function 'sleep' [-Wimplicit-function-declaration]
+   sleep(20);
+   ^~~~~
+../src/helloworld.c:69:27: warning: format '%u' expects argument of type 'unsigned int', but argument 3 has type 'u32 {aka long unsigned int}' [-Wformat=]
+    printf("register %d : %u \n",i,x);
+                           ^
+../src/helloworld.c:77:31: warning: format '%u' expects argument of type 'unsigned int', but argument 3 has type 'u32 {aka long unsigned int}' [-Wformat=]
+    printf("data changed %d : %u \n",i,x);
+                               ^
+../src/helloworld.c:82:19: warning: format '%u' expects argument of type 'unsigned int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+   printf("pin0 = %u\n",x);
+                   ^
+../src/helloworld.c:84:19: warning: format '%u' expects argument of type 'unsigned int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+   printf("pin1 = %u\n",x);
+                   ^
+../src/helloworld.c:88:32: warning: format '%u' expects argument of type 'unsigned int', but argument 3 has type 'u32 {aka long unsigned int}' [-Wformat=]
+    printf("data original %d : %u \n",i,x);
+                                ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: dma_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../dma_test_bsp/ps7_cortexa9_0/lib -o "dma_test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: dma_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size dma_test.elf  |tee "dma_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  81892	   2592	  23376	 107860	  1a554	dma_test.elf
+'Finished building: dma_test.elf.size'
+' '
+01:03:20 **** Incremental Build of configuration Debug for project dma_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+01:03:53 **** Incremental Build of configuration Debug for project dma_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+01:04:40 **** Incremental Build of configuration Debug for project dma_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+01:05:24 **** Incremental Build of configuration Debug for project dma_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+01:11:39 **** Incremental Build of configuration Debug for project dma_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../dma_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'disablecache':
+../src/helloworld.c:24:2: warning: implicit declaration of function 'Xil_DCacheDisable' [-Wimplicit-function-declaration]
+  Xil_DCacheDisable();
+  ^~~~~~~~~~~~~~~~~
+../src/helloworld.c:25:2: warning: implicit declaration of function 'Xil_ICacheDisable' [-Wimplicit-function-declaration]
+  Xil_ICacheDisable();
+  ^~~~~~~~~~~~~~~~~
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:49:19: warning: format '%u' expects argument of type 'unsigned int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+   printf("pin0 = %u\n",x);
+                   ^
+../src/helloworld.c:51:19: warning: format '%u' expects argument of type 'unsigned int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+   printf("pin1 = %u\n",x);
+                   ^
+../src/helloworld.c:52:3: warning: implicit declaration of function 'sleep' [-Wimplicit-function-declaration]
+   sleep(20);
+   ^~~~~
+../src/helloworld.c:69:27: warning: format '%u' expects argument of type 'unsigned int', but argument 3 has type 'u32 {aka long unsigned int}' [-Wformat=]
+    printf("register %d : %u \n",i,x);
+                           ^
+../src/helloworld.c:77:31: warning: format '%u' expects argument of type 'unsigned int', but argument 3 has type 'u32 {aka long unsigned int}' [-Wformat=]
+    printf("data changed %d : %u \n",i,x);
+                               ^
+../src/helloworld.c:82:19: warning: format '%u' expects argument of type 'unsigned int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+   printf("pin0 = %u\n",x);
+                   ^
+../src/helloworld.c:84:19: warning: format '%u' expects argument of type 'unsigned int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+   printf("pin1 = %u\n",x);
+                   ^
+../src/helloworld.c:88:32: warning: format '%u' expects argument of type 'unsigned int', but argument 3 has type 'u32 {aka long unsigned int}' [-Wformat=]
+    printf("data original %d : %u \n",i,x);
+                                ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: dma_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../dma_test_bsp/ps7_cortexa9_0/lib -o "dma_test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: dma_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size dma_test.elf  |tee "dma_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  81892	   2592	  23376	 107860	  1a554	dma_test.elf
+'Finished building: dma_test.elf.size'
+' '
+01:16:18 **** Auto Build of configuration Debug for project dma_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../dma_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'disablecache':
+../src/helloworld.c:24:2: warning: implicit declaration of function 'Xil_DCacheDisable' [-Wimplicit-function-declaration]
+  Xil_DCacheDisable();
+  ^~~~~~~~~~~~~~~~~
+../src/helloworld.c:25:2: warning: implicit declaration of function 'Xil_ICacheDisable' [-Wimplicit-function-declaration]
+  Xil_ICacheDisable();
+  ^~~~~~~~~~~~~~~~~
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:49:19: warning: format '%u' expects argument of type 'unsigned int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+   printf("pin0 = %u\n",x);
+                   ^
+../src/helloworld.c:51:19: warning: format '%u' expects argument of type 'unsigned int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+   printf("pin1 = %u\n",x);
+                   ^
+../src/helloworld.c:52:3: warning: implicit declaration of function 'sleep' [-Wimplicit-function-declaration]
+   sleep(20);
+   ^~~~~
+../src/helloworld.c:69:27: warning: format '%u' expects argument of type 'unsigned int', but argument 3 has type 'u32 {aka long unsigned int}' [-Wformat=]
+    printf("register %d : %u \n",i,x);
+                           ^
+../src/helloworld.c:77:31: warning: format '%u' expects argument of type 'unsigned int', but argument 3 has type 'u32 {aka long unsigned int}' [-Wformat=]
+    printf("data changed %d : %u \n",i,x);
+                               ^
+../src/helloworld.c:82:19: warning: format '%u' expects argument of type 'unsigned int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+   printf("pin0 = %u\n",x);
+                   ^
+../src/helloworld.c:84:19: warning: format '%u' expects argument of type 'unsigned int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+   printf("pin1 = %u\n",x);
+                   ^
+../src/helloworld.c:88:32: warning: format '%u' expects argument of type 'unsigned int', but argument 3 has type 'u32 {aka long unsigned int}' [-Wformat=]
+    printf("data original %d : %u \n",i,x);
+                                ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: dma_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../dma_test_bsp/ps7_cortexa9_0/lib -o "dma_test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: dma_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size dma_test.elf  |tee "dma_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  81892	   2592	  23376	 107860	  1a554	dma_test.elf
+'Finished building: dma_test.elf.size'
+' '
+01:16:42 **** Incremental Build of configuration Debug for project dma_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+01:19:52 **** Auto Build of configuration Debug for project dma_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../dma_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'disablecache':
+../src/helloworld.c:24:2: warning: implicit declaration of function 'Xil_DCacheDisable' [-Wimplicit-function-declaration]
+  Xil_DCacheDisable();
+  ^~~~~~~~~~~~~~~~~
+../src/helloworld.c:25:2: warning: implicit declaration of function 'Xil_ICacheDisable' [-Wimplicit-function-declaration]
+  Xil_ICacheDisable();
+  ^~~~~~~~~~~~~~~~~
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:49:19: warning: format '%u' expects argument of type 'unsigned int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+   printf("pin0 = %u\n",x);
+                   ^
+../src/helloworld.c:51:19: warning: format '%u' expects argument of type 'unsigned int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+   printf("pin1 = %u\n",x);
+                   ^
+../src/helloworld.c:52:3: warning: implicit declaration of function 'sleep' [-Wimplicit-function-declaration]
+   sleep(20);
+   ^~~~~
+../src/helloworld.c:69:27: warning: format '%u' expects argument of type 'unsigned int', but argument 3 has type 'u32 {aka long unsigned int}' [-Wformat=]
+    printf("register %d : %u \n",i,x);
+                           ^
+../src/helloworld.c:77:31: warning: format '%u' expects argument of type 'unsigned int', but argument 3 has type 'u32 {aka long unsigned int}' [-Wformat=]
+    printf("data changed %d : %u \n",i,x);
+                               ^
+../src/helloworld.c:82:19: warning: format '%u' expects argument of type 'unsigned int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+   printf("pin0 = %u\n",x);
+                   ^
+../src/helloworld.c:84:19: warning: format '%u' expects argument of type 'unsigned int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+   printf("pin1 = %u\n",x);
+                   ^
+../src/helloworld.c:88:32: warning: format '%u' expects argument of type 'unsigned int', but argument 3 has type 'u32 {aka long unsigned int}' [-Wformat=]
+    printf("data original %d : %u \n",i,x);
+                                ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: dma_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../dma_test_bsp/ps7_cortexa9_0/lib -o "dma_test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: dma_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size dma_test.elf  |tee "dma_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  81828	   2592	  23376	 107796	  1a514	dma_test.elf
+'Finished building: dma_test.elf.size'
+' '
+01:19:57 **** Incremental Build of configuration Debug for project dma_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+01:21:07 **** Auto Build of configuration Debug for project dma_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../dma_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'disablecache':
+../src/helloworld.c:24:2: warning: implicit declaration of function 'Xil_DCacheDisable' [-Wimplicit-function-declaration]
+  Xil_DCacheDisable();
+  ^~~~~~~~~~~~~~~~~
+../src/helloworld.c:25:2: warning: implicit declaration of function 'Xil_ICacheDisable' [-Wimplicit-function-declaration]
+  Xil_ICacheDisable();
+  ^~~~~~~~~~~~~~~~~
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:49:19: warning: format '%u' expects argument of type 'unsigned int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+   printf("pin0 = %u\n",x);
+                   ^
+../src/helloworld.c:51:19: warning: format '%u' expects argument of type 'unsigned int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+   printf("pin1 = %u\n",x);
+                   ^
+../src/helloworld.c:52:3: warning: implicit declaration of function 'sleep' [-Wimplicit-function-declaration]
+   sleep(20);
+   ^~~~~
+../src/helloworld.c:69:27: warning: format '%u' expects argument of type 'unsigned int', but argument 3 has type 'u32 {aka long unsigned int}' [-Wformat=]
+    printf("register %d : %u \n",i,x);
+                           ^
+../src/helloworld.c:77:31: warning: format '%u' expects argument of type 'unsigned int', but argument 3 has type 'u32 {aka long unsigned int}' [-Wformat=]
+    printf("data changed %d : %u \n",i,x);
+                               ^
+../src/helloworld.c:82:19: warning: format '%u' expects argument of type 'unsigned int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+   printf("pin0 = %u\n",x);
+                   ^
+../src/helloworld.c:84:19: warning: format '%u' expects argument of type 'unsigned int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+   printf("pin1 = %u\n",x);
+                   ^
+../src/helloworld.c:88:32: warning: format '%u' expects argument of type 'unsigned int', but argument 3 has type 'u32 {aka long unsigned int}' [-Wformat=]
+    printf("data original %d : %u \n",i,x);
+                                ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: dma_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../dma_test_bsp/ps7_cortexa9_0/lib -o "dma_test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: dma_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size dma_test.elf  |tee "dma_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  81892	   2592	  23376	 107860	  1a554	dma_test.elf
+'Finished building: dma_test.elf.size'
+' '
+01:21:27 **** Auto Build of configuration Debug for project dma_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../dma_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'disablecache':
+../src/helloworld.c:24:2: warning: implicit declaration of function 'Xil_DCacheDisable' [-Wimplicit-function-declaration]
+  Xil_DCacheDisable();
+  ^~~~~~~~~~~~~~~~~
+../src/helloworld.c:25:2: warning: implicit declaration of function 'Xil_ICacheDisable' [-Wimplicit-function-declaration]
+  Xil_ICacheDisable();
+  ^~~~~~~~~~~~~~~~~
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:49:19: warning: format '%u' expects argument of type 'unsigned int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+   printf("pin0 = %u\n",x);
+                   ^
+../src/helloworld.c:51:19: warning: format '%u' expects argument of type 'unsigned int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+   printf("pin1 = %u\n",x);
+                   ^
+../src/helloworld.c:52:3: warning: implicit declaration of function 'sleep' [-Wimplicit-function-declaration]
+   sleep(20);
+   ^~~~~
+../src/helloworld.c:69:27: warning: format '%u' expects argument of type 'unsigned int', but argument 3 has type 'u32 {aka long unsigned int}' [-Wformat=]
+    printf("register %d : %u \n",i,x);
+                           ^
+../src/helloworld.c:77:31: warning: format '%u' expects argument of type 'unsigned int', but argument 3 has type 'u32 {aka long unsigned int}' [-Wformat=]
+    printf("data changed %d : %u \n",i,x);
+                               ^
+../src/helloworld.c:82:19: warning: format '%u' expects argument of type 'unsigned int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+   printf("pin0 = %u\n",x);
+                   ^
+../src/helloworld.c:84:19: warning: format '%u' expects argument of type 'unsigned int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+   printf("pin1 = %u\n",x);
+                   ^
+../src/helloworld.c:88:32: warning: format '%u' expects argument of type 'unsigned int', but argument 3 has type 'u32 {aka long unsigned int}' [-Wformat=]
+    printf("data original %d : %u \n",i,x);
+                                ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: dma_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../dma_test_bsp/ps7_cortexa9_0/lib -o "dma_test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: dma_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size dma_test.elf  |tee "dma_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  81892	   2592	  23376	 107860	  1a554	dma_test.elf
+'Finished building: dma_test.elf.size'
+' '
+01:23:02 **** Incremental Build of configuration Debug for project dma_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+01:44:00 **** Incremental Build of configuration Debug for project dma_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../dma_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'disablecache':
+../src/helloworld.c:24:2: warning: implicit declaration of function 'Xil_DCacheDisable' [-Wimplicit-function-declaration]
+  Xil_DCacheDisable();
+  ^~~~~~~~~~~~~~~~~
+../src/helloworld.c:25:2: warning: implicit declaration of function 'Xil_ICacheDisable' [-Wimplicit-function-declaration]
+  Xil_ICacheDisable();
+  ^~~~~~~~~~~~~~~~~
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:49:19: warning: format '%u' expects argument of type 'unsigned int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+   printf("pin0 = %u\n",x);
+                   ^
+../src/helloworld.c:51:19: warning: format '%u' expects argument of type 'unsigned int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+   printf("pin1 = %u\n",x);
+                   ^
+../src/helloworld.c:52:3: warning: implicit declaration of function 'sleep' [-Wimplicit-function-declaration]
+   sleep(20);
+   ^~~~~
+../src/helloworld.c:69:27: warning: format '%u' expects argument of type 'unsigned int', but argument 3 has type 'u32 {aka long unsigned int}' [-Wformat=]
+    printf("register %d : %u \n",i,x);
+                           ^
+../src/helloworld.c:77:31: warning: format '%u' expects argument of type 'unsigned int', but argument 3 has type 'u32 {aka long unsigned int}' [-Wformat=]
+    printf("data changed %d : %u \n",i,x);
+                               ^
+../src/helloworld.c:82:19: warning: format '%u' expects argument of type 'unsigned int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+   printf("pin0 = %u\n",x);
+                   ^
+../src/helloworld.c:84:19: warning: format '%u' expects argument of type 'unsigned int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+   printf("pin1 = %u\n",x);
+                   ^
+../src/helloworld.c:88:32: warning: format '%u' expects argument of type 'unsigned int', but argument 3 has type 'u32 {aka long unsigned int}' [-Wformat=]
+    printf("data original %d : %u \n",i,x);
+                                ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: dma_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../dma_test_bsp/ps7_cortexa9_0/lib -o "dma_test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: dma_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size dma_test.elf  |tee "dma_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  81892	   2592	  23376	 107860	  1a554	dma_test.elf
+'Finished building: dma_test.elf.size'
+' '
+01:46:22 **** Incremental Build of configuration Debug for project dma_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../dma_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'disablecache':
+../src/helloworld.c:24:2: warning: implicit declaration of function 'Xil_DCacheDisable' [-Wimplicit-function-declaration]
+  Xil_DCacheDisable();
+  ^~~~~~~~~~~~~~~~~
+../src/helloworld.c:25:2: warning: implicit declaration of function 'Xil_ICacheDisable' [-Wimplicit-function-declaration]
+  Xil_ICacheDisable();
+  ^~~~~~~~~~~~~~~~~
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:49:19: warning: format '%u' expects argument of type 'unsigned int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+   printf("pin0 = %u\n",x);
+                   ^
+../src/helloworld.c:51:19: warning: format '%u' expects argument of type 'unsigned int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+   printf("pin1 = %u\n",x);
+                   ^
+../src/helloworld.c:52:3: warning: implicit declaration of function 'sleep' [-Wimplicit-function-declaration]
+   sleep(20);
+   ^~~~~
+../src/helloworld.c:69:27: warning: format '%u' expects argument of type 'unsigned int', but argument 3 has type 'u32 {aka long unsigned int}' [-Wformat=]
+    printf("register %d : %u \n",i,x);
+                           ^
+../src/helloworld.c:77:31: warning: format '%u' expects argument of type 'unsigned int', but argument 3 has type 'u32 {aka long unsigned int}' [-Wformat=]
+    printf("data changed %d : %u \n",i,x);
+                               ^
+../src/helloworld.c:82:19: warning: format '%u' expects argument of type 'unsigned int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+   printf("pin0 = %u\n",x);
+                   ^
+../src/helloworld.c:84:19: warning: format '%u' expects argument of type 'unsigned int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+   printf("pin1 = %u\n",x);
+                   ^
+../src/helloworld.c:88:32: warning: format '%u' expects argument of type 'unsigned int', but argument 3 has type 'u32 {aka long unsigned int}' [-Wformat=]
+    printf("data original %d : %u \n",i,x);
+                                ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: dma_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../dma_test_bsp/ps7_cortexa9_0/lib -o "dma_test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: dma_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size dma_test.elf  |tee "dma_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  81892	   2592	  23376	 107860	  1a554	dma_test.elf
+'Finished building: dma_test.elf.size'
+' '
+01:47:48 **** Auto Build of configuration Debug for project dma_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../dma_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'disablecache':
+../src/helloworld.c:24:2: warning: implicit declaration of function 'Xil_DCacheDisable' [-Wimplicit-function-declaration]
+  Xil_DCacheDisable();
+  ^~~~~~~~~~~~~~~~~
+../src/helloworld.c:25:2: warning: implicit declaration of function 'Xil_ICacheDisable' [-Wimplicit-function-declaration]
+  Xil_ICacheDisable();
+  ^~~~~~~~~~~~~~~~~
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:49:19: warning: format '%u' expects argument of type 'unsigned int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+   printf("pin0 = %u\n",x);
+                   ^
+../src/helloworld.c:51:19: warning: format '%u' expects argument of type 'unsigned int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+   printf("pin1 = %u\n",x);
+                   ^
+../src/helloworld.c:52:3: warning: implicit declaration of function 'sleep' [-Wimplicit-function-declaration]
+   sleep(20);
+   ^~~~~
+../src/helloworld.c:69:27: warning: format '%u' expects argument of type 'unsigned int', but argument 3 has type 'u32 {aka long unsigned int}' [-Wformat=]
+    printf("register %d : %u \n",i,x);
+                           ^
+../src/helloworld.c:77:31: warning: format '%u' expects argument of type 'unsigned int', but argument 3 has type 'u32 {aka long unsigned int}' [-Wformat=]
+    printf("data changed %d : %u \n",i,x);
+                               ^
+../src/helloworld.c:82:19: warning: format '%u' expects argument of type 'unsigned int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+   printf("pin0 = %u\n",x);
+                   ^
+../src/helloworld.c:84:19: warning: format '%u' expects argument of type 'unsigned int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+   printf("pin1 = %u\n",x);
+                   ^
+../src/helloworld.c:88:32: warning: format '%u' expects argument of type 'unsigned int', but argument 3 has type 'u32 {aka long unsigned int}' [-Wformat=]
+    printf("data original %d : %u \n",i,x);
+                                ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: dma_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../dma_test_bsp/ps7_cortexa9_0/lib -o "dma_test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: dma_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size dma_test.elf  |tee "dma_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  81892	   2592	  23376	 107860	  1a554	dma_test.elf
+'Finished building: dma_test.elf.size'
+' '
+01:49:11 **** Incremental Build of configuration Debug for project dma_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../dma_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'disablecache':
+../src/helloworld.c:24:2: warning: implicit declaration of function 'Xil_DCacheDisable' [-Wimplicit-function-declaration]
+  Xil_DCacheDisable();
+  ^~~~~~~~~~~~~~~~~
+../src/helloworld.c:25:2: warning: implicit declaration of function 'Xil_ICacheDisable' [-Wimplicit-function-declaration]
+  Xil_ICacheDisable();
+  ^~~~~~~~~~~~~~~~~
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:49:19: warning: format '%u' expects argument of type 'unsigned int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+   printf("pin0 = %u\n",x);
+                   ^
+../src/helloworld.c:51:19: warning: format '%u' expects argument of type 'unsigned int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+   printf("pin1 = %u\n",x);
+                   ^
+../src/helloworld.c:52:3: warning: implicit declaration of function 'sleep' [-Wimplicit-function-declaration]
+   sleep(20);
+   ^~~~~
+../src/helloworld.c:69:27: warning: format '%u' expects argument of type 'unsigned int', but argument 3 has type 'u32 {aka long unsigned int}' [-Wformat=]
+    printf("register %d : %u \n",i,x);
+                           ^
+../src/helloworld.c:77:31: warning: format '%u' expects argument of type 'unsigned int', but argument 3 has type 'u32 {aka long unsigned int}' [-Wformat=]
+    printf("data changed %d : %u \n",i,x);
+                               ^
+../src/helloworld.c:82:19: warning: format '%u' expects argument of type 'unsigned int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+   printf("pin0 = %u\n",x);
+                   ^
+../src/helloworld.c:84:19: warning: format '%u' expects argument of type 'unsigned int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+   printf("pin1 = %u\n",x);
+                   ^
+../src/helloworld.c:88:32: warning: format '%u' expects argument of type 'unsigned int', but argument 3 has type 'u32 {aka long unsigned int}' [-Wformat=]
+    printf("data original %d : %u \n",i,x);
+                                ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: dma_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../dma_test_bsp/ps7_cortexa9_0/lib -o "dma_test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: dma_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size dma_test.elf  |tee "dma_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  81892	   2592	  23376	 107860	  1a554	dma_test.elf
+'Finished building: dma_test.elf.size'
+' '
+01:50:48 **** Auto Build of configuration Debug for project dma_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../dma_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'disablecache':
+../src/helloworld.c:24:2: warning: implicit declaration of function 'Xil_DCacheDisable' [-Wimplicit-function-declaration]
+  Xil_DCacheDisable();
+  ^~~~~~~~~~~~~~~~~
+../src/helloworld.c:25:2: warning: implicit declaration of function 'Xil_ICacheDisable' [-Wimplicit-function-declaration]
+  Xil_ICacheDisable();
+  ^~~~~~~~~~~~~~~~~
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:49:19: warning: format '%u' expects argument of type 'unsigned int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+   printf("pin0 = %u\n",x);
+                   ^
+../src/helloworld.c:51:19: warning: format '%u' expects argument of type 'unsigned int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+   printf("pin1 = %u\n",x);
+                   ^
+../src/helloworld.c:52:3: warning: implicit declaration of function 'sleep' [-Wimplicit-function-declaration]
+   sleep(20);
+   ^~~~~
+../src/helloworld.c:69:27: warning: format '%u' expects argument of type 'unsigned int', but argument 3 has type 'u32 {aka long unsigned int}' [-Wformat=]
+    printf("register %d : %u \n",i,x);
+                           ^
+../src/helloworld.c:77:31: warning: format '%u' expects argument of type 'unsigned int', but argument 3 has type 'u32 {aka long unsigned int}' [-Wformat=]
+    printf("data changed %d : %u \n",i,x);
+                               ^
+../src/helloworld.c:82:19: warning: format '%u' expects argument of type 'unsigned int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+   printf("pin0 = %u\n",x);
+                   ^
+../src/helloworld.c:84:19: warning: format '%u' expects argument of type 'unsigned int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+   printf("pin1 = %u\n",x);
+                   ^
+../src/helloworld.c:88:32: warning: format '%u' expects argument of type 'unsigned int', but argument 3 has type 'u32 {aka long unsigned int}' [-Wformat=]
+    printf("data original %d : %u \n",i,x);
+                                ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: dma_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../dma_test_bsp/ps7_cortexa9_0/lib -o "dma_test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: dma_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size dma_test.elf  |tee "dma_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  81892	   2592	  23376	 107860	  1a554	dma_test.elf
+'Finished building: dma_test.elf.size'
+' '
+01:50:52 **** Incremental Build of configuration Debug for project dma_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+01:52:09 **** Auto Build of configuration Debug for project dma_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../dma_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'disablecache':
+../src/helloworld.c:24:2: warning: implicit declaration of function 'Xil_DCacheDisable' [-Wimplicit-function-declaration]
+  Xil_DCacheDisable();
+  ^~~~~~~~~~~~~~~~~
+../src/helloworld.c:25:2: warning: implicit declaration of function 'Xil_ICacheDisable' [-Wimplicit-function-declaration]
+  Xil_ICacheDisable();
+  ^~~~~~~~~~~~~~~~~
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:49:19: warning: format '%u' expects argument of type 'unsigned int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+   printf("pin0 = %u\n",x);
+                   ^
+../src/helloworld.c:51:19: warning: format '%u' expects argument of type 'unsigned int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+   printf("pin1 = %u\n",x);
+                   ^
+../src/helloworld.c:52:3: warning: implicit declaration of function 'sleep' [-Wimplicit-function-declaration]
+   sleep(20);
+   ^~~~~
+../src/helloworld.c:69:27: warning: format '%u' expects argument of type 'unsigned int', but argument 3 has type 'u32 {aka long unsigned int}' [-Wformat=]
+    printf("register %d : %u \n",i,x);
+                           ^
+../src/helloworld.c:77:31: warning: format '%u' expects argument of type 'unsigned int', but argument 3 has type 'u32 {aka long unsigned int}' [-Wformat=]
+    printf("data changed %d : %u \n",i,x);
+                               ^
+../src/helloworld.c:82:19: warning: format '%u' expects argument of type 'unsigned int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+   printf("pin0 = %u\n",x);
+                   ^
+../src/helloworld.c:84:19: warning: format '%u' expects argument of type 'unsigned int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+   printf("pin1 = %u\n",x);
+                   ^
+../src/helloworld.c:88:32: warning: format '%u' expects argument of type 'unsigned int', but argument 3 has type 'u32 {aka long unsigned int}' [-Wformat=]
+    printf("data original %d : %u \n",i,x);
+                                ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: dma_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../dma_test_bsp/ps7_cortexa9_0/lib -o "dma_test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: dma_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size dma_test.elf  |tee "dma_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  81892	   2592	  23376	 107860	  1a554	dma_test.elf
+'Finished building: dma_test.elf.size'
+' '
+01:52:17 **** Incremental Build of configuration Debug for project dma_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+01:52:56 **** Incremental Build of configuration Debug for project dma_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../dma_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'disablecache':
+../src/helloworld.c:24:2: warning: implicit declaration of function 'Xil_DCacheDisable' [-Wimplicit-function-declaration]
+  Xil_DCacheDisable();
+  ^~~~~~~~~~~~~~~~~
+../src/helloworld.c:25:2: warning: implicit declaration of function 'Xil_ICacheDisable' [-Wimplicit-function-declaration]
+  Xil_ICacheDisable();
+  ^~~~~~~~~~~~~~~~~
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:49:19: warning: format '%u' expects argument of type 'unsigned int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+   printf("pin0 = %u\n",x);
+                   ^
+../src/helloworld.c:51:19: warning: format '%u' expects argument of type 'unsigned int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+   printf("pin1 = %u\n",x);
+                   ^
+../src/helloworld.c:52:3: warning: implicit declaration of function 'sleep' [-Wimplicit-function-declaration]
+   sleep(20);
+   ^~~~~
+../src/helloworld.c:69:27: warning: format '%u' expects argument of type 'unsigned int', but argument 3 has type 'u32 {aka long unsigned int}' [-Wformat=]
+    printf("register %d : %u \n",i,x);
+                           ^
+../src/helloworld.c:77:31: warning: format '%u' expects argument of type 'unsigned int', but argument 3 has type 'u32 {aka long unsigned int}' [-Wformat=]
+    printf("data changed %d : %u \n",i,x);
+                               ^
+../src/helloworld.c:82:19: warning: format '%u' expects argument of type 'unsigned int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+   printf("pin0 = %u\n",x);
+                   ^
+../src/helloworld.c:84:19: warning: format '%u' expects argument of type 'unsigned int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+   printf("pin1 = %u\n",x);
+                   ^
+../src/helloworld.c:88:32: warning: format '%u' expects argument of type 'unsigned int', but argument 3 has type 'u32 {aka long unsigned int}' [-Wformat=]
+    printf("data original %d : %u \n",i,x);
+                                ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: dma_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../dma_test_bsp/ps7_cortexa9_0/lib -o "dma_test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: dma_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size dma_test.elf  |tee "dma_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  81892	   2592	  23376	 107860	  1a554	dma_test.elf
+'Finished building: dma_test.elf.size'
+' '
+01:58:45 **** Incremental Build of configuration Debug for project dma_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../dma_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'disablecache':
+../src/helloworld.c:24:2: warning: implicit declaration of function 'Xil_DCacheDisable' [-Wimplicit-function-declaration]
+  Xil_DCacheDisable();
+  ^~~~~~~~~~~~~~~~~
+../src/helloworld.c:25:2: warning: implicit declaration of function 'Xil_ICacheDisable' [-Wimplicit-function-declaration]
+  Xil_ICacheDisable();
+  ^~~~~~~~~~~~~~~~~
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:49:19: warning: format '%u' expects argument of type 'unsigned int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+   printf("pin0 = %u\n",x);
+                   ^
+../src/helloworld.c:51:19: warning: format '%u' expects argument of type 'unsigned int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+   printf("pin1 = %u\n",x);
+                   ^
+../src/helloworld.c:52:3: warning: implicit declaration of function 'sleep' [-Wimplicit-function-declaration]
+   sleep(20);
+   ^~~~~
+../src/helloworld.c:69:27: warning: format '%u' expects argument of type 'unsigned int', but argument 3 has type 'u32 {aka long unsigned int}' [-Wformat=]
+    printf("register %d : %u \n",i,x);
+                           ^
+../src/helloworld.c:77:31: warning: format '%u' expects argument of type 'unsigned int', but argument 3 has type 'u32 {aka long unsigned int}' [-Wformat=]
+    printf("data changed %d : %u \n",i,x);
+                               ^
+../src/helloworld.c:82:19: warning: format '%u' expects argument of type 'unsigned int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+   printf("pin0 = %u\n",x);
+                   ^
+../src/helloworld.c:84:19: warning: format '%u' expects argument of type 'unsigned int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+   printf("pin1 = %u\n",x);
+                   ^
+../src/helloworld.c:88:32: warning: format '%u' expects argument of type 'unsigned int', but argument 3 has type 'u32 {aka long unsigned int}' [-Wformat=]
+    printf("data original %d : %u \n",i,x);
+                                ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: dma_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../dma_test_bsp/ps7_cortexa9_0/lib -o "dma_test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: dma_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size dma_test.elf  |tee "dma_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  81892	   2592	  23376	 107860	  1a554	dma_test.elf
+'Finished building: dma_test.elf.size'
+' '
+02:08:34 **** Incremental Build of configuration Debug for project dma_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../dma_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'disablecache':
+../src/helloworld.c:24:2: warning: implicit declaration of function 'Xil_DCacheDisable' [-Wimplicit-function-declaration]
+  Xil_DCacheDisable();
+  ^~~~~~~~~~~~~~~~~
+../src/helloworld.c:25:2: warning: implicit declaration of function 'Xil_ICacheDisable' [-Wimplicit-function-declaration]
+  Xil_ICacheDisable();
+  ^~~~~~~~~~~~~~~~~
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:49:19: warning: format '%u' expects argument of type 'unsigned int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+   printf("pin0 = %u\n",x);
+                   ^
+../src/helloworld.c:51:19: warning: format '%u' expects argument of type 'unsigned int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+   printf("pin1 = %u\n",x);
+                   ^
+../src/helloworld.c:52:3: warning: implicit declaration of function 'sleep' [-Wimplicit-function-declaration]
+   sleep(20);
+   ^~~~~
+../src/helloworld.c:69:27: warning: format '%u' expects argument of type 'unsigned int', but argument 3 has type 'u32 {aka long unsigned int}' [-Wformat=]
+    printf("register %d : %u \n",i,x);
+                           ^
+../src/helloworld.c:77:31: warning: format '%u' expects argument of type 'unsigned int', but argument 3 has type 'u32 {aka long unsigned int}' [-Wformat=]
+    printf("data changed %d : %u \n",i,x);
+                               ^
+../src/helloworld.c:82:19: warning: format '%u' expects argument of type 'unsigned int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+   printf("pin0 = %u\n",x);
+                   ^
+../src/helloworld.c:84:19: warning: format '%u' expects argument of type 'unsigned int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+   printf("pin1 = %u\n",x);
+                   ^
+../src/helloworld.c:88:32: warning: format '%u' expects argument of type 'unsigned int', but argument 3 has type 'u32 {aka long unsigned int}' [-Wformat=]
+    printf("data original %d : %u \n",i,x);
+                                ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: dma_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../dma_test_bsp/ps7_cortexa9_0/lib -o "dma_test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: dma_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size dma_test.elf  |tee "dma_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  81892	   2592	  23376	 107860	  1a554	dma_test.elf
+'Finished building: dma_test.elf.size'
+' '
+02:59:01 **** Auto Build of configuration Debug for project dma_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../dma_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c:5:23: fatal error: xil_printf.h: No such file or directory
+ #include"xil_printf.h"
+                       ^
+compilation terminated.
+make: *** [src/helloworld.o] ´íÎó 1
+02:59:14 **** Auto Build of project dma_test_bsp ****
+make -k all 
+'Finished building libraries'
+02:59:15 **** Auto Build of configuration Debug for project dma_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../dma_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c:5:23: fatal error: xil_printf.h: No such file or directory
+ #include"xil_printf.h"
+                       ^
+compilation terminated.
+make: *** [src/helloworld.o] ´íÎó 1
+02:59:25 **** Auto Build of configuration Debug for project dma_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../dma_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c:5:23: fatal error: xil_printf.h: No such file or directory
+ #include"xil_printf.h"
+                       ^
+compilation terminated.
+make: *** [src/helloworld.o] ´íÎó 1
+02:59:36 **** Auto Build of project dma_test_bsp ****
+make -k all 
+"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_5/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scugic_v3_8/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_8/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/standalone_v6_5/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v6_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/User_DMA_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/User_DMA_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling coresightps_dcc"
+arm-none-eabi-ar: creating ../../../lib/libxil.a
+"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_5/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling cpu_cortexa9"
+"Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling ddrps"
+"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling devcfg"
+"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling dmaps"
+"Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling gpiops"
+"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v3_8/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_8/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling scugic"
+"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling scutimer"
+"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling scuwdt"
+"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v6_5/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v6_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling standalone"
+"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling uartps"
+"Running Make libs in ps7_cortexa9_0/libsrc/User_DMA_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/User_DMA_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling User_DMA..."
+User_DMA_selftest.c: In function 'USER_DMA_Reg_SelfTest':
+User_DMA_selftest.c:52:57: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    if ( USER_DMA_mReadReg (baseaddr, read_loop_index*4) != (read_loop_index+1)*READ_WRITE_MUL_FACTOR){
+                                                         ^~
+User_DMA_selftest.c:36:6: warning: unused variable 'Index' [-Wunused-variable]
+  int Index;
+      ^~~~~
+"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling xadcps"
+'Finished building libraries'
+03:00:36 **** Auto Build of configuration Debug for project dma_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../dma_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'disablecache':
+../src/helloworld.c:24:2: warning: implicit declaration of function 'Xil_DCacheDisable' [-Wimplicit-function-declaration]
+  Xil_DCacheDisable();
+  ^~~~~~~~~~~~~~~~~
+../src/helloworld.c:25:2: warning: implicit declaration of function 'Xil_ICacheDisable' [-Wimplicit-function-declaration]
+  Xil_ICacheDisable();
+  ^~~~~~~~~~~~~~~~~
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:49:19: warning: format '%u' expects argument of type 'unsigned int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+   printf("pin0 = %u\n",x);
+                   ^
+../src/helloworld.c:51:19: warning: format '%u' expects argument of type 'unsigned int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+   printf("pin1 = %u\n",x);
+                   ^
+../src/helloworld.c:52:3: warning: implicit declaration of function 'sleep' [-Wimplicit-function-declaration]
+   sleep(20);
+   ^~~~~
+../src/helloworld.c:68:27: warning: format '%u' expects argument of type 'unsigned int', but argument 3 has type 'u32 {aka long unsigned int}' [-Wformat=]
+    printf("register %d : %u \n",i,x);
+                           ^
+../src/helloworld.c:77:31: warning: format '%u' expects argument of type 'unsigned int', but argument 3 has type 'u32 {aka long unsigned int}' [-Wformat=]
+    printf("data changed %d : %u \n",i,x);
+                               ^
+../src/helloworld.c:82:19: warning: format '%u' expects argument of type 'unsigned int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+   printf("pin0 = %u\n",x);
+                   ^
+../src/helloworld.c:84:19: warning: format '%u' expects argument of type 'unsigned int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+   printf("pin1 = %u\n",x);
+                   ^
+../src/helloworld.c:88:32: warning: format '%u' expects argument of type 'unsigned int', but argument 3 has type 'u32 {aka long unsigned int}' [-Wformat=]
+    printf("data original %d : %u \n",i,x);
+                                ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../dma_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: dma_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../dma_test_bsp/ps7_cortexa9_0/lib -o "dma_test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: dma_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size dma_test.elf  |tee "dma_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  81892	   2592	  23376	 107860	  1a554	dma_test.elf
+'Finished building: dma_test.elf.size'
+' '
+03:03:17 **** Incremental Build of configuration Debug for project dma_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+03:04:01 **** Incremental Build of configuration Debug for project dma_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+03:05:10 **** Auto Build of configuration Debug for project dma_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../dma_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'disablecache':
+../src/helloworld.c:24:2: warning: implicit declaration of function 'Xil_DCacheDisable' [-Wimplicit-function-declaration]
+  Xil_DCacheDisable();
+  ^~~~~~~~~~~~~~~~~
+../src/helloworld.c:25:2: warning: implicit declaration of function 'Xil_ICacheDisable' [-Wimplicit-function-declaration]
+  Xil_ICacheDisable();
+  ^~~~~~~~~~~~~~~~~
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:49:19: warning: format '%u' expects argument of type 'unsigned int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+   printf("pin0 = %u\n",x);
+                   ^
+../src/helloworld.c:51:19: warning: format '%u' expects argument of type 'unsigned int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+   printf("pin1 = %u\n",x);
+                   ^
+../src/helloworld.c:52:3: warning: implicit declaration of function 'sleep' [-Wimplicit-function-declaration]
+   sleep(20);
+   ^~~~~
+../src/helloworld.c:68:27: warning: format '%u' expects argument of type 'unsigned int', but argument 3 has type 'u32 {aka long unsigned int}' [-Wformat=]
+    printf("register %d : %u \n",i,x);
+                           ^
+../src/helloworld.c:77:31: warning: format '%u' expects argument of type 'unsigned int', but argument 3 has type 'u32 {aka long unsigned int}' [-Wformat=]
+    printf("data changed %d : %u \n",i,x);
+                               ^
+../src/helloworld.c:82:19: warning: format '%u' expects argument of type 'unsigned int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+   printf("pin0 = %u\n",x);
+                   ^
+../src/helloworld.c:84:19: warning: format '%u' expects argument of type 'unsigned int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+   printf("pin1 = %u\n",x);
+                   ^
+../src/helloworld.c:88:32: warning: format '%u' expects argument of type 'unsigned int', but argument 3 has type 'u32 {aka long unsigned int}' [-Wformat=]
+    printf("data original %d : %u \n",i,x);
+                                ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: dma_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../dma_test_bsp/ps7_cortexa9_0/lib -o "dma_test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: dma_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size dma_test.elf  |tee "dma_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  81892	   2592	  23376	 107860	  1a554	dma_test.elf
+'Finished building: dma_test.elf.size'
+' '
+03:05:15 **** Incremental Build of configuration Debug for project dma_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+03:07:34 **** Auto Build of configuration Debug for project dma_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../dma_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'disablecache':
+../src/helloworld.c:24:2: warning: implicit declaration of function 'Xil_DCacheDisable' [-Wimplicit-function-declaration]
+  Xil_DCacheDisable();
+  ^~~~~~~~~~~~~~~~~
+../src/helloworld.c:25:2: warning: implicit declaration of function 'Xil_ICacheDisable' [-Wimplicit-function-declaration]
+  Xil_ICacheDisable();
+  ^~~~~~~~~~~~~~~~~
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:49:19: warning: format '%u' expects argument of type 'unsigned int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+   printf("pin0 = %u\n",x);
+                   ^
+../src/helloworld.c:51:19: warning: format '%u' expects argument of type 'unsigned int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+   printf("pin1 = %u\n",x);
+                   ^
+../src/helloworld.c:52:3: warning: implicit declaration of function 'sleep' [-Wimplicit-function-declaration]
+   sleep(20);
+   ^~~~~
+../src/helloworld.c:68:27: warning: format '%u' expects argument of type 'unsigned int', but argument 3 has type 'u32 {aka long unsigned int}' [-Wformat=]
+    printf("register %d : %u \n",i,x);
+                           ^
+../src/helloworld.c:77:31: warning: format '%u' expects argument of type 'unsigned int', but argument 3 has type 'u32 {aka long unsigned int}' [-Wformat=]
+    printf("data changed %d : %u \n",i,x);
+                               ^
+../src/helloworld.c:82:19: warning: format '%u' expects argument of type 'unsigned int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+   printf("pin0 = %u\n",x);
+                   ^
+../src/helloworld.c:84:19: warning: format '%u' expects argument of type 'unsigned int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+   printf("pin1 = %u\n",x);
+                   ^
+../src/helloworld.c:88:32: warning: format '%u' expects argument of type 'unsigned int', but argument 3 has type 'u32 {aka long unsigned int}' [-Wformat=]
+    printf("data original %d : %u \n",i,x);
+                                ^
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: dma_test.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../dma_test_bsp/ps7_cortexa9_0/lib -o "dma_test.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: dma_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size dma_test.elf  |tee "dma_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  81892	   2592	  23376	 107860	  1a554	dma_test.elf
+'Finished building: dma_test.elf.size'
+' '
+03:07:38 **** Incremental Build of configuration Debug for project dma_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.

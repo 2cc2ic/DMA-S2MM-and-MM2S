@@ -142,7 +142,7 @@ output wire m00_axi_txn_done;
     .REG_DATA_VALUE_0('H00000000),
     .REG_DATA_VALUE_1('H00000000),
     .REG_DATA_VALUE_2('H44A00000),
-    .REG_DATA_VALUE_3('HFF000060)
+    .REG_DATA_VALUE_3('HFF00006F)
   ) inst (
     .m00_axi_awaddr(m00_axi_awaddr),
     .m00_axi_awprot(m00_axi_awprot),

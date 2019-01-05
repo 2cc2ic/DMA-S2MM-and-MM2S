@@ -1,7 +1,7 @@
 // Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
-// Date        : Fri Jan  4 12:24:54 2019
+// Date        : Sat Jan  5 02:41:24 2019
 // Host        : hubbery running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode synth_stub
 //               D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ip/system_User_DMA_0_0/system_User_DMA_0_0_stub.v

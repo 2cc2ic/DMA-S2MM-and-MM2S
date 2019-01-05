@@ -178,7 +178,7 @@
 
 	  always @(posedge M_AXI_ACLK)
 	  begin
-	    if (M_AXI_ARESETN == 0 || init_txn_pulse == 1'b1)
+	    if (M_AXI_ARESETN == 0 || init_state_signal == 1'b1)
 	      begin
 	        axi_araddr <= 'b0;
 	      end
@@ -466,7 +466,7 @@
 							if(init_txn_pulse)
 								begin
 									init_txn_pulse <= 0;
-									state_ctrl <= 1;
+									state_ctrl <= state_ctrl + 1;
 								end
 							else
 								begin

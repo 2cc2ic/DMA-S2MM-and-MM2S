@@ -2,12 +2,13 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="43C0" key="selection"/>
+		<item value="&#x09;&#x09;XGpio_axi_WriteReg(XPAR_GPIO_LITE_ML_0,0,DDR_BASEARDDR+2048);" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="&#x09;&#x09;XGpio_axi_WriteReg(XPAR_GPIO_LITE_ML_0,0,DDR_BASEARDDR+2048);"/>
 			<item value="43C0"/>
 			<item value="XPAR_GPIO_LITE"/>
 			<item value="XPAR_GPIO_LITE_ML_0_BASEADDR"/>

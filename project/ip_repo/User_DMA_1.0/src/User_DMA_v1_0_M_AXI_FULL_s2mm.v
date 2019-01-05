@@ -196,7 +196,7 @@
 
 	  always @(posedge M_AXI_ACLK)
 	  begin
-	    if (M_AXI_ARESETN == 0 || init_txn_pulse == 1'b1)
+	    if (M_AXI_ARESETN == 0 || init_state_signal == 1'b1)
 	      begin
 	        axi_awaddr <= 'b0;
 	      end
@@ -240,7 +240,7 @@
 	      begin
 	        axi_wlast <= 1'b0;
 	      end
-	    else if (((write_index == burst_len-2 && write_index >= 2) && wnext) || (write_index == 1 ))
+	    else if (((write_index == burst_len-2 && burst_len >= 2) && wnext) || (burst_len == 1 ))
 	      begin
 	        axi_wlast <= 1'b1;
 	      end
@@ -497,7 +497,7 @@
 									if(init_txn_pulse)
 										begin
 											init_txn_pulse <= 0;
-											state_ctrl <= 1;
+											state_ctrl <= state_ctrl + 1;
 										end
 									else
 										begin

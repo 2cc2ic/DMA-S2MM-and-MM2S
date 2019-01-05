@@ -140,7 +140,7 @@ output wire m00_axi_txn_done;
     .C_M00_AXI_TRANSACTIONS_NUM(4),  // Transaction number is the number of write 
     // and read transactions the master will perform as a part of this example memory test.
     .REG_DATA_VALUE_0('H44A01000),
-    .REG_DATA_VALUE_1('HFF000060),
+    .REG_DATA_VALUE_1('HFF00006F),
     .REG_DATA_VALUE_2('H00000000),
     .REG_DATA_VALUE_3('H00000000)
   ) inst (

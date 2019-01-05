@@ -2038,3 +2038,975 @@ con
 14:07:05 INFO  : Launch script is exported to file 'D:\git\DMA-S2MM-and-MM2S-\project\DMA_test\DMA_test.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_dma_test.elf_on_local.tcl'
 14:38:38 INFO  : Disconnected from the channel tcfchan#9.
 14:38:46 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+00:49:12 INFO  : Registering command handlers for SDK TCF services
+00:49:13 INFO  : Launching XSCT server: xsct.bat -interactive D:\git\DMA-S2MM-and-MM2S-\project\DMA_test\DMA_test.sdk\temp_xsdb_launch_script.tcl
+00:49:19 INFO  : XSCT server has started successfully.
+00:49:19 INFO  : Successfully done setting XSCT server connection channel  
+00:49:19 INFO  : Successfully done setting SDK workspace  
+00:49:19 INFO  : Processing command line option -hwspec D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.sdk/system_wrapper.hdf.
+00:49:20 INFO  : Checking for hwspec changes in the project system_wrapper_hw_platform_0.
+00:49:24 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1546620115398,  Project:1546577657686
+00:49:24 INFO  : The hardware specification for project 'system_wrapper_hw_platform_0' is different from D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.sdk/system_wrapper.hdf.
+00:49:24 INFO  : Copied contents of D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.sdk/system_wrapper.hdf into \system_wrapper_hw_platform_0\system.hdf.
+00:50:20 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+00:50:26 INFO  : 
+00:50:29 INFO  : 
+00:50:30 INFO  : Updating hardware inferred compiler options for dma_test.
+00:50:30 INFO  : Updating hardware inferred compiler options for hello.
+00:50:31 INFO  : Clearing existing target manager status.
+00:50:31 WARN  : Given IPC port value is invalid. Using default port 2350
+00:50:31 WARN  : Given XMD timeout value is invalid. Using default value of 50000
+00:50:35 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+00:56:22 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:56:32 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+00:56:48 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:56:57 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+00:57:19 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:57:28 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+00:57:58 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+00:58:07 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+00:59:08 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+00:59:31 INFO  : Registering command handlers for SDK TCF services
+00:59:31 INFO  : Launching XSCT server: xsct.bat -interactive D:\git\DMA-S2MM-and-MM2S-\project\DMA_test\DMA_test.sdk\temp_xsdb_launch_script.tcl
+00:59:36 INFO  : XSCT server has started successfully.
+00:59:37 INFO  : Successfully done setting XSCT server connection channel  
+00:59:37 INFO  : Successfully done setting SDK workspace  
+00:59:37 INFO  : Processing command line option -hwspec D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.sdk/system_wrapper.hdf.
+00:59:37 INFO  : Checking for hwspec changes in the project system_wrapper_hw_platform_0.
+01:03:23 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:03:33 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+01:03:54 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:03:55 INFO  : Jtag cable 'Digilent JTAG-HS1 210249854657' is selected.
+01:03:55 INFO  : 'jtag frequency' command is executed.
+01:03:55 INFO  : Sourcing of 'D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+01:03:55 INFO  : Context for 'APU' is selected.
+01:03:55 INFO  : System reset is completed.
+01:03:58 INFO  : 'after 3000' command is executed.
+01:03:58 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249854657" && level==0} -index 1' command is executed.
+01:04:00 INFO  : FPGA configured successfully with bitstream "D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+01:04:00 INFO  : Context for 'APU' is selected.
+01:04:00 INFO  : Hardware design information is loaded from 'D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.sdk/system_wrapper_hw_platform_0/system.hdf'.
+01:04:00 INFO  : 'configparams force-mem-access 1' command is executed.
+01:04:00 INFO  : Context for 'APU' is selected.
+01:04:01 INFO  : 'ps7_init' command is executed.
+01:04:01 INFO  : 'ps7_post_config' command is executed.
+01:04:01 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:04:01 INFO  : The application 'D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.sdk/dma_test/Debug/dma_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+01:04:01 INFO  : 'configparams force-mem-access 0' command is executed.
+01:04:01 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854657"} -index 0
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249854657" && level==0} -index 1
+fpga -file D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.sdk/system_wrapper_hw_platform_0/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854657"} -index 0
+loadhw -hw D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.sdk/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854657"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854657"} -index 0
+dow D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.sdk/dma_test/Debug/dma_test.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+01:04:01 INFO  : Memory regions updated for context APU
+01:04:02 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:04:02 INFO  : 'con' command is executed.
+01:04:02 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854657"} -index 0
+con
+----------------End of Script----------------
+
+01:04:02 INFO  : Launch script is exported to file 'D:\git\DMA-S2MM-and-MM2S-\project\DMA_test\DMA_test.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_dma_test.elf_on_local.tcl'
+01:04:43 INFO  : Disconnected from the channel tcfchan#1.
+01:04:44 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:04:44 INFO  : Jtag cable 'Digilent JTAG-HS1 210249854657' is selected.
+01:04:44 INFO  : 'jtag frequency' command is executed.
+01:04:44 INFO  : Sourcing of 'D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+01:04:44 INFO  : Context for 'APU' is selected.
+01:04:45 INFO  : System reset is completed.
+01:04:48 INFO  : 'after 3000' command is executed.
+01:04:48 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249854657" && level==0} -index 1' command is executed.
+01:04:49 INFO  : FPGA configured successfully with bitstream "D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+01:04:50 INFO  : Context for 'APU' is selected.
+01:04:52 INFO  : Hardware design information is loaded from 'D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.sdk/system_wrapper_hw_platform_0/system.hdf'.
+01:04:52 INFO  : 'configparams force-mem-access 1' command is executed.
+01:04:52 INFO  : Context for 'APU' is selected.
+01:04:52 INFO  : 'ps7_init' command is executed.
+01:04:52 INFO  : 'ps7_post_config' command is executed.
+01:04:52 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:04:53 INFO  : The application 'D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.sdk/dma_test/Debug/dma_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+01:04:53 INFO  : 'configparams force-mem-access 0' command is executed.
+01:04:53 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854657"} -index 0
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249854657" && level==0} -index 1
+fpga -file D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.sdk/system_wrapper_hw_platform_0/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854657"} -index 0
+loadhw -hw D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.sdk/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854657"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854657"} -index 0
+dow D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.sdk/dma_test/Debug/dma_test.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+01:04:53 INFO  : Memory regions updated for context APU
+01:04:53 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:04:53 INFO  : 'con' command is executed.
+01:04:53 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854657"} -index 0
+con
+----------------End of Script----------------
+
+01:04:53 INFO  : Launch script is exported to file 'D:\git\DMA-S2MM-and-MM2S-\project\DMA_test\DMA_test.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_dma_test.elf_on_local.tcl'
+01:05:26 INFO  : Disconnected from the channel tcfchan#2.
+01:05:27 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:05:27 INFO  : Jtag cable 'Digilent JTAG-HS1 210249854657' is selected.
+01:05:27 INFO  : 'jtag frequency' command is executed.
+01:05:27 INFO  : Sourcing of 'D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+01:05:27 INFO  : Context for 'APU' is selected.
+01:05:27 INFO  : System reset is completed.
+01:05:30 INFO  : 'after 3000' command is executed.
+01:05:30 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249854657" && level==0} -index 1' command is executed.
+01:05:32 INFO  : FPGA configured successfully with bitstream "D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+01:05:32 INFO  : Context for 'APU' is selected.
+01:05:34 INFO  : Hardware design information is loaded from 'D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.sdk/system_wrapper_hw_platform_0/system.hdf'.
+01:05:34 INFO  : 'configparams force-mem-access 1' command is executed.
+01:05:34 INFO  : Context for 'APU' is selected.
+01:05:35 INFO  : 'ps7_init' command is executed.
+01:05:35 INFO  : 'ps7_post_config' command is executed.
+01:05:35 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:05:35 INFO  : The application 'D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.sdk/dma_test/Debug/dma_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+01:05:35 INFO  : 'configparams force-mem-access 0' command is executed.
+01:05:35 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854657"} -index 0
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249854657" && level==0} -index 1
+fpga -file D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.sdk/system_wrapper_hw_platform_0/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854657"} -index 0
+loadhw -hw D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.sdk/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854657"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854657"} -index 0
+dow D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.sdk/dma_test/Debug/dma_test.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+01:05:35 INFO  : Memory regions updated for context APU
+01:05:35 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:05:36 INFO  : 'con' command is executed.
+01:05:36 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854657"} -index 0
+con
+----------------End of Script----------------
+
+01:05:36 INFO  : Launch script is exported to file 'D:\git\DMA-S2MM-and-MM2S-\project\DMA_test\DMA_test.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_dma_test.elf_on_local.tcl'
+01:12:52 INFO  : Disconnected from the channel tcfchan#3.
+01:12:53 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:12:53 INFO  : Jtag cable 'Digilent JTAG-HS1 210249854657' is selected.
+01:12:53 INFO  : 'jtag frequency' command is executed.
+01:12:53 INFO  : Sourcing of 'D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+01:12:53 INFO  : Context for 'APU' is selected.
+01:12:53 INFO  : System reset is completed.
+01:12:56 INFO  : 'after 3000' command is executed.
+01:12:56 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249854657" && level==0} -index 1' command is executed.
+01:12:58 INFO  : FPGA configured successfully with bitstream "D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+01:12:58 INFO  : Context for 'APU' is selected.
+01:13:00 INFO  : Hardware design information is loaded from 'D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.sdk/system_wrapper_hw_platform_0/system.hdf'.
+01:13:00 INFO  : 'configparams force-mem-access 1' command is executed.
+01:13:00 INFO  : Context for 'APU' is selected.
+01:13:01 INFO  : 'ps7_init' command is executed.
+01:13:01 INFO  : 'ps7_post_config' command is executed.
+01:13:01 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:13:01 INFO  : The application 'D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.sdk/dma_test/Debug/dma_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+01:13:01 INFO  : 'configparams force-mem-access 0' command is executed.
+01:13:01 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854657"} -index 0
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249854657" && level==0} -index 1
+fpga -file D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.sdk/system_wrapper_hw_platform_0/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854657"} -index 0
+loadhw -hw D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.sdk/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854657"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854657"} -index 0
+dow D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.sdk/dma_test/Debug/dma_test.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+01:13:01 INFO  : Memory regions updated for context APU
+01:13:01 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:13:01 INFO  : 'con' command is executed.
+01:13:01 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854657"} -index 0
+con
+----------------End of Script----------------
+
+01:13:01 INFO  : Launch script is exported to file 'D:\git\DMA-S2MM-and-MM2S-\project\DMA_test\DMA_test.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_dma_test.elf_on_local.tcl'
+01:16:44 INFO  : Disconnected from the channel tcfchan#4.
+01:16:45 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:16:46 INFO  : Jtag cable 'Digilent JTAG-HS1 210249854657' is selected.
+01:16:46 INFO  : 'jtag frequency' command is executed.
+01:16:46 INFO  : Sourcing of 'D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+01:16:46 INFO  : Context for 'APU' is selected.
+01:16:46 INFO  : System reset is completed.
+01:16:49 INFO  : 'after 3000' command is executed.
+01:16:49 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249854657" && level==0} -index 1' command is executed.
+01:16:51 INFO  : FPGA configured successfully with bitstream "D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+01:16:51 INFO  : Context for 'APU' is selected.
+01:16:53 INFO  : Hardware design information is loaded from 'D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.sdk/system_wrapper_hw_platform_0/system.hdf'.
+01:16:53 INFO  : 'configparams force-mem-access 1' command is executed.
+01:16:53 INFO  : Context for 'APU' is selected.
+01:16:53 INFO  : 'ps7_init' command is executed.
+01:16:53 INFO  : 'ps7_post_config' command is executed.
+01:16:53 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:16:53 INFO  : The application 'D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.sdk/dma_test/Debug/dma_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+01:16:53 INFO  : 'configparams force-mem-access 0' command is executed.
+01:16:53 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854657"} -index 0
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249854657" && level==0} -index 1
+fpga -file D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.sdk/system_wrapper_hw_platform_0/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854657"} -index 0
+loadhw -hw D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.sdk/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854657"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854657"} -index 0
+dow D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.sdk/dma_test/Debug/dma_test.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+01:16:53 INFO  : Memory regions updated for context APU
+01:16:54 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:16:54 INFO  : 'con' command is executed.
+01:16:54 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854657"} -index 0
+con
+----------------End of Script----------------
+
+01:16:54 INFO  : Launch script is exported to file 'D:\git\DMA-S2MM-and-MM2S-\project\DMA_test\DMA_test.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_dma_test.elf_on_local.tcl'
+01:20:00 INFO  : Disconnected from the channel tcfchan#5.
+01:20:01 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:20:01 INFO  : Jtag cable 'Digilent JTAG-HS1 210249854657' is selected.
+01:20:01 INFO  : 'jtag frequency' command is executed.
+01:20:01 INFO  : Sourcing of 'D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+01:20:01 INFO  : Context for 'APU' is selected.
+01:20:01 INFO  : System reset is completed.
+01:20:04 INFO  : 'after 3000' command is executed.
+01:20:04 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249854657" && level==0} -index 1' command is executed.
+01:20:06 INFO  : FPGA configured successfully with bitstream "D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+01:20:06 INFO  : Context for 'APU' is selected.
+01:20:08 INFO  : Hardware design information is loaded from 'D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.sdk/system_wrapper_hw_platform_0/system.hdf'.
+01:20:08 INFO  : 'configparams force-mem-access 1' command is executed.
+01:20:08 INFO  : Context for 'APU' is selected.
+01:20:08 INFO  : 'ps7_init' command is executed.
+01:20:08 INFO  : 'ps7_post_config' command is executed.
+01:20:09 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:20:09 INFO  : The application 'D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.sdk/dma_test/Debug/dma_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+01:20:09 INFO  : 'configparams force-mem-access 0' command is executed.
+01:20:09 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854657"} -index 0
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249854657" && level==0} -index 1
+fpga -file D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.sdk/system_wrapper_hw_platform_0/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854657"} -index 0
+loadhw -hw D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.sdk/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854657"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854657"} -index 0
+dow D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.sdk/dma_test/Debug/dma_test.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+01:20:09 INFO  : Memory regions updated for context APU
+01:20:09 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:20:09 INFO  : 'con' command is executed.
+01:20:09 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854657"} -index 0
+con
+----------------End of Script----------------
+
+01:20:09 INFO  : Launch script is exported to file 'D:\git\DMA-S2MM-and-MM2S-\project\DMA_test\DMA_test.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_dma_test.elf_on_local.tcl'
+01:23:04 INFO  : Disconnected from the channel tcfchan#6.
+01:23:05 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:23:06 INFO  : Jtag cable 'Digilent JTAG-HS1 210249854657' is selected.
+01:23:06 INFO  : 'jtag frequency' command is executed.
+01:23:06 INFO  : Sourcing of 'D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+01:23:06 INFO  : Context for 'APU' is selected.
+01:23:06 INFO  : System reset is completed.
+01:23:09 INFO  : 'after 3000' command is executed.
+01:23:09 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249854657" && level==0} -index 1' command is executed.
+01:23:11 INFO  : FPGA configured successfully with bitstream "D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+01:23:11 INFO  : Context for 'APU' is selected.
+01:23:12 INFO  : Hardware design information is loaded from 'D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.sdk/system_wrapper_hw_platform_0/system.hdf'.
+01:23:12 INFO  : 'configparams force-mem-access 1' command is executed.
+01:23:12 INFO  : Context for 'APU' is selected.
+01:23:13 INFO  : 'ps7_init' command is executed.
+01:23:13 INFO  : 'ps7_post_config' command is executed.
+01:23:13 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:23:13 INFO  : The application 'D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.sdk/dma_test/Debug/dma_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+01:23:13 INFO  : 'configparams force-mem-access 0' command is executed.
+01:23:13 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854657"} -index 0
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249854657" && level==0} -index 1
+fpga -file D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.sdk/system_wrapper_hw_platform_0/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854657"} -index 0
+loadhw -hw D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.sdk/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854657"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854657"} -index 0
+dow D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.sdk/dma_test/Debug/dma_test.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+01:23:13 INFO  : Memory regions updated for context APU
+01:23:13 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:23:13 INFO  : 'con' command is executed.
+01:23:13 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854657"} -index 0
+con
+----------------End of Script----------------
+
+01:23:13 INFO  : Launch script is exported to file 'D:\git\DMA-S2MM-and-MM2S-\project\DMA_test\DMA_test.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_dma_test.elf_on_local.tcl'
+01:44:24 INFO  : Disconnected from the channel tcfchan#7.
+01:44:25 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:44:25 INFO  : Jtag cable 'Digilent JTAG-HS1 210249854657' is selected.
+01:44:25 INFO  : 'jtag frequency' command is executed.
+01:44:25 INFO  : Sourcing of 'D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+01:44:25 INFO  : Context for 'APU' is selected.
+01:44:26 INFO  : System reset is completed.
+01:44:29 INFO  : 'after 3000' command is executed.
+01:44:29 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249854657" && level==0} -index 1' command is executed.
+01:44:30 INFO  : FPGA configured successfully with bitstream "D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+01:44:30 INFO  : Context for 'APU' is selected.
+01:44:32 INFO  : Hardware design information is loaded from 'D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.sdk/system_wrapper_hw_platform_0/system.hdf'.
+01:44:32 INFO  : 'configparams force-mem-access 1' command is executed.
+01:44:32 INFO  : Context for 'APU' is selected.
+01:44:33 INFO  : 'ps7_init' command is executed.
+01:44:33 INFO  : 'ps7_post_config' command is executed.
+01:44:33 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:44:33 INFO  : The application 'D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.sdk/dma_test/Debug/dma_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+01:44:33 INFO  : 'configparams force-mem-access 0' command is executed.
+01:44:33 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854657"} -index 0
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249854657" && level==0} -index 1
+fpga -file D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.sdk/system_wrapper_hw_platform_0/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854657"} -index 0
+loadhw -hw D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.sdk/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854657"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854657"} -index 0
+dow D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.sdk/dma_test/Debug/dma_test.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+01:44:33 INFO  : Memory regions updated for context APU
+01:44:34 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:44:34 INFO  : 'con' command is executed.
+01:44:34 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854657"} -index 0
+con
+----------------End of Script----------------
+
+01:44:34 INFO  : Launch script is exported to file 'D:\git\DMA-S2MM-and-MM2S-\project\DMA_test\DMA_test.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_dma_test.elf_on_local.tcl'
+01:46:49 INFO  : Disconnected from the channel tcfchan#8.
+01:46:50 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:46:51 INFO  : Jtag cable 'Digilent JTAG-HS1 210249854657' is selected.
+01:46:51 INFO  : 'jtag frequency' command is executed.
+01:46:51 INFO  : Sourcing of 'D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+01:46:51 INFO  : Context for 'APU' is selected.
+01:46:51 INFO  : System reset is completed.
+01:46:54 INFO  : 'after 3000' command is executed.
+01:46:54 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249854657" && level==0} -index 1' command is executed.
+01:46:56 INFO  : FPGA configured successfully with bitstream "D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+01:46:56 INFO  : Context for 'APU' is selected.
+01:46:58 INFO  : Hardware design information is loaded from 'D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.sdk/system_wrapper_hw_platform_0/system.hdf'.
+01:46:58 INFO  : 'configparams force-mem-access 1' command is executed.
+01:46:58 INFO  : Context for 'APU' is selected.
+01:46:58 INFO  : 'ps7_init' command is executed.
+01:46:58 INFO  : 'ps7_post_config' command is executed.
+01:46:58 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:46:59 INFO  : The application 'D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.sdk/dma_test/Debug/dma_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+01:46:59 INFO  : 'configparams force-mem-access 0' command is executed.
+01:46:59 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854657"} -index 0
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249854657" && level==0} -index 1
+fpga -file D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.sdk/system_wrapper_hw_platform_0/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854657"} -index 0
+loadhw -hw D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.sdk/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854657"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854657"} -index 0
+dow D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.sdk/dma_test/Debug/dma_test.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+01:46:59 INFO  : Memory regions updated for context APU
+01:46:59 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:46:59 INFO  : 'con' command is executed.
+01:46:59 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854657"} -index 0
+con
+----------------End of Script----------------
+
+01:46:59 INFO  : Launch script is exported to file 'D:\git\DMA-S2MM-and-MM2S-\project\DMA_test\DMA_test.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_dma_test.elf_on_local.tcl'
+01:49:16 INFO  : Disconnected from the channel tcfchan#9.
+01:49:17 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:49:17 INFO  : Jtag cable 'Digilent JTAG-HS1 210249854657' is selected.
+01:49:17 INFO  : 'jtag frequency' command is executed.
+01:49:17 INFO  : Sourcing of 'D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+01:49:18 INFO  : Context for 'APU' is selected.
+01:49:18 INFO  : System reset is completed.
+01:49:21 INFO  : 'after 3000' command is executed.
+01:49:21 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249854657" && level==0} -index 1' command is executed.
+01:49:23 INFO  : FPGA configured successfully with bitstream "D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+01:49:23 INFO  : Context for 'APU' is selected.
+01:49:25 INFO  : Hardware design information is loaded from 'D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.sdk/system_wrapper_hw_platform_0/system.hdf'.
+01:49:25 INFO  : 'configparams force-mem-access 1' command is executed.
+01:49:25 INFO  : Context for 'APU' is selected.
+01:49:25 INFO  : 'ps7_init' command is executed.
+01:49:25 INFO  : 'ps7_post_config' command is executed.
+01:49:25 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:49:26 INFO  : The application 'D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.sdk/dma_test/Debug/dma_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+01:49:26 INFO  : 'configparams force-mem-access 0' command is executed.
+01:49:26 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854657"} -index 0
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249854657" && level==0} -index 1
+fpga -file D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.sdk/system_wrapper_hw_platform_0/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854657"} -index 0
+loadhw -hw D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.sdk/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854657"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854657"} -index 0
+dow D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.sdk/dma_test/Debug/dma_test.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+01:49:26 INFO  : Memory regions updated for context APU
+01:49:26 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:49:26 INFO  : 'con' command is executed.
+01:49:26 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854657"} -index 0
+con
+----------------End of Script----------------
+
+01:49:26 INFO  : Launch script is exported to file 'D:\git\DMA-S2MM-and-MM2S-\project\DMA_test\DMA_test.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_dma_test.elf_on_local.tcl'
+01:50:55 INFO  : Disconnected from the channel tcfchan#10.
+01:50:56 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:50:56 INFO  : Jtag cable 'Digilent JTAG-HS1 210249854657' is selected.
+01:50:56 INFO  : 'jtag frequency' command is executed.
+01:50:56 INFO  : Sourcing of 'D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+01:50:56 INFO  : Context for 'APU' is selected.
+01:50:57 INFO  : System reset is completed.
+01:51:00 INFO  : 'after 3000' command is executed.
+01:51:00 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249854657" && level==0} -index 1' command is executed.
+01:51:01 INFO  : FPGA configured successfully with bitstream "D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+01:51:01 INFO  : Context for 'APU' is selected.
+01:51:03 INFO  : Hardware design information is loaded from 'D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.sdk/system_wrapper_hw_platform_0/system.hdf'.
+01:51:03 INFO  : 'configparams force-mem-access 1' command is executed.
+01:51:03 INFO  : Context for 'APU' is selected.
+01:51:04 INFO  : 'ps7_init' command is executed.
+01:51:04 INFO  : 'ps7_post_config' command is executed.
+01:51:04 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:51:04 INFO  : The application 'D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.sdk/dma_test/Debug/dma_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+01:51:04 INFO  : 'configparams force-mem-access 0' command is executed.
+01:51:04 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854657"} -index 0
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249854657" && level==0} -index 1
+fpga -file D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.sdk/system_wrapper_hw_platform_0/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854657"} -index 0
+loadhw -hw D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.sdk/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854657"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854657"} -index 0
+dow D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.sdk/dma_test/Debug/dma_test.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+01:51:04 INFO  : Memory regions updated for context APU
+01:51:04 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:51:04 INFO  : 'con' command is executed.
+01:51:04 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854657"} -index 0
+con
+----------------End of Script----------------
+
+01:51:04 INFO  : Launch script is exported to file 'D:\git\DMA-S2MM-and-MM2S-\project\DMA_test\DMA_test.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_dma_test.elf_on_local.tcl'
+01:52:20 INFO  : Disconnected from the channel tcfchan#11.
+01:52:21 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:52:21 INFO  : Jtag cable 'Digilent JTAG-HS1 210249854657' is selected.
+01:52:21 INFO  : 'jtag frequency' command is executed.
+01:52:21 INFO  : Sourcing of 'D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+01:52:21 INFO  : Context for 'APU' is selected.
+01:52:21 INFO  : System reset is completed.
+01:52:24 INFO  : 'after 3000' command is executed.
+01:52:24 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249854657" && level==0} -index 1' command is executed.
+01:52:26 INFO  : FPGA configured successfully with bitstream "D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+01:52:26 INFO  : Context for 'APU' is selected.
+01:52:28 INFO  : Hardware design information is loaded from 'D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.sdk/system_wrapper_hw_platform_0/system.hdf'.
+01:52:28 INFO  : 'configparams force-mem-access 1' command is executed.
+01:52:28 INFO  : Context for 'APU' is selected.
+01:52:28 INFO  : 'ps7_init' command is executed.
+01:52:28 INFO  : 'ps7_post_config' command is executed.
+01:52:28 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:52:29 INFO  : The application 'D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.sdk/dma_test/Debug/dma_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+01:52:29 INFO  : 'configparams force-mem-access 0' command is executed.
+01:52:29 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854657"} -index 0
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249854657" && level==0} -index 1
+fpga -file D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.sdk/system_wrapper_hw_platform_0/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854657"} -index 0
+loadhw -hw D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.sdk/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854657"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854657"} -index 0
+dow D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.sdk/dma_test/Debug/dma_test.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+01:52:29 INFO  : Memory regions updated for context APU
+01:52:29 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:52:29 INFO  : 'con' command is executed.
+01:52:29 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854657"} -index 0
+con
+----------------End of Script----------------
+
+01:52:29 INFO  : Launch script is exported to file 'D:\git\DMA-S2MM-and-MM2S-\project\DMA_test\DMA_test.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_dma_test.elf_on_local.tcl'
+01:53:02 INFO  : Disconnected from the channel tcfchan#12.
+01:53:03 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+01:53:03 INFO  : Jtag cable 'Digilent JTAG-HS1 210249854657' is selected.
+01:53:03 INFO  : 'jtag frequency' command is executed.
+01:53:03 INFO  : Sourcing of 'D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+01:53:03 INFO  : Context for 'APU' is selected.
+01:53:04 INFO  : System reset is completed.
+01:53:07 INFO  : 'after 3000' command is executed.
+01:53:07 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249854657" && level==0} -index 1' command is executed.
+01:53:08 INFO  : FPGA configured successfully with bitstream "D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+01:53:09 INFO  : Context for 'APU' is selected.
+01:53:10 INFO  : Hardware design information is loaded from 'D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.sdk/system_wrapper_hw_platform_0/system.hdf'.
+01:53:10 INFO  : 'configparams force-mem-access 1' command is executed.
+01:53:10 INFO  : Context for 'APU' is selected.
+01:53:11 INFO  : 'ps7_init' command is executed.
+01:53:11 INFO  : 'ps7_post_config' command is executed.
+01:53:11 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:53:11 INFO  : The application 'D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.sdk/dma_test/Debug/dma_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+01:53:11 INFO  : 'configparams force-mem-access 0' command is executed.
+01:53:11 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854657"} -index 0
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249854657" && level==0} -index 1
+fpga -file D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.sdk/system_wrapper_hw_platform_0/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854657"} -index 0
+loadhw -hw D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.sdk/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854657"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854657"} -index 0
+dow D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.sdk/dma_test/Debug/dma_test.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+01:53:11 INFO  : Memory regions updated for context APU
+01:53:11 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+01:53:11 INFO  : 'con' command is executed.
+01:53:11 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854657"} -index 0
+con
+----------------End of Script----------------
+
+01:53:11 INFO  : Launch script is exported to file 'D:\git\DMA-S2MM-and-MM2S-\project\DMA_test\DMA_test.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_dma_test.elf_on_local.tcl'
+02:03:27 INFO  : Disconnected from the channel tcfchan#13.
+02:03:28 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+02:03:28 INFO  : Jtag cable 'Digilent JTAG-HS1 210249854657' is selected.
+02:03:28 INFO  : 'jtag frequency' command is executed.
+02:03:28 INFO  : Sourcing of 'D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+02:03:28 INFO  : Context for 'APU' is selected.
+02:03:28 INFO  : System reset is completed.
+02:03:31 INFO  : 'after 3000' command is executed.
+02:03:31 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249854657" && level==0} -index 1' command is executed.
+02:03:33 INFO  : FPGA configured successfully with bitstream "D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+02:03:33 INFO  : Context for 'APU' is selected.
+02:03:35 INFO  : Hardware design information is loaded from 'D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.sdk/system_wrapper_hw_platform_0/system.hdf'.
+02:03:35 INFO  : 'configparams force-mem-access 1' command is executed.
+02:03:35 INFO  : Context for 'APU' is selected.
+02:03:36 INFO  : 'ps7_init' command is executed.
+02:03:36 INFO  : 'ps7_post_config' command is executed.
+02:03:36 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+02:03:36 INFO  : The application 'D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.sdk/dma_test/Debug/dma_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+02:03:36 INFO  : 'configparams force-mem-access 0' command is executed.
+02:03:36 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854657"} -index 0
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249854657" && level==0} -index 1
+fpga -file D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.sdk/system_wrapper_hw_platform_0/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854657"} -index 0
+loadhw -hw D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.sdk/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854657"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854657"} -index 0
+dow D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.sdk/dma_test/Debug/dma_test.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+02:03:36 INFO  : Memory regions updated for context APU
+02:03:37 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+02:03:37 INFO  : 'con' command is executed.
+02:03:37 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854657"} -index 0
+con
+----------------End of Script----------------
+
+02:03:37 INFO  : Launch script is exported to file 'D:\git\DMA-S2MM-and-MM2S-\project\DMA_test\DMA_test.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_dma_test.elf_on_local.tcl'
+02:08:56 INFO  : Disconnected from the channel tcfchan#14.
+02:08:57 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+02:08:58 INFO  : Jtag cable 'Digilent JTAG-HS1 210249854657' is selected.
+02:08:58 INFO  : 'jtag frequency' command is executed.
+02:08:58 INFO  : Sourcing of 'D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+02:08:58 INFO  : Context for 'APU' is selected.
+02:08:58 INFO  : System reset is completed.
+02:09:01 INFO  : 'after 3000' command is executed.
+02:09:01 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249854657" && level==0} -index 1' command is executed.
+02:09:03 INFO  : FPGA configured successfully with bitstream "D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+02:09:03 INFO  : Context for 'APU' is selected.
+02:09:04 INFO  : Hardware design information is loaded from 'D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.sdk/system_wrapper_hw_platform_0/system.hdf'.
+02:09:04 INFO  : 'configparams force-mem-access 1' command is executed.
+02:09:05 INFO  : Context for 'APU' is selected.
+02:09:05 INFO  : 'ps7_init' command is executed.
+02:09:05 INFO  : 'ps7_post_config' command is executed.
+02:09:05 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+02:09:05 INFO  : The application 'D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.sdk/dma_test/Debug/dma_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+02:09:05 INFO  : 'configparams force-mem-access 0' command is executed.
+02:09:05 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854657"} -index 0
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249854657" && level==0} -index 1
+fpga -file D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.sdk/system_wrapper_hw_platform_0/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854657"} -index 0
+loadhw -hw D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.sdk/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854657"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854657"} -index 0
+dow D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.sdk/dma_test/Debug/dma_test.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+02:09:06 INFO  : Memory regions updated for context APU
+02:09:06 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+02:09:06 INFO  : 'con' command is executed.
+02:09:06 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854657"} -index 0
+con
+----------------End of Script----------------
+
+02:09:06 INFO  : Launch script is exported to file 'D:\git\DMA-S2MM-and-MM2S-\project\DMA_test\DMA_test.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_dma_test.elf_on_local.tcl'
+02:28:47 INFO  : Disconnected from the channel tcfchan#15.
+02:54:37 INFO  : Registering command handlers for SDK TCF services
+02:54:39 INFO  : Launching XSCT server: xsct.bat -interactive D:\git\DMA-S2MM-and-MM2S-\project\DMA_test\DMA_test.sdk\temp_xsdb_launch_script.tcl
+02:54:49 INFO  : XSCT server has started successfully.
+02:54:52 INFO  : Successfully done setting XSCT server connection channel  
+02:54:52 INFO  : Successfully done setting SDK workspace  
+02:54:52 INFO  : Processing command line option -hwspec D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.sdk/system_wrapper.hdf.
+02:54:52 INFO  : Checking for hwspec changes in the project system_wrapper_hw_platform_0.
+02:54:58 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1546627723182,  Project:1546620115398
+02:54:58 INFO  : The hardware specification for project 'system_wrapper_hw_platform_0' is different from D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.sdk/system_wrapper.hdf.
+02:54:58 INFO  : Copied contents of D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.sdk/system_wrapper.hdf into \system_wrapper_hw_platform_0\system.hdf.
+02:55:03 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+02:55:11 INFO  : 
+02:55:15 INFO  : 
+02:55:16 INFO  : Updating hardware inferred compiler options for dma_test.
+02:55:17 INFO  : Updating hardware inferred compiler options for hello.
+02:55:17 INFO  : Clearing existing target manager status.
+02:55:17 WARN  : Given IPC port value is invalid. Using default port 2350
+02:55:17 WARN  : Given XMD timeout value is invalid. Using default value of 50000
+02:55:21 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+02:59:14 ERROR : Failed to regenerate sources for BSP project dma_test_bsp
+org.eclipse.core.internal.resources.ResourceException: Problems encountered while deleting resources.
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:795)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:750)
+	at com.xilinx.sdk.sw.ui.handlers.RegenBspSourcesHandler.internalGenerateBsp(RegenBspSourcesHandler.java:170)
+	at com.xilinx.sdk.sw.ui.handlers.RegenBspSourcesHandler.access$2(RegenBspSourcesHandler.java:163)
+	at com.xilinx.sdk.sw.ui.handlers.RegenBspSourcesHandler$1$1.run(RegenBspSourcesHandler.java:131)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2240)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2267)
+	at com.xilinx.sdk.sw.ui.handlers.RegenBspSourcesHandler$1.run(RegenBspSourcesHandler.java:135)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:119)
+Contains: Could not delete '/dma_test_bsp/ps7_cortexa9_0'.
+org.eclipse.core.internal.resources.ResourceException: Problems encountered while deleting resources.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.delete(FileSystemResourceManager.java:370)
+	at org.eclipse.core.internal.resources.ResourceTree.internalDeleteFolder(ResourceTree.java:358)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteFolder(ResourceTree.java:810)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1832)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:782)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:750)
+	at com.xilinx.sdk.sw.ui.handlers.RegenBspSourcesHandler.internalGenerateBsp(RegenBspSourcesHandler.java:170)
+	at com.xilinx.sdk.sw.ui.handlers.RegenBspSourcesHandler.access$2(RegenBspSourcesHandler.java:163)
+	at com.xilinx.sdk.sw.ui.handlers.RegenBspSourcesHandler$1$1.run(RegenBspSourcesHandler.java:131)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2240)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2267)
+	at com.xilinx.sdk.sw.ui.handlers.RegenBspSourcesHandler$1.run(RegenBspSourcesHandler.java:135)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:119)
+Contains: Problems encountered while deleting files.
+Contains: Could not delete: D:\git\DMA-S2MM-and-MM2S-\project\DMA_test\DMA_test.sdk\dma_test_bsp\ps7_cortexa9_0\libsrc\standalone_v6_5.
+java.nio.file.DirectoryNotEmptyException: D:\git\DMA-S2MM-and-MM2S-\project\DMA_test\DMA_test.sdk\dma_test_bsp\ps7_cortexa9_0\libsrc\standalone_v6_5
+	at sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:266)
+	at sun.nio.fs.AbstractFileSystemProvider.deleteIfExists(AbstractFileSystemProvider.java:108)
+	at java.nio.file.Files.deleteIfExists(Files.java:1165)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.internalDelete(LocalFile.java:243)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.internalDelete(LocalFile.java:238)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.internalDelete(LocalFile.java:238)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.delete(LocalFile.java:136)
+	at org.eclipse.core.internal.localstore.DeleteVisitor.delete(DeleteVisitor.java:63)
+	at org.eclipse.core.internal.localstore.DeleteVisitor.visit(DeleteVisitor.java:151)
+	at org.eclipse.core.internal.localstore.UnifiedTree.accept(UnifiedTree.java:111)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.delete(FileSystemResourceManager.java:367)
+	at org.eclipse.core.internal.resources.ResourceTree.internalDeleteFolder(ResourceTree.java:358)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteFolder(ResourceTree.java:810)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1832)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:782)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:750)
+	at com.xilinx.sdk.sw.ui.handlers.RegenBspSourcesHandler.internalGenerateBsp(RegenBspSourcesHandler.java:170)
+	at com.xilinx.sdk.sw.ui.handlers.RegenBspSourcesHandler.access$2(RegenBspSourcesHandler.java:163)
+	at com.xilinx.sdk.sw.ui.handlers.RegenBspSourcesHandler$1$1.run(RegenBspSourcesHandler.java:131)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2240)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2267)
+	at com.xilinx.sdk.sw.ui.handlers.RegenBspSourcesHandler$1.run(RegenBspSourcesHandler.java:135)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:119)
+Contains: Could not delete: D:\git\DMA-S2MM-and-MM2S-\project\DMA_test\DMA_test.sdk\dma_test_bsp\ps7_cortexa9_0\libsrc.
+Contains: Could not delete: D:\git\DMA-S2MM-and-MM2S-\project\DMA_test\DMA_test.sdk\dma_test_bsp\ps7_cortexa9_0.
+03:03:21 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+03:03:22 INFO  : Jtag cable 'Digilent JTAG-HS1 210249854657' is selected.
+03:03:22 INFO  : 'jtag frequency' command is executed.
+03:03:22 INFO  : Sourcing of 'D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+03:03:22 INFO  : Context for 'APU' is selected.
+03:03:22 INFO  : System reset is completed.
+03:03:25 INFO  : 'after 3000' command is executed.
+03:03:25 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249854657" && level==0} -index 1' command is executed.
+03:03:27 INFO  : FPGA configured successfully with bitstream "D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+03:03:27 INFO  : Context for 'APU' is selected.
+03:03:27 INFO  : Hardware design information is loaded from 'D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.sdk/system_wrapper_hw_platform_0/system.hdf'.
+03:03:27 INFO  : 'configparams force-mem-access 1' command is executed.
+03:03:27 INFO  : Context for 'APU' is selected.
+03:03:28 INFO  : 'ps7_init' command is executed.
+03:03:28 INFO  : 'ps7_post_config' command is executed.
+03:03:28 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+03:03:28 INFO  : The application 'D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.sdk/dma_test/Debug/dma_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+03:03:28 INFO  : 'configparams force-mem-access 0' command is executed.
+03:03:28 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854657"} -index 0
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249854657" && level==0} -index 1
+fpga -file D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.sdk/system_wrapper_hw_platform_0/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854657"} -index 0
+loadhw -hw D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.sdk/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854657"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854657"} -index 0
+dow D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.sdk/dma_test/Debug/dma_test.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+03:03:29 INFO  : Memory regions updated for context APU
+03:03:29 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+03:03:29 INFO  : 'con' command is executed.
+03:03:29 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854657"} -index 0
+con
+----------------End of Script----------------
+
+03:03:29 INFO  : Launch script is exported to file 'D:\git\DMA-S2MM-and-MM2S-\project\DMA_test\DMA_test.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_dma_test.elf_on_local.tcl'
+03:05:43 INFO  : Disconnected from the channel tcfchan#1.
+03:05:44 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+03:05:44 INFO  : Jtag cable 'Digilent JTAG-HS1 210249854657' is selected.
+03:05:44 INFO  : 'jtag frequency' command is executed.
+03:05:44 INFO  : Sourcing of 'D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+03:05:44 INFO  : Context for 'APU' is selected.
+03:05:45 INFO  : System reset is completed.
+03:05:48 INFO  : 'after 3000' command is executed.
+03:05:48 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249854657" && level==0} -index 1' command is executed.
+03:05:49 INFO  : FPGA configured successfully with bitstream "D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+03:05:50 INFO  : Context for 'APU' is selected.
+03:05:52 INFO  : Hardware design information is loaded from 'D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.sdk/system_wrapper_hw_platform_0/system.hdf'.
+03:05:52 INFO  : 'configparams force-mem-access 1' command is executed.
+03:05:52 INFO  : Context for 'APU' is selected.
+03:05:53 INFO  : 'ps7_init' command is executed.
+03:05:53 INFO  : 'ps7_post_config' command is executed.
+03:05:53 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+03:05:53 INFO  : The application 'D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.sdk/dma_test/Debug/dma_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+03:05:53 INFO  : 'configparams force-mem-access 0' command is executed.
+03:05:53 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854657"} -index 0
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249854657" && level==0} -index 1
+fpga -file D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.sdk/system_wrapper_hw_platform_0/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854657"} -index 0
+loadhw -hw D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.sdk/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854657"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854657"} -index 0
+dow D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.sdk/dma_test/Debug/dma_test.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+03:05:53 INFO  : Memory regions updated for context APU
+03:05:53 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+03:05:53 INFO  : 'con' command is executed.
+03:05:53 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854657"} -index 0
+con
+----------------End of Script----------------
+
+03:05:53 INFO  : Launch script is exported to file 'D:\git\DMA-S2MM-and-MM2S-\project\DMA_test\DMA_test.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_dma_test.elf_on_local.tcl'
+03:07:40 INFO  : Disconnected from the channel tcfchan#2.
+03:07:41 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+03:07:42 INFO  : Jtag cable 'Digilent JTAG-HS1 210249854657' is selected.
+03:07:42 INFO  : 'jtag frequency' command is executed.
+03:07:42 INFO  : Sourcing of 'D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+03:07:42 INFO  : Context for 'APU' is selected.
+03:07:42 INFO  : System reset is completed.
+03:07:45 INFO  : 'after 3000' command is executed.
+03:07:45 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249854657" && level==0} -index 1' command is executed.
+03:07:47 INFO  : FPGA configured successfully with bitstream "D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+03:07:47 INFO  : Context for 'APU' is selected.
+03:07:47 INFO  : Hardware design information is loaded from 'D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.sdk/system_wrapper_hw_platform_0/system.hdf'.
+03:07:47 INFO  : 'configparams force-mem-access 1' command is executed.
+03:07:47 INFO  : Context for 'APU' is selected.
+03:07:48 INFO  : 'ps7_init' command is executed.
+03:07:48 INFO  : 'ps7_post_config' command is executed.
+03:07:48 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+03:07:48 INFO  : The application 'D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.sdk/dma_test/Debug/dma_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+03:07:48 INFO  : 'configparams force-mem-access 0' command is executed.
+03:07:48 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854657"} -index 0
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210249854657" && level==0} -index 1
+fpga -file D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.sdk/system_wrapper_hw_platform_0/system_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854657"} -index 0
+loadhw -hw D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.sdk/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854657"} -index 0
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854657"} -index 0
+dow D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.sdk/dma_test/Debug/dma_test.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+03:07:48 INFO  : Memory regions updated for context APU
+03:07:48 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+03:07:48 INFO  : 'con' command is executed.
+03:07:48 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent JTAG-HS1 210249854657"} -index 0
+con
+----------------End of Script----------------
+
+03:07:48 INFO  : Launch script is exported to file 'D:\git\DMA-S2MM-and-MM2S-\project\DMA_test\DMA_test.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_dma_test.elf_on_local.tcl'
+03:11:08 INFO  : Disconnected from the channel tcfchan#3.
+03:11:16 ERROR : Unexpected error while parsing XMD response ?: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 

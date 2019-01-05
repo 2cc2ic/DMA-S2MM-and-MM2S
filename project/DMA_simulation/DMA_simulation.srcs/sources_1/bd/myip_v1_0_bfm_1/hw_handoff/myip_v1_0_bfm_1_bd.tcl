@@ -178,7 +178,7 @@ proc create_root_design { parentCell } {
    CONFIG.C_M00_AXI_START_DATA_VALUE {0x00000000} \
    CONFIG.C_M00_AXI_TARGET_SLAVE_BASE_ADDR {0x44A10000} \
    CONFIG.REG_DATA_VALUE_2 {0x44A00000} \
-   CONFIG.REG_DATA_VALUE_3 {0xFF000060} \
+   CONFIG.REG_DATA_VALUE_3 {0xFF00006F} \
  ] $AXI_LITE_master_IP_0
 
   # Create instance: AXI_LITE_master_IP_1, and set properties
@@ -187,7 +187,7 @@ proc create_root_design { parentCell } {
    CONFIG.C_M00_AXI_START_DATA_VALUE {0x00000000} \
    CONFIG.C_M00_AXI_TARGET_SLAVE_BASE_ADDR {0x44A10000} \
    CONFIG.REG_DATA_VALUE_0 {0x44A01000} \
-   CONFIG.REG_DATA_VALUE_1 {0xFF000060} \
+   CONFIG.REG_DATA_VALUE_1 {0xFF00006F} \
  ] $AXI_LITE_master_IP_1
 
   # Create instance: User_DMA_0, and set properties

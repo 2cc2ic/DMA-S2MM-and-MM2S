@@ -2,10 +2,10 @@
 <Root MajorVersion="0" MinorVersion="33">
   <CompositeFile CompositeFileTopName="myip_v1_0_bfm_1" CanBeSetAsTop="false" CanDisplayChildGraph="true">
     <Description>Composite Fileset</Description>
-    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1546606271"/>
-    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1546606271"/>
-    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1546606271"/>
-    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1546606271"/>
+    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1546627060"/>
+    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1546627060"/>
+    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1546627060"/>
+    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1546627060"/>
     <FileCollection Name="SOURCES" Type="SOURCES">
       <File Name="ip\myip_v1_0_bfm_1_myip_0_0\myip_v1_0_bfm_1_myip_0_0.xci" Type="IP">
         <Instance HierarchyPath="myip_0"/>

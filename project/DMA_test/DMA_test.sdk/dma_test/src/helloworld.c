@@ -34,6 +34,7 @@ int main()
 		GpioConfigPtr = XGpioPs_LookupConfig(XPAR_PS7_GPIO_0_DEVICE_ID);
 		xStatus = XGpioPs_CfgInitialize(&psGpioInstancePtr,GpioConfigPtr, GpioConfigPtr->BaseAddr);
 
+
 		if(XST_SUCCESS != xStatus)
 			print(" PS GPIO INIT FAILED \n\r");
 
@@ -51,29 +52,28 @@ int main()
 		sleep(20);
 		disablecache();
 
-
 		int i;
-		for(int i=0;i<100;i++)
+		for(int i=0;i<400;i++)
 		{
 			Xil_Out32( (DDR_BASEARDDR) + i*4 , i);
 		}
-
 		XGpio_axi_WriteReg(XPAR_GPIO_LITE_ML_0,8,DDR_BASEARDDR);
-		XGpio_axi_WriteReg(XPAR_GPIO_LITE_ML_0,12,0xFF000060);
-		sleep(20);
-		XGpio_axi_WriteReg(XPAR_GPIO_LITE_ML_0,0,DDR_BASEARDDR+4);
-		XGpio_axi_WriteReg(XPAR_GPIO_LITE_ML_0,4,0xFF000060);
+		XGpio_axi_WriteReg(XPAR_GPIO_LITE_ML_0,12,0xFF00004F);
+		sleep(5);
+		XGpio_axi_WriteReg(XPAR_GPIO_LITE_ML_0,0,DDR_BASEARDDR+6000);
+		XGpio_axi_WriteReg(XPAR_GPIO_LITE_ML_0,4,0xFF00004F);
 		for(int i=0;i<4;i++)
 		{
 			x = Xil_In32( XPAR_GPIO_LITE_ML_0 + i*4);
 			printf("register %d : %u \n",i,x);
 		}
 
-		sleep(20);
+
+		sleep(5);
 		print(" hello2 \n");
-		for(i=0;i<100;i++)
+		for(i=0;i<400;i++)
 		{
-			x = Xil_In32( (DDR_BASEARDDR+1000) + i*4);
+			x = Xil_In32( (DDR_BASEARDDR+6000) + i*4);
 			printf("data changed %d : %u \n",i,x);
 		}
 		print(" hello3 \n");
@@ -82,7 +82,7 @@ int main()
 		printf("pin0 = %u\n",x);
 		x = XGpioPs_ReadPin(&psGpioInstancePtr,55);
 		printf("pin1 = %u\n",x);
-		for(i=0;i<100;i++)
+		for(i=0;i<400;i++)
 		{
 			x = Xil_In32( (DDR_BASEARDDR) + i*4);
 			printf("data original %d : %u \n",i,x);

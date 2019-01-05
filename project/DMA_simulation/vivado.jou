@@ -2,121 +2,36 @@
 # Vivado v2017.4 (64-bit)
 # SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
 # IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
-# Start of session at: Fri Jan  4 20:28:08 2019
-# Process ID: 18572
-# Current directory: E:/git/DMA-S2MM-and-MM2S-/project/DMA_simulation
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10988 E:\git\DMA-S2MM-and-MM2S-\project\DMA_simulation\DMA_simulation.xpr
-# Log file: E:/git/DMA-S2MM-and-MM2S-/project/DMA_simulation/vivado.log
-# Journal file: E:/git/DMA-S2MM-and-MM2S-/project/DMA_simulation\vivado.jou
+# Start of session at: Sat Jan  5 00:05:34 2019
+# Process ID: 38076
+# Current directory: D:/git/DMA-S2MM-and-MM2S-/project/DMA_simulation
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent23424 D:\git\DMA-S2MM-and-MM2S-\project\DMA_simulation\DMA_simulation.xpr
+# Log file: D:/git/DMA-S2MM-and-MM2S-/project/DMA_simulation/vivado.log
+# Journal file: D:/git/DMA-S2MM-and-MM2S-/project/DMA_simulation\vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project E:/git/DMA-S2MM-and-MM2S-/project/DMA_simulation/DMA_simulation.xpr
+open_project D:/git/DMA-S2MM-and-MM2S-/project/DMA_simulation/DMA_simulation.xpr
+open_bd_design {D:/git/DMA-S2MM-and-MM2S-/project/DMA_simulation/DMA_simulation.srcs/sources_1/bd/myip_v1_0_bfm_1/myip_v1_0_bfm_1.bd}
 update_compile_order -fileset sources_1
-open_bd_design {E:/git/DMA-S2MM-and-MM2S-/project/DMA_simulation/DMA_simulation.srcs/sources_1/bd/myip_v1_0_bfm_1/myip_v1_0_bfm_1.bd}
-ipx::edit_ip_in_project -upgrade true -name User_DMA_v1_0_project -directory E:/git/DMA-S2MM-and-MM2S-/project/DMA_simulation/DMA_simulation.tmp/User_DMA_v1_0_project e:/git/DMA-S2MM-and-MM2S-/project/ip_repo/User_DMA_1.0/component.xml
+ipx::edit_ip_in_project -upgrade true -name User_DMA_v1_0_project -directory D:/git/DMA-S2MM-and-MM2S-/project/DMA_simulation/DMA_simulation.tmp/User_DMA_v1_0_project d:/git/DMA-S2MM-and-MM2S-/project/ip_repo/User_DMA_1.0/component.xml
 update_compile_order -fileset sources_1
-close_project
-startgroup
-set_property -dict [list CONFIG.C_M00_AXI_START_DATA_VALUE {0x00000000} CONFIG.REG_DATA_VALUE_2 {0x44A00000} CONFIG.REG_DATA_VALUE_3 {0xFF000060}] [get_bd_cells AXI_LITE_master_IP_0]
-endgroup
-startgroup
-set_property -dict [list CONFIG.C_M00_AXI_START_DATA_VALUE {0x00000000} CONFIG.C_M00_AXI_TARGET_SLAVE_BASE_ADDR {0x44A10000}] [get_bd_cells AXI_LITE_master_IP_1]
-endgroup
-startgroup
-endgroup
-startgroup
-set_property -dict [list CONFIG.REG_DATA_VALUE_0 {0x44A00000}] [get_bd_cells AXI_LITE_master_IP_1]
-endgroup
-startgroup
-set_property -dict [list CONFIG.REG_DATA_VALUE_1 {0xFF000060}] [get_bd_cells AXI_LITE_master_IP_1]
-endgroup
-startgroup
-set_property -dict [list CONFIG.REG_DATA_VALUE_0 {0x44A01000}] [get_bd_cells AXI_LITE_master_IP_1]
-endgroup
-generate_target all [get_files  E:/git/DMA-S2MM-and-MM2S-/project/DMA_simulation/DMA_simulation.srcs/sources_1/bd/myip_v1_0_bfm_1/myip_v1_0_bfm_1.bd]
-assign_bd_address
-save_bd_design
-generate_target all [get_files  E:/git/DMA-S2MM-and-MM2S-/project/DMA_simulation/DMA_simulation.srcs/sources_1/bd/myip_v1_0_bfm_1/myip_v1_0_bfm_1.bd]
-set_property range 2M [get_bd_addr_segs {User_DMA_0/M_AXI_FULL/SEG_slave_0_Reg}]
-set_property range 128K [get_bd_addr_segs {User_DMA_0/M_AXI_FULL/SEG_slave_0_Reg}]
-set_property range 32K [get_bd_addr_segs {User_DMA_0/M_AXI_FULL/SEG_slave_0_Reg}]
-set_property range 64K [get_bd_addr_segs {User_DMA_0/M_AXI_FULL/SEG_slave_0_Reg}]
-set_property range 4K [get_bd_addr_segs {AXI_LITE_master_IP_0/M00_AXI/SEG_User_DMA_0_S_AXI_LITE_reg}]
-set_property range 4K [get_bd_addr_segs {User_DMA_0/M_AXI_FULL/SEG_User_DMA_0_S_AXI_LITE_reg}]
-set_property offset 0x44A11000 [get_bd_addr_segs {User_DMA_0/M_AXI_FULL/SEG_User_DMA_0_S_AXI_LITE_reg}]
-set_property range 4K [get_bd_addr_segs {AXI_LITE_master_IP_1/M00_AXI/SEG_User_DMA_0_S_AXI_LITE_reg}]
-generate_target all [get_files  E:/git/DMA-S2MM-and-MM2S-/project/DMA_simulation/DMA_simulation.srcs/sources_1/bd/myip_v1_0_bfm_1/myip_v1_0_bfm_1.bd]
-set_property offset 0x00000000 [get_bd_addr_segs {myip_0/M00_AXI/SEG_slave_0_Reg}]
-set_property range 4G [get_bd_addr_segs {myip_0/M00_AXI/SEG_slave_0_Reg}]
-set_property range 1M [get_bd_addr_segs {myip_0/M00_AXI/SEG_slave_0_Reg}]
-set_property offset 0x00000000 [get_bd_addr_segs {User_DMA_0/M_AXI_FULL/SEG_slave_0_Reg}]
-set_property range 1M [get_bd_addr_segs {User_DMA_0/M_AXI_FULL/SEG_slave_0_Reg}]
-undo
-undo
-undo
-undo
-undo
-undo
-undo
-undo
-undo
-delete_bd_objs [get_bd_addr_segs User_DMA_0/M_AXI_FULL/SEG_User_DMA_0_S_AXI_LITE_reg]
-save_bd_design
-generate_target all [get_files  E:/git/DMA-S2MM-and-MM2S-/project/DMA_simulation/DMA_simulation.srcs/sources_1/bd/myip_v1_0_bfm_1/myip_v1_0_bfm_1.bd]
-catch { config_ip_cache -export [get_ips -all myip_v1_0_bfm_1_myip_0_0] }
-catch { config_ip_cache -export [get_ips -all myip_v1_0_bfm_1_slave_0_0] }
+set_property core_revision 12 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path d:/git/DMA-S2MM-and-MM2S-/project/ip_repo
+report_ip_status -name ip_status 
+upgrade_ip -vlnv user.org:user:User_DMA:1.0 [get_ips  myip_v1_0_bfm_1_User_DMA_0_1] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips myip_v1_0_bfm_1_User_DMA_0_1] -no_script -sync -force -quiet
+generate_target all [get_files  D:/git/DMA-S2MM-and-MM2S-/project/DMA_simulation/DMA_simulation.srcs/sources_1/bd/myip_v1_0_bfm_1/myip_v1_0_bfm_1.bd]
 catch { config_ip_cache -export [get_ips -all myip_v1_0_bfm_1_User_DMA_0_1] }
-catch { config_ip_cache -export [get_ips -all myip_v1_0_bfm_1_axis_data_fifo_0_0] }
-catch { config_ip_cache -export [get_ips -all myip_v1_0_bfm_1_xbar_0] }
-catch { config_ip_cache -export [get_ips -all myip_v1_0_bfm_1_AXI_LITE_master_IP_0_0] }
-catch { config_ip_cache -export [get_ips -all myip_v1_0_bfm_1_AXI_LITE_master_IP_1_0] }
-catch { config_ip_cache -export [get_ips -all myip_v1_0_bfm_1_xbar_1] }
-export_ip_user_files -of_objects [get_files E:/git/DMA-S2MM-and-MM2S-/project/DMA_simulation/DMA_simulation.srcs/sources_1/bd/myip_v1_0_bfm_1/myip_v1_0_bfm_1.bd] -no_script -sync -force -quiet
-create_ip_run [get_files -of_objects [get_fileset sources_1] E:/git/DMA-S2MM-and-MM2S-/project/DMA_simulation/DMA_simulation.srcs/sources_1/bd/myip_v1_0_bfm_1/myip_v1_0_bfm_1.bd]
-launch_runs -jobs 4 {myip_v1_0_bfm_1_myip_0_0_synth_1 myip_v1_0_bfm_1_slave_0_0_synth_1 myip_v1_0_bfm_1_User_DMA_0_1_synth_1 myip_v1_0_bfm_1_axis_data_fifo_0_0_synth_1 myip_v1_0_bfm_1_xbar_0_synth_1 myip_v1_0_bfm_1_AXI_LITE_master_IP_0_0_synth_1 myip_v1_0_bfm_1_AXI_LITE_master_IP_1_0_synth_1 myip_v1_0_bfm_1_xbar_1_synth_1}
-export_simulation -of_objects [get_files E:/git/DMA-S2MM-and-MM2S-/project/DMA_simulation/DMA_simulation.srcs/sources_1/bd/myip_v1_0_bfm_1/myip_v1_0_bfm_1.bd] -directory E:/git/DMA-S2MM-and-MM2S-/project/DMA_simulation/DMA_simulation.ip_user_files/sim_scripts -ip_user_files_dir E:/git/DMA-S2MM-and-MM2S-/project/DMA_simulation/DMA_simulation.ip_user_files -ipstatic_source_dir E:/git/DMA-S2MM-and-MM2S-/project/DMA_simulation/DMA_simulation.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/git/DMA-S2MM-and-MM2S-/project/DMA_simulation/DMA_simulation.cache/compile_simlib/modelsim} {questa=E:/git/DMA-S2MM-and-MM2S-/project/DMA_simulation/DMA_simulation.cache/compile_simlib/questa} {riviera=E:/git/DMA-S2MM-and-MM2S-/project/DMA_simulation/DMA_simulation.cache/compile_simlib/riviera} {activehdl=E:/git/DMA-S2MM-and-MM2S-/project/DMA_simulation/DMA_simulation.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+export_ip_user_files -of_objects [get_files D:/git/DMA-S2MM-and-MM2S-/project/DMA_simulation/DMA_simulation.srcs/sources_1/bd/myip_v1_0_bfm_1/myip_v1_0_bfm_1.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] D:/git/DMA-S2MM-and-MM2S-/project/DMA_simulation/DMA_simulation.srcs/sources_1/bd/myip_v1_0_bfm_1/myip_v1_0_bfm_1.bd]
+launch_runs -jobs 4 myip_v1_0_bfm_1_User_DMA_0_1_synth_1
+export_simulation -of_objects [get_files D:/git/DMA-S2MM-and-MM2S-/project/DMA_simulation/DMA_simulation.srcs/sources_1/bd/myip_v1_0_bfm_1/myip_v1_0_bfm_1.bd] -directory D:/git/DMA-S2MM-and-MM2S-/project/DMA_simulation/DMA_simulation.ip_user_files/sim_scripts -ip_user_files_dir D:/git/DMA-S2MM-and-MM2S-/project/DMA_simulation/DMA_simulation.ip_user_files -ipstatic_source_dir D:/git/DMA-S2MM-and-MM2S-/project/DMA_simulation/DMA_simulation.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/git/DMA-S2MM-and-MM2S-/project/DMA_simulation/DMA_simulation.cache/compile_simlib/modelsim} {questa=D:/git/DMA-S2MM-and-MM2S-/project/DMA_simulation/DMA_simulation.cache/compile_simlib/questa} {riviera=D:/git/DMA-S2MM-and-MM2S-/project/DMA_simulation/DMA_simulation.cache/compile_simlib/riviera} {activehdl=D:/git/DMA-S2MM-and-MM2S-/project/DMA_simulation/DMA_simulation.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run myip_v1_0_bfm_1_User_DMA_0_1_synth_1
 launch_simulation
-launch_simulation
+open_wave_config D:/git/DMA-S2MM-and-MM2S-/project/DMA_simulation/myip_v1_0_tb_behav.wcfg
 source myip_v1_0_tb.tcl
-reset_run myip_v1_0_bfm_1_xbar_1_synth_1
-reset_run myip_v1_0_bfm_1_axis_data_fifo_0_0_synth_1
-reset_run myip_v1_0_bfm_1_xbar_0_synth_1
-reset_run myip_v1_0_bfm_1_AXI_LITE_master_IP_0_0_synth_1
-reset_run myip_v1_0_bfm_1_AXI_LITE_master_IP_1_0_synth_1
-save_wave_config {E:/git/DMA-S2MM-and-MM2S-/project/DMA_simulation/myip_v1_0_tb_behav.wcfg}
-add_files -fileset sim_1 -norecurse E:/git/DMA-S2MM-and-MM2S-/project/DMA_simulation/myip_v1_0_tb_behav.wcfg
-set_property xsim.view E:/git/DMA-S2MM-and-MM2S-/project/DMA_simulation/myip_v1_0_tb_behav.wcfg [get_filesets sim_1]
-add_wave {{/myip_v1_0_tb/DUT/myip_v1_0_bfm_1_i/User_DMA_0/inst/User_DMA_v1_0_S_AXI_LITE_inst/slv_reg0}} {{/myip_v1_0_tb/DUT/myip_v1_0_bfm_1_i/User_DMA_0/inst/User_DMA_v1_0_S_AXI_LITE_inst/slv_reg1}} {{/myip_v1_0_tb/DUT/myip_v1_0_bfm_1_i/User_DMA_0/inst/User_DMA_v1_0_S_AXI_LITE_inst/slv_reg2}} {{/myip_v1_0_tb/DUT/myip_v1_0_bfm_1_i/User_DMA_0/inst/User_DMA_v1_0_S_AXI_LITE_inst/slv_reg3}} 
-open_bd_design {E:/git/DMA-S2MM-and-MM2S-/project/DMA_simulation/DMA_simulation.srcs/sources_1/bd/myip_v1_0_bfm_1/myip_v1_0_bfm_1.bd}
-open_bd_design {E:/git/DMA-S2MM-and-MM2S-/project/DMA_simulation/DMA_simulation.srcs/sources_1/bd/myip_v1_0_bfm_1/myip_v1_0_bfm_1.bd}
-relaunch_sim
-save_wave_config {E:/git/DMA-S2MM-and-MM2S-/project/DMA_simulation/myip_v1_0_tb_behav.wcfg}
-close_sim
-launch_simulation
-open_wave_config E:/git/DMA-S2MM-and-MM2S-/project/DMA_simulation/myip_v1_0_tb_behav.wcfg
-source myip_v1_0_tb.tcl
-run all
-run all
-run all
-run all
-run all
-run all
-run all
-add_wave {{/myip_v1_0_tb/DUT/myip_v1_0_bfm_1_i/axis_data_fifo_0/s_axis_tvalid}} {{/myip_v1_0_tb/DUT/myip_v1_0_bfm_1_i/axis_data_fifo_0/s_axis_tready}} {{/myip_v1_0_tb/DUT/myip_v1_0_bfm_1_i/axis_data_fifo_0/s_axis_tdata}} {{/myip_v1_0_tb/DUT/myip_v1_0_bfm_1_i/axis_data_fifo_0/m_axis_tvalid}} {{/myip_v1_0_tb/DUT/myip_v1_0_bfm_1_i/axis_data_fifo_0/m_axis_tready}} {{/myip_v1_0_tb/DUT/myip_v1_0_bfm_1_i/axis_data_fifo_0/m_axis_tdata}} {{/myip_v1_0_tb/DUT/myip_v1_0_bfm_1_i/axis_data_fifo_0/axis_data_count}} {{/myip_v1_0_tb/DUT/myip_v1_0_bfm_1_i/axis_data_fifo_0/axis_wr_data_count}} {{/myip_v1_0_tb/DUT/myip_v1_0_bfm_1_i/axis_data_fifo_0/axis_rd_data_count}} 
-save_wave_config {E:/git/DMA-S2MM-and-MM2S-/project/DMA_simulation/myip_v1_0_tb_behav.wcfg}
-add_wave {{/myip_v1_0_tb/DUT/myip_v1_0_bfm_1_i/User_DMA_0/inst/User_DMA_v1_0_M_AXI_FULL_s2mm_inst/state_ctrl}} 
-add_wave {{/myip_v1_0_tb/DUT/myip_v1_0_bfm_1_i/User_DMA_0/inst/User_DMA_v1_0_M_AXI_FULL_s2mm_inst/M_AXI_WREADY}} {{/myip_v1_0_tb/DUT/myip_v1_0_bfm_1_i/User_DMA_0/inst/User_DMA_v1_0_M_AXI_FULL_s2mm_inst/all_done}} {{/myip_v1_0_tb/DUT/myip_v1_0_bfm_1_i/User_DMA_0/inst/User_DMA_v1_0_M_AXI_FULL_s2mm_inst/burst_count}} {{/myip_v1_0_tb/DUT/myip_v1_0_bfm_1_i/User_DMA_0/inst/User_DMA_v1_0_M_AXI_FULL_s2mm_inst/state_write}} {{/myip_v1_0_tb/DUT/myip_v1_0_bfm_1_i/User_DMA_0/inst/User_DMA_v1_0_M_AXI_FULL_s2mm_inst/init_state_signal}} {{/myip_v1_0_tb/DUT/myip_v1_0_bfm_1_i/User_DMA_0/inst/User_DMA_v1_0_M_AXI_FULL_s2mm_inst/axi_awaddr}} {{/myip_v1_0_tb/DUT/myip_v1_0_bfm_1_i/User_DMA_0/inst/User_DMA_v1_0_M_AXI_FULL_s2mm_inst/axi_awvalid}} {{/myip_v1_0_tb/DUT/myip_v1_0_bfm_1_i/User_DMA_0/inst/User_DMA_v1_0_M_AXI_FULL_s2mm_inst/axi_wvalid}} {{/myip_v1_0_tb/DUT/myip_v1_0_bfm_1_i/User_DMA_0/inst/User_DMA_v1_0_M_AXI_FULL_s2mm_inst/writes_done}} {{/myip_v1_0_tb/DUT/myip_v1_0_bfm_1_i/User_DMA_0/inst/User_DMA_v1_0_M_AXI_FULL_s2mm_inst/init_txn_pulse}} {{/myip_v1_0_tb/DUT/myip_v1_0_bfm_1_i/User_DMA_0/inst/User_DMA_v1_0_M_AXI_FULL_s2mm_inst/burst_len}} 
-add_wave {{/myip_v1_0_tb/DUT/myip_v1_0_bfm_1_i/User_DMA_0/inst/User_DMA_v1_0_M_AXI_FULL_mm2s_inst/M_AXI_ARADDR}} {{/myip_v1_0_tb/DUT/myip_v1_0_bfm_1_i/User_DMA_0/inst/User_DMA_v1_0_M_AXI_FULL_mm2s_inst/M_AXI_ARVALID}} {{/myip_v1_0_tb/DUT/myip_v1_0_bfm_1_i/User_DMA_0/inst/User_DMA_v1_0_M_AXI_FULL_mm2s_inst/M_AXI_ARREADY}} {{/myip_v1_0_tb/DUT/myip_v1_0_bfm_1_i/User_DMA_0/inst/User_DMA_v1_0_M_AXI_FULL_mm2s_inst/M_AXI_RVALID}} {{/myip_v1_0_tb/DUT/myip_v1_0_bfm_1_i/User_DMA_0/inst/User_DMA_v1_0_M_AXI_FULL_mm2s_inst/M_AXI_RREADY}} {{/myip_v1_0_tb/DUT/myip_v1_0_bfm_1_i/User_DMA_0/inst/User_DMA_v1_0_M_AXI_FULL_mm2s_inst/state_ctrl}} {{/myip_v1_0_tb/DUT/myip_v1_0_bfm_1_i/User_DMA_0/inst/User_DMA_v1_0_M_AXI_FULL_mm2s_inst/burst_count}} {{/myip_v1_0_tb/DUT/myip_v1_0_bfm_1_i/User_DMA_0/inst/User_DMA_v1_0_M_AXI_FULL_mm2s_inst/start_single_burst_read}} {{/myip_v1_0_tb/DUT/myip_v1_0_bfm_1_i/User_DMA_0/inst/User_DMA_v1_0_M_AXI_FULL_mm2s_inst/reads_done}} {{/myip_v1_0_tb/DUT/myip_v1_0_bfm_1_i/User_DMA_0/inst/User_DMA_v1_0_M_AXI_FULL_mm2s_inst/burst_read_active}} {{/myip_v1_0_tb/DUT/myip_v1_0_bfm_1_i/User_DMA_0/inst/User_DMA_v1_0_M_AXI_FULL_mm2s_inst/rnext}} {{/myip_v1_0_tb/DUT/myip_v1_0_bfm_1_i/User_DMA_0/inst/User_DMA_v1_0_M_AXI_FULL_mm2s_inst/state_read}} 
-save_wave_config {E:/git/DMA-S2MM-and-MM2S-/project/DMA_simulation/myip_v1_0_tb_behav.wcfg}
-restart
-run all
-run all
-run all
-run all
-run all
-run all
-run all
-run all
-save_wave_config {E:/git/DMA-S2MM-and-MM2S-/project/DMA_simulation/myip_v1_0_tb_behav.wcfg}
-save_wave_config {E:/git/DMA-S2MM-and-MM2S-/project/DMA_simulation/myip_v1_0_tb_behav.wcfg}
 close_sim

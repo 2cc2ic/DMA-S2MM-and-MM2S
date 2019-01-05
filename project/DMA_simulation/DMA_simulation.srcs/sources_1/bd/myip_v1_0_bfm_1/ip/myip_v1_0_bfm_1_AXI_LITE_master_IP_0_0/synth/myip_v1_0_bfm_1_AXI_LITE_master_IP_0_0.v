@@ -53,7 +53,7 @@
 (* X_CORE_INFO = "AXI_LITE_master_IP_v1_0,Vivado 2017.4" *)
 (* CHECK_LICENSE_TYPE = "myip_v1_0_bfm_1_AXI_LITE_master_IP_0_0,AXI_LITE_master_IP_v1_0,{}" *)
 (* CORE_GENERATION_INFO = "myip_v1_0_bfm_1_AXI_LITE_master_IP_0_0,AXI_LITE_master_IP_v1_0,{x_ipProduct=Vivado 2017.4,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=AXI_LITE_master_IP,x_ipVersion=1.0,x_ipCoreRevision=3,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,C_M00_AXI_START_DATA_VALUE=0x00000000,C_M00_AXI_TARGET_SLAVE_BASE_ADDR=0x44A10000,C_M00_AXI_ADDR_WIDTH=32,C_M00_AXI_DATA_WIDTH=32,C_M00_AXI_TRANSACTIONS_NUM=4,REG_DATA_VALUE_0=0x00000000,REG_DATA_VALUE_1=0x00000000,REG_DATA_VALUE_2=0x44A00000,REG_DATA_VALUE_3=0xFF0\
-00060}" *)
+0006F}" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module myip_v1_0_bfm_1_AXI_LITE_master_IP_0_0 (
   m00_axi_awaddr,
@@ -144,7 +144,7 @@ output wire m00_axi_txn_done;
     .REG_DATA_VALUE_0('H00000000),
     .REG_DATA_VALUE_1('H00000000),
     .REG_DATA_VALUE_2('H44A00000),
-    .REG_DATA_VALUE_3('HFF000060)
+    .REG_DATA_VALUE_3('HFF00006F)
   ) inst (
     .m00_axi_awaddr(m00_axi_awaddr),
     .m00_axi_awprot(m00_axi_awprot),

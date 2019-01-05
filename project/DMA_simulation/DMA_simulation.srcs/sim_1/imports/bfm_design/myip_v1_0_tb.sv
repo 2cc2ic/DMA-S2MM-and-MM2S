@@ -80,7 +80,7 @@ initial begin
         $display("PTGEN_TEST: PASSED!");
       end
       #1ns;
-      $finish;
+
   end
   initial begin
   #1;

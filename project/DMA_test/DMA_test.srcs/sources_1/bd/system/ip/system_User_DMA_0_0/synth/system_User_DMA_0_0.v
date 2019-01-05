@@ -48,7 +48,7 @@
 
 
 // IP VLNV: user.org:user:User_DMA:1.0
-// IP Revision: 8
+// IP Revision: 15
 
 (* X_CORE_INFO = "User_DMA_v1_0,Vivado 2017.4" *)
 (* CHECK_LICENSE_TYPE = "system_User_DMA_0_0,User_DMA_v1_0,{}" *)

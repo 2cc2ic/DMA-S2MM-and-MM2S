@@ -166,13 +166,6 @@
         </spirit:configurableElementValues>
       </spirit:componentInstance>
       <spirit:componentInstance>
-        <spirit:instanceName>User_DMA_0</spirit:instanceName>
-        <spirit:componentRef spirit:library="user" spirit:name="User_DMA" spirit:vendor="user.org" spirit:version="1.0"/>
-        <spirit:configurableElementValues>
-          <spirit:configurableElementValue spirit:referenceId="bd:xciName">myip_v1_0_bfm_1_User_DMA_0_1</spirit:configurableElementValue>
-        </spirit:configurableElementValues>
-      </spirit:componentInstance>
-      <spirit:componentInstance>
         <spirit:instanceName>axi_interconnect_0</spirit:instanceName>
         <spirit:componentRef spirit:library="BlockDiagram/myip_v1_0_bfm_1_imp" spirit:name="axi_interconnect_0" spirit:vendor="xilinx.com" spirit:version="1.00.a"/>
         <spirit:configurableElementValues>
@@ -197,7 +190,7 @@
           <spirit:configurableElementValue spirit:referenceId="C_M00_AXI_START_DATA_VALUE">0x00000000</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="C_M00_AXI_TARGET_SLAVE_BASE_ADDR">0x44A10000</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="REG_DATA_VALUE_2">0x44A00000</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="REG_DATA_VALUE_3">0xFF000060</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="REG_DATA_VALUE_3">0xFF00006F</spirit:configurableElementValue>
         </spirit:configurableElementValues>
       </spirit:componentInstance>
       <spirit:componentInstance>
@@ -208,7 +201,7 @@
           <spirit:configurableElementValue spirit:referenceId="C_M00_AXI_START_DATA_VALUE">0x00000000</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="C_M00_AXI_TARGET_SLAVE_BASE_ADDR">0x44A10000</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="REG_DATA_VALUE_0">0x44A01000</spirit:configurableElementValue>
-          <spirit:configurableElementValue spirit:referenceId="REG_DATA_VALUE_1">0xFF000060</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="REG_DATA_VALUE_1">0xFF00006F</spirit:configurableElementValue>
         </spirit:configurableElementValues>
       </spirit:componentInstance>
       <spirit:componentInstance>
@@ -219,6 +212,13 @@
           <spirit:configurableElementValue spirit:referenceId="NUM_SI">2</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="NUM_MI">1</spirit:configurableElementValue>
           <spirit:configurableElementValue spirit:referenceId="appcore">xilinx.com:ip:axi_interconnect:2.1</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>User_DMA_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="user" spirit:name="User_DMA" spirit:vendor="user.org" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">myip_v1_0_bfm_1_User_DMA_0_1</spirit:configurableElementValue>
         </spirit:configurableElementValues>
       </spirit:componentInstance>
     </spirit:componentInstances>
@@ -270,10 +270,6 @@
         <spirit:externalPortReference spirit:portRef="ACLK"/>
         <spirit:internalPortReference spirit:componentRef="slave_0" spirit:portRef="aclk"/>
         <spirit:internalPortReference spirit:componentRef="myip_0" spirit:portRef="m00_axi_aclk"/>
-        <spirit:internalPortReference spirit:componentRef="User_DMA_0" spirit:portRef="s_axi_lite_aclk"/>
-        <spirit:internalPortReference spirit:componentRef="User_DMA_0" spirit:portRef="m_axi_full_aclk"/>
-        <spirit:internalPortReference spirit:componentRef="User_DMA_0" spirit:portRef="s_axis_s2mm_aclk"/>
-        <spirit:internalPortReference spirit:componentRef="User_DMA_0" spirit:portRef="m_axis_mm2s_aclk"/>
         <spirit:internalPortReference spirit:componentRef="axis_data_fifo_0" spirit:portRef="s_axis_aclk"/>
         <spirit:internalPortReference spirit:componentRef="AXI_LITE_master_IP_0" spirit:portRef="m00_axi_aclk"/>
         <spirit:internalPortReference spirit:componentRef="AXI_LITE_master_IP_1" spirit:portRef="m00_axi_aclk"/>
@@ -286,16 +282,16 @@
         <spirit:internalPortReference spirit:componentRef="axi_interconnect_1" spirit:portRef="ACLK"/>
         <spirit:internalPortReference spirit:componentRef="axi_interconnect_1" spirit:portRef="S00_ACLK"/>
         <spirit:internalPortReference spirit:componentRef="axi_interconnect_1" spirit:portRef="M00_ACLK"/>
+        <spirit:internalPortReference spirit:componentRef="User_DMA_0" spirit:portRef="s_axi_lite_aclk"/>
+        <spirit:internalPortReference spirit:componentRef="User_DMA_0" spirit:portRef="s_axis_s2mm_aclk"/>
+        <spirit:internalPortReference spirit:componentRef="User_DMA_0" spirit:portRef="m_axi_full_aclk"/>
+        <spirit:internalPortReference spirit:componentRef="User_DMA_0" spirit:portRef="m_axis_mm2s_aclk"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>aresetn_net</spirit:name>
         <spirit:externalPortReference spirit:portRef="ARESETN"/>
         <spirit:internalPortReference spirit:componentRef="slave_0" spirit:portRef="aresetn"/>
         <spirit:internalPortReference spirit:componentRef="myip_0" spirit:portRef="m00_axi_aresetn"/>
-        <spirit:internalPortReference spirit:componentRef="User_DMA_0" spirit:portRef="s_axi_lite_aresetn"/>
-        <spirit:internalPortReference spirit:componentRef="User_DMA_0" spirit:portRef="m_axi_full_aresetn"/>
-        <spirit:internalPortReference spirit:componentRef="User_DMA_0" spirit:portRef="s_axis_s2mm_aresetn"/>
-        <spirit:internalPortReference spirit:componentRef="User_DMA_0" spirit:portRef="m_axis_mm2s_aresetn"/>
         <spirit:internalPortReference spirit:componentRef="axis_data_fifo_0" spirit:portRef="s_axis_aresetn"/>
         <spirit:internalPortReference spirit:componentRef="AXI_LITE_master_IP_0" spirit:portRef="m00_axi_aresetn"/>
         <spirit:internalPortReference spirit:componentRef="AXI_LITE_master_IP_1" spirit:portRef="m00_axi_aresetn"/>
@@ -308,6 +304,10 @@
         <spirit:internalPortReference spirit:componentRef="axi_interconnect_1" spirit:portRef="ARESETN"/>
         <spirit:internalPortReference spirit:componentRef="axi_interconnect_1" spirit:portRef="S00_ARESETN"/>
         <spirit:internalPortReference spirit:componentRef="axi_interconnect_1" spirit:portRef="M00_ARESETN"/>
+        <spirit:internalPortReference spirit:componentRef="User_DMA_0" spirit:portRef="s_axi_lite_aresetn"/>
+        <spirit:internalPortReference spirit:componentRef="User_DMA_0" spirit:portRef="s_axis_s2mm_aresetn"/>
+        <spirit:internalPortReference spirit:componentRef="User_DMA_0" spirit:portRef="m_axi_full_aresetn"/>
+        <spirit:internalPortReference spirit:componentRef="User_DMA_0" spirit:portRef="m_axis_mm2s_aresetn"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>init_axi_txn_00</spirit:name>
@@ -2508,46 +2508,6 @@
   </spirit:component>
 
   <spirit:component xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009">
-    <spirit:vendor>user.org</spirit:vendor>
-    <spirit:library>Addressing/User_DMA_0</spirit:library>
-    <spirit:name>User_DMA</spirit:name>
-    <spirit:version>1.0</spirit:version>
-    <spirit:busInterfaces>
-      <spirit:busInterface>
-        <spirit:name>S_AXI_LITE</spirit:name>
-        <spirit:slave>
-          <spirit:memoryMapRef spirit:memoryMapRef="S_AXI_LITE"/>
-        </spirit:slave>
-        <spirit:busType spirit:library="interface" spirit:name="aximm" spirit:vendor="xilinx.com" spirit:version="1.0"/>
-        <spirit:abstractionType spirit:library="interface" spirit:name="aximm_rtl" spirit:vendor="xilinx.com" spirit:version="1.0"/>
-      </spirit:busInterface>
-      <spirit:busInterface>
-        <spirit:name>M_AXI_FULL</spirit:name>
-        <spirit:master>
-          <spirit:addressSpaceRef spirit:addressSpaceRef="M_AXI_FULL"/>
-        </spirit:master>
-        <spirit:busType spirit:library="interface" spirit:name="aximm" spirit:vendor="xilinx.com" spirit:version="1.0"/>
-        <spirit:abstractionType spirit:library="interface" spirit:name="aximm_rtl" spirit:vendor="xilinx.com" spirit:version="1.0"/>
-      </spirit:busInterface>
-    </spirit:busInterfaces>
-    <spirit:addressSpaces>
-      <spirit:addressSpace>
-        <spirit:name>M_AXI_FULL</spirit:name>
-        <spirit:range>4G</spirit:range>
-        <spirit:width>32</spirit:width>
-        <spirit:segments>
-          <spirit:segment>
-            <spirit:name>SEG_slave_0_Reg</spirit:name>
-            <spirit:displayName>/slave_0/S_AXI/Reg</spirit:displayName>
-            <spirit:addressOffset>0x44A00000</spirit:addressOffset>
-            <spirit:range>64K</spirit:range>
-          </spirit:segment>
-        </spirit:segments>
-      </spirit:addressSpace>
-    </spirit:addressSpaces>
-  </spirit:component>
-
-  <spirit:component xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009">
     <spirit:vendor>xilinx.com</spirit:vendor>
     <spirit:library>Addressing/AXI_LITE_master_IP_0</spirit:library>
     <spirit:name>AXI_LITE_master_IP</spirit:name>
@@ -2604,6 +2564,46 @@
             <spirit:name>SEG_User_DMA_0_S_AXI_LITE_reg</spirit:name>
             <spirit:displayName>/User_DMA_0/S_AXI_LITE/S_AXI_LITE_reg</spirit:displayName>
             <spirit:addressOffset>0x44A10000</spirit:addressOffset>
+            <spirit:range>64K</spirit:range>
+          </spirit:segment>
+        </spirit:segments>
+      </spirit:addressSpace>
+    </spirit:addressSpaces>
+  </spirit:component>
+
+  <spirit:component xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009">
+    <spirit:vendor>user.org</spirit:vendor>
+    <spirit:library>Addressing/User_DMA_0</spirit:library>
+    <spirit:name>User_DMA</spirit:name>
+    <spirit:version>1.0</spirit:version>
+    <spirit:busInterfaces>
+      <spirit:busInterface>
+        <spirit:name>S_AXI_LITE</spirit:name>
+        <spirit:slave>
+          <spirit:memoryMapRef spirit:memoryMapRef="S_AXI_LITE"/>
+        </spirit:slave>
+        <spirit:busType spirit:library="interface" spirit:name="aximm" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:abstractionType spirit:library="interface" spirit:name="aximm_rtl" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+      </spirit:busInterface>
+      <spirit:busInterface>
+        <spirit:name>M_AXI_FULL</spirit:name>
+        <spirit:master>
+          <spirit:addressSpaceRef spirit:addressSpaceRef="M_AXI_FULL"/>
+        </spirit:master>
+        <spirit:busType spirit:library="interface" spirit:name="aximm" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:abstractionType spirit:library="interface" spirit:name="aximm_rtl" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+      </spirit:busInterface>
+    </spirit:busInterfaces>
+    <spirit:addressSpaces>
+      <spirit:addressSpace>
+        <spirit:name>M_AXI_FULL</spirit:name>
+        <spirit:range>4G</spirit:range>
+        <spirit:width>32</spirit:width>
+        <spirit:segments>
+          <spirit:segment>
+            <spirit:name>SEG_slave_0_Reg</spirit:name>
+            <spirit:displayName>/slave_0/S_AXI/Reg</spirit:displayName>
+            <spirit:addressOffset>0x44A00000</spirit:addressOffset>
             <spirit:range>64K</spirit:range>
           </spirit:segment>
         </spirit:segments>

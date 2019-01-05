@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Fri Jan  4 20:51:11 2019" VIVADOVERSION="2017.4">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Sat Jan  5 02:37:40 2019" VIVADOVERSION="2017.4">
 
   <SYSTEMINFO ARCH="zynq" DEVICE="7z010" NAME="myip_v1_0_bfm_1" PACKAGE="clg400" SPEEDGRADE="-1"/>
 
@@ -8,10 +8,6 @@
       <CONNECTIONS>
         <CONNECTION INSTANCE="slave_0" PORT="aclk"/>
         <CONNECTION INSTANCE="myip_0" PORT="m00_axi_aclk"/>
-        <CONNECTION INSTANCE="User_DMA_0" PORT="s_axi_lite_aclk"/>
-        <CONNECTION INSTANCE="User_DMA_0" PORT="m_axi_full_aclk"/>
-        <CONNECTION INSTANCE="User_DMA_0" PORT="s_axis_s2mm_aclk"/>
-        <CONNECTION INSTANCE="User_DMA_0" PORT="m_axis_mm2s_aclk"/>
         <CONNECTION INSTANCE="axis_data_fifo_0" PORT="s_axis_aclk"/>
         <CONNECTION INSTANCE="AXI_LITE_master_IP_0" PORT="m00_axi_aclk"/>
         <CONNECTION INSTANCE="AXI_LITE_master_IP_1" PORT="m00_axi_aclk"/>
@@ -24,16 +20,16 @@
         <CONNECTION INSTANCE="axi_interconnect_1" PORT="ACLK"/>
         <CONNECTION INSTANCE="axi_interconnect_1" PORT="S00_ACLK"/>
         <CONNECTION INSTANCE="axi_interconnect_1" PORT="M00_ACLK"/>
+        <CONNECTION INSTANCE="User_DMA_0" PORT="s_axi_lite_aclk"/>
+        <CONNECTION INSTANCE="User_DMA_0" PORT="s_axis_s2mm_aclk"/>
+        <CONNECTION INSTANCE="User_DMA_0" PORT="m_axi_full_aclk"/>
+        <CONNECTION INSTANCE="User_DMA_0" PORT="m_axis_mm2s_aclk"/>
       </CONNECTIONS>
     </PORT>
     <PORT DIR="I" NAME="ARESETN" SIGIS="rst" SIGNAME="External_Ports_ARESETN">
       <CONNECTIONS>
         <CONNECTION INSTANCE="slave_0" PORT="aresetn"/>
         <CONNECTION INSTANCE="myip_0" PORT="m00_axi_aresetn"/>
-        <CONNECTION INSTANCE="User_DMA_0" PORT="s_axi_lite_aresetn"/>
-        <CONNECTION INSTANCE="User_DMA_0" PORT="m_axi_full_aresetn"/>
-        <CONNECTION INSTANCE="User_DMA_0" PORT="s_axis_s2mm_aresetn"/>
-        <CONNECTION INSTANCE="User_DMA_0" PORT="m_axis_mm2s_aresetn"/>
         <CONNECTION INSTANCE="axis_data_fifo_0" PORT="s_axis_aresetn"/>
         <CONNECTION INSTANCE="AXI_LITE_master_IP_0" PORT="m00_axi_aresetn"/>
         <CONNECTION INSTANCE="AXI_LITE_master_IP_1" PORT="m00_axi_aresetn"/>
@@ -46,6 +42,10 @@
         <CONNECTION INSTANCE="axi_interconnect_1" PORT="ARESETN"/>
         <CONNECTION INSTANCE="axi_interconnect_1" PORT="S00_ARESETN"/>
         <CONNECTION INSTANCE="axi_interconnect_1" PORT="M00_ARESETN"/>
+        <CONNECTION INSTANCE="User_DMA_0" PORT="s_axi_lite_aresetn"/>
+        <CONNECTION INSTANCE="User_DMA_0" PORT="s_axis_s2mm_aresetn"/>
+        <CONNECTION INSTANCE="User_DMA_0" PORT="m_axi_full_aresetn"/>
+        <CONNECTION INSTANCE="User_DMA_0" PORT="m_axis_mm2s_aresetn"/>
       </CONNECTIONS>
     </PORT>
     <PORT DIR="I" NAME="M00_AXI_INIT_AXI_TXN" SIGIS="undef" SIGNAME="External_Ports_M00_AXI_INIT_AXI_TXN">
@@ -79,7 +79,7 @@
         <PARAMETER NAME="REG_DATA_VALUE_0" VALUE="0x00000000"/>
         <PARAMETER NAME="REG_DATA_VALUE_1" VALUE="0x00000000"/>
         <PARAMETER NAME="REG_DATA_VALUE_2" VALUE="0x44A00000"/>
-        <PARAMETER NAME="REG_DATA_VALUE_3" VALUE="0xFF000060"/>
+        <PARAMETER NAME="REG_DATA_VALUE_3" VALUE="0xFF00006F"/>
         <PARAMETER NAME="Component_Name" VALUE="myip_v1_0_bfm_1_AXI_LITE_master_IP_0_0"/>
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
       </PARAMETERS>
@@ -269,7 +269,7 @@
         <PARAMETER NAME="C_M00_AXI_DATA_WIDTH" VALUE="32"/>
         <PARAMETER NAME="C_M00_AXI_TRANSACTIONS_NUM" VALUE="4"/>
         <PARAMETER NAME="REG_DATA_VALUE_0" VALUE="0x44A01000"/>
-        <PARAMETER NAME="REG_DATA_VALUE_1" VALUE="0xFF000060"/>
+        <PARAMETER NAME="REG_DATA_VALUE_1" VALUE="0xFF00006F"/>
         <PARAMETER NAME="REG_DATA_VALUE_2" VALUE="0x00000000"/>
         <PARAMETER NAME="REG_DATA_VALUE_3" VALUE="0x00000000"/>
         <PARAMETER NAME="Component_Name" VALUE="myip_v1_0_bfm_1_AXI_LITE_master_IP_1_0"/>
@@ -1892,7 +1892,7 @@
             <CONNECTION INSTANCE="User_DMA_0" PORT="m_axi_full_awburst"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="0" NAME="S01_AXI_awlock" RIGHT="0" SIGIS="undef" SIGNAME="User_DMA_0_m_axi_full_awlock">
+        <PORT DIR="I" NAME="S01_AXI_awlock" SIGIS="undef" SIGNAME="User_DMA_0_m_axi_full_awlock">
           <CONNECTIONS>
             <CONNECTION INSTANCE="User_DMA_0" PORT="m_axi_full_awlock"/>
           </CONNECTIONS>
@@ -1917,12 +1917,12 @@
             <CONNECTION INSTANCE="User_DMA_0" PORT="m_axi_full_awuser"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="0" NAME="S01_AXI_awvalid" RIGHT="0" SIGIS="undef" SIGNAME="User_DMA_0_m_axi_full_awvalid">
+        <PORT DIR="I" NAME="S01_AXI_awvalid" SIGIS="undef" SIGNAME="User_DMA_0_m_axi_full_awvalid">
           <CONNECTIONS>
             <CONNECTION INSTANCE="User_DMA_0" PORT="m_axi_full_awvalid"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="0" NAME="S01_AXI_awready" RIGHT="0" SIGIS="undef" SIGNAME="User_DMA_0_m_axi_full_awready">
+        <PORT DIR="O" NAME="S01_AXI_awready" SIGIS="undef" SIGNAME="User_DMA_0_m_axi_full_awready">
           <CONNECTIONS>
             <CONNECTION INSTANCE="User_DMA_0" PORT="m_axi_full_awready"/>
           </CONNECTIONS>
@@ -1937,7 +1937,7 @@
             <CONNECTION INSTANCE="User_DMA_0" PORT="m_axi_full_wstrb"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="0" NAME="S01_AXI_wlast" RIGHT="0" SIGIS="undef" SIGNAME="User_DMA_0_m_axi_full_wlast">
+        <PORT DIR="I" NAME="S01_AXI_wlast" SIGIS="undef" SIGNAME="User_DMA_0_m_axi_full_wlast">
           <CONNECTIONS>
             <CONNECTION INSTANCE="User_DMA_0" PORT="m_axi_full_wlast"/>
           </CONNECTIONS>
@@ -1947,12 +1947,12 @@
             <CONNECTION INSTANCE="User_DMA_0" PORT="m_axi_full_wuser"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="0" NAME="S01_AXI_wvalid" RIGHT="0" SIGIS="undef" SIGNAME="User_DMA_0_m_axi_full_wvalid">
+        <PORT DIR="I" NAME="S01_AXI_wvalid" SIGIS="undef" SIGNAME="User_DMA_0_m_axi_full_wvalid">
           <CONNECTIONS>
             <CONNECTION INSTANCE="User_DMA_0" PORT="m_axi_full_wvalid"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="0" NAME="S01_AXI_wready" RIGHT="0" SIGIS="undef" SIGNAME="User_DMA_0_m_axi_full_wready">
+        <PORT DIR="O" NAME="S01_AXI_wready" SIGIS="undef" SIGNAME="User_DMA_0_m_axi_full_wready">
           <CONNECTIONS>
             <CONNECTION INSTANCE="User_DMA_0" PORT="m_axi_full_wready"/>
           </CONNECTIONS>
@@ -1972,12 +1972,12 @@
             <CONNECTION INSTANCE="User_DMA_0" PORT="m_axi_full_buser"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="0" NAME="S01_AXI_bvalid" RIGHT="0" SIGIS="undef" SIGNAME="User_DMA_0_m_axi_full_bvalid">
+        <PORT DIR="O" NAME="S01_AXI_bvalid" SIGIS="undef" SIGNAME="User_DMA_0_m_axi_full_bvalid">
           <CONNECTIONS>
             <CONNECTION INSTANCE="User_DMA_0" PORT="m_axi_full_bvalid"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="0" NAME="S01_AXI_bready" RIGHT="0" SIGIS="undef" SIGNAME="User_DMA_0_m_axi_full_bready">
+        <PORT DIR="I" NAME="S01_AXI_bready" SIGIS="undef" SIGNAME="User_DMA_0_m_axi_full_bready">
           <CONNECTIONS>
             <CONNECTION INSTANCE="User_DMA_0" PORT="m_axi_full_bready"/>
           </CONNECTIONS>
@@ -2007,7 +2007,7 @@
             <CONNECTION INSTANCE="User_DMA_0" PORT="m_axi_full_arburst"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="0" NAME="S01_AXI_arlock" RIGHT="0" SIGIS="undef" SIGNAME="User_DMA_0_m_axi_full_arlock">
+        <PORT DIR="I" NAME="S01_AXI_arlock" SIGIS="undef" SIGNAME="User_DMA_0_m_axi_full_arlock">
           <CONNECTIONS>
             <CONNECTION INSTANCE="User_DMA_0" PORT="m_axi_full_arlock"/>
           </CONNECTIONS>
@@ -2032,12 +2032,12 @@
             <CONNECTION INSTANCE="User_DMA_0" PORT="m_axi_full_aruser"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="0" NAME="S01_AXI_arvalid" RIGHT="0" SIGIS="undef" SIGNAME="User_DMA_0_m_axi_full_arvalid">
+        <PORT DIR="I" NAME="S01_AXI_arvalid" SIGIS="undef" SIGNAME="User_DMA_0_m_axi_full_arvalid">
           <CONNECTIONS>
             <CONNECTION INSTANCE="User_DMA_0" PORT="m_axi_full_arvalid"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="0" NAME="S01_AXI_arready" RIGHT="0" SIGIS="undef" SIGNAME="User_DMA_0_m_axi_full_arready">
+        <PORT DIR="O" NAME="S01_AXI_arready" SIGIS="undef" SIGNAME="User_DMA_0_m_axi_full_arready">
           <CONNECTIONS>
             <CONNECTION INSTANCE="User_DMA_0" PORT="m_axi_full_arready"/>
           </CONNECTIONS>
@@ -2057,7 +2057,7 @@
             <CONNECTION INSTANCE="User_DMA_0" PORT="m_axi_full_rresp"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="0" NAME="S01_AXI_rlast" RIGHT="0" SIGIS="undef" SIGNAME="User_DMA_0_m_axi_full_rlast">
+        <PORT DIR="O" NAME="S01_AXI_rlast" SIGIS="undef" SIGNAME="User_DMA_0_m_axi_full_rlast">
           <CONNECTIONS>
             <CONNECTION INSTANCE="User_DMA_0" PORT="m_axi_full_rlast"/>
           </CONNECTIONS>
@@ -2067,12 +2067,12 @@
             <CONNECTION INSTANCE="User_DMA_0" PORT="m_axi_full_ruser"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="0" NAME="S01_AXI_rvalid" RIGHT="0" SIGIS="undef" SIGNAME="User_DMA_0_m_axi_full_rvalid">
+        <PORT DIR="O" NAME="S01_AXI_rvalid" SIGIS="undef" SIGNAME="User_DMA_0_m_axi_full_rvalid">
           <CONNECTIONS>
             <CONNECTION INSTANCE="User_DMA_0" PORT="m_axi_full_rvalid"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="0" NAME="S01_AXI_rready" RIGHT="0" SIGIS="undef" SIGNAME="User_DMA_0_m_axi_full_rready">
+        <PORT DIR="I" NAME="S01_AXI_rready" SIGIS="undef" SIGNAME="User_DMA_0_m_axi_full_rready">
           <CONNECTIONS>
             <CONNECTION INSTANCE="User_DMA_0" PORT="m_axi_full_rready"/>
           </CONNECTIONS>
@@ -2087,15 +2087,18 @@
         <PORT DIR="O" NAME="M01_AXI_awprot" SIGIS="undef"/>
         <PORT DIR="O" NAME="M01_AXI_awregion" SIGIS="undef"/>
         <PORT DIR="O" NAME="M01_AXI_awqos" SIGIS="undef"/>
+        <PORT DIR="O" NAME="M01_AXI_awuser" SIGIS="undef"/>
         <PORT DIR="O" NAME="M01_AXI_awvalid" SIGIS="undef"/>
         <PORT DIR="I" NAME="M01_AXI_awready" SIGIS="undef"/>
         <PORT DIR="O" NAME="M01_AXI_wdata" SIGIS="undef"/>
         <PORT DIR="O" NAME="M01_AXI_wstrb" SIGIS="undef"/>
         <PORT DIR="O" NAME="M01_AXI_wlast" SIGIS="undef"/>
+        <PORT DIR="O" NAME="M01_AXI_wuser" SIGIS="undef"/>
         <PORT DIR="O" NAME="M01_AXI_wvalid" SIGIS="undef"/>
         <PORT DIR="I" NAME="M01_AXI_wready" SIGIS="undef"/>
         <PORT DIR="I" NAME="M01_AXI_bid" SIGIS="undef"/>
         <PORT DIR="I" NAME="M01_AXI_bresp" SIGIS="undef"/>
+        <PORT DIR="I" NAME="M01_AXI_buser" SIGIS="undef"/>
         <PORT DIR="I" NAME="M01_AXI_bvalid" SIGIS="undef"/>
         <PORT DIR="O" NAME="M01_AXI_bready" SIGIS="undef"/>
         <PORT DIR="O" NAME="M01_AXI_arid" SIGIS="undef"/>
@@ -2108,12 +2111,14 @@
         <PORT DIR="O" NAME="M01_AXI_arprot" SIGIS="undef"/>
         <PORT DIR="O" NAME="M01_AXI_arregion" SIGIS="undef"/>
         <PORT DIR="O" NAME="M01_AXI_arqos" SIGIS="undef"/>
+        <PORT DIR="O" NAME="M01_AXI_aruser" SIGIS="undef"/>
         <PORT DIR="O" NAME="M01_AXI_arvalid" SIGIS="undef"/>
         <PORT DIR="I" NAME="M01_AXI_arready" SIGIS="undef"/>
         <PORT DIR="I" NAME="M01_AXI_rid" SIGIS="undef"/>
         <PORT DIR="I" NAME="M01_AXI_rdata" SIGIS="undef"/>
         <PORT DIR="I" NAME="M01_AXI_rresp" SIGIS="undef"/>
         <PORT DIR="I" NAME="M01_AXI_rlast" SIGIS="undef"/>
+        <PORT DIR="I" NAME="M01_AXI_ruser" SIGIS="undef"/>
         <PORT DIR="I" NAME="M01_AXI_rvalid" SIGIS="undef"/>
         <PORT DIR="O" NAME="M01_AXI_rready" SIGIS="undef"/>
       </PORTS>
@@ -2268,15 +2273,18 @@
             <PORTMAP LOGICAL="AWPROT" PHYSICAL="M01_AXI_awprot"/>
             <PORTMAP LOGICAL="AWREGION" PHYSICAL="M01_AXI_awregion"/>
             <PORTMAP LOGICAL="AWQOS" PHYSICAL="M01_AXI_awqos"/>
+            <PORTMAP LOGICAL="AWUSER" PHYSICAL="M01_AXI_awuser"/>
             <PORTMAP LOGICAL="AWVALID" PHYSICAL="M01_AXI_awvalid"/>
             <PORTMAP LOGICAL="AWREADY" PHYSICAL="M01_AXI_awready"/>
             <PORTMAP LOGICAL="WDATA" PHYSICAL="M01_AXI_wdata"/>
             <PORTMAP LOGICAL="WSTRB" PHYSICAL="M01_AXI_wstrb"/>
             <PORTMAP LOGICAL="WLAST" PHYSICAL="M01_AXI_wlast"/>
+            <PORTMAP LOGICAL="WUSER" PHYSICAL="M01_AXI_wuser"/>
             <PORTMAP LOGICAL="WVALID" PHYSICAL="M01_AXI_wvalid"/>
             <PORTMAP LOGICAL="WREADY" PHYSICAL="M01_AXI_wready"/>
             <PORTMAP LOGICAL="BID" PHYSICAL="M01_AXI_bid"/>
             <PORTMAP LOGICAL="BRESP" PHYSICAL="M01_AXI_bresp"/>
+            <PORTMAP LOGICAL="BUSER" PHYSICAL="M01_AXI_buser"/>
             <PORTMAP LOGICAL="BVALID" PHYSICAL="M01_AXI_bvalid"/>
             <PORTMAP LOGICAL="BREADY" PHYSICAL="M01_AXI_bready"/>
             <PORTMAP LOGICAL="ARID" PHYSICAL="M01_AXI_arid"/>
@@ -2289,12 +2297,14 @@
             <PORTMAP LOGICAL="ARPROT" PHYSICAL="M01_AXI_arprot"/>
             <PORTMAP LOGICAL="ARREGION" PHYSICAL="M01_AXI_arregion"/>
             <PORTMAP LOGICAL="ARQOS" PHYSICAL="M01_AXI_arqos"/>
+            <PORTMAP LOGICAL="ARUSER" PHYSICAL="M01_AXI_aruser"/>
             <PORTMAP LOGICAL="ARVALID" PHYSICAL="M01_AXI_arvalid"/>
             <PORTMAP LOGICAL="ARREADY" PHYSICAL="M01_AXI_arready"/>
             <PORTMAP LOGICAL="RID" PHYSICAL="M01_AXI_rid"/>
             <PORTMAP LOGICAL="RDATA" PHYSICAL="M01_AXI_rdata"/>
             <PORTMAP LOGICAL="RRESP" PHYSICAL="M01_AXI_rresp"/>
             <PORTMAP LOGICAL="RLAST" PHYSICAL="M01_AXI_rlast"/>
+            <PORTMAP LOGICAL="RUSER" PHYSICAL="M01_AXI_ruser"/>
             <PORTMAP LOGICAL="RVALID" PHYSICAL="M01_AXI_rvalid"/>
             <PORTMAP LOGICAL="RREADY" PHYSICAL="M01_AXI_rready"/>
           </PORTMAPS>
@@ -2674,12 +2684,12 @@
             <CONNECTION INSTANCE="User_DMA_0" PORT="s_axi_lite_awprot"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="0" NAME="M00_AXI_awvalid" RIGHT="0" SIGIS="undef" SIGNAME="User_DMA_0_s_axi_lite_awvalid">
+        <PORT DIR="O" NAME="M00_AXI_awvalid" SIGIS="undef" SIGNAME="User_DMA_0_s_axi_lite_awvalid">
           <CONNECTIONS>
             <CONNECTION INSTANCE="User_DMA_0" PORT="s_axi_lite_awvalid"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="0" NAME="M00_AXI_awready" RIGHT="0" SIGIS="undef" SIGNAME="User_DMA_0_s_axi_lite_awready">
+        <PORT DIR="I" NAME="M00_AXI_awready" SIGIS="undef" SIGNAME="User_DMA_0_s_axi_lite_awready">
           <CONNECTIONS>
             <CONNECTION INSTANCE="User_DMA_0" PORT="s_axi_lite_awready"/>
           </CONNECTIONS>
@@ -2694,12 +2704,12 @@
             <CONNECTION INSTANCE="User_DMA_0" PORT="s_axi_lite_wstrb"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="0" NAME="M00_AXI_wvalid" RIGHT="0" SIGIS="undef" SIGNAME="User_DMA_0_s_axi_lite_wvalid">
+        <PORT DIR="O" NAME="M00_AXI_wvalid" SIGIS="undef" SIGNAME="User_DMA_0_s_axi_lite_wvalid">
           <CONNECTIONS>
             <CONNECTION INSTANCE="User_DMA_0" PORT="s_axi_lite_wvalid"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="0" NAME="M00_AXI_wready" RIGHT="0" SIGIS="undef" SIGNAME="User_DMA_0_s_axi_lite_wready">
+        <PORT DIR="I" NAME="M00_AXI_wready" SIGIS="undef" SIGNAME="User_DMA_0_s_axi_lite_wready">
           <CONNECTIONS>
             <CONNECTION INSTANCE="User_DMA_0" PORT="s_axi_lite_wready"/>
           </CONNECTIONS>
@@ -2709,12 +2719,12 @@
             <CONNECTION INSTANCE="User_DMA_0" PORT="s_axi_lite_bresp"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="0" NAME="M00_AXI_bvalid" RIGHT="0" SIGIS="undef" SIGNAME="User_DMA_0_s_axi_lite_bvalid">
+        <PORT DIR="I" NAME="M00_AXI_bvalid" SIGIS="undef" SIGNAME="User_DMA_0_s_axi_lite_bvalid">
           <CONNECTIONS>
             <CONNECTION INSTANCE="User_DMA_0" PORT="s_axi_lite_bvalid"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="0" NAME="M00_AXI_bready" RIGHT="0" SIGIS="undef" SIGNAME="User_DMA_0_s_axi_lite_bready">
+        <PORT DIR="O" NAME="M00_AXI_bready" SIGIS="undef" SIGNAME="User_DMA_0_s_axi_lite_bready">
           <CONNECTIONS>
             <CONNECTION INSTANCE="User_DMA_0" PORT="s_axi_lite_bready"/>
           </CONNECTIONS>
@@ -2729,12 +2739,12 @@
             <CONNECTION INSTANCE="User_DMA_0" PORT="s_axi_lite_arprot"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="0" NAME="M00_AXI_arvalid" RIGHT="0" SIGIS="undef" SIGNAME="User_DMA_0_s_axi_lite_arvalid">
+        <PORT DIR="O" NAME="M00_AXI_arvalid" SIGIS="undef" SIGNAME="User_DMA_0_s_axi_lite_arvalid">
           <CONNECTIONS>
             <CONNECTION INSTANCE="User_DMA_0" PORT="s_axi_lite_arvalid"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="0" NAME="M00_AXI_arready" RIGHT="0" SIGIS="undef" SIGNAME="User_DMA_0_s_axi_lite_arready">
+        <PORT DIR="I" NAME="M00_AXI_arready" SIGIS="undef" SIGNAME="User_DMA_0_s_axi_lite_arready">
           <CONNECTIONS>
             <CONNECTION INSTANCE="User_DMA_0" PORT="s_axi_lite_arready"/>
           </CONNECTIONS>
@@ -2749,12 +2759,12 @@
             <CONNECTION INSTANCE="User_DMA_0" PORT="s_axi_lite_rresp"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="0" NAME="M00_AXI_rvalid" RIGHT="0" SIGIS="undef" SIGNAME="User_DMA_0_s_axi_lite_rvalid">
+        <PORT DIR="I" NAME="M00_AXI_rvalid" SIGIS="undef" SIGNAME="User_DMA_0_s_axi_lite_rvalid">
           <CONNECTIONS>
             <CONNECTION INSTANCE="User_DMA_0" PORT="s_axi_lite_rvalid"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="0" NAME="M00_AXI_rready" RIGHT="0" SIGIS="undef" SIGNAME="User_DMA_0_s_axi_lite_rready">
+        <PORT DIR="O" NAME="M00_AXI_rready" SIGIS="undef" SIGNAME="User_DMA_0_s_axi_lite_rready">
           <CONNECTIONS>
             <CONNECTION INSTANCE="User_DMA_0" PORT="s_axi_lite_rready"/>
           </CONNECTIONS>
