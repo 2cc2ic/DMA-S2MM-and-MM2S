@@ -1,1 +1,3 @@
-*.vhd linguist-language=verilog
+*.vhd linguist-language=Verilog
+
+*.html linguist-language=Verilog
