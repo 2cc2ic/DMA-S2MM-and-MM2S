@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="myip_v1_0_bfm_1_AXI_LITE_master_IP_0_0_synth_1" LaunchDir="D:/git/DMA-S2MM-and-MM2S-/project/DMA_simulation/DMA_simulation.runs/myip_v1_0_bfm_1_AXI_LITE_master_IP_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="myip_v1_0_bfm_1_AXI_LITE_master_IP_1_0_synth_1" LaunchDir="D:/git/DMA-S2MM-and-MM2S-/project/DMA_simulation/DMA_simulation.runs/myip_v1_0_bfm_1_AXI_LITE_master_IP_1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="myip_v1_0_bfm_1_User_DMA_0_1_synth_1" LaunchDir="D:/git/DMA-S2MM-and-MM2S-/project/DMA_simulation/DMA_simulation.runs/myip_v1_0_bfm_1_User_DMA_0_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+</Runs>
+
