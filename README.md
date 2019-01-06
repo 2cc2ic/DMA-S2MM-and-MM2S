@@ -1,7 +1,6 @@
 # DMA-S2MM-and-MM2S-
 Build an open source, extremely simple DMA.
 
-
 ***
 ### 概述
 本项目构建了一个开放RTL源码、极简的`AXI DMA IP`，来帮助ZYNQ实际开发中更简单易行地完成大规模数据搬运。
@@ -10,7 +9,7 @@ Build an open source, extremely simple DMA.
 ***
 ### IP结构
 
-https://github.com/zhanghaoqing/DMA-S2MM-and-MM2S-/blob/master/Picture/%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1.jpg
+![ip结构](./Picture/架构设计.jpg)
 
 ***
 ### 例程
@@ -22,7 +21,7 @@ https://github.com/zhanghaoqing/DMA-S2MM-and-MM2S-/blob/master/Picture/%E6%9E%B6
 
 结构示意图如下:
 
-https://github.com/zhanghaoqing/DMA-S2MM-and-MM2S-/blob/master/Picture/simulation.jpg
+![simulation结构](./Picture/simulation.jpg)
 
 2. DMA_test
 
@@ -30,4 +29,4 @@ https://github.com/zhanghaoqing/DMA-S2MM-and-MM2S-/blob/master/Picture/simulatio
 
 结构示意图如下:
 
-https://github.com/zhanghaoqing/DMA-S2MM-and-MM2S-/blob/master/Picture/test.jpg
+![simulation结构](./Picture/test.jpg)
