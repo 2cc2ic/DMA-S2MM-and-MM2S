@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Fri Jan  4 20:19:32 2019
+# Process ID: 18660
+# Current directory: E:/git/DMA-S2MM-and-MM2S-/project/DMA_simulation/DMA_simulation.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source E:/git/DMA-S2MM-and-MM2S-/project/DMA_simulation/DMA_simulation.sim/sim_1/behav/xsim/xsim.dir/myip_v1_0_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: E:/git/DMA-S2MM-and-MM2S-/project/DMA_simulation/DMA_simulation.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: E:/git/DMA-S2MM-and-MM2S-/project/DMA_simulation/DMA_simulation.sim/sim_1/behav/xsim\webtalk.jou
+#-----------------------------------------------------------
+source E:/git/DMA-S2MM-and-MM2S-/project/DMA_simulation/DMA_simulation.sim/sim_1/behav/xsim/xsim.dir/myip_v1_0_tb_behav/webtalk/xsim_webtalk.tcl -notrace

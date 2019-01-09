@@ -7,13 +7,13 @@
   "D:/xilinx/Vivado/2017.4/data/ip/xpm/xpm_VCOMP.vhd" \
 -endlib
 -makelib ies_lib/xil_defaultlib \
-  "../../../bd/system/ipshared/34f2/hdl/User_DMA_v1_0_S_AXI_LITE.v" \
-  "../../../bd/system/ipshared/34f2/src/User_DMA_v1_0_M_AXI_FULL_mm2s.v" \
-  "../../../bd/system/ipshared/34f2/src/User_DMA_v1_0_M_AXI_FULL_s2mm.v" \
-  "../../../bd/system/ipshared/34f2/hdl/User_DMA_v1_0_S_AXIS_S2MM.v" \
-  "../../../bd/system/ipshared/34f2/hdl/User_DMA_v1_0_M_AXIS_MM2S.v" \
-  "../../../bd/system/ipshared/34f2/src/fifo.v" \
-  "../../../bd/system/ipshared/34f2/hdl/User_DMA_v1_0.v" \
+  "../../../bd/system/ipshared/c239/hdl/User_DMA_v1_0_S_AXI_LITE.v" \
+  "../../../bd/system/ipshared/c239/src/User_DMA_v1_0_M_AXI_FULL_mm2s.v" \
+  "../../../bd/system/ipshared/c239/src/User_DMA_v1_0_M_AXI_FULL_s2mm.v" \
+  "../../../bd/system/ipshared/c239/hdl/User_DMA_v1_0_S_AXIS_S2MM.v" \
+  "../../../bd/system/ipshared/c239/hdl/User_DMA_v1_0_M_AXIS_MM2S.v" \
+  "../../../bd/system/ipshared/c239/src/fifo.v" \
+  "../../../bd/system/ipshared/c239/hdl/User_DMA_v1_0.v" \
   "../../../bd/system/ip/system_User_DMA_0_0/sim/system_User_DMA_0_0.v" \
 -endlib
 -makelib ies_lib/axi_infrastructure_v1_1_0 \

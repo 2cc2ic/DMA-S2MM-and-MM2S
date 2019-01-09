@@ -22,34 +22,34 @@ set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property webtalk.parent_dir D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.cache/wt [current_project]
-set_property parent.project_path D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.xpr [current_project]
+set_property webtalk.parent_dir C:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_test/DMA_test.cache/wt [current_project]
+set_property parent.project_path C:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_test/DMA_test.xpr [current_project]
 set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property ip_repo_paths d:/git/DMA-S2MM-and-MM2S-/project/ip_repo [current_project]
-set_property ip_output_repo d:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.cache/ip [current_project]
+set_property ip_repo_paths c:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/ip_repo [current_project]
+set_property ip_output_repo c:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_test/DMA_test.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
-read_verilog -library xil_defaultlib D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.srcs/sources_1/imports/hdl/system_wrapper.v
-add_files D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.srcs/sources_1/bd/system/system.bd
-set_property used_in_implementation false [get_files -all d:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/system_processing_system7_0_0.xdc]
-set_property used_in_implementation false [get_files -all d:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ip/system_rst_ps7_0_50M_0/system_rst_ps7_0_50M_0_board.xdc]
-set_property used_in_implementation false [get_files -all d:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ip/system_rst_ps7_0_50M_0/system_rst_ps7_0_50M_0.xdc]
-set_property used_in_implementation false [get_files -all d:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ip/system_rst_ps7_0_50M_0/system_rst_ps7_0_50M_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all d:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_5/bd_44e3_s00a2s_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all d:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_11/bd_44e3_m00s2a_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all d:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_6/bd_44e3_sarn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all d:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_7/bd_44e3_srn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all d:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_8/bd_44e3_sawn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all d:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_9/bd_44e3_swn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all d:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_10/bd_44e3_sbn_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all d:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_1/bd_44e3_psr_aclk_0_board.xdc]
-set_property used_in_implementation false [get_files -all d:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_1/bd_44e3_psr_aclk_0.xdc]
-set_property used_in_implementation false [get_files -all d:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ip/system_axi_smc_0/ooc.xdc]
-set_property used_in_implementation false [get_files -all d:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ip/system_axis_data_fifo_0_0/system_axis_data_fifo_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all d:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ip/system_axis_data_fifo_0_0/system_axis_data_fifo_0_0/system_axis_data_fifo_0_0.xdc]
-set_property used_in_implementation false [get_files -all d:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ip/system_auto_pc_0/system_auto_pc_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all D:/git/DMA-S2MM-and-MM2S-/project/DMA_test/DMA_test.srcs/sources_1/bd/system/system_ooc.xdc]
+read_verilog -library xil_defaultlib C:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_test/DMA_test.srcs/sources_1/imports/hdl/system_wrapper.v
+add_files C:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_test/DMA_test.srcs/sources_1/bd/system/system.bd
+set_property used_in_implementation false [get_files -all c:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/system_processing_system7_0_0.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ip/system_rst_ps7_0_50M_0/system_rst_ps7_0_50M_0_board.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ip/system_rst_ps7_0_50M_0/system_rst_ps7_0_50M_0.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ip/system_rst_ps7_0_50M_0/system_rst_ps7_0_50M_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_5/bd_44e3_s00a2s_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_11/bd_44e3_m00s2a_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_6/bd_44e3_sarn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_7/bd_44e3_srn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_8/bd_44e3_sawn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_9/bd_44e3_swn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_10/bd_44e3_sbn_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_1/bd_44e3_psr_aclk_0_board.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ip/system_axi_smc_0/bd_0/ip/ip_1/bd_44e3_psr_aclk_0.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ip/system_axi_smc_0/ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ip/system_axis_data_fifo_0_0/system_axis_data_fifo_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ip/system_axis_data_fifo_0_0/system_axis_data_fifo_0_0/system_axis_data_fifo_0_0.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_test/DMA_test.srcs/sources_1/bd/system/ip/system_auto_pc_0/system_auto_pc_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all C:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_test/DMA_test.srcs/sources_1/bd/system/system_ooc.xdc]
 
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the

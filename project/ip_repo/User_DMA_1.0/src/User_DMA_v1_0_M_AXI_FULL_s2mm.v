@@ -123,8 +123,8 @@
     reg all_done;
     reg [3:0] state_ctrl;
     reg [23:0] burst_count;
-	reg state_write;
-	wire init_state_signal;
+	  reg state_write;
+	  wire init_state_signal;
     reg [23:0] len_r_ff,len_r_state;
     reg [31:0] addr_r_ff,addr_r_state;
 
@@ -602,7 +602,7 @@
 
 							default:
 								begin
-                                    state_ctrl<=0;
+                    state_ctrl<=0;
 								end
 							endcase
 			      end
@@ -660,10 +660,6 @@
 				endcase
 			end
 	end
-
-
-
-
 	// User logic ends
 
 	endmodule
