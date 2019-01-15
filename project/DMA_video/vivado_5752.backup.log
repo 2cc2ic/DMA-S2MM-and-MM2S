@@ -1,0 +1,28 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Wed Aug 30 14:56:22 2017
+# Process ID: 5752
+# Current directory: F:/miz701N/7020/s3/S03_CH03_AXI_DMA_OV7725_HDMI/Miz_sys
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11596 F:\miz701N\7020\s3\S03_CH03_AXI_DMA_OV7725_HDMI\Miz_sys\Miz_sys.xpr
+# Log file: F:/miz701N/7020/s3/S03_CH03_AXI_DMA_OV7725_HDMI/Miz_sys/vivado.log
+# Journal file: F:/miz701N/7020/s3/S03_CH03_AXI_DMA_OV7725_HDMI/Miz_sys\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/miz701N/7020/s3/S03_CH03_AXI_DMA_OV7725_HDMI/Miz_sys/Miz_sys.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/miz701N/7020/s3/S03_CH03_AXI_DMA_OV7725_HDMI/Miz_ip_lib/AXI_OLED'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/miz701N/7020/s3/S03_CH03_AXI_DMA_OV7725_HDMI/Miz_ip_lib/rgb2vga_v1_0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/miz701N/7020/s3/S03_CH03_AXI_DMA_OV7725_HDMI/Miz_ip_lib/OV_Sensor_ML'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/miz701N/7020/s3/S03_CH03_AXI_DMA_OV7725_HDMI/Miz_ip_lib/HDMI_FPGA_ML'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2016.4/data/ip'.
+open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 910.090 ; gain = 220.398
+launch_sdk -workspace F:/miz701N/7020/s3/S03_CH03_AXI_DMA_OV7725_HDMI/Miz_sys/Miz_sys.sdk -hwspec F:/miz701N/7020/s3/S03_CH03_AXI_DMA_OV7725_HDMI/Miz_sys/Miz_sys.sdk/system_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace F:/miz701N/7020/s3/S03_CH03_AXI_DMA_OV7725_HDMI/Miz_sys/Miz_sys.sdk -hwspec F:/miz701N/7020/s3/S03_CH03_AXI_DMA_OV7725_HDMI/Miz_sys/Miz_sys.sdk/system_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Aug 30 14:57:31 2017...

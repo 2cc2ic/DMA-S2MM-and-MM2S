@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="D:/MIZ_SOC/SEASON_03/CH03_AXI_DMA_CMOS/Miz_sys/Miz_sys.hw/hw_1/wave/hw_ila_data_2/hw_ila_data_2.wdb" id="1">
+         <top_modules>
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="1024001fs"></ZoomEndTime>
+      <Cursor1Time time="76000fs"></Cursor1Time>
+   </zoom_setting>
+   <WVObjectSize size="5" />
+   <wave_markers>
+   </wave_markers>
+   <wvobject db_ref_id="1" fp_name="system_i/v_axi4s_vid_out_0_vid_hsync" type="logic">
+      <obj_property name="ElementShortName">system_i/v_axi4s_vid_out_0_vid_hsync</obj_property>
+      <obj_property name="ObjectShortName">system_i/v_axi4s_vid_out_0_vid_hsync</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="system_i/v_axi4s_vid_out_0_vid_vsync" type="logic">
+      <obj_property name="ElementShortName">system_i/v_axi4s_vid_out_0_vid_vsync</obj_property>
+      <obj_property name="ObjectShortName">system_i/v_axi4s_vid_out_0_vid_vsync</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="system_i/v_tc_0_active_video_out" type="logic">
+      <obj_property name="ElementShortName">system_i/v_tc_0_active_video_out</obj_property>
+      <obj_property name="ObjectShortName">system_i/v_tc_0_active_video_out</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="system_i/v_tc_0_hsync_out" type="logic">
+      <obj_property name="ElementShortName">system_i/v_tc_0_hsync_out</obj_property>
+      <obj_property name="ObjectShortName">system_i/v_tc_0_hsync_out</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="system_i/v_tc_0_vsync_out" type="logic">
+      <obj_property name="ElementShortName">system_i/v_tc_0_vsync_out</obj_property>
+      <obj_property name="ObjectShortName">system_i/v_tc_0_vsync_out</obj_property>
+   </wvobject>
+</wave_config>

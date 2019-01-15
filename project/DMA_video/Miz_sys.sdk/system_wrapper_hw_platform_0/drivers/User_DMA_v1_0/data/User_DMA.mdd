@@ -1,0 +1,10 @@
+
+
+OPTION psf_version = 2.1;
+
+BEGIN DRIVER User_DMA
+	OPTION supported_peripherals = (User_DMA);
+	OPTION copyfiles = all;
+	OPTION VERSION = 1.0;
+	OPTION NAME = User_DMA;
+END DRIVER

@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Wed Aug 30 14:56:22 2017
+# Process ID: 5752
+# Current directory: F:/miz701N/7020/s3/S03_CH03_AXI_DMA_OV7725_HDMI/Miz_sys
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11596 F:\miz701N\7020\s3\S03_CH03_AXI_DMA_OV7725_HDMI\Miz_sys\Miz_sys.xpr
+# Log file: F:/miz701N/7020/s3/S03_CH03_AXI_DMA_OV7725_HDMI/Miz_sys/vivado.log
+# Journal file: F:/miz701N/7020/s3/S03_CH03_AXI_DMA_OV7725_HDMI/Miz_sys\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/miz701N/7020/s3/S03_CH03_AXI_DMA_OV7725_HDMI/Miz_sys/Miz_sys.xpr
+launch_sdk -workspace F:/miz701N/7020/s3/S03_CH03_AXI_DMA_OV7725_HDMI/Miz_sys/Miz_sys.sdk -hwspec F:/miz701N/7020/s3/S03_CH03_AXI_DMA_OV7725_HDMI/Miz_sys/Miz_sys.sdk/system_wrapper.hdf

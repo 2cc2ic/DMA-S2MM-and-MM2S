@@ -1,0 +1,20 @@
+02:10:16 **** Auto Build of configuration Debug for project display ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../display_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'init_intr_sys':
+../src/main.c:37:2: warning: implicit declaration of function 'Setup_Intr_Exception' [-Wimplicit-function-declaration]
+  Setup_Intr_Exception(&Intc);
+  ^~~~~~~~~~~~~~~~~~~~
+../src/main.c:39:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+'Finished building: ../src/main.c'
+' '
+make: *** 没有规则可以创建“display.elf”需要的目标“I2C_8bit.o”。 停止。
+
+02:10:18 Build Finished (took 1s.768ms)
+

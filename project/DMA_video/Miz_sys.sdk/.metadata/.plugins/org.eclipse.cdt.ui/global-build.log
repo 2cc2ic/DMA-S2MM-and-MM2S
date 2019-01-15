@@ -1,0 +1,853 @@
+01:46:58 **** Clean-only build of configuration Debug for project display ****
+make clean 
+rm -rf  ./src/I2C_8bit.o ./src/main.o ./src/sys_intr.o  ./I2C_8bit.o ./main.o ./sys_intr.o  ./src/I2C_8bit.d ./src/main.d ./src/sys_intr.d  ./I2C_8bit.d ./main.d ./sys_intr.d  display.elf.size  display.elf
+' '
+01:46:59 **** Clean-only build of project display_bsp ****
+make -k clean 
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s clean 
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_5/src -s clean 
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s clean 
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s clean 
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_3/src -s clean 
+make -C ps7_cortexa9_0/libsrc/emacps_v3_6/src -s clean 
+make -C ps7_cortexa9_0/libsrc/gpio_v4_3/src -s clean 
+make -C ps7_cortexa9_0/libsrc/iicps_v3_5/src -s clean 
+make -C ps7_cortexa9_0/libsrc/scugic_v3_8/src -s clean 
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s clean 
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s clean 
+make -C ps7_cortexa9_0/libsrc/standalone_v6_5/src -s clean 
+make -C ps7_cortexa9_0/libsrc/uartps_v3_5/src -s clean 
+make -C ps7_cortexa9_0/libsrc/User_DMA_v1_0/src -s clean 
+rm: lstat‘*.o’失败: Invalid argument
+make[1]: *** [clean] 错误 1
+make: *** [ps7_cortexa9_0/libsrc/User_DMA_v1_0/src/make.clean] 错误 2
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s clean 
+make: 由于错误目标“clean”并未重新创建。
+01:47:02 **** Build of project display_bsp ****
+make -k all 
+"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_5/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/emacps_v3_6/src"
+make -C ps7_cortexa9_0/libsrc/emacps_v3_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/gpio_v4_3/src"
+make -C ps7_cortexa9_0/libsrc/gpio_v4_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/iicps_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/iicps_v3_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scugic_v3_8/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_8/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/standalone_v6_5/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v6_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/User_DMA_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/User_DMA_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling coresightps_dcc"
+"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_5/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling cpu_cortexa9"
+"Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling ddrps"
+"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling devcfg"
+"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling dmaps"
+"Running Make libs in ps7_cortexa9_0/libsrc/emacps_v3_6/src"
+make -C ps7_cortexa9_0/libsrc/emacps_v3_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling emacps"
+"Running Make libs in ps7_cortexa9_0/libsrc/gpio_v4_3/src"
+make -C ps7_cortexa9_0/libsrc/gpio_v4_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling gpio"
+"Running Make libs in ps7_cortexa9_0/libsrc/iicps_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/iicps_v3_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling iicps"
+"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v3_8/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_8/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling scugic"
+"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling scutimer"
+"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling scuwdt"
+"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v6_5/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v6_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling standalone"
+"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling uartps"
+"Running Make libs in ps7_cortexa9_0/libsrc/User_DMA_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/User_DMA_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling User_DMA..."
+User_DMA_selftest.c: In function 'USER_DMA_Reg_SelfTest':
+User_DMA_selftest.c:52:57: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    if ( USER_DMA_mReadReg (baseaddr, read_loop_index*4) != (read_loop_index+1)*READ_WRITE_MUL_FACTOR){
+                                                         ^~
+User_DMA_selftest.c:36:6: warning: unused variable 'Index' [-Wunused-variable]
+  int Index;
+      ^~~~~
+"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling xadcps"
+'Finished building libraries'
+01:48:02 **** Build of configuration Debug for project display ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/I2C_8bit.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/I2C_8bit.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../display_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/I2C_8bit.d" -MT"src/I2C_8bit.o" -o "src/I2C_8bit.o" "../src/I2C_8bit.c"
+../src/I2C_8bit.c: In function 'I2C_read':
+../src/I2C_8bit.c:176:39: warning: passing argument 3 of 'I2C_write_byte' makes pointer from integer without a cast [-Wint-conversion]
+  if(I2C_write_byte(InstancePtr,OV_CAM,addr,1) != XST_SUCCESS)
+                                       ^~~~
+../src/I2C_8bit.c:138:5: note: expected 'void *' but argument is of type 'u8 {aka unsigned char}'
+ int I2C_write_byte(XIicPs *InstancePtr,u8 sensor_slave_addr,void *write_byte,int byte_num)
+     ^~~~~~~~~~~~~~
+'Finished building: ../src/I2C_8bit.c'
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../display_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'init_intr_sys':
+../src/main.c:50:2: warning: implicit declaration of function 'Setup_Intr_Exception' [-Wimplicit-function-declaration]
+  Setup_Intr_Exception(&Intc);
+  ^~~~~~~~~~~~~~~~~~~~
+../src/main.c: At top level:
+../src/main.c:61:0: warning: "INTC_DEVICE_ID" redefined
+ #define INTC_DEVICE_ID          XPAR_PS7_SCUGIC_0_DEVICE_ID
+ 
+In file included from ../src/main.c:1:0:
+../src/sys_intr.h:17:0: note: this is the location of the previous definition
+ #define INTC_DEVICE_ID          XPAR_SCUGIC_SINGLE_DEVICE_ID
+ 
+../src/main.c: In function 'init_intr_sys':
+../src/main.c:53:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+'Finished building: ../src/main.c'
+' '
+'Building file: ../src/sys_intr.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sys_intr.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../display_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sys_intr.d" -MT"src/sys_intr.o" -o "src/sys_intr.o" "../src/sys_intr.c"
+'Finished building: ../src/sys_intr.c'
+' '
+make: *** 没有规则可以创建“display.elf”需要的目标“I2C_8bit.o”。 停止。
+01:48:19 **** Auto Build of configuration Debug for project display ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../display_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'init_intr_sys':
+../src/main.c:50:2: warning: implicit declaration of function 'Setup_Intr_Exception' [-Wimplicit-function-declaration]
+  Setup_Intr_Exception(&Intc);
+  ^~~~~~~~~~~~~~~~~~~~
+../src/main.c: At top level:
+../src/main.c:61:0: warning: "INTC_DEVICE_ID" redefined
+ #define INTC_DEVICE_ID          XPAR_PS7_SCUGIC_0_DEVICE_ID
+ 
+In file included from ../src/main.c:1:0:
+../src/sys_intr.h:17:0: note: this is the location of the previous definition
+ #define INTC_DEVICE_ID          XPAR_SCUGIC_SINGLE_DEVICE_ID
+ 
+../src/main.c: In function 'SW_intr_Handler':
+../src/main.c:36:29: error: invalid suffix "_0000" on integer constant
+ #define XPAR_GPIO_LITE_ML_0 0x4040_0000
+                             ^
+../src/main.c:35:14: note: in definition of macro 'XGpio_axi_WriteReg'
+   Xil_Out32((BaseAddr) + (u32)(RegOffset), (u32)(Data))
+              ^~~~~~~~
+../src/main.c:85:25: note: in expansion of macro 'XPAR_GPIO_LITE_ML_0'
+      XGpio_axi_WriteReg(XPAR_GPIO_LITE_ML_0,8,BufferPtr[mm2s_count]);
+                         ^~~~~~~~~~~~~~~~~~~
+../src/main.c:36:29: error: invalid suffix "_0000" on integer constant
+ #define XPAR_GPIO_LITE_ML_0 0x4040_0000
+                             ^
+../src/main.c:35:14: note: in definition of macro 'XGpio_axi_WriteReg'
+   Xil_Out32((BaseAddr) + (u32)(RegOffset), (u32)(Data))
+              ^~~~~~~~
+../src/main.c:86:25: note: in expansion of macro 'XPAR_GPIO_LITE_ML_0'
+      XGpio_axi_WriteReg(XPAR_GPIO_LITE_ML_0,12,image_length);
+                         ^~~~~~~~~~~~~~~~~~~
+../src/main.c:36:29: error: invalid suffix "_0000" on integer constant
+ #define XPAR_GPIO_LITE_ML_0 0x4040_0000
+                             ^
+../src/main.c:35:14: note: in definition of macro 'XGpio_axi_WriteReg'
+   Xil_Out32((BaseAddr) + (u32)(RegOffset), (u32)(Data))
+              ^~~~~~~~
+../src/main.c:97:25: note: in expansion of macro 'XPAR_GPIO_LITE_ML_0'
+      XGpio_axi_WriteReg(XPAR_GPIO_LITE_ML_0,0,BufferPtr[s2mm_count]);
+                         ^~~~~~~~~~~~~~~~~~~
+../src/main.c:36:29: error: invalid suffix "_0000" on integer constant
+ #define XPAR_GPIO_LITE_ML_0 0x4040_0000
+                             ^
+../src/main.c:35:14: note: in definition of macro 'XGpio_axi_WriteReg'
+   Xil_Out32((BaseAddr) + (u32)(RegOffset), (u32)(Data))
+              ^~~~~~~~
+../src/main.c:98:25: note: in expansion of macro 'XPAR_GPIO_LITE_ML_0'
+      XGpio_axi_WriteReg(XPAR_GPIO_LITE_ML_0,4,image_length);
+                         ^~~~~~~~~~~~~~~~~~~
+../src/main.c: In function 'main':
+../src/main.c:36:29: error: invalid suffix "_0000" on integer constant
+ #define XPAR_GPIO_LITE_ML_0 0x4040_0000
+                             ^
+../src/main.c:35:14: note: in definition of macro 'XGpio_axi_WriteReg'
+   Xil_Out32((BaseAddr) + (u32)(RegOffset), (u32)(Data))
+              ^~~~~~~~
+../src/main.c:174:21: note: in expansion of macro 'XPAR_GPIO_LITE_ML_0'
+  XGpio_axi_WriteReg(XPAR_GPIO_LITE_ML_0,0,BufferPtr[0]);
+                     ^~~~~~~~~~~~~~~~~~~
+../src/main.c:36:29: error: invalid suffix "_0000" on integer constant
+ #define XPAR_GPIO_LITE_ML_0 0x4040_0000
+                             ^
+../src/main.c:35:14: note: in definition of macro 'XGpio_axi_WriteReg'
+   Xil_Out32((BaseAddr) + (u32)(RegOffset), (u32)(Data))
+              ^~~~~~~~
+../src/main.c:175:21: note: in expansion of macro 'XPAR_GPIO_LITE_ML_0'
+  XGpio_axi_WriteReg(XPAR_GPIO_LITE_ML_0,4,image_length);
+                     ^~~~~~~~~~~~~~~~~~~
+../src/main.c:36:29: error: invalid suffix "_0000" on integer constant
+ #define XPAR_GPIO_LITE_ML_0 0x4040_0000
+                             ^
+../src/main.c:35:14: note: in definition of macro 'XGpio_axi_WriteReg'
+   Xil_Out32((BaseAddr) + (u32)(RegOffset), (u32)(Data))
+              ^~~~~~~~
+../src/main.c:177:21: note: in expansion of macro 'XPAR_GPIO_LITE_ML_0'
+  XGpio_axi_WriteReg(XPAR_GPIO_LITE_ML_0,8,BufferPtr[0]);
+                     ^~~~~~~~~~~~~~~~~~~
+../src/main.c:36:29: error: invalid suffix "_0000" on integer constant
+ #define XPAR_GPIO_LITE_ML_0 0x4040_0000
+                             ^
+../src/main.c:35:14: note: in definition of macro 'XGpio_axi_WriteReg'
+   Xil_Out32((BaseAddr) + (u32)(RegOffset), (u32)(Data))
+              ^~~~~~~~
+../src/main.c:178:21: note: in expansion of macro 'XPAR_GPIO_LITE_ML_0'
+  XGpio_axi_WriteReg(XPAR_GPIO_LITE_ML_0,12,image_length);
+                     ^~~~~~~~~~~~~~~~~~~
+../src/main.c: In function 'init_intr_sys':
+../src/main.c:53:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/main.o] 错误 1
+01:48:29 **** Auto Build of configuration Debug for project display ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../display_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'init_intr_sys':
+../src/main.c:50:2: warning: implicit declaration of function 'Setup_Intr_Exception' [-Wimplicit-function-declaration]
+  Setup_Intr_Exception(&Intc);
+  ^~~~~~~~~~~~~~~~~~~~
+../src/main.c: At top level:
+../src/main.c:61:0: warning: "INTC_DEVICE_ID" redefined
+ #define INTC_DEVICE_ID          XPAR_PS7_SCUGIC_0_DEVICE_ID
+ 
+In file included from ../src/main.c:1:0:
+../src/sys_intr.h:17:0: note: this is the location of the previous definition
+ #define INTC_DEVICE_ID          XPAR_SCUGIC_SINGLE_DEVICE_ID
+ 
+../src/main.c: In function 'init_intr_sys':
+../src/main.c:53:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+'Finished building: ../src/main.c'
+' '
+make: *** 没有规则可以创建“display.elf”需要的目标“I2C_8bit.o”。 停止。
+01:49:12 **** Auto Build of configuration Debug for project display ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/I2C_8bit.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/I2C_8bit.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../display_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/I2C_8bit.d" -MT"src/I2C_8bit.o" -o "src/I2C_8bit.o" "../src/I2C_8bit.c"
+../src/I2C_8bit.c: In function 'I2C_read':
+../src/I2C_8bit.c:177:39: warning: passing argument 3 of 'I2C_write_byte' makes pointer from integer without a cast [-Wint-conversion]
+  if(I2C_write_byte(InstancePtr,OV_CAM,addr,1) != XST_SUCCESS)
+                                       ^~~~
+../src/I2C_8bit.c:139:5: note: expected 'void *' but argument is of type 'u8 {aka unsigned char}'
+ int I2C_write_byte(XIicPs *InstancePtr,u8 sensor_slave_addr,void *write_byte,int byte_num)
+     ^~~~~~~~~~~~~~
+'Finished building: ../src/I2C_8bit.c'
+' '
+make: *** 没有规则可以创建“display.elf”需要的目标“I2C_8bit.o”。 停止。
+01:50:43 **** Auto Build of configuration Debug for project display ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../display_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'init_intr_sys':
+../src/main.c:50:2: warning: implicit declaration of function 'Setup_Intr_Exception' [-Wimplicit-function-declaration]
+  Setup_Intr_Exception(&Intc);
+  ^~~~~~~~~~~~~~~~~~~~
+../src/main.c: At top level:
+../src/main.c:61:0: warning: "INTC_DEVICE_ID" redefined
+ #define INTC_DEVICE_ID          XPAR_PS7_SCUGIC_0_DEVICE_ID
+ 
+In file included from ../src/main.c:1:0:
+../src/sys_intr.h:17:0: note: this is the location of the previous definition
+ #define INTC_DEVICE_ID          XPAR_SCUGIC_SINGLE_DEVICE_ID
+ 
+../src/main.c: In function 'init_intr_sys':
+../src/main.c:53:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+'Finished building: ../src/main.c'
+' '
+make: *** 没有规则可以创建“display.elf”需要的目标“I2C_8bit.o”。 停止。
+01:50:48 **** Auto Build of configuration Debug for project display ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../display_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'init_intr_sys':
+../src/main.c:50:2: warning: implicit declaration of function 'Setup_Intr_Exception' [-Wimplicit-function-declaration]
+  Setup_Intr_Exception(&Intc);
+  ^~~~~~~~~~~~~~~~~~~~
+../src/main.c: At top level:
+../src/main.c:61:0: warning: "INTC_DEVICE_ID" redefined
+ #define INTC_DEVICE_ID          XPAR_PS7_SCUGIC_0_DEVICE_ID
+ 
+In file included from ../src/main.c:1:0:
+../src/sys_intr.h:17:0: note: this is the location of the previous definition
+ #define INTC_DEVICE_ID          XPAR_SCUGIC_SINGLE_DEVICE_ID
+ 
+../src/main.c: In function 'init_intr_sys':
+../src/main.c:53:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+'Finished building: ../src/main.c'
+' '
+make: *** 没有规则可以创建“display.elf”需要的目标“I2C_8bit.o”。 停止。
+01:51:36 **** Auto Build of configuration Debug for project display ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../display_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'init_intr_sys':
+../src/main.c:50:2: warning: implicit declaration of function 'Setup_Intr_Exception' [-Wimplicit-function-declaration]
+  Setup_Intr_Exception(&Intc);
+  ^~~~~~~~~~~~~~~~~~~~
+../src/main.c: At top level:
+../src/main.c:61:0: warning: "INTC_DEVICE_ID" redefined
+ #define INTC_DEVICE_ID          XPAR_PS7_SCUGIC_0_DEVICE_ID
+ 
+In file included from ../src/main.c:1:0:
+../src/sys_intr.h:17:0: note: this is the location of the previous definition
+ #define INTC_DEVICE_ID          XPAR_SCUGIC_SINGLE_DEVICE_ID
+ 
+../src/main.c: In function 'init_intr_sys':
+../src/main.c:53:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+'Finished building: ../src/main.c'
+' '
+make: *** 没有规则可以创建“display.elf”需要的目标“I2C_8bit.o”。 停止。
+01:51:49 **** Clean-only build of configuration Debug for project display ****
+make clean 
+rm -rf  ./src/I2C_8bit.o ./src/main.o ./src/sys_intr.o  ./I2C_8bit.o ./main.o ./sys_intr.o  ./src/I2C_8bit.d ./src/main.d ./src/sys_intr.d  ./I2C_8bit.d ./main.d ./sys_intr.d  display.elf.size  display.elf
+' '
+01:51:50 **** Auto Build of configuration Debug for project display ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../display_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c:2:22: fatal error: I2C_8bit.h: No such file or directory
+ #include "I2C_8bit.h"
+                      ^
+compilation terminated.
+make: *** [src/main.o] 错误 1
+01:52:00 **** Auto Build of configuration Debug for project display ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../display_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'init_intr_sys':
+../src/main.c:50:2: warning: implicit declaration of function 'Setup_Intr_Exception' [-Wimplicit-function-declaration]
+  Setup_Intr_Exception(&Intc);
+  ^~~~~~~~~~~~~~~~~~~~
+../src/main.c: At top level:
+../src/main.c:61:0: warning: "INTC_DEVICE_ID" redefined
+ #define INTC_DEVICE_ID          XPAR_PS7_SCUGIC_0_DEVICE_ID
+ 
+In file included from ../src/main.c:1:0:
+../src/sys_intr.h:17:0: note: this is the location of the previous definition
+ #define INTC_DEVICE_ID          XPAR_SCUGIC_SINGLE_DEVICE_ID
+ 
+../src/main.c: In function 'init_intr_sys':
+../src/main.c:53:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+'Finished building: ../src/main.c'
+' '
+'Building file: ../src/sys_intr.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sys_intr.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../display_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sys_intr.d" -MT"src/sys_intr.o" -o "src/sys_intr.o" "../src/sys_intr.c"
+'Finished building: ../src/sys_intr.c'
+' '
+make: *** 没有规则可以创建“display.elf”需要的目标“I2C_8bit.o”。 停止。
+01:53:16 **** Auto Build of configuration Debug for project display ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/I2C_8bit.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/I2C_8bit.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../display_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/I2C_8bit.d" -MT"src/I2C_8bit.o" -o "src/I2C_8bit.o" "../src/I2C_8bit.c"
+../src/I2C_8bit.c: In function 'I2C_read':
+../src/I2C_8bit.c:176:39: warning: passing argument 3 of 'I2C_write_byte' makes pointer from integer without a cast [-Wint-conversion]
+  if(I2C_write_byte(InstancePtr,OV_CAM,addr,1) != XST_SUCCESS)
+                                       ^~~~
+../src/I2C_8bit.c:138:5: note: expected 'void *' but argument is of type 'u8 {aka unsigned char}'
+ int I2C_write_byte(XIicPs *InstancePtr,u8 sensor_slave_addr,void *write_byte,int byte_num)
+     ^~~~~~~~~~~~~~
+'Finished building: ../src/I2C_8bit.c'
+' '
+make: *** 没有规则可以创建“display.elf”需要的目标“I2C_8bit.o”。 停止。
+01:53:43 **** Auto Build of configuration Debug for project display ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/I2C_8bit.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/I2C_8bit.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../display_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/I2C_8bit.d" -MT"src/I2C_8bit.o" -o "src/I2C_8bit.o" "../src/I2C_8bit.c"
+../src/I2C_8bit.c: In function 'iic_init':
+../src/I2C_8bit.c:10:18: error: 'XPAR_PS7_I2C_1_DEVICE_ID' undeclared (first use in this function)
+ #define DeviceId XPAR_PS7_I2C_1_DEVICE_ID
+                  ^
+../src/I2C_8bit.c:119:31: note: in expansion of macro 'DeviceId'
+  Config = XIicPs_LookupConfig(DeviceId);
+                               ^~~~~~~~
+../src/I2C_8bit.c:10:18: note: each undeclared identifier is reported only once for each function it appears in
+ #define DeviceId XPAR_PS7_I2C_1_DEVICE_ID
+                  ^
+../src/I2C_8bit.c:119:31: note: in expansion of macro 'DeviceId'
+  Config = XIicPs_LookupConfig(DeviceId);
+                               ^~~~~~~~
+../src/I2C_8bit.c: In function 'I2C_read':
+../src/I2C_8bit.c:176:39: warning: passing argument 3 of 'I2C_write_byte' makes pointer from integer without a cast [-Wint-conversion]
+  if(I2C_write_byte(InstancePtr,OV_CAM,addr,1) != XST_SUCCESS)
+                                       ^~~~
+../src/I2C_8bit.c:138:5: note: expected 'void *' but argument is of type 'u8 {aka unsigned char}'
+ int I2C_write_byte(XIicPs *InstancePtr,u8 sensor_slave_addr,void *write_byte,int byte_num)
+     ^~~~~~~~~~~~~~
+make: *** [src/I2C_8bit.o] 错误 1
+01:53:58 **** Auto Build of configuration Debug for project display ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/I2C_8bit.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/I2C_8bit.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../display_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/I2C_8bit.d" -MT"src/I2C_8bit.o" -o "src/I2C_8bit.o" "../src/I2C_8bit.c"
+../src/I2C_8bit.c: In function 'I2C_read':
+../src/I2C_8bit.c:176:39: warning: passing argument 3 of 'I2C_write_byte' makes pointer from integer without a cast [-Wint-conversion]
+  if(I2C_write_byte(InstancePtr,OV_CAM,addr,1) != XST_SUCCESS)
+                                       ^~~~
+../src/I2C_8bit.c:138:5: note: expected 'void *' but argument is of type 'u8 {aka unsigned char}'
+ int I2C_write_byte(XIicPs *InstancePtr,u8 sensor_slave_addr,void *write_byte,int byte_num)
+     ^~~~~~~~~~~~~~
+'Finished building: ../src/I2C_8bit.c'
+' '
+make: *** 没有规则可以创建“display.elf”需要的目标“I2C_8bit.o”。 停止。
+01:55:02 **** Incremental Build of configuration Debug for project display ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: *** 没有规则可以创建“display.elf”需要的目标“I2C_8bit.o”。 停止。
+01:56:05 **** Incremental Build of configuration Debug for project display ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: *** 没有规则可以创建“display.elf”需要的目标“I2C_8bit.o”。 停止。
+01:57:00 **** Auto Build of configuration Debug for project display ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../display_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'init_intr_sys':
+../src/main.c:50:2: warning: implicit declaration of function 'Setup_Intr_Exception' [-Wimplicit-function-declaration]
+  Setup_Intr_Exception(&Intc);
+  ^~~~~~~~~~~~~~~~~~~~
+../src/main.c: At top level:
+../src/main.c:61:0: warning: "INTC_DEVICE_ID" redefined
+ #define INTC_DEVICE_ID          XPAR_PS7_SCUGIC_0_DEVICE_ID
+ 
+In file included from ../src/main.c:1:0:
+../src/sys_intr.h:17:0: note: this is the location of the previous definition
+ #define INTC_DEVICE_ID          XPAR_SCUGIC_SINGLE_DEVICE_ID
+ 
+../src/main.c: In function 'init_intr_sys':
+../src/main.c:53:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+'Finished building: ../src/main.c'
+' '
+make: *** 没有规则可以创建“display.elf”需要的目标“I2C_8bit.o”。 停止。
+01:57:25 **** Auto Build of configuration Debug for project display ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../display_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'init_intr_sys':
+../src/main.c:50:2: warning: implicit declaration of function 'Setup_Intr_Exception' [-Wimplicit-function-declaration]
+  Setup_Intr_Exception(&Intc);
+  ^~~~~~~~~~~~~~~~~~~~
+../src/main.c: At top level:
+../src/main.c:61:0: warning: "INTC_DEVICE_ID" redefined
+ #define INTC_DEVICE_ID          XPAR_PS7_SCUGIC_0_DEVICE_ID
+ 
+In file included from ../src/main.c:1:0:
+../src/sys_intr.h:17:0: note: this is the location of the previous definition
+ #define INTC_DEVICE_ID          XPAR_SCUGIC_SINGLE_DEVICE_ID
+ 
+../src/main.c: In function 'init_intr_sys':
+../src/main.c:53:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+'Finished building: ../src/main.c'
+' '
+make: *** 没有规则可以创建“display.elf”需要的目标“I2C_8bit.o”。 停止。
+01:58:37 **** Clean-only build of configuration Debug for project display ****
+make clean 
+rm -rf  ./src/I2C_8bit.o ./src/main.o ./src/sys_intr.o  ./I2C_8bit.o ./main.o ./sys_intr.o  ./src/I2C_8bit.d ./src/main.d ./src/sys_intr.d  ./I2C_8bit.d ./main.d ./sys_intr.d  display.elf.size  display.elf
+' '
+01:58:38 **** Auto Build of configuration Debug for project display ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../display_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c:2:22: fatal error: I2C_8bit.h: No such file or directory
+ #include "I2C_8bit.h"
+                      ^
+compilation terminated.
+make: *** [src/main.o] 错误 1
+01:58:55 **** Auto Build of configuration Debug for project display ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../display_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'init_intr_sys':
+../src/main.c:50:2: warning: implicit declaration of function 'Setup_Intr_Exception' [-Wimplicit-function-declaration]
+  Setup_Intr_Exception(&Intc);
+  ^~~~~~~~~~~~~~~~~~~~
+../src/main.c: At top level:
+../src/main.c:61:0: warning: "INTC_DEVICE_ID" redefined
+ #define INTC_DEVICE_ID          XPAR_PS7_SCUGIC_0_DEVICE_ID
+ 
+In file included from ../src/main.c:1:0:
+../src/sys_intr.h:17:0: note: this is the location of the previous definition
+ #define INTC_DEVICE_ID          XPAR_SCUGIC_SINGLE_DEVICE_ID
+ 
+../src/main.c: In function 'main':
+../src/main.c:164:2: warning: implicit declaration of function 'I2C_config_init' [-Wimplicit-function-declaration]
+  I2C_config_init();
+  ^~~~~~~~~~~~~~~
+../src/main.c: In function 'init_intr_sys':
+../src/main.c:53:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+'Finished building: ../src/main.c'
+' '
+'Building file: ../src/sys_intr.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sys_intr.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../display_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sys_intr.d" -MT"src/sys_intr.o" -o "src/sys_intr.o" "../src/sys_intr.c"
+'Finished building: ../src/sys_intr.c'
+' '
+make: *** 没有规则可以创建“display.elf”需要的目标“I2C_8bit.o”。 停止。
+01:59:15 **** Auto Build of configuration Debug for project display ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../display_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c:2:22: fatal error: I2C_8bit.h: No such file or directory
+ #include "I2C_8bit.h"
+                      ^
+compilation terminated.
+make: *** [src/main.o] 错误 1
+02:04:24 **** Auto Build of configuration Debug for project display ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/I2C_8bit.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/I2C_8bit.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../display_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/I2C_8bit.d" -MT"src/I2C_8bit.o" -o "src/I2C_8bit.o" "../src/I2C_8bit.c"
+../src/I2C_8bit.c: In function 'iic_init':
+../src/I2C_8bit.c:10:18: error: 'XPAR_PS7_I2C_1_DEVICE_ID' undeclared (first use in this function)
+ #define DeviceId XPAR_PS7_I2C_1_DEVICE_ID
+                  ^
+../src/I2C_8bit.c:119:31: note: in expansion of macro 'DeviceId'
+  Config = XIicPs_LookupConfig(DeviceId);
+                               ^~~~~~~~
+../src/I2C_8bit.c:10:18: note: each undeclared identifier is reported only once for each function it appears in
+ #define DeviceId XPAR_PS7_I2C_1_DEVICE_ID
+                  ^
+../src/I2C_8bit.c:119:31: note: in expansion of macro 'DeviceId'
+  Config = XIicPs_LookupConfig(DeviceId);
+                               ^~~~~~~~
+../src/I2C_8bit.c: In function 'I2C_read':
+../src/I2C_8bit.c:176:39: warning: passing argument 3 of 'I2C_write_byte' makes pointer from integer without a cast [-Wint-conversion]
+  if(I2C_write_byte(InstancePtr,OV_CAM,addr,1) != XST_SUCCESS)
+                                       ^~~~
+../src/I2C_8bit.c:138:5: note: expected 'void *' but argument is of type 'u8 {aka unsigned char}'
+ int I2C_write_byte(XIicPs *InstancePtr,u8 sensor_slave_addr,void *write_byte,int byte_num)
+     ^~~~~~~~~~~~~~
+make: *** [src/I2C_8bit.o] 错误 1
+02:04:36 **** Auto Build of configuration Debug for project display ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/I2C_8bit.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/I2C_8bit.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../display_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/I2C_8bit.d" -MT"src/I2C_8bit.o" -o "src/I2C_8bit.o" "../src/I2C_8bit.c"
+../src/I2C_8bit.c: In function 'I2C_read':
+../src/I2C_8bit.c:176:39: warning: passing argument 3 of 'I2C_write_byte' makes pointer from integer without a cast [-Wint-conversion]
+  if(I2C_write_byte(InstancePtr,OV_CAM,addr,1) != XST_SUCCESS)
+                                       ^~~~
+../src/I2C_8bit.c:138:5: note: expected 'void *' but argument is of type 'u8 {aka unsigned char}'
+ int I2C_write_byte(XIicPs *InstancePtr,u8 sensor_slave_addr,void *write_byte,int byte_num)
+     ^~~~~~~~~~~~~~
+'Finished building: ../src/I2C_8bit.c'
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../display_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'init_intr_sys':
+../src/main.c:50:2: warning: implicit declaration of function 'Setup_Intr_Exception' [-Wimplicit-function-declaration]
+  Setup_Intr_Exception(&Intc);
+  ^~~~~~~~~~~~~~~~~~~~
+../src/main.c: At top level:
+../src/main.c:61:0: warning: "INTC_DEVICE_ID" redefined
+ #define INTC_DEVICE_ID          XPAR_PS7_SCUGIC_0_DEVICE_ID
+ 
+In file included from ../src/main.c:1:0:
+../src/sys_intr.h:17:0: note: this is the location of the previous definition
+ #define INTC_DEVICE_ID          XPAR_SCUGIC_SINGLE_DEVICE_ID
+ 
+../src/main.c: In function 'init_intr_sys':
+../src/main.c:53:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+'Finished building: ../src/main.c'
+' '
+make: *** 没有规则可以创建“display.elf”需要的目标“I2C_8bit.o”。 停止。
+02:06:23 **** Auto Build of configuration Debug for project display ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../display_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'init_intr_sys':
+../src/main.c:50:2: warning: implicit declaration of function 'Setup_Intr_Exception' [-Wimplicit-function-declaration]
+  Setup_Intr_Exception(&Intc);
+  ^~~~~~~~~~~~~~~~~~~~
+../src/main.c: At top level:
+../src/main.c:61:0: warning: "INTC_DEVICE_ID" redefined
+ #define INTC_DEVICE_ID          XPAR_PS7_SCUGIC_0_DEVICE_ID
+ 
+In file included from ../src/main.c:1:0:
+../src/sys_intr.h:17:0: note: this is the location of the previous definition
+ #define INTC_DEVICE_ID          XPAR_SCUGIC_SINGLE_DEVICE_ID
+ 
+../src/main.c: In function 'init_intr_sys':
+../src/main.c:53:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+'Finished building: ../src/main.c'
+' '
+make: *** 没有规则可以创建“display.elf”需要的目标“I2C_8bit.o”。 停止。
+02:06:54 **** Auto Build of configuration Debug for project display ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../display_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'init_intr_sys':
+../src/main.c:50:2: warning: implicit declaration of function 'Setup_Intr_Exception' [-Wimplicit-function-declaration]
+  Setup_Intr_Exception(&Intc);
+  ^~~~~~~~~~~~~~~~~~~~
+../src/main.c:53:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+'Finished building: ../src/main.c'
+' '
+'Building file: ../src/sys_intr.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sys_intr.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../display_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sys_intr.d" -MT"src/sys_intr.o" -o "src/sys_intr.o" "../src/sys_intr.c"
+../src/sys_intr.c: In function 'Init_Intr_System':
+../src/sys_intr.c:28:36: error: 'INTC_DEVICE_ID' undeclared (first use in this function)
+  IntcConfig = XScuGic_LookupConfig(INTC_DEVICE_ID);
+                                    ^~~~~~~~~~~~~~
+../src/sys_intr.c:28:36: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/sys_intr.o] 错误 1
+02:07:09 **** Auto Build of configuration Debug for project display ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../display_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:1:0:
+../src/sys_intr.h:16:2: warning: data definition has no type or storage class
+  IntcConfig = XScuGic_LookupConfig(INTC_DEVICE_ID);
+  ^~~~~~~~~~
+../src/sys_intr.h:16:2: warning: type defaults to 'int' in declaration of 'IntcConfig' [-Wimplicit-int]
+../src/sys_intr.h:16:36: error: 'INTC_DEVICE_ID' undeclared here (not in a function)
+  IntcConfig = XScuGic_LookupConfig(INTC_DEVICE_ID);
+                                    ^~~~~~~~~~~~~~
+../src/main.c: In function 'init_intr_sys':
+../src/main.c:50:2: warning: implicit declaration of function 'Setup_Intr_Exception' [-Wimplicit-function-declaration]
+  Setup_Intr_Exception(&Intc);
+  ^~~~~~~~~~~~~~~~~~~~
+../src/main.c:53:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/main.o] 错误 1
+02:07:31 **** Auto Build of configuration Debug for project display ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../display_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'init_intr_sys':
+../src/main.c:50:2: warning: implicit declaration of function 'Setup_Intr_Exception' [-Wimplicit-function-declaration]
+  Setup_Intr_Exception(&Intc);
+  ^~~~~~~~~~~~~~~~~~~~
+../src/main.c:53:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+'Finished building: ../src/main.c'
+' '
+'Building file: ../src/sys_intr.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sys_intr.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../display_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sys_intr.d" -MT"src/sys_intr.o" -o "src/sys_intr.o" "../src/sys_intr.c"
+'Finished building: ../src/sys_intr.c'
+' '
+make: *** 没有规则可以创建“display.elf”需要的目标“I2C_8bit.o”。 停止。
+02:08:12 **** Auto Build of configuration Debug for project display ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/I2C_8bit.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/I2C_8bit.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../display_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/I2C_8bit.d" -MT"src/I2C_8bit.o" -o "src/I2C_8bit.o" "../src/I2C_8bit.c"
+../src/I2C_8bit.c: In function 'I2C_read':
+../src/I2C_8bit.c:176:39: warning: passing argument 3 of 'I2C_write_byte' makes pointer from integer without a cast [-Wint-conversion]
+  if(I2C_write_byte(InstancePtr,OV_CAM,addr,1) != XST_SUCCESS)
+                                       ^~~~
+../src/I2C_8bit.c:138:5: note: expected 'void *' but argument is of type 'u8 {aka unsigned char}'
+ int I2C_write_byte(XIicPs *InstancePtr,u8 sensor_slave_addr,void *write_byte,int byte_num)
+     ^~~~~~~~~~~~~~
+'Finished building: ../src/I2C_8bit.c'
+' '
+make: *** 没有规则可以创建“display.elf”需要的目标“I2C_8bit.o”。 停止。
+02:09:18 **** Auto Build of configuration Debug for project display ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../display_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'init_intr_sys':
+../src/main.c:44:2: warning: implicit declaration of function 'Setup_Intr_Exception' [-Wimplicit-function-declaration]
+  Setup_Intr_Exception(&Intc);
+  ^~~~~~~~~~~~~~~~~~~~
+../src/main.c:47:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+'Finished building: ../src/main.c'
+' '
+make: *** 没有规则可以创建“display.elf”需要的目标“I2C_8bit.o”。 停止。
+02:09:39 **** Auto Build of configuration Debug for project display ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../display_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'init_intr_sys':
+../src/main.c:45:2: warning: implicit declaration of function 'Setup_Intr_Exception' [-Wimplicit-function-declaration]
+  Setup_Intr_Exception(&Intc);
+  ^~~~~~~~~~~~~~~~~~~~
+../src/main.c:48:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+'Finished building: ../src/main.c'
+' '
+make: *** 没有规则可以创建“display.elf”需要的目标“I2C_8bit.o”。 停止。
+02:09:54 **** Auto Build of configuration Debug for project display ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../display_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'init_intr_sys':
+../src/main.c:37:2: warning: implicit declaration of function 'Setup_Intr_Exception' [-Wimplicit-function-declaration]
+  Setup_Intr_Exception(&Intc);
+  ^~~~~~~~~~~~~~~~~~~~
+../src/main.c:40:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+'Finished building: ../src/main.c'
+' '
+make: *** 没有规则可以创建“display.elf”需要的目标“I2C_8bit.o”。 停止。
+02:10:16 **** Auto Build of configuration Debug for project display ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../display_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'init_intr_sys':
+../src/main.c:37:2: warning: implicit declaration of function 'Setup_Intr_Exception' [-Wimplicit-function-declaration]
+  Setup_Intr_Exception(&Intc);
+  ^~~~~~~~~~~~~~~~~~~~
+../src/main.c:39:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+'Finished building: ../src/main.c'
+' '
+make: *** 没有规则可以创建“display.elf”需要的目标“I2C_8bit.o”。 停止。

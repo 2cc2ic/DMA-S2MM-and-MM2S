@@ -1,0 +1,169 @@
+#include "sys_intr.h"
+#include "I2C_8bit.h"
+#include "xgpio.h"
+#include "xil_exception.h"
+
+#define IMAGE_WIDTH     640
+#define IMAGE_HEIGHT	480
+#define BYTES_PER_PIXEL	4
+#define image_length IMAGE_WIDTH*IMAGE_HEIGHT
+
+#define MEM_BASE_ADDR		0x10000000
+
+
+#define BUFFER0_BASE		(MEM_BASE_ADDR )
+#define BUFFER1_BASE		(MEM_BASE_ADDR +     IMAGE_WIDTH * IMAGE_HEIGHT * BYTES_PER_PIXEL)
+#define BUFFER2_BASE		(MEM_BASE_ADDR + 2 * IMAGE_WIDTH * IMAGE_HEIGHT * BYTES_PER_PIXEL)
+
+volatile int TxDone;
+volatile int RxDone;
+volatile int Error;
+
+volatile u8 tx_buffer_index;
+volatile u8 rx_buffer_index;
+
+u32 *BufferPtr[3];
+
+static XScuGic Intc; //GIC
+
+static XGpio Gpio;
+
+#define AXI_GPIO_DEV_ID	        XPAR_AXI_GPIO_0_DEVICE_ID
+
+
+#define XGpio_axi_WriteReg(BaseAddr, RegOffset, Data)	\
+		Xil_Out32((BaseAddr) + (u32)(RegOffset), (u32)(Data))
+#define XPAR_GPIO_LITE_ML_0 XPAR_USER_DMA_0_S_AXI_LITE_BASEADDR
+
+/*
+ 		XGpio_axi_WriteReg(XPAR_GPIO_LITE_ML_0,8,DDR_BASEARDDR);
+		XGpio_axi_WriteReg(XPAR_GPIO_LITE_ML_0,12,0xFF00004F);
+
+		XGpio_axi_WriteReg(XPAR_GPIO_LITE_ML_0,0,DDR_BASEARDDR+6000);
+		XGpio_axi_WriteReg(XPAR_GPIO_LITE_ML_0,4,0xFF00004F);
+ */
+
+int init_intr_sys(void)
+{
+//	DMA_Intr_Init(&AxiDma,0);//initial interrupt system
+	Init_Intr_System(&Intc); // initial DMA interrupt system
+	Setup_Intr_Exception(&Intc);
+//	DMA_Setup_Intr_System(&Intc,&AxiDma,TX_INTR_ID,RX_INTR_ID);//setup dma interrpt system
+//	DMA_Intr_Enable(&Intc,&AxiDma);
+}
+
+#define INT_CFG0_OFFSET 0x00000C00
+
+// Parameter definitions
+#define SW1_INT_ID              61
+#define SW2_INT_ID              62
+
+#define INTC_DEVICE_ID          XPAR_PS7_SCUGIC_0_DEVICE_ID
+#define INT_TYPE_RISING_EDGE    0x03
+#define INT_TYPE_HIGHLEVEL      0x01
+#define INT_TYPE_MASK           0x03
+
+static XScuGic INTCInst;
+
+static void SW_intr_Handler(void *param);
+static int IntcInitFunction(u16 DeviceId);
+
+int s2mm = 0;
+int s2mm = 0;
+static void SW_intr_Handler(void *param)
+{
+    int sw_id = (int)param;
+
+    if(sw_id == 1)
+    	;
+
+    if(sw_id == 2)
+    	;
+
+}
+
+void IntcTypeSetup(XScuGic *InstancePtr, int intId, int intType)
+{
+    int mask;
+
+    intType &= INT_TYPE_MASK;
+    mask = XScuGic_DistReadReg(InstancePtr, INT_CFG0_OFFSET + (intId/16)*4);
+    mask &= ~(INT_TYPE_MASK << (intId%16)*2);
+    mask |= intType << ((intId%16)*2);
+    XScuGic_DistWriteReg(InstancePtr, INT_CFG0_OFFSET + (intId/16)*4, mask);
+}
+
+int IntcInitFunction(u16 DeviceId)
+{
+    XScuGic_Config *IntcConfig;
+    int status;
+
+    // Interrupt controller initialisation
+    IntcConfig = XScuGic_LookupConfig(DeviceId);
+    status = XScuGic_CfgInitialize(&INTCInst, IntcConfig, IntcConfig->CpuBaseAddress);
+    if(status != XST_SUCCESS) return XST_FAILURE;
+
+    // Call to interrupt setup
+    Xil_ExceptionRegisterHandler(XIL_EXCEPTION_ID_INT,
+                                 (Xil_ExceptionHandler)XScuGic_InterruptHandler,
+                                 &INTCInst);
+    Xil_ExceptionEnable();
+
+    // Connect SW1~SW3 interrupt to handler
+    status = XScuGic_Connect(&INTCInst,
+                             SW1_INT_ID,
+                             (Xil_ExceptionHandler)SW_intr_Handler,
+                             (void *)1);
+    if(status != XST_SUCCESS) return XST_FAILURE;
+
+    status = XScuGic_Connect(&INTCInst,
+                             SW2_INT_ID,
+                             (Xil_ExceptionHandler)SW_intr_Handler,
+                             (void *)2);
+    if(status != XST_SUCCESS) return XST_FAILURE;
+
+    IntcTypeSetup(&INTCInst, SW1_INT_ID, INT_TYPE_RISING_EDGE);
+    IntcTypeSetup(&INTCInst, SW2_INT_ID, INT_TYPE_RISING_EDGE);
+
+
+
+    XScuGic_Enable(&INTCInst, SW1_INT_ID);
+    XScuGic_Enable(&INTCInst, SW2_INT_ID);
+
+    return XST_SUCCESS;
+}
+
+int main(void)
+{
+
+	BufferPtr[0] = (u32 *)BUFFER0_BASE;
+	BufferPtr[1] = (u32 *)BUFFER1_BASE;
+	BufferPtr[2] = (u32 *)BUFFER2_BASE;
+
+	tx_buffer_index = 0;
+	rx_buffer_index = 0;
+	TxDone = 0;
+	RxDone = 0;
+	Error = 0;
+
+	XGpio_Initialize(&Gpio, AXI_GPIO_DEV_ID);
+	XGpio_SetDataDirection(&Gpio, 1, 0);
+	init_intr_sys();
+
+	I2C_config_init();
+
+	XGpio_DiscreteWrite(&Gpio, 1, 1);
+
+	XGpio_axi_WriteReg(XPAR_GPIO_LITE_ML_0,8,BUFFER0_BASE);
+	XGpio_axi_WriteReg(XPAR_GPIO_LITE_ML_0,12,image_length);
+
+	XGpio_axi_WriteReg(XPAR_GPIO_LITE_ML_0,0,BUFFER0_BASE);
+	XGpio_axi_WriteReg(XPAR_GPIO_LITE_ML_0,4,image_length);
+
+
+	while (1) ;
+
+	return 0;
+}
+
+

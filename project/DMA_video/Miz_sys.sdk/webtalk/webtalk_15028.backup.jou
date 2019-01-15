@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:54:30 MST 2017
+# 
+# Start of session at: Wed Sep 26 18:33:59 2018
+# Process ID: 15028
+# Current directory: /media/hubbery/LENOVO1/360Downloads/MZ701Amini/离线下载/MZ701Amini/S03/S03_CH03_AXI_DMA_OV7725_HDMI/Miz_sys/Miz_sys.sdk/webtalk
+# Command line: wbtcv -mode batch -source sdk_webtalk.tcl
+# Log file: /media/hubbery/LENOVO1/360Downloads/MZ701Amini/离线下载/MZ701Amini/S03/S03_CH03_AXI_DMA_OV7725_HDMI/Miz_sys/Miz_sys.sdk/webtalk/webtalk.log
+# Journal file: /media/hubbery/LENOVO1/360Downloads/MZ701Amini/离线下载/MZ701Amini/S03/S03_CH03_AXI_DMA_OV7725_HDMI/Miz_sys/Miz_sys.sdk/webtalk/webtalk.jou
+#-----------------------------------------------------------
+source sdk_webtalk.tcl

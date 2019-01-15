@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spirit:component xmlns:xilinx="http://www.xilinx.com" xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <spirit:vendor>xilinx.com</spirit:vendor>
+  <spirit:library>customized_ip</spirit:library>
+  <spirit:name>axis_temp</spirit:name>
+  <spirit:version>1.0</spirit:version>
+  <spirit:model>
+    <spirit:ports>
+      <spirit:port>
+        <spirit:name>const</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">0</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>dummy_view</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+    </spirit:ports>
+  </spirit:model>
+  <spirit:choices>
+    <spirit:choice>
+      <spirit:name>choice_pairs_4873554b</spirit:name>
+      <spirit:enumeration spirit:text="false">0</spirit:enumeration>
+      <spirit:enumeration spirit:text="true">1</spirit:enumeration>
+    </spirit:choice>
+  </spirit:choices>
+  <spirit:description>axi-stream parameters</spirit:description>
+  <spirit:parameters>
+    <spirit:parameter>
+      <spirit:name>CLK_DOMAIN</spirit:name>
+      <spirit:displayName>Clk Domain</spirit:displayName>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.CLK_DOMAIN" spirit:order="1100">0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>PHASE</spirit:name>
+      <spirit:displayName>Phase</spirit:displayName>
+      <spirit:value spirit:format="float" spirit:resolve="user" spirit:id="PARAM_VALUE.PHASE" spirit:order="1200">0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>FREQ_HZ</spirit:name>
+      <spirit:displayName>Frequency</spirit:displayName>
+      <spirit:value spirit:format="float" spirit:resolve="user" spirit:id="PARAM_VALUE.FREQ_HZ" spirit:order="1300">100000000</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>LAYERED_METADATA</spirit:name>
+      <spirit:displayName>Layered Metadata</spirit:displayName>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.LAYERED_METADATA" spirit:order="1400">0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>HAS_TLAST</spirit:name>
+      <spirit:displayName>Has Tlast</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.HAS_TLAST" spirit:choiceRef="choice_pairs_4873554b" spirit:order="1500">0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>HAS_TKEEP</spirit:name>
+      <spirit:displayName>Has Tkeep</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.HAS_TKEEP" spirit:choiceRef="choice_pairs_4873554b" spirit:order="1600">0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>HAS_TSTRB</spirit:name>
+      <spirit:displayName>Has Tstrb</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.HAS_TSTRB" spirit:choiceRef="choice_pairs_4873554b" spirit:order="1700">0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>HAS_TREADY</spirit:name>
+      <spirit:displayName>Has Tready</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.HAS_TREADY" spirit:choiceRef="choice_pairs_4873554b" spirit:order="1800">0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>TUSER_WIDTH</spirit:name>
+      <spirit:displayName>Tuser Width</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.TUSER_WIDTH" spirit:order="1900">0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>TID_WIDTH</spirit:name>
+      <spirit:displayName>Tid Width</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.TID_WIDTH" spirit:order="2000">0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>TDEST_WIDTH</spirit:name>
+      <spirit:displayName>Tdest Width</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.TDEST_WIDTH" spirit:order="2100">0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>TDATA_NUM_BYTES</spirit:name>
+      <spirit:displayName>Tdata Num Bytes</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.TDATA_NUM_BYTES" spirit:order="2200">0</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>Component_Name</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.Component_Name" spirit:order="1">axis_temp</spirit:value>
+    </spirit:parameter>
+  </spirit:parameters>
+  <spirit:vendorExtensions>
+    <xilinx:coreExtensions>
+      <xilinx:displayName>axi-stream</xilinx:displayName>
+      <xilinx:coreRevision>1</xilinx:coreRevision>
+      <xilinx:tags>
+        <xilinx:tag xilinx:name="nopcore"/>
+      </xilinx:tags>
+    </xilinx:coreExtensions>
+    <xilinx:packagingInfo>
+      <xilinx:xilinxVersion>2013.3.0</xilinx:xilinxVersion>
+    </xilinx:packagingInfo>
+  </spirit:vendorExtensions>
+</spirit:component>

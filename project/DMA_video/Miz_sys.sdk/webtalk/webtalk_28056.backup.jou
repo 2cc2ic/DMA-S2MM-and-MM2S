@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
+# 
+# Start of session at: Tue Dec 19 15:51:15 2017
+# Process ID: 28056
+# Current directory: F:/MZ7X/MZ701-MINI/S03/S03_CH03_AXI_DMA_OV7725_HDMI/Miz_sys/Miz_sys.sdk/webtalk
+# Command line: wbtcv.exe -mode batch -source sdk_webtalk.tcl
+# Log file: F:/MZ7X/MZ701-MINI/S03/S03_CH03_AXI_DMA_OV7725_HDMI/Miz_sys/Miz_sys.sdk/webtalk/webtalk.log
+# Journal file: F:/MZ7X/MZ701-MINI/S03/S03_CH03_AXI_DMA_OV7725_HDMI/Miz_sys/Miz_sys.sdk/webtalk\webtalk.jou
+#-----------------------------------------------------------
+source sdk_webtalk.tcl
