@@ -606,3 +606,22 @@ configparams force-mem-access 0
 02:01:49 INFO  : Successfully done setting SDK workspace  
 02:01:49 INFO  : Processing command line option -hwspec D:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.sdk/system_wrapper.hdf.
 02:01:49 INFO  : Checking for hwspec changes in the project system_wrapper_hw_platform_0.
+19:26:50 INFO  : Registering command handlers for SDK TCF services
+19:26:51 INFO  : Launching XSCT server: xsct.bat -interactive F:\project\DMA_video\Miz_sys.sdk\temp_xsdb_launch_script.tcl
+19:26:58 INFO  : XSCT server has started successfully.
+19:27:08 INFO  : Successfully done setting XSCT server connection channel  
+19:27:10 INFO  : Successfully done setting SDK workspace  
+19:27:10 INFO  : Processing command line option -hwspec F:/project/DMA_video/Miz_sys.sdk/system_wrapper.hdf.
+19:46:44 INFO  : Registering command handlers for SDK TCF services
+19:46:45 INFO  : Launching XSCT server: xsct.bat -interactive F:\project\DMA_video\Miz_sys.sdk\temp_xsdb_launch_script.tcl
+19:46:47 INFO  : XSCT server has started successfully.
+19:46:47 INFO  : Successfully done setting XSCT server connection channel  
+19:46:47 INFO  : Successfully done setting SDK workspace  
+19:46:47 INFO  : Processing command line option -hwspec F:/project/DMA_video/Miz_sys.sdk/system_wrapper.hdf.
+20:02:19 INFO  : Registering command handlers for SDK TCF services
+20:02:19 INFO  : Launching XSCT server: xsct.bat -interactive F:\project\DMA_video\Miz_sys.sdk\temp_xsdb_launch_script.tcl
+20:02:22 INFO  : XSCT server has started successfully.
+20:02:22 INFO  : Successfully done setting XSCT server connection channel  
+20:02:22 INFO  : Successfully done setting SDK workspace  
+20:02:22 INFO  : Processing command line option -hwspec F:/project/DMA_video/Miz_sys.sdk/system_wrapper.hdf.
+20:02:22 INFO  : Checking for hwspec changes in the project system_wrapper_hw_platform_0.

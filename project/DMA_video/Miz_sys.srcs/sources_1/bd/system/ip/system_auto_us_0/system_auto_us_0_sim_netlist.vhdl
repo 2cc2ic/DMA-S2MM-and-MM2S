@@ -1,10 +1,10 @@
 -- Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
--- Date        : Tue Jan 15 23:03:20 2019
--- Host        : hubbery running 64-bit major release  (build 9200)
+-- Date        : Wed Jan 16 19:05:36 2019
+-- Host        : DESKTOP-0CQ9E4M running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode funcsim
---               d:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ip/system_auto_us_0/system_auto_us_0_sim_netlist.vhdl
+--               f:/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ip/system_auto_us_0/system_auto_us_0_sim_netlist.vhdl
 -- Design      : system_auto_us_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.

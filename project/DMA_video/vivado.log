@@ -1,80 +1,40 @@
 #-----------------------------------------------------------
-# Vivado v2016.4 (64-bit)
-# SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
-# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
-# Start of session at: Tue Dec 26 16:29:52 2017
-# Process ID: 13136
-# Current directory: F:/MZ7X/MZ701-MINI/S03/S03_CH03_AXI_DMA_OV7725_HDMI/Miz_sys
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16140 F:\MZ7X\MZ701-MINI\S03\S03_CH03_AXI_DMA_OV7725_HDMI\Miz_sys\Miz_sys.xpr
-# Log file: F:/MZ7X/MZ701-MINI/S03/S03_CH03_AXI_DMA_OV7725_HDMI/Miz_sys/vivado.log
-# Journal file: F:/MZ7X/MZ701-MINI/S03/S03_CH03_AXI_DMA_OV7725_HDMI/Miz_sys\vivado.jou
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Wed Jan 16 18:56:01 2019
+# Process ID: 13212
+# Current directory: F:/project/DMA_video
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14912 F:\project\DMA_video\Miz_sys.xpr
+# Log file: F:/project/DMA_video/vivado.log
+# Journal file: F:/project/DMA_video\vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project F:/MZ7X/MZ701-MINI/S03/S03_CH03_AXI_DMA_OV7725_HDMI/Miz_sys/Miz_sys.xpr
+open_project F:/project/DMA_video/Miz_sys.xpr
+INFO: [Project 1-313] Project file moved from 'D:/git/DMA-S2MM-and-MM2S/project/DMA_video' since last save.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'F:/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ip/system_axi_dma_0_0/system_axi_dma_0_0.upgrade_log', nor could it be found using path 'D:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ip/system_axi_dma_0_0/system_axi_dma_0_0.upgrade_log'.
 Scanning sources...
 Finished scanning sources
-WARNING: [filemgmt 56-3] IP Repository Path: Could not find the directory 'F:/MZ7X/MZ701-MINI/S03/S03_CH03_AXI_DMA_OV7725_HDMI/Miz_ip_lib/AXI_OLED'.
-WARNING: [filemgmt 56-3] IP Repository Path: Could not find the directory 'F:/MZ7X/MZ701-MINI/S03/S03_CH03_AXI_DMA_OV7725_HDMI/Miz_ip_lib/rgb2vga_v1_0'.
-WARNING: [filemgmt 56-3] IP Repository Path: Could not find the directory 'F:/MZ7X/MZ701-MINI/S03/S03_CH03_AXI_DMA_OV7725_HDMI/Miz_ip_lib/OV_Sensor_ML'.
-WARNING: [filemgmt 56-3] IP Repository Path: Could not find the directory 'F:/MZ7X/MZ701-MINI/S03/S03_CH03_AXI_DMA_OV7725_HDMI/Miz_ip_lib/HDMI_FPGA_ML'.
+WARNING: [filemgmt 56-2] IP Repository Path: Could not find the directory 'F:/../../360Downloads/MZ701Amini/xxx/MZ701Amini/S03/S03_CH03_AXI_DMA_OV7725_HDMI/DOC/Miz_ip_lib', nor could it be found using path 'D:/360Downloads/MZ701Amini/xxx/MZ701Amini/S03/S03_CH03_AXI_DMA_OV7725_HDMI/DOC/Miz_ip_lib'.
 INFO: [IP_Flow 19-234] Refreshing IP repositories
-WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'f:/MZ7X/MZ701-MINI/S03/S03_CH03_AXI_DMA_OV7725_HDMI/Miz_ip_lib/AXI_OLED'; Can't find the specified path.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'f:/project/DMA_video/360Downloads/MZ701Amini/xxx/MZ701Amini/S03/S03_CH03_AXI_DMA_OV7725_HDMI/DOC/Miz_ip_lib'; Can't find the specified path.
 If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
-WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'f:/MZ7X/MZ701-MINI/S03/S03_CH03_AXI_DMA_OV7725_HDMI/Miz_ip_lib/rgb2vga_v1_0'; Can't find the specified path.
-If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
-WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'f:/MZ7X/MZ701-MINI/S03/S03_CH03_AXI_DMA_OV7725_HDMI/Miz_ip_lib/OV_Sensor_ML'; Can't find the specified path.
-If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
-WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'f:/MZ7X/MZ701-MINI/S03/S03_CH03_AXI_DMA_OV7725_HDMI/Miz_ip_lib/HDMI_FPGA_ML'; Can't find the specified path.
-If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2016.4/data/ip'.
-WARNING: [BD 41-1661] One or more IPs have been locked in the design 'system.bd'. Please run report_ip_status for more details and recommendations on how to fix this issue.
-List of locked IPs:
-system_OV_Sensor_ML_0_2
-system_HDMI_FPGA_ML_0_0
-
-open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:08 . Memory (MB): peak = 909.742 ; gain = 212.832
-set_property  ip_repo_paths  {f:/MZ7X/MZ701-MINI/S03/S03_CH03_AXI_DMA_OV7725_HDMI/Miz_ip_lib/rgb2vga_v1_0 f:/MZ7X/MZ701-MINI/S03/S03_CH03_AXI_DMA_OV7725_HDMI/Miz_ip_lib/OV_Sensor_ML f:/MZ7X/MZ701-MINI/S03/S03_CH03_AXI_DMA_OV7725_HDMI/Miz_ip_lib/HDMI_FPGA_ML} [current_project]
-update_ip_catalog
-INFO: [IP_Flow 19-234] Refreshing IP repositories
-WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'f:/MZ7X/MZ701-MINI/S03/S03_CH03_AXI_DMA_OV7725_HDMI/Miz_ip_lib/rgb2vga_v1_0'; Can't find the specified path.
-If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
-WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'f:/MZ7X/MZ701-MINI/S03/S03_CH03_AXI_DMA_OV7725_HDMI/Miz_ip_lib/OV_Sensor_ML'; Can't find the specified path.
-If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
-WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'f:/MZ7X/MZ701-MINI/S03/S03_CH03_AXI_DMA_OV7725_HDMI/Miz_ip_lib/HDMI_FPGA_ML'; Can't find the specified path.
-If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
-set_property  ip_repo_paths  {f:/MZ7X/MZ701-MINI/S03/S03_CH03_AXI_DMA_OV7725_HDMI/Miz_ip_lib/OV_Sensor_ML f:/MZ7X/MZ701-MINI/S03/S03_CH03_AXI_DMA_OV7725_HDMI/Miz_ip_lib/HDMI_FPGA_ML} [current_project]
-update_ip_catalog
-INFO: [IP_Flow 19-234] Refreshing IP repositories
-WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'f:/MZ7X/MZ701-MINI/S03/S03_CH03_AXI_DMA_OV7725_HDMI/Miz_ip_lib/OV_Sensor_ML'; Can't find the specified path.
-If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
-WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'f:/MZ7X/MZ701-MINI/S03/S03_CH03_AXI_DMA_OV7725_HDMI/Miz_ip_lib/HDMI_FPGA_ML'; Can't find the specified path.
-If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
-set_property  ip_repo_paths  f:/MZ7X/MZ701-MINI/S03/S03_CH03_AXI_DMA_OV7725_HDMI/Miz_ip_lib/HDMI_FPGA_ML [current_project]
-update_ip_catalog
-INFO: [IP_Flow 19-234] Refreshing IP repositories
-WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'f:/MZ7X/MZ701-MINI/S03/S03_CH03_AXI_DMA_OV7725_HDMI/Miz_ip_lib/HDMI_FPGA_ML'; Can't find the specified path.
-If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
-set_property  ip_repo_paths  {} [current_project]
-update_ip_catalog
-INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1704] No user IP repositories specified
-set_property  ip_repo_paths  F:/MZ7X/MZ701-MINI/S03/S03_CH03_AXI_DMA_OV7725_HDMI/DOC/Miz_ip_lib [current_project]
-update_ip_catalog
-INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/MZ7X/MZ701-MINI/S03/S03_CH03_AXI_DMA_OV7725_HDMI/DOC/Miz_ip_lib'.
-open_bd_design {F:/MZ7X/MZ701-MINI/S03/S03_CH03_AXI_DMA_OV7725_HDMI/Miz_sys/Miz_sys.srcs/sources_1/bd/system/system.bd}
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/project/ip_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/xilinx/Vivado/2017.4/data/ip'.
+open_project: Time (s): cpu = 00:00:19 ; elapsed = 00:00:13 . Memory (MB): peak = 915.957 ; gain = 206.914
+update_compile_order -fileset sources_1
+open_bd_design {F:/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/system.bd}
 Adding cell -- xilinx.com:user:HDMI_FPGA_ML:1.0 - HDMI_FPGA_ML_0
 Adding cell -- xilinx.com:user:OV_Sensor_ML:1.0 - OV_Sensor_ML_0
-Adding cell -- xilinx.com:ip:axi_dma:7.1 - axi_dma_0
 Adding cell -- xilinx.com:ip:axi_gpio:2.0 - axi_gpio_0
-Adding cell -- xilinx.com:ip:clk_wiz:5.3 - clk_wiz_0
+Adding cell -- xilinx.com:ip:clk_wiz:5.4 - clk_wiz_0
 Adding cell -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
 Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - rst_processing_system7_0_50M
 Adding cell -- xilinx.com:ip:v_axi4s_vid_out:4.0 - v_axi4s_vid_out_0
 Adding cell -- xilinx.com:ip:v_tc:6.1 - v_tc_0
 Adding cell -- xilinx.com:ip:v_vid_in_axi4s:4.0 - v_vid_in_axi4s_0
 Adding cell -- xilinx.com:ip:xlconcat:2.1 - xlconcat_0
-Adding cell -- xilinx.com:ip:xlconstant:1.1 - xlconstant_0
+Adding cell -- user.org:user:User_DMA:1.0 - User_DMA_0
 WARNING: [BD 41-1731] Type mismatch between connected pins: /clk_wiz_0/clk_out1(clk) and /HDMI_FPGA_ML_0/PXLCLK_I(undef)
 WARNING: [BD 41-1731] Type mismatch between connected pins: /clk_wiz_0/locked(undef) and /v_axi4s_vid_out_0/aclken(ce)
 WARNING: [BD 41-1731] Type mismatch between connected pins: /clk_wiz_0/locked(undef) and /v_axi4s_vid_out_0/aresetn(rst)
@@ -88,10 +48,135 @@ WARNING: [BD 41-1731] Type mismatch between connected pins: /OV_Sensor_ML_0/vid_
 WARNING: [BD 41-1731] Type mismatch between connected pins: /clk_wiz_0/clk_out2(clk) and /HDMI_FPGA_ML_0/PXLCLK_5X_I(undef)
 Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
 Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
-Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
 Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
 Adding cell -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us
-Adding cell -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us
-Successfully read diagram <system> from BD file <F:/MZ7X/MZ701-MINI/S03/S03_CH03_AXI_DMA_OV7725_HDMI/Miz_sys/Miz_sys.srcs/sources_1/bd/system/system.bd>
+Successfully read diagram <system> from BD file <F:/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/system.bd>
+open_bd_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 996.008 ; gain = 64.293
+set_property  ip_repo_paths  f:/project/ip_repo [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'f:/project/ip_repo'.
+open_bd_design {F:/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/system.bd}
+generate_target all [get_files  F:/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/system.bd]
+INFO: [BD 41-1637] Generated targets are already up-to-date for bd-design 'system' - hence not re-generating.
+export_ip_user_files -of_objects [get_files F:/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/system.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] F:/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/system.bd]
+export_simulation -of_objects [get_files F:/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/system.bd] -directory F:/project/DMA_video/Miz_sys.ip_user_files/sim_scripts -ip_user_files_dir F:/project/DMA_video/Miz_sys.ip_user_files -ipstatic_source_dir F:/project/DMA_video/Miz_sys.ip_user_files/ipstatic -lib_map_path [list {modelsim=F:/project/DMA_video/Miz_sys.cache/compile_simlib/modelsim} {questa=F:/project/DMA_video/Miz_sys.cache/compile_simlib/questa} {riviera=F:/project/DMA_video/Miz_sys.cache/compile_simlib/riviera} {activehdl=F:/project/DMA_video/Miz_sys.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+WARNING: [IP_Flow 19-474] Invalid Parameter 'Component_Name'
+startgroup
+set_property -dict [list CONFIG.PCW_USE_FABRIC_INTERRUPT {0} CONFIG.PCW_GPIO_EMIO_GPIO_ENABLE {1} CONFIG.PCW_GPIO_EMIO_GPIO_IO {2}] [get_bd_cells processing_system7_0]
+WARNING: [BD 41-1684] Pin /processing_system7_0/IRQ_F2P is now disabled. All connections to this pin have been removed. 
+delete_bd_objs [get_bd_nets xlconcat_0_dout]
+endgroup
+connect_bd_net [get_bd_pins processing_system7_0/GPIO_I] [get_bd_pins xlconcat_0/dout]
+WARNING: [BD 41-1306] The connection to interface pin /processing_system7_0/GPIO_I is being overridden by the user. This pin will not be connected as a part of interface connection GPIO_0
+save_bd_design
+Wrote  : <F:/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/system.bd> 
+Wrote  : <F:/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ui/bd_c954508f.ui> 
+reset_run synth_1
+reset_run system_processing_system7_0_0_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+WARNING: [BD 41-237] Bus Interface property BUSER_WIDTH does not match between /axi_mem_intercon/s00_couplers/auto_pc/S_AXI(0) and /User_DMA_0/M_AXI_FULL(1)
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /axi_mem_intercon/s00_couplers/auto_us/S_AXI(0) and /axi_mem_intercon/s00_couplers/auto_pc/M_AXI(1)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /axi_mem_intercon/s00_couplers/auto_us/S_AXI(0) and /axi_mem_intercon/s00_couplers/auto_pc/M_AXI(1)
+WARNING: [BD 41-237] Bus Interface property WUSER_WIDTH does not match between /axi_mem_intercon/s00_couplers/auto_us/S_AXI(0) and /axi_mem_intercon/s00_couplers/auto_pc/M_AXI(1)
+WARNING: [BD 41-237] Bus Interface property RUSER_WIDTH does not match between /axi_mem_intercon/s00_couplers/auto_us/S_AXI(0) and /axi_mem_intercon/s00_couplers/auto_pc/M_AXI(1)
+WARNING: [BD 41-927] Following properties on pin /HDMI_FPGA_ML_0/HDMI_CLK_P have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_HDMI_FPGA_ML_0_0_HDMI_CLK_P 
+WARNING: [BD 41-927] Following properties on pin /HDMI_FPGA_ML_0/HDMI_CLK_N have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_HDMI_FPGA_ML_0_0_HDMI_CLK_N 
+Wrote  : <F:/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/system.bd> 
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/v_axi4s_vid_out_0/s_axis_video_tdata'(24) to net 'User_DMA_0_m_axis_mm2s_tdata'(32) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/User_DMA_0/s_axis_s2mm_tdata'(32) to net 'v_vid_in_axi4s_0_m_axis_video_tdata'(24) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+VHDL Output written to : F:/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/synth/system.v
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/v_axi4s_vid_out_0/s_axis_video_tdata'(24) to net 'User_DMA_0_m_axis_mm2s_tdata'(32) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-1228] Width mismatch when connecting input pin '/User_DMA_0/s_axis_s2mm_tdata'(32) to net 'v_vid_in_axi4s_0_m_axis_video_tdata'(24) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+VHDL Output written to : F:/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/sim/system.v
+VHDL Output written to : F:/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/hdl/system_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_processing_system7_0_50M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconcat_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block v_vid_in_axi4s_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block v_axi4s_vid_out_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block v_tc_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_gpio_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block OV_Sensor_ML_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block HDMI_FPGA_ML_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0_axi_periph/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block User_DMA_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'f:/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ip/system_auto_pc_1/system_auto_pc_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0_axi_periph/s00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'f:/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ip/system_auto_pc_0/system_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/s00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'f:/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ip/system_auto_us_0/system_auto_us_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/s00_couplers/auto_us .
+Exporting to file F:/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/hw_handoff/system.hwh
+Generated Block Design Tcl file F:/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/hw_handoff/system_bd.tcl
+Generated Hardware Definition File F:/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/synth/system.hwdef
+[Wed Jan 16 19:00:22 2019] Launched system_processing_system7_0_0_synth_1, system_auto_us_0_synth_1, system_auto_pc_1_synth_1, system_auto_pc_0_synth_1, synth_1...
+Run output will be captured here:
+system_processing_system7_0_0_synth_1: F:/project/DMA_video/Miz_sys.runs/system_processing_system7_0_0_synth_1/runme.log
+system_auto_us_0_synth_1: F:/project/DMA_video/Miz_sys.runs/system_auto_us_0_synth_1/runme.log
+system_auto_pc_1_synth_1: F:/project/DMA_video/Miz_sys.runs/system_auto_pc_1_synth_1/runme.log
+system_auto_pc_0_synth_1: F:/project/DMA_video/Miz_sys.runs/system_auto_pc_0_synth_1/runme.log
+synth_1: F:/project/DMA_video/Miz_sys.runs/synth_1/runme.log
+[Wed Jan 16 19:00:23 2019] Launched impl_1...
+Run output will be captured here: F:/project/DMA_video/Miz_sys.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:29 ; elapsed = 00:00:34 . Memory (MB): peak = 1434.770 ; gain = 155.879
+generate_target all [get_files  F:/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/system.bd]
+INFO: [BD 41-1637] Generated targets are already up-to-date for bd-design 'system' - hence not re-generating.
+export_ip_user_files -of_objects [get_files F:/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/system.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] F:/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/system.bd]
+launch_runs -jobs 4 {system_processing_system7_0_0_synth_1 system_auto_us_0_synth_1 system_auto_pc_1_synth_1 system_auto_pc_0_synth_1}
+[Wed Jan 16 19:01:31 2019] Launched system_processing_system7_0_0_synth_1, system_auto_us_0_synth_1, system_auto_pc_1_synth_1, system_auto_pc_0_synth_1...
+Run output will be captured here:
+system_processing_system7_0_0_synth_1: F:/project/DMA_video/Miz_sys.runs/system_processing_system7_0_0_synth_1/runme.log
+system_auto_us_0_synth_1: F:/project/DMA_video/Miz_sys.runs/system_auto_us_0_synth_1/runme.log
+system_auto_pc_1_synth_1: F:/project/DMA_video/Miz_sys.runs/system_auto_pc_1_synth_1/runme.log
+system_auto_pc_0_synth_1: F:/project/DMA_video/Miz_sys.runs/system_auto_pc_0_synth_1/runme.log
+export_simulation -of_objects [get_files F:/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/system.bd] -directory F:/project/DMA_video/Miz_sys.ip_user_files/sim_scripts -ip_user_files_dir F:/project/DMA_video/Miz_sys.ip_user_files -ipstatic_source_dir F:/project/DMA_video/Miz_sys.ip_user_files/ipstatic -lib_map_path [list {modelsim=F:/project/DMA_video/Miz_sys.cache/compile_simlib/modelsim} {questa=F:/project/DMA_video/Miz_sys.cache/compile_simlib/questa} {riviera=F:/project/DMA_video/Miz_sys.cache/compile_simlib/riviera} {activehdl=F:/project/DMA_video/Miz_sys.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+open_bd_design {F:/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/system.bd}
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed Jan 16 19:02:41 2019] Launched system_processing_system7_0_0_synth_1, system_auto_us_0_synth_1, system_auto_pc_1_synth_1, system_auto_pc_0_synth_1, synth_1...
+Run output will be captured here:
+system_processing_system7_0_0_synth_1: F:/project/DMA_video/Miz_sys.runs/system_processing_system7_0_0_synth_1/runme.log
+system_auto_us_0_synth_1: F:/project/DMA_video/Miz_sys.runs/system_auto_us_0_synth_1/runme.log
+system_auto_pc_1_synth_1: F:/project/DMA_video/Miz_sys.runs/system_auto_pc_1_synth_1/runme.log
+system_auto_pc_0_synth_1: F:/project/DMA_video/Miz_sys.runs/system_auto_pc_0_synth_1/runme.log
+synth_1: F:/project/DMA_video/Miz_sys.runs/synth_1/runme.log
+[Wed Jan 16 19:02:41 2019] Launched impl_1...
+Run output will be captured here: F:/project/DMA_video/Miz_sys.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1434.770 ; gain = 0.000
+export_ip_user_files -of_objects  [get_files F:/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/hdl/system_wrapper.v] -no_script -reset -force -quiet
+remove_files  F:/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/hdl/system_wrapper.v
+make_wrapper -files [get_files F:/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/system.bd] -top
+import_files -force -norecurse F:/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/hdl/system_wrapper.v
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed Jan 16 19:23:06 2019] Launched synth_1...
+Run output will be captured here: F:/project/DMA_video/Miz_sys.runs/synth_1/runme.log
+[Wed Jan 16 19:23:06 2019] Launched impl_1...
+Run output will be captured here: F:/project/DMA_video/Miz_sys.runs/impl_1/runme.log
+file copy -force F:/project/DMA_video/Miz_sys.runs/impl_1/system_wrapper.sysdef F:/project/DMA_video/Miz_sys.sdk/system_wrapper.hdf
+
+launch_sdk -workspace F:/project/DMA_video/Miz_sys.sdk -hwspec F:/project/DMA_video/Miz_sys.sdk/system_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace F:/project/DMA_video/Miz_sys.sdk -hwspec F:/project/DMA_video/Miz_sys.sdk/system_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+file copy -force F:/project/DMA_video/Miz_sys.runs/impl_1/system_wrapper.sysdef F:/project/DMA_video/Miz_sys.sdk/system_wrapper.hdf
+
+launch_sdk -workspace F:/project/DMA_video/Miz_sys.sdk -hwspec F:/project/DMA_video/Miz_sys.sdk/system_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace F:/project/DMA_video/Miz_sys.sdk -hwspec F:/project/DMA_video/Miz_sys.sdk/system_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+launch_sdk -workspace F:/project/DMA_video/Miz_sys.sdk -hwspec F:/project/DMA_video/Miz_sys.sdk/system_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace F:/project/DMA_video/Miz_sys.sdk -hwspec F:/project/DMA_video/Miz_sys.sdk/system_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+open_bd_design {F:/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/system.bd}
+open_bd_design {F:/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/system.bd}
 exit
-INFO: [Common 17-206] Exiting Vivado at Tue Dec 26 16:30:57 2017...
+INFO: [Common 17-206] Exiting Vivado at Wed Jan 16 20:06:06 2019...

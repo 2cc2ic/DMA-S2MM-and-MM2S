@@ -1,8 +1,8 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
-| Date             : Wed Jan 16 00:13:55 2019
-| Host             : hubbery running 64-bit major release  (build 9200)
+| Date             : Wed Jan 16 19:25:31 2019
+| Host             : DESKTOP-0CQ9E4M running 64-bit major release  (build 9200)
 | Command          : report_power -file system_wrapper_power_routed.rpt -pb system_wrapper_power_summary_routed.pb -rpx system_wrapper_power_routed.rpx
 | Design           : system_wrapper
 | Device           : xc7z010clg400-1
@@ -54,7 +54,7 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | Clocks                   |     0.010 |        8 |       --- |             --- |
 | Slice Logic              |     0.004 |     6474 |       --- |             --- |
-|   LUT as Logic           |     0.003 |     2176 |     17600 |           12.36 |
+|   LUT as Logic           |     0.003 |     2181 |     17600 |           12.39 |
 |   CARRY4                 |    <0.001 |      172 |      4400 |            3.91 |
 |   Register               |    <0.001 |     3127 |     35200 |            8.88 |
 |   LUT as Distributed RAM |    <0.001 |       50 |      6000 |            0.83 |
@@ -62,7 +62,7 @@ Table of Contents
 |   LUT as Shift Register  |    <0.001 |      105 |      6000 |            1.75 |
 |   F7/F8 Muxes            |    <0.001 |        4 |     17600 |            0.02 |
 |   Others                 |     0.000 |      388 |       --- |             --- |
-| Signals                  |     0.005 |     4701 |       --- |             --- |
+| Signals                  |     0.005 |     4697 |       --- |             --- |
 | Block RAM                |     0.001 |      2.5 |        60 |            4.17 |
 | MMCM                     |     0.106 |        1 |         2 |           50.00 |
 | I/O                      |     0.003 |       20 |       100 |           20.00 |
@@ -78,7 +78,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.029 |       0.021 |      0.007 |
+| Vccint    |       1.000 |     0.028 |       0.021 |      0.007 |
 | Vccaux    |       1.800 |     0.067 |       0.059 |      0.008 |
 | Vcco33    |       3.300 |     0.002 |       0.001 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -160,7 +160,7 @@ Table of Contents
 | Name                                                                              | Power (W) |
 +-----------------------------------------------------------------------------------+-----------+
 | system_wrapper                                                                    |     1.657 |
-|   system_i                                                                        |     1.654 |
+|   system_i                                                                        |     1.653 |
 |     HDMI_FPGA_ML_0                                                                |     0.001 |
 |       U0                                                                          |     0.001 |
 |         Inst_DVITransmitter                                                       |     0.001 |
@@ -226,7 +226,7 @@ Table of Contents
 |                             rstblk                                                |    <0.001 |
 |                               ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst |    <0.001 |
 |               USE_WRITE.USE_SPLIT_W.write_resp_inst                               |    <0.001 |
-|               USE_WRITE.write_addr_inst                                           |     0.001 |
+|               USE_WRITE.write_addr_inst                                           |    <0.001 |
 |                 USE_BURSTS.cmd_queue                                              |    <0.001 |
 |                   inst                                                            |    <0.001 |
 |                     fifo_gen_inst                                                 |    <0.001 |
@@ -284,7 +284,7 @@ Table of Contents
 |       inst                                                                        |     0.106 |
 |     processing_system7_0                                                          |     1.528 |
 |       inst                                                                        |     1.528 |
-|     processing_system7_0_axi_periph                                               |     0.005 |
+|     processing_system7_0_axi_periph                                               |     0.004 |
 |       s00_couplers                                                                |     0.004 |
 |         auto_pc                                                                   |     0.004 |
 |           inst                                                                    |     0.004 |

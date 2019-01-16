@@ -1,8 +1,8 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
-| Date         : Wed Jan 16 00:13:58 2019
-| Host         : hubbery running 64-bit major release  (build 9200)
+| Date         : Wed Jan 16 19:25:32 2019
+| Host         : DESKTOP-0CQ9E4M running 64-bit major release  (build 9200)
 | Command      : report_clock_utilization -file system_wrapper_clock_utilization_routed.rpt
 | Design       : system_wrapper
 | Device       : 7z010-clg400
@@ -87,10 +87,10 @@ Table of Contents
 +-------------------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+
 | Clock Region Name | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail |
 +-------------------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+
-| X0Y0              |    4 |    12 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 | 2681 |  1100 |  996 |   400 |    0 |    20 |    1 |    10 |    0 |    20 |
-| X1Y0              |    4 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    1 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |  194 |  1100 |   38 |   350 |    0 |    40 |    1 |    20 |    0 |    20 |
-| X0Y1              |    1 |    12 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |   95 |  1100 |   26 |   400 |    0 |    20 |    0 |    10 |    0 |    20 |
-| X1Y1              |    3 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    8 |    50 |  157 |  1100 |   52 |   350 |    0 |    40 |    0 |    20 |    0 |    20 |
+| X0Y0              |    4 |    12 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 | 2788 |  1100 | 1071 |   400 |    0 |    20 |    2 |    10 |    0 |    20 |
+| X1Y0              |    4 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    1 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |   27 |  1100 |    0 |   350 |    0 |    40 |    0 |    20 |    0 |    20 |
+| X0Y1              |    1 |    12 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |  157 |  1100 |   59 |   400 |    0 |    20 |    0 |    10 |    0 |    20 |
+| X1Y1              |    3 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    8 |    50 |  155 |  1100 |   38 |   350 |    0 |    40 |    0 |    20 |    0 |    20 |
 +-------------------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+
 * Global Clock column represents track count; while other columns represents cell counts
 
@@ -121,12 +121,12 @@ All Modules
 **** GT Loads column represents load cell count of GT types
 
 
-+----+-------+-----+
-|    | X0    | X1  |
-+----+-------+-----+
-| Y1 |   108 |   0 |
-| Y0 |  2351 |  18 |
-+----+-------+-----+
++----+-------+----+
+|    | X0    | X1 |
++----+-------+----+
+| Y1 |   170 |  0 |
+| Y0 |  2306 |  1 |
++----+-------+----+
 
 
 7. Device Cell Placement Summary for Global Clock g1
@@ -146,8 +146,8 @@ All Modules
 +----+------+------+
 |    | X0   | X1   |
 +----+------+------+
-| Y1 |    0 |  165 |
-| Y0 |  350 |    1 |
+| Y1 |    0 |  163 |
+| Y0 |  334 |   19 |
 +----+------+------+
 
 
@@ -165,12 +165,12 @@ All Modules
 **** GT Loads column represents load cell count of GT types
 
 
-+----+-----+------+
-|    | X0  | X1   |
-+----+-----+------+
-| Y1 |   0 |    0 |
-| Y0 |  56 |  181 |
-+----+-----+------+
++----+------+----+
+|    | X0   | X1 |
++----+------+----+
+| Y1 |    0 |  0 |
+| Y0 |  229 |  8 |
++----+------+----+
 
 
 9. Device Cell Placement Summary for Global Clock g3
@@ -245,9 +245,9 @@ All Modules
 +-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+----------------------------------------------+
 | Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF   | LUTRAM | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                                          |
 +-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+----------------------------------------------+
-| g0        | n/a   | BUFG/O          | None       |        2351 |               0 | 2256 |     94 |    1 |   0 |  0 |    0 |   0 |       0 | system_i/processing_system7_0/inst/FCLK_CLK0 |
-| g1        | n/a   | BUFG/O          | None       |         350 |               0 |  348 |      1 |    1 |   0 |  0 |    0 |   0 |       0 | system_i/clk_wiz_0/inst/clk_out1             |
-| g2        | n/a   | BUFG/O          | None       |          56 |               0 |   56 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | pclk_i                                       |
+| g0        | n/a   | BUFG/O          | None       |        2306 |               0 | 2208 |     95 |    2 |   0 |  0 |    0 |   0 |       0 | system_i/processing_system7_0/inst/FCLK_CLK0 |
+| g1        | n/a   | BUFG/O          | None       |         334 |               0 |  332 |      1 |    1 |   0 |  0 |    0 |   0 |       0 | system_i/clk_wiz_0/inst/clk_out1             |
+| g2        | n/a   | BUFG/O          | None       |         229 |               0 |  227 |      0 |    1 |   0 |  0 |    0 |   0 |       0 | pclk_i                                       |
 | g3        | n/a   | BUFG/O          | None       |          22 |               0 |   21 |      1 |    0 |   0 |  0 |    0 |   0 |       0 | system_i/processing_system7_0/inst/FCLK_CLK1 |
 +-----------+-------+-----------------+------------+-------------+-----------------+------+--------+------+-----+----+------+-----+---------+----------------------------------------------+
 * Clock Loads column represents the clock pin loads (pin count)
@@ -258,14 +258,14 @@ All Modules
 13. Clock Region Cell Placement per Global Clock: Region X1Y0
 -------------------------------------------------------------
 
-+-----------+-------+-----------------+------------+-------------+-----------------+-----+--------+------+-----+----+------+-----+---------+---------------------------------------------------------+
-| Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF  | LUTRAM | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                                                     |
-+-----------+-------+-----------------+------------+-------------+-----------------+-----+--------+------+-----+----+------+-----+---------+---------------------------------------------------------+
-| g0        | n/a   | BUFG/O          | None       |          18 |               0 |  14 |      1 |    1 |   0 |  0 |    1 |   0 |       0 | system_i/processing_system7_0/inst/FCLK_CLK0            |
-| g1        | n/a   | BUFG/O          | None       |           1 |               0 |   1 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | system_i/clk_wiz_0/inst/clk_out1                        |
-| g2        | n/a   | BUFG/O          | None       |         181 |               0 | 179 |      0 |    1 |   0 |  0 |    0 |   0 |       0 | pclk_i                                                  |
-| g5        | n/a   | BUFG/O          | None       |           1 |               0 |   0 |      0 |    0 |   0 |  0 |    1 |   0 |       0 | system_i/clk_wiz_0/inst/clkfbout_buf_system_clk_wiz_0_0 |
-+-----------+-------+-----------------+------------+-------------+-----------------+-----+--------+------+-----+----+------+-----+---------+---------------------------------------------------------+
++-----------+-------+-----------------+------------+-------------+-----------------+----+--------+------+-----+----+------+-----+---------+---------------------------------------------------------+
+| Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF | LUTRAM | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                                                     |
++-----------+-------+-----------------+------------+-------------+-----------------+----+--------+------+-----+----+------+-----+---------+---------------------------------------------------------+
+| g0        | n/a   | BUFG/O          | None       |           1 |               0 |  0 |      0 |    0 |   0 |  0 |    1 |   0 |       0 | system_i/processing_system7_0/inst/FCLK_CLK0            |
+| g1        | n/a   | BUFG/O          | None       |          19 |               0 | 19 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | system_i/clk_wiz_0/inst/clk_out1                        |
+| g2        | n/a   | BUFG/O          | None       |           8 |               0 |  8 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | pclk_i                                                  |
+| g5        | n/a   | BUFG/O          | None       |           1 |               0 |  0 |      0 |    0 |   0 |  0 |    1 |   0 |       0 | system_i/clk_wiz_0/inst/clkfbout_buf_system_clk_wiz_0_0 |
++-----------+-------+-----------------+------------+-------------+-----------------+----+--------+------+-----+----+------+-----+---------+---------------------------------------------------------+
 * Clock Loads column represents the clock pin loads (pin count)
 ** Non-Clock Loads column represents the non-clock pin loads (pin count)
 *** Columns FF, LUTRAM, RAMB through 'Hard IP' represents load cell counts
@@ -274,11 +274,11 @@ All Modules
 14. Clock Region Cell Placement per Global Clock: Region X0Y1
 -------------------------------------------------------------
 
-+-----------+-------+-----------------+------------+-------------+-----------------+----+--------+------+-----+----+------+-----+---------+----------------------------------------------+
-| Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF | LUTRAM | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                                          |
-+-----------+-------+-----------------+------------+-------------+-----------------+----+--------+------+-----+----+------+-----+---------+----------------------------------------------+
-| g0        | n/a   | BUFG/O          | None       |         108 |               0 | 95 |     12 |    0 |   0 |  0 |    0 |   0 |       0 | system_i/processing_system7_0/inst/FCLK_CLK0 |
-+-----------+-------+-----------------+------------+-------------+-----------------+----+--------+------+-----+----+------+-----+---------+----------------------------------------------+
++-----------+-------+-----------------+------------+-------------+-----------------+-----+--------+------+-----+----+------+-----+---------+----------------------------------------------+
+| Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF  | LUTRAM | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                                          |
++-----------+-------+-----------------+------------+-------------+-----------------+-----+--------+------+-----+----+------+-----+---------+----------------------------------------------+
+| g0        | n/a   | BUFG/O          | None       |         170 |               0 | 157 |     12 |    0 |   0 |  0 |    0 |   0 |       0 | system_i/processing_system7_0/inst/FCLK_CLK0 |
++-----------+-------+-----------------+------------+-------------+-----------------+-----+--------+------+-----+----+------+-----+---------+----------------------------------------------+
 * Clock Loads column represents the clock pin loads (pin count)
 ** Non-Clock Loads column represents the non-clock pin loads (pin count)
 *** Columns FF, LUTRAM, RAMB through 'Hard IP' represents load cell counts
@@ -290,7 +290,7 @@ All Modules
 +-----------+-------+-----------------+------------+-------------+-----------------+-----+--------+------+-----+----+------+-----+---------+----------------------------------------------+
 | Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF  | LUTRAM | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                                          |
 +-----------+-------+-----------------+------------+-------------+-----------------+-----+--------+------+-----+----+------+-----+---------+----------------------------------------------+
-| g1        | n/a   | BUFG/O          | None       |         165 |               0 | 157 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | system_i/clk_wiz_0/inst/clk_out1             |
+| g1        | n/a   | BUFG/O          | None       |         163 |               0 | 155 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | system_i/clk_wiz_0/inst/clk_out1             |
 | g3        | n/a   | BUFG/O          | None       |           0 |               1 |   0 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | system_i/processing_system7_0/inst/FCLK_CLK1 |
 | g4        | n/a   | BUFG/O          | None       |           8 |               0 |   0 |      0 |    0 |   0 |  0 |    0 |   0 |       0 | system_i/clk_wiz_0/inst/clk_out2             |
 +-----------+-------+-----------------+------------+-------------+-----------------+-----+--------+------+-----+----+------+-----+---------+----------------------------------------------+
@@ -325,7 +325,7 @@ resize_pblock [get_pblocks {CLKAG_system_i/processing_system7_0/inst/FCLK_CLK1}]
 #startgroup
 create_pblock {CLKAG_system_i/processing_system7_0/inst/FCLK_CLK0}
 add_cells_to_pblock [get_pblocks  {CLKAG_system_i/processing_system7_0/inst/FCLK_CLK0}] [get_cells -filter { PRIMITIVE_GROUP != I/O && IS_PRIMITIVE==1 && PRIMITIVE_LEVEL !=INTERNAL && NAME!=system_i/clk_wiz_0/inst/mmcm_adv_inst} -of_object [get_pins -filter {DIRECTION==IN} -of_objects [get_nets -hierarchical -filter {PARENT=="system_i/processing_system7_0/inst/FCLK_CLK0"}]]]
-resize_pblock [get_pblocks {CLKAG_system_i/processing_system7_0/inst/FCLK_CLK0}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X0Y1:CLOCKREGION_X0Y1 CLOCKREGION_X1Y0:CLOCKREGION_X1Y0}
+resize_pblock [get_pblocks {CLKAG_system_i/processing_system7_0/inst/FCLK_CLK0}] -add {CLOCKREGION_X0Y0:CLOCKREGION_X0Y0 CLOCKREGION_X0Y1:CLOCKREGION_X0Y1}
 #endgroup
 
 # Clock net "system_i/clk_wiz_0/inst/clk_out2" driven by instance "system_i/clk_wiz_0/inst/clkout2_buf" located at site "BUFGCTRL_X0Y3"

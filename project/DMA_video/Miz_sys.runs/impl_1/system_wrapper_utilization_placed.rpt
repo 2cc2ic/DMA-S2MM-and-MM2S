@@ -1,8 +1,8 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
-| Date         : Wed Jan 16 00:13:07 2019
-| Host         : hubbery running 64-bit major release  (build 9200)
+| Date         : Wed Jan 16 19:25:01 2019
+| Host         : DESKTOP-0CQ9E4M running 64-bit major release  (build 9200)
 | Command      : report_utilization -file system_wrapper_utilization_placed.rpt -pb system_wrapper_utilization_placed.pb
 | Design       : system_wrapper
 | Device       : 7z010clg400-1
@@ -31,8 +31,8 @@ Table of Contents
 +----------------------------+------+-------+-----------+-------+
 |          Site Type         | Used | Fixed | Available | Util% |
 +----------------------------+------+-------+-----------+-------+
-| Slice LUTs                 | 2331 |     0 |     17600 | 13.24 |
-|   LUT as Logic             | 2176 |     0 |     17600 | 12.36 |
+| Slice LUTs                 | 2336 |     0 |     17600 | 13.27 |
+|   LUT as Logic             | 2181 |     0 |     17600 | 12.39 |
 |   LUT as Memory            |  155 |     0 |      6000 |  2.58 |
 |     LUT as Distributed RAM |   50 |     0 |           |       |
 |     LUT as Shift Register  |  105 |     0 |           |       |
@@ -69,13 +69,13 @@ Table of Contents
 +-------------------------------------------+------+-------+-----------+-------+
 |                 Site Type                 | Used | Fixed | Available | Util% |
 +-------------------------------------------+------+-------+-----------+-------+
-| Slice                                     |  991 |     0 |      4400 | 22.52 |
-|   SLICEL                                  |  636 |     0 |           |       |
-|   SLICEM                                  |  355 |     0 |           |       |
-| LUT as Logic                              | 2176 |     0 |     17600 | 12.36 |
+| Slice                                     |  953 |     0 |      4400 | 21.66 |
+|   SLICEL                                  |  591 |     0 |           |       |
+|   SLICEM                                  |  362 |     0 |           |       |
+| LUT as Logic                              | 2181 |     0 |     17600 | 12.39 |
 |   using O5 output only                    |    0 |       |           |       |
-|   using O6 output only                    | 1777 |       |           |       |
-|   using O5 and O6                         |  399 |       |           |       |
+|   using O6 output only                    | 1787 |       |           |       |
+|   using O5 and O6                         |  394 |       |           |       |
 | LUT as Memory                             |  155 |     0 |      6000 |  2.58 |
 |   LUT as Distributed RAM                  |   50 |     0 |           |       |
 |     using O5 output only                  |    0 |       |           |       |
@@ -85,10 +85,10 @@ Table of Contents
 |     using O5 output only                  |    3 |       |           |       |
 |     using O6 output only                  |   98 |       |           |       |
 |     using O5 and O6                       |    4 |       |           |       |
-| LUT Flip Flop Pairs                       | 1292 |     0 |     17600 |  7.34 |
+| LUT Flip Flop Pairs                       | 1309 |     0 |     17600 |  7.44 |
 |   fully used LUT-FF pairs                 |  226 |       |           |       |
-|   LUT-FF pairs with one unused LUT output | 1007 |       |           |       |
-|   LUT-FF pairs with one unused Flip Flop  |  941 |       |           |       |
+|   LUT-FF pairs with one unused LUT output | 1013 |       |           |       |
+|   LUT-FF pairs with one unused Flip Flop  |  975 |       |           |       |
 | Unique Control Sets                       |  164 |       |           |       |
 +-------------------------------------------+------+-------+-----------+-------+
 * Note: Review the Control Sets Report for more information regarding control sets.

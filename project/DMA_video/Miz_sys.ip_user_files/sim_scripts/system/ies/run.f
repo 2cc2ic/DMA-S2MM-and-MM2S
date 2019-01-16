@@ -117,9 +117,26 @@
   "../../../bd/system/ipshared/1122/src/fifo.v" \
   "../../../bd/system/ipshared/1122/hdl/User_DMA_v1_0.v" \
   "../../../bd/system/ip/system_User_DMA_0_0/sim/system_User_DMA_0_0.v" \
-  "d:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ip/system_auto_pc_1/system_auto_pc_1_sim_netlist.v" \
-  "d:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ip/system_auto_pc_0/system_auto_pc_0_sim_netlist.v" \
-  "d:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ip/system_auto_us_0/system_auto_us_0_sim_netlist.v" \
+  "../../../bd/system/sim/system.v" \
+-endlib
+-makelib ies_lib/axi_protocol_converter_v2_1_15 \
+  "../../../../Miz_sys.srcs/sources_1/bd/system/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v" \
+-endlib
+-makelib ies_lib/xil_defaultlib \
+  "../../../bd/system/ip/system_auto_pc_1/sim/system_auto_pc_1.v" \
+  "../../../bd/system/ip/system_auto_pc_0/sim/system_auto_pc_0.v" \
+-endlib
+-makelib ies_lib/axi_clock_converter_v2_1_14 \
+  "../../../../Miz_sys.srcs/sources_1/bd/system/ipshared/445f/hdl/axi_clock_converter_v2_1_vl_rfs.v" \
+-endlib
+-makelib ies_lib/blk_mem_gen_v8_4_1 \
+  "../../../../Miz_sys.srcs/sources_1/bd/system/ipshared/67d8/simulation/blk_mem_gen_v8_4.v" \
+-endlib
+-makelib ies_lib/axi_dwidth_converter_v2_1_15 \
+  "../../../../Miz_sys.srcs/sources_1/bd/system/ipshared/1cdc/hdl/axi_dwidth_converter_v2_1_vl_rfs.v" \
+-endlib
+-makelib ies_lib/xil_defaultlib \
+  "../../../bd/system/ip/system_auto_us_0/sim/system_auto_us_0.v" \
 -endlib
 -makelib ies_lib/xil_defaultlib \
   glbl.v

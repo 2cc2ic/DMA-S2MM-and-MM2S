@@ -361,7 +361,7 @@ proc create_root_design { parentCell } {
    CONFIG.PCW_EN_EMIO_CD_SDIO1 {0} \
    CONFIG.PCW_EN_EMIO_ENET0 {0} \
    CONFIG.PCW_EN_EMIO_ENET1 {0} \
-   CONFIG.PCW_EN_EMIO_GPIO {0} \
+   CONFIG.PCW_EN_EMIO_GPIO {1} \
    CONFIG.PCW_EN_EMIO_I2C0 {1} \
    CONFIG.PCW_EN_EMIO_I2C1 {0} \
    CONFIG.PCW_EN_EMIO_MODEM_UART0 {0} \
@@ -447,9 +447,9 @@ proc create_root_design { parentCell } {
    CONFIG.PCW_GP1_NUM_READ_THREADS {4} \
    CONFIG.PCW_GP1_NUM_WRITE_THREADS {4} \
    CONFIG.PCW_GPIO_BASEADDR {0xE000A000} \
-   CONFIG.PCW_GPIO_EMIO_GPIO_ENABLE {0} \
-   CONFIG.PCW_GPIO_EMIO_GPIO_IO {<Select>} \
-   CONFIG.PCW_GPIO_EMIO_GPIO_WIDTH {64} \
+   CONFIG.PCW_GPIO_EMIO_GPIO_ENABLE {1} \
+   CONFIG.PCW_GPIO_EMIO_GPIO_IO {2} \
+   CONFIG.PCW_GPIO_EMIO_GPIO_WIDTH {2} \
    CONFIG.PCW_GPIO_HIGHADDR {0xE000AFFF} \
    CONFIG.PCW_GPIO_MIO_GPIO_ENABLE {0} \
    CONFIG.PCW_GPIO_PERIPHERAL_ENABLE {0} \
@@ -858,7 +858,7 @@ proc create_root_design { parentCell } {
    CONFIG.PCW_USE_DMA3 {0} \
    CONFIG.PCW_USE_EXPANDED_IOP {0} \
    CONFIG.PCW_USE_EXPANDED_PS_SLCR_REGISTERS {0} \
-   CONFIG.PCW_USE_FABRIC_INTERRUPT {1} \
+   CONFIG.PCW_USE_FABRIC_INTERRUPT {0} \
    CONFIG.PCW_USE_HIGH_OCM {0} \
    CONFIG.PCW_USE_M_AXI_GP0 {1} \
    CONFIG.PCW_USE_M_AXI_GP1 {0} \
@@ -993,7 +993,7 @@ proc create_root_design { parentCell } {
   connect_bd_net -net v_vid_in_axi4s_0_m_axis_video_tvalid [get_bd_ports m_axis_video_tvalid] [get_bd_pins User_DMA_0/s_axis_s2mm_tvalid] [get_bd_pins v_vid_in_axi4s_0/m_axis_video_tvalid]
   connect_bd_net -net vga_vs [get_bd_pins HDMI_FPGA_ML_0/VGA_VS] [get_bd_pins v_axi4s_vid_out_0/vid_vsync]
   connect_bd_net -net vid_io_in_reset_1 [get_bd_ports vid_io_rst_i] [get_bd_pins v_axi4s_vid_out_0/vid_io_out_reset] [get_bd_pins v_vid_in_axi4s_0/vid_io_in_reset]
-  connect_bd_net -net xlconcat_0_dout [get_bd_pins processing_system7_0/IRQ_F2P] [get_bd_pins xlconcat_0/dout]
+  connect_bd_net -net xlconcat_0_dout [get_bd_pins processing_system7_0/GPIO_I] [get_bd_pins xlconcat_0/dout]
 
   # Create address segments
   create_bd_addr_seg -range 0x20000000 -offset 0x00000000 [get_bd_addr_spaces User_DMA_0/M_AXI_FULL] [get_bd_addr_segs processing_system7_0/S_AXI_HP0/HP0_DDR_LOWOCM] SEG_processing_system7_0_HP0_DDR_LOWOCM

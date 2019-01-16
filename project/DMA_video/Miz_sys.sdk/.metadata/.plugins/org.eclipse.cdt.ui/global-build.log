@@ -851,3 +851,1401 @@ arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cort
 'Finished building: ../src/main.c'
 ' '
 make: *** Ã»ÓÐ¹æÔò¿ÉÒÔ´´½¨¡°display.elf¡±ÐèÒªµÄÄ¿±ê¡°I2C_8bit.o¡±¡£ Í£Ö¹¡£
+19:26:52 **** Auto Build of project display_bsp ****
+make -k all 
+"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_5/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/emacps_v3_6/src"
+make -C ps7_cortexa9_0/libsrc/emacps_v3_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/gpio_v4_3/src"
+make -C ps7_cortexa9_0/libsrc/gpio_v4_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/iicps_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/iicps_v3_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scugic_v3_8/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_8/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/standalone_v6_5/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v6_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/User_DMA_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/User_DMA_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling coresightps_dcc"
+"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_5/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling cpu_cortexa9"
+"Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling ddrps"
+"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling devcfg"
+"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling dmaps"
+"Running Make libs in ps7_cortexa9_0/libsrc/emacps_v3_6/src"
+make -C ps7_cortexa9_0/libsrc/emacps_v3_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling emacps"
+"Running Make libs in ps7_cortexa9_0/libsrc/gpio_v4_3/src"
+make -C ps7_cortexa9_0/libsrc/gpio_v4_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling gpio"
+"Running Make libs in ps7_cortexa9_0/libsrc/iicps_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/iicps_v3_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling iicps"
+"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v3_8/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_8/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling scugic"
+"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling scutimer"
+"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling scuwdt"
+"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v6_5/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v6_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling standalone"
+"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling uartps"
+"Running Make libs in ps7_cortexa9_0/libsrc/User_DMA_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/User_DMA_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling User_DMA..."
+User_DMA_selftest.c: In function 'USER_DMA_Reg_SelfTest':
+User_DMA_selftest.c:52:57: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    if ( USER_DMA_mReadReg (baseaddr, read_loop_index*4) != (read_loop_index+1)*READ_WRITE_MUL_FACTOR){
+                                                         ^~
+User_DMA_selftest.c:36:6: warning: unused variable 'Index' [-Wunused-variable]
+  int Index;
+      ^~~~~
+"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling xadcps"
+'Finished building libraries'
+19:47:15 **** Build of project display_bsp ****
+make -k all 
+"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_5/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/emacps_v3_6/src"
+make -C ps7_cortexa9_0/libsrc/emacps_v3_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/gpio_v4_3/src"
+make -C ps7_cortexa9_0/libsrc/gpio_v4_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/iicps_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/iicps_v3_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scugic_v3_8/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_8/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/standalone_v6_5/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v6_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/User_DMA_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/User_DMA_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling coresightps_dcc"
+arm-none-eabi-ar: creating ../../../lib/libxil.a
+"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_5/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling cpu_cortexa9"
+"Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling ddrps"
+"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling devcfg"
+"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling dmaps"
+"Running Make libs in ps7_cortexa9_0/libsrc/emacps_v3_6/src"
+make -C ps7_cortexa9_0/libsrc/emacps_v3_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling emacps"
+"Running Make libs in ps7_cortexa9_0/libsrc/gpio_v4_3/src"
+make -C ps7_cortexa9_0/libsrc/gpio_v4_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling gpio"
+"Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling gpiops"
+"Running Make libs in ps7_cortexa9_0/libsrc/iicps_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/iicps_v3_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling iicps"
+"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v3_8/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_8/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling scugic"
+"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling scutimer"
+"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling scuwdt"
+"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v6_5/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v6_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling standalone"
+"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling uartps"
+"Running Make libs in ps7_cortexa9_0/libsrc/User_DMA_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/User_DMA_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling User_DMA..."
+User_DMA_selftest.c: In function 'USER_DMA_Reg_SelfTest':
+User_DMA_selftest.c:52:57: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    if ( USER_DMA_mReadReg (baseaddr, read_loop_index*4) != (read_loop_index+1)*READ_WRITE_MUL_FACTOR){
+                                                         ^~
+User_DMA_selftest.c:36:6: warning: unused variable 'Index' [-Wunused-variable]
+  int Index;
+      ^~~~~
+"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -Wall -Wextra"
+"Compiling xadcps"
+'Finished building libraries'
+
+**** Build of configuration Debug for project display ****
+
+Nothing to build for project display
+19:48:18 **** Auto Build of configuration Debug for project display ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/I2C_8bit.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/I2C_8bit.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../display_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/I2C_8bit.d" -MT"src/I2C_8bit.o" -o "src/I2C_8bit.o" "../src/I2C_8bit.c"
+../src/I2C_8bit.c: In function 'I2C_read':
+../src/I2C_8bit.c:176:39: warning: passing argument 3 of 'I2C_write_byte' makes pointer from integer without a cast [-Wint-conversion]
+  if(I2C_write_byte(InstancePtr,OV_CAM,addr,1) != XST_SUCCESS)
+                                       ^~~~
+../src/I2C_8bit.c:138:5: note: expected 'void *' but argument is of type 'u8 {aka unsigned char}'
+ int I2C_write_byte(XIicPs *InstancePtr,u8 sensor_slave_addr,void *write_byte,int byte_num)
+     ^~~~~~~~~~~~~~
+'Finished building: ../src/I2C_8bit.c'
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../display_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c:12:22: fatal error: dma_intr.h: No such file or directory
+ #include "dma_intr.h"
+                      ^
+compilation terminated.
+make: *** [src/main.o] ´íÎó 1
+19:49:26 **** Auto Build of configuration Debug for project display ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../display_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'init_intr_sys':
+../src/main.c:37:2: warning: implicit declaration of function 'Setup_Intr_Exception' [-Wimplicit-function-declaration]
+  Setup_Intr_Exception(&Intc);
+  ^~~~~~~~~~~~~~~~~~~~
+../src/main.c:39:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+'Finished building: ../src/main.c'
+' '
+'Building file: ../src/sys_intr.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sys_intr.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../display_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sys_intr.d" -MT"src/sys_intr.o" -o "src/sys_intr.o" "../src/sys_intr.c"
+'Finished building: ../src/sys_intr.c'
+' '
+'Building target: display.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../display_bsp/ps7_cortexa9_0/lib -o "display.elf"  ./src/I2C_8bit.o ./src/main.o ./src/sys_intr.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: display.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size display.elf  |tee "display.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  33512	   2900	  22712	  59124	   e6f4	display.elf
+'Finished building: display.elf.size'
+' '
+19:50:52 **** Clean-only build of configuration Debug for project display ****
+make clean 
+rm -rf  ./src/I2C_8bit.o ./src/main.o ./src/sys_intr.o  ./src/I2C_8bit.d ./src/main.d ./src/sys_intr.d  display.elf.size  display.elf
+' '
+19:50:52 **** Auto Build of configuration Debug for project display ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/I2C_8bit.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/I2C_8bit.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../display_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/I2C_8bit.d" -MT"src/I2C_8bit.o" -o "src/I2C_8bit.o" "../src/I2C_8bit.c"
+../src/I2C_8bit.c: In function 'I2C_read':
+../src/I2C_8bit.c:176:39: warning: passing argument 3 of 'I2C_write_byte' makes pointer from integer without a cast [-Wint-conversion]
+  if(I2C_write_byte(InstancePtr,OV_CAM,addr,1) != XST_SUCCESS)
+                                       ^~~~
+../src/I2C_8bit.c:138:5: note: expected 'void *' but argument is of type 'u8 {aka unsigned char}'
+ int I2C_write_byte(XIicPs *InstancePtr,u8 sensor_slave_addr,void *write_byte,int byte_num)
+     ^~~~~~~~~~~~~~
+'Finished building: ../src/I2C_8bit.c'
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../display_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c:1:22: fatal error: sys_intr.h: No such file or directory
+ #include "sys_intr.h"
+                      ^
+compilation terminated.
+make: *** [src/main.o] ´íÎó 1
+19:50:59 **** Auto Build of configuration Debug for project display ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../display_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c:21:8: error: unknown type name 'XScuGic'
+ static XScuGic Intc; //GIC
+        ^~~~~~~
+../src/main.c: In function 'init_intr_sys':
+../src/main.c:36:2: warning: implicit declaration of function 'Init_Intr_System' [-Wimplicit-function-declaration]
+  Init_Intr_System(&Intc); // initial DMA interrupt system
+  ^~~~~~~~~~~~~~~~
+../src/main.c:37:2: warning: implicit declaration of function 'Setup_Intr_Exception' [-Wimplicit-function-declaration]
+  Setup_Intr_Exception(&Intc);
+  ^~~~~~~~~~~~~~~~~~~~
+../src/main.c: At top level:
+../src/main.c:52:8: error: unknown type name 'XScuGic'
+ static XScuGic INTCInst;
+        ^~~~~~~
+../src/main.c:88:20: error: unknown type name 'XScuGic'
+ void IntcTypeSetup(XScuGic *InstancePtr, int intId, int intType)
+                    ^~~~~~~
+../src/main.c: In function 'IntcInitFunction':
+../src/main.c:101:5: error: unknown type name 'XScuGic_Config'
+     XScuGic_Config *IntcConfig;
+     ^~~~~~~~~~~~~~
+../src/main.c:105:18: warning: implicit declaration of function 'XScuGic_LookupConfig' [-Wimplicit-function-declaration]
+     IntcConfig = XScuGic_LookupConfig(DeviceId);
+                  ^~~~~~~~~~~~~~~~~~~~
+../src/main.c:105:16: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+     IntcConfig = XScuGic_LookupConfig(DeviceId);
+                ^
+../src/main.c:106:14: warning: implicit declaration of function 'XScuGic_CfgInitialize' [-Wimplicit-function-declaration]
+     status = XScuGic_CfgInitialize(&INTCInst, IntcConfig, IntcConfig->CpuBaseAddress);
+              ^~~~~~~~~~~~~~~~~~~~~
+../src/main.c:106:69: error: request for member 'CpuBaseAddress' in something not a structure or union
+     status = XScuGic_CfgInitialize(&INTCInst, IntcConfig, IntcConfig->CpuBaseAddress);
+                                                                     ^~
+../src/main.c:111:56: error: 'XScuGic_InterruptHandler' undeclared (first use in this function)
+                                  (Xil_ExceptionHandler)XScuGic_InterruptHandler,
+                                                        ^~~~~~~~~~~~~~~~~~~~~~~~
+../src/main.c:111:56: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:116:14: warning: implicit declaration of function 'XScuGic_Connect' [-Wimplicit-function-declaration]
+     status = XScuGic_Connect(&INTCInst,
+              ^~~~~~~~~~~~~~~
+../src/main.c:128:5: warning: implicit declaration of function 'IntcTypeSetup' [-Wimplicit-function-declaration]
+     IntcTypeSetup(&INTCInst, SW1_INT_ID, INT_TYPE_RISING_EDGE);
+     ^~~~~~~~~~~~~
+../src/main.c:133:5: warning: implicit declaration of function 'XScuGic_Enable' [-Wimplicit-function-declaration]
+     XScuGic_Enable(&INTCInst, SW1_INT_ID);
+     ^~~~~~~~~~~~~~
+../src/main.c: In function 'init_intr_sys':
+../src/main.c:39:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/main.o] ´íÎó 1
+19:51:03 **** Auto Build of configuration Debug for project display ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../display_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c:21:8: error: unknown type name 'XScuGic'
+ static XScuGic Intc; //GIC
+        ^~~~~~~
+../src/main.c: In function 'init_intr_sys':
+../src/main.c:36:2: warning: implicit declaration of function 'Init_Intr_System' [-Wimplicit-function-declaration]
+  Init_Intr_System(&Intc); // initial DMA interrupt system
+  ^~~~~~~~~~~~~~~~
+../src/main.c:37:2: warning: implicit declaration of function 'Setup_Intr_Exception' [-Wimplicit-function-declaration]
+  Setup_Intr_Exception(&Intc);
+  ^~~~~~~~~~~~~~~~~~~~
+../src/main.c: At top level:
+../src/main.c:87:20: error: unknown type name 'XScuGic'
+ void IntcTypeSetup(XScuGic *InstancePtr, int intId, int intType)
+                    ^~~~~~~
+../src/main.c: In function 'IntcInitFunction':
+../src/main.c:100:5: error: unknown type name 'XScuGic_Config'
+     XScuGic_Config *IntcConfig;
+     ^~~~~~~~~~~~~~
+../src/main.c:104:18: warning: implicit declaration of function 'XScuGic_LookupConfig' [-Wimplicit-function-declaration]
+     IntcConfig = XScuGic_LookupConfig(DeviceId);
+                  ^~~~~~~~~~~~~~~~~~~~
+../src/main.c:104:16: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+     IntcConfig = XScuGic_LookupConfig(DeviceId);
+                ^
+../src/main.c:105:14: warning: implicit declaration of function 'XScuGic_CfgInitialize' [-Wimplicit-function-declaration]
+     status = XScuGic_CfgInitialize(&INTCInst, IntcConfig, IntcConfig->CpuBaseAddress);
+              ^~~~~~~~~~~~~~~~~~~~~
+../src/main.c:105:37: error: 'INTCInst' undeclared (first use in this function)
+     status = XScuGic_CfgInitialize(&INTCInst, IntcConfig, IntcConfig->CpuBaseAddress);
+                                     ^~~~~~~~
+../src/main.c:105:37: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:105:69: error: request for member 'CpuBaseAddress' in something not a structure or union
+     status = XScuGic_CfgInitialize(&INTCInst, IntcConfig, IntcConfig->CpuBaseAddress);
+                                                                     ^~
+../src/main.c:110:56: error: 'XScuGic_InterruptHandler' undeclared (first use in this function)
+                                  (Xil_ExceptionHandler)XScuGic_InterruptHandler,
+                                                        ^~~~~~~~~~~~~~~~~~~~~~~~
+../src/main.c:115:14: warning: implicit declaration of function 'XScuGic_Connect' [-Wimplicit-function-declaration]
+     status = XScuGic_Connect(&INTCInst,
+              ^~~~~~~~~~~~~~~
+../src/main.c:127:5: warning: implicit declaration of function 'IntcTypeSetup' [-Wimplicit-function-declaration]
+     IntcTypeSetup(&INTCInst, SW1_INT_ID, INT_TYPE_RISING_EDGE);
+     ^~~~~~~~~~~~~
+../src/main.c:132:5: warning: implicit declaration of function 'XScuGic_Enable' [-Wimplicit-function-declaration]
+     XScuGic_Enable(&INTCInst, SW1_INT_ID);
+     ^~~~~~~~~~~~~~
+../src/main.c: In function 'init_intr_sys':
+../src/main.c:39:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/main.o] ´íÎó 1
+19:51:12 **** Auto Build of configuration Debug for project display ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../display_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c:20:8: error: unknown type name 'XScuGic'
+ static XScuGic Intc; //GIC
+        ^~~~~~~
+../src/main.c: In function 'init_intr_sys':
+../src/main.c:35:2: warning: implicit declaration of function 'Init_Intr_System' [-Wimplicit-function-declaration]
+  Init_Intr_System(&Intc); // initial DMA interrupt system
+  ^~~~~~~~~~~~~~~~
+../src/main.c:36:2: warning: implicit declaration of function 'Setup_Intr_Exception' [-Wimplicit-function-declaration]
+  Setup_Intr_Exception(&Intc);
+  ^~~~~~~~~~~~~~~~~~~~
+../src/main.c: At top level:
+../src/main.c:86:20: error: unknown type name 'XScuGic'
+ void IntcTypeSetup(XScuGic *InstancePtr, int intId, int intType)
+                    ^~~~~~~
+../src/main.c: In function 'IntcInitFunction':
+../src/main.c:99:5: error: unknown type name 'XScuGic_Config'
+     XScuGic_Config *IntcConfig;
+     ^~~~~~~~~~~~~~
+../src/main.c:103:18: warning: implicit declaration of function 'XScuGic_LookupConfig' [-Wimplicit-function-declaration]
+     IntcConfig = XScuGic_LookupConfig(DeviceId);
+                  ^~~~~~~~~~~~~~~~~~~~
+../src/main.c:103:16: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+     IntcConfig = XScuGic_LookupConfig(DeviceId);
+                ^
+../src/main.c:104:14: warning: implicit declaration of function 'XScuGic_CfgInitialize' [-Wimplicit-function-declaration]
+     status = XScuGic_CfgInitialize(&INTCInst, IntcConfig, IntcConfig->CpuBaseAddress);
+              ^~~~~~~~~~~~~~~~~~~~~
+../src/main.c:104:37: error: 'INTCInst' undeclared (first use in this function)
+     status = XScuGic_CfgInitialize(&INTCInst, IntcConfig, IntcConfig->CpuBaseAddress);
+                                     ^~~~~~~~
+../src/main.c:104:37: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:104:69: error: request for member 'CpuBaseAddress' in something not a structure or union
+     status = XScuGic_CfgInitialize(&INTCInst, IntcConfig, IntcConfig->CpuBaseAddress);
+                                                                     ^~
+../src/main.c:109:56: error: 'XScuGic_InterruptHandler' undeclared (first use in this function)
+                                  (Xil_ExceptionHandler)XScuGic_InterruptHandler,
+                                                        ^~~~~~~~~~~~~~~~~~~~~~~~
+../src/main.c:114:14: warning: implicit declaration of function 'XScuGic_Connect' [-Wimplicit-function-declaration]
+     status = XScuGic_Connect(&INTCInst,
+              ^~~~~~~~~~~~~~~
+../src/main.c:126:5: warning: implicit declaration of function 'IntcTypeSetup' [-Wimplicit-function-declaration]
+     IntcTypeSetup(&INTCInst, SW1_INT_ID, INT_TYPE_RISING_EDGE);
+     ^~~~~~~~~~~~~
+../src/main.c:131:5: warning: implicit declaration of function 'XScuGic_Enable' [-Wimplicit-function-declaration]
+     XScuGic_Enable(&INTCInst, SW1_INT_ID);
+     ^~~~~~~~~~~~~~
+../src/main.c: In function 'init_intr_sys':
+../src/main.c:38:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/main.o] ´íÎó 1
+19:51:23 **** Auto Build of configuration Debug for project display ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../display_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c:19:8: error: unknown type name 'XScuGic'
+ static XScuGic Intc; //GIC
+        ^~~~~~~
+../src/main.c: In function 'init_intr_sys':
+../src/main.c:34:2: warning: implicit declaration of function 'Init_Intr_System' [-Wimplicit-function-declaration]
+  Init_Intr_System(&Intc); // initial DMA interrupt system
+  ^~~~~~~~~~~~~~~~
+../src/main.c:35:2: warning: implicit declaration of function 'Setup_Intr_Exception' [-Wimplicit-function-declaration]
+  Setup_Intr_Exception(&Intc);
+  ^~~~~~~~~~~~~~~~~~~~
+../src/main.c: At top level:
+../src/main.c:85:20: error: unknown type name 'XScuGic'
+ void IntcTypeSetup(XScuGic *InstancePtr, int intId, int intType)
+                    ^~~~~~~
+../src/main.c: In function 'IntcInitFunction':
+../src/main.c:98:5: error: unknown type name 'XScuGic_Config'
+     XScuGic_Config *IntcConfig;
+     ^~~~~~~~~~~~~~
+../src/main.c:102:18: warning: implicit declaration of function 'XScuGic_LookupConfig' [-Wimplicit-function-declaration]
+     IntcConfig = XScuGic_LookupConfig(DeviceId);
+                  ^~~~~~~~~~~~~~~~~~~~
+../src/main.c:102:16: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+     IntcConfig = XScuGic_LookupConfig(DeviceId);
+                ^
+../src/main.c:103:14: warning: implicit declaration of function 'XScuGic_CfgInitialize' [-Wimplicit-function-declaration]
+     status = XScuGic_CfgInitialize(&INTCInst, IntcConfig, IntcConfig->CpuBaseAddress);
+              ^~~~~~~~~~~~~~~~~~~~~
+../src/main.c:103:37: error: 'INTCInst' undeclared (first use in this function)
+     status = XScuGic_CfgInitialize(&INTCInst, IntcConfig, IntcConfig->CpuBaseAddress);
+                                     ^~~~~~~~
+../src/main.c:103:37: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:103:69: error: request for member 'CpuBaseAddress' in something not a structure or union
+     status = XScuGic_CfgInitialize(&INTCInst, IntcConfig, IntcConfig->CpuBaseAddress);
+                                                                     ^~
+../src/main.c:108:56: error: 'XScuGic_InterruptHandler' undeclared (first use in this function)
+                                  (Xil_ExceptionHandler)XScuGic_InterruptHandler,
+                                                        ^~~~~~~~~~~~~~~~~~~~~~~~
+../src/main.c:113:14: warning: implicit declaration of function 'XScuGic_Connect' [-Wimplicit-function-declaration]
+     status = XScuGic_Connect(&INTCInst,
+              ^~~~~~~~~~~~~~~
+../src/main.c:125:5: warning: implicit declaration of function 'IntcTypeSetup' [-Wimplicit-function-declaration]
+     IntcTypeSetup(&INTCInst, SW1_INT_ID, INT_TYPE_RISING_EDGE);
+     ^~~~~~~~~~~~~
+../src/main.c:130:5: warning: implicit declaration of function 'XScuGic_Enable' [-Wimplicit-function-declaration]
+     XScuGic_Enable(&INTCInst, SW1_INT_ID);
+     ^~~~~~~~~~~~~~
+../src/main.c: In function 'init_intr_sys':
+../src/main.c:37:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/main.o] ´íÎó 1
+19:51:32 **** Auto Build of configuration Debug for project display ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../display_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'init_intr_sys':
+../src/main.c:33:2: warning: implicit declaration of function 'Init_Intr_System' [-Wimplicit-function-declaration]
+  Init_Intr_System(&Intc); // initial DMA interrupt system
+  ^~~~~~~~~~~~~~~~
+../src/main.c:33:20: error: 'Intc' undeclared (first use in this function)
+  Init_Intr_System(&Intc); // initial DMA interrupt system
+                    ^~~~
+../src/main.c:33:20: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:34:2: warning: implicit declaration of function 'Setup_Intr_Exception' [-Wimplicit-function-declaration]
+  Setup_Intr_Exception(&Intc);
+  ^~~~~~~~~~~~~~~~~~~~
+../src/main.c: At top level:
+../src/main.c:84:20: error: unknown type name 'XScuGic'
+ void IntcTypeSetup(XScuGic *InstancePtr, int intId, int intType)
+                    ^~~~~~~
+../src/main.c: In function 'IntcInitFunction':
+../src/main.c:97:5: error: unknown type name 'XScuGic_Config'
+     XScuGic_Config *IntcConfig;
+     ^~~~~~~~~~~~~~
+../src/main.c:101:18: warning: implicit declaration of function 'XScuGic_LookupConfig' [-Wimplicit-function-declaration]
+     IntcConfig = XScuGic_LookupConfig(DeviceId);
+                  ^~~~~~~~~~~~~~~~~~~~
+../src/main.c:101:16: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+     IntcConfig = XScuGic_LookupConfig(DeviceId);
+                ^
+../src/main.c:102:14: warning: implicit declaration of function 'XScuGic_CfgInitialize' [-Wimplicit-function-declaration]
+     status = XScuGic_CfgInitialize(&INTCInst, IntcConfig, IntcConfig->CpuBaseAddress);
+              ^~~~~~~~~~~~~~~~~~~~~
+../src/main.c:102:37: error: 'INTCInst' undeclared (first use in this function)
+     status = XScuGic_CfgInitialize(&INTCInst, IntcConfig, IntcConfig->CpuBaseAddress);
+                                     ^~~~~~~~
+../src/main.c:102:69: error: request for member 'CpuBaseAddress' in something not a structure or union
+     status = XScuGic_CfgInitialize(&INTCInst, IntcConfig, IntcConfig->CpuBaseAddress);
+                                                                     ^~
+../src/main.c:107:56: error: 'XScuGic_InterruptHandler' undeclared (first use in this function)
+                                  (Xil_ExceptionHandler)XScuGic_InterruptHandler,
+                                                        ^~~~~~~~~~~~~~~~~~~~~~~~
+../src/main.c:112:14: warning: implicit declaration of function 'XScuGic_Connect' [-Wimplicit-function-declaration]
+     status = XScuGic_Connect(&INTCInst,
+              ^~~~~~~~~~~~~~~
+../src/main.c:124:5: warning: implicit declaration of function 'IntcTypeSetup' [-Wimplicit-function-declaration]
+     IntcTypeSetup(&INTCInst, SW1_INT_ID, INT_TYPE_RISING_EDGE);
+     ^~~~~~~~~~~~~
+../src/main.c:129:5: warning: implicit declaration of function 'XScuGic_Enable' [-Wimplicit-function-declaration]
+     XScuGic_Enable(&INTCInst, SW1_INT_ID);
+     ^~~~~~~~~~~~~~
+../src/main.c: In function 'init_intr_sys':
+../src/main.c:36:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/main.o] ´íÎó 1
+19:51:38 **** Auto Build of configuration Debug for project display ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../display_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'init_intr_sys':
+../src/main.c:32:2: warning: implicit declaration of function 'Init_Intr_System' [-Wimplicit-function-declaration]
+  Init_Intr_System(&Intc); // initial DMA interrupt system
+  ^~~~~~~~~~~~~~~~
+../src/main.c:32:20: error: 'Intc' undeclared (first use in this function)
+  Init_Intr_System(&Intc); // initial DMA interrupt system
+                    ^~~~
+../src/main.c:32:20: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:33:2: warning: implicit declaration of function 'Setup_Intr_Exception' [-Wimplicit-function-declaration]
+  Setup_Intr_Exception(&Intc);
+  ^~~~~~~~~~~~~~~~~~~~
+../src/main.c: At top level:
+../src/main.c:83:20: error: unknown type name 'XScuGic'
+ void IntcTypeSetup(XScuGic *InstancePtr, int intId, int intType)
+                    ^~~~~~~
+../src/main.c: In function 'IntcInitFunction':
+../src/main.c:96:5: error: unknown type name 'XScuGic_Config'
+     XScuGic_Config *IntcConfig;
+     ^~~~~~~~~~~~~~
+../src/main.c:100:18: warning: implicit declaration of function 'XScuGic_LookupConfig' [-Wimplicit-function-declaration]
+     IntcConfig = XScuGic_LookupConfig(DeviceId);
+                  ^~~~~~~~~~~~~~~~~~~~
+../src/main.c:100:16: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+     IntcConfig = XScuGic_LookupConfig(DeviceId);
+                ^
+../src/main.c:101:14: warning: implicit declaration of function 'XScuGic_CfgInitialize' [-Wimplicit-function-declaration]
+     status = XScuGic_CfgInitialize(&INTCInst, IntcConfig, IntcConfig->CpuBaseAddress);
+              ^~~~~~~~~~~~~~~~~~~~~
+../src/main.c:101:37: error: 'INTCInst' undeclared (first use in this function)
+     status = XScuGic_CfgInitialize(&INTCInst, IntcConfig, IntcConfig->CpuBaseAddress);
+                                     ^~~~~~~~
+../src/main.c:101:69: error: request for member 'CpuBaseAddress' in something not a structure or union
+     status = XScuGic_CfgInitialize(&INTCInst, IntcConfig, IntcConfig->CpuBaseAddress);
+                                                                     ^~
+../src/main.c:106:56: error: 'XScuGic_InterruptHandler' undeclared (first use in this function)
+                                  (Xil_ExceptionHandler)XScuGic_InterruptHandler,
+                                                        ^~~~~~~~~~~~~~~~~~~~~~~~
+../src/main.c:111:14: warning: implicit declaration of function 'XScuGic_Connect' [-Wimplicit-function-declaration]
+     status = XScuGic_Connect(&INTCInst,
+              ^~~~~~~~~~~~~~~
+../src/main.c:123:5: warning: implicit declaration of function 'IntcTypeSetup' [-Wimplicit-function-declaration]
+     IntcTypeSetup(&INTCInst, SW1_INT_ID, INT_TYPE_RISING_EDGE);
+     ^~~~~~~~~~~~~
+../src/main.c:128:5: warning: implicit declaration of function 'XScuGic_Enable' [-Wimplicit-function-declaration]
+     XScuGic_Enable(&INTCInst, SW1_INT_ID);
+     ^~~~~~~~~~~~~~
+../src/main.c: In function 'init_intr_sys':
+../src/main.c:35:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+make: *** [src/main.o] ´íÎó 1
+19:51:49 **** Auto Build of configuration Debug for project display ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../display_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c:77:20: error: unknown type name 'XScuGic'
+ void IntcTypeSetup(XScuGic *InstancePtr, int intId, int intType)
+                    ^~~~~~~
+../src/main.c: In function 'IntcInitFunction':
+../src/main.c:90:5: error: unknown type name 'XScuGic_Config'
+     XScuGic_Config *IntcConfig;
+     ^~~~~~~~~~~~~~
+../src/main.c:94:18: warning: implicit declaration of function 'XScuGic_LookupConfig' [-Wimplicit-function-declaration]
+     IntcConfig = XScuGic_LookupConfig(DeviceId);
+                  ^~~~~~~~~~~~~~~~~~~~
+../src/main.c:94:16: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+     IntcConfig = XScuGic_LookupConfig(DeviceId);
+                ^
+../src/main.c:95:14: warning: implicit declaration of function 'XScuGic_CfgInitialize' [-Wimplicit-function-declaration]
+     status = XScuGic_CfgInitialize(&INTCInst, IntcConfig, IntcConfig->CpuBaseAddress);
+              ^~~~~~~~~~~~~~~~~~~~~
+../src/main.c:95:37: error: 'INTCInst' undeclared (first use in this function)
+     status = XScuGic_CfgInitialize(&INTCInst, IntcConfig, IntcConfig->CpuBaseAddress);
+                                     ^~~~~~~~
+../src/main.c:95:37: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:95:69: error: request for member 'CpuBaseAddress' in something not a structure or union
+     status = XScuGic_CfgInitialize(&INTCInst, IntcConfig, IntcConfig->CpuBaseAddress);
+                                                                     ^~
+../src/main.c:100:56: error: 'XScuGic_InterruptHandler' undeclared (first use in this function)
+                                  (Xil_ExceptionHandler)XScuGic_InterruptHandler,
+                                                        ^~~~~~~~~~~~~~~~~~~~~~~~
+../src/main.c:105:14: warning: implicit declaration of function 'XScuGic_Connect' [-Wimplicit-function-declaration]
+     status = XScuGic_Connect(&INTCInst,
+              ^~~~~~~~~~~~~~~
+../src/main.c:117:5: warning: implicit declaration of function 'IntcTypeSetup' [-Wimplicit-function-declaration]
+     IntcTypeSetup(&INTCInst, SW1_INT_ID, INT_TYPE_RISING_EDGE);
+     ^~~~~~~~~~~~~
+../src/main.c:122:5: warning: implicit declaration of function 'XScuGic_Enable' [-Wimplicit-function-declaration]
+     XScuGic_Enable(&INTCInst, SW1_INT_ID);
+     ^~~~~~~~~~~~~~
+make: *** [src/main.o] ´íÎó 1
+19:51:52 **** Auto Build of configuration Debug for project display ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../display_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c:76:20: error: unknown type name 'XScuGic'
+ void IntcTypeSetup(XScuGic *InstancePtr, int intId, int intType)
+                    ^~~~~~~
+../src/main.c: In function 'IntcInitFunction':
+../src/main.c:89:5: error: unknown type name 'XScuGic_Config'
+     XScuGic_Config *IntcConfig;
+     ^~~~~~~~~~~~~~
+../src/main.c:93:18: warning: implicit declaration of function 'XScuGic_LookupConfig' [-Wimplicit-function-declaration]
+     IntcConfig = XScuGic_LookupConfig(DeviceId);
+                  ^~~~~~~~~~~~~~~~~~~~
+../src/main.c:93:16: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+     IntcConfig = XScuGic_LookupConfig(DeviceId);
+                ^
+../src/main.c:94:14: warning: implicit declaration of function 'XScuGic_CfgInitialize' [-Wimplicit-function-declaration]
+     status = XScuGic_CfgInitialize(&INTCInst, IntcConfig, IntcConfig->CpuBaseAddress);
+              ^~~~~~~~~~~~~~~~~~~~~
+../src/main.c:94:37: error: 'INTCInst' undeclared (first use in this function)
+     status = XScuGic_CfgInitialize(&INTCInst, IntcConfig, IntcConfig->CpuBaseAddress);
+                                     ^~~~~~~~
+../src/main.c:94:37: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:94:69: error: request for member 'CpuBaseAddress' in something not a structure or union
+     status = XScuGic_CfgInitialize(&INTCInst, IntcConfig, IntcConfig->CpuBaseAddress);
+                                                                     ^~
+../src/main.c:99:56: error: 'XScuGic_InterruptHandler' undeclared (first use in this function)
+                                  (Xil_ExceptionHandler)XScuGic_InterruptHandler,
+                                                        ^~~~~~~~~~~~~~~~~~~~~~~~
+../src/main.c:104:14: warning: implicit declaration of function 'XScuGic_Connect' [-Wimplicit-function-declaration]
+     status = XScuGic_Connect(&INTCInst,
+              ^~~~~~~~~~~~~~~
+../src/main.c:116:5: warning: implicit declaration of function 'IntcTypeSetup' [-Wimplicit-function-declaration]
+     IntcTypeSetup(&INTCInst, SW1_INT_ID, INT_TYPE_RISING_EDGE);
+     ^~~~~~~~~~~~~
+../src/main.c:121:5: warning: implicit declaration of function 'XScuGic_Enable' [-Wimplicit-function-declaration]
+     XScuGic_Enable(&INTCInst, SW1_INT_ID);
+     ^~~~~~~~~~~~~~
+make: *** [src/main.o] ´íÎó 1
+19:52:04 **** Auto Build of configuration Debug for project display ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../display_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c:65:20: error: unknown type name 'XScuGic'
+ void IntcTypeSetup(XScuGic *InstancePtr, int intId, int intType)
+                    ^~~~~~~
+../src/main.c: In function 'IntcInitFunction':
+../src/main.c:78:5: error: unknown type name 'XScuGic_Config'
+     XScuGic_Config *IntcConfig;
+     ^~~~~~~~~~~~~~
+../src/main.c:82:18: warning: implicit declaration of function 'XScuGic_LookupConfig' [-Wimplicit-function-declaration]
+     IntcConfig = XScuGic_LookupConfig(DeviceId);
+                  ^~~~~~~~~~~~~~~~~~~~
+../src/main.c:82:16: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+     IntcConfig = XScuGic_LookupConfig(DeviceId);
+                ^
+../src/main.c:83:14: warning: implicit declaration of function 'XScuGic_CfgInitialize' [-Wimplicit-function-declaration]
+     status = XScuGic_CfgInitialize(&INTCInst, IntcConfig, IntcConfig->CpuBaseAddress);
+              ^~~~~~~~~~~~~~~~~~~~~
+../src/main.c:83:37: error: 'INTCInst' undeclared (first use in this function)
+     status = XScuGic_CfgInitialize(&INTCInst, IntcConfig, IntcConfig->CpuBaseAddress);
+                                     ^~~~~~~~
+../src/main.c:83:37: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:83:69: error: request for member 'CpuBaseAddress' in something not a structure or union
+     status = XScuGic_CfgInitialize(&INTCInst, IntcConfig, IntcConfig->CpuBaseAddress);
+                                                                     ^~
+../src/main.c:88:56: error: 'XScuGic_InterruptHandler' undeclared (first use in this function)
+                                  (Xil_ExceptionHandler)XScuGic_InterruptHandler,
+                                                        ^~~~~~~~~~~~~~~~~~~~~~~~
+../src/main.c:93:14: warning: implicit declaration of function 'XScuGic_Connect' [-Wimplicit-function-declaration]
+     status = XScuGic_Connect(&INTCInst,
+              ^~~~~~~~~~~~~~~
+../src/main.c:94:30: error: 'SW1_INT_ID' undeclared (first use in this function)
+                              SW1_INT_ID,
+                              ^~~~~~~~~~
+../src/main.c:100:30: error: 'SW2_INT_ID' undeclared (first use in this function)
+                              SW2_INT_ID,
+                              ^~~~~~~~~~
+../src/main.c:105:5: warning: implicit declaration of function 'IntcTypeSetup' [-Wimplicit-function-declaration]
+     IntcTypeSetup(&INTCInst, SW1_INT_ID, INT_TYPE_RISING_EDGE);
+     ^~~~~~~~~~~~~
+../src/main.c:105:42: error: 'INT_TYPE_RISING_EDGE' undeclared (first use in this function)
+     IntcTypeSetup(&INTCInst, SW1_INT_ID, INT_TYPE_RISING_EDGE);
+                                          ^~~~~~~~~~~~~~~~~~~~
+../src/main.c:110:5: warning: implicit declaration of function 'XScuGic_Enable' [-Wimplicit-function-declaration]
+     XScuGic_Enable(&INTCInst, SW1_INT_ID);
+     ^~~~~~~~~~~~~~
+../src/main.c: In function 'main':
+../src/main.c:126:19: error: 'INTC_DEVICE_ID' undeclared (first use in this function)
+  IntcInitFunction(INTC_DEVICE_ID);
+                   ^~~~~~~~~~~~~~
+make: *** [src/main.o] ´íÎó 1
+19:52:07 **** Auto Build of configuration Debug for project display ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../display_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c:62:20: error: unknown type name 'XScuGic'
+ void IntcTypeSetup(XScuGic *InstancePtr, int intId, int intType)
+                    ^~~~~~~
+../src/main.c: In function 'IntcInitFunction':
+../src/main.c:75:5: error: unknown type name 'XScuGic_Config'
+     XScuGic_Config *IntcConfig;
+     ^~~~~~~~~~~~~~
+../src/main.c:79:18: warning: implicit declaration of function 'XScuGic_LookupConfig' [-Wimplicit-function-declaration]
+     IntcConfig = XScuGic_LookupConfig(DeviceId);
+                  ^~~~~~~~~~~~~~~~~~~~
+../src/main.c:79:16: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+     IntcConfig = XScuGic_LookupConfig(DeviceId);
+                ^
+../src/main.c:80:14: warning: implicit declaration of function 'XScuGic_CfgInitialize' [-Wimplicit-function-declaration]
+     status = XScuGic_CfgInitialize(&INTCInst, IntcConfig, IntcConfig->CpuBaseAddress);
+              ^~~~~~~~~~~~~~~~~~~~~
+../src/main.c:80:37: error: 'INTCInst' undeclared (first use in this function)
+     status = XScuGic_CfgInitialize(&INTCInst, IntcConfig, IntcConfig->CpuBaseAddress);
+                                     ^~~~~~~~
+../src/main.c:80:37: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:80:69: error: request for member 'CpuBaseAddress' in something not a structure or union
+     status = XScuGic_CfgInitialize(&INTCInst, IntcConfig, IntcConfig->CpuBaseAddress);
+                                                                     ^~
+../src/main.c:85:56: error: 'XScuGic_InterruptHandler' undeclared (first use in this function)
+                                  (Xil_ExceptionHandler)XScuGic_InterruptHandler,
+                                                        ^~~~~~~~~~~~~~~~~~~~~~~~
+../src/main.c:90:14: warning: implicit declaration of function 'XScuGic_Connect' [-Wimplicit-function-declaration]
+     status = XScuGic_Connect(&INTCInst,
+              ^~~~~~~~~~~~~~~
+../src/main.c:91:30: error: 'SW1_INT_ID' undeclared (first use in this function)
+                              SW1_INT_ID,
+                              ^~~~~~~~~~
+../src/main.c:97:30: error: 'SW2_INT_ID' undeclared (first use in this function)
+                              SW2_INT_ID,
+                              ^~~~~~~~~~
+../src/main.c:102:5: warning: implicit declaration of function 'IntcTypeSetup' [-Wimplicit-function-declaration]
+     IntcTypeSetup(&INTCInst, SW1_INT_ID, INT_TYPE_RISING_EDGE);
+     ^~~~~~~~~~~~~
+../src/main.c:102:42: error: 'INT_TYPE_RISING_EDGE' undeclared (first use in this function)
+     IntcTypeSetup(&INTCInst, SW1_INT_ID, INT_TYPE_RISING_EDGE);
+                                          ^~~~~~~~~~~~~~~~~~~~
+../src/main.c:107:5: warning: implicit declaration of function 'XScuGic_Enable' [-Wimplicit-function-declaration]
+     XScuGic_Enable(&INTCInst, SW1_INT_ID);
+     ^~~~~~~~~~~~~~
+../src/main.c: In function 'main':
+../src/main.c:123:19: error: 'INTC_DEVICE_ID' undeclared (first use in this function)
+  IntcInitFunction(INTC_DEVICE_ID);
+                   ^~~~~~~~~~~~~~
+make: *** [src/main.o] ´íÎó 1
+19:52:22 **** Auto Build of configuration Debug for project display ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../display_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:74:2: warning: implicit declaration of function 'IntcInitFunction' [-Wimplicit-function-declaration]
+  IntcInitFunction(INTC_DEVICE_ID);
+  ^~~~~~~~~~~~~~~~
+../src/main.c:74:19: error: 'INTC_DEVICE_ID' undeclared (first use in this function)
+  IntcInitFunction(INTC_DEVICE_ID);
+                   ^~~~~~~~~~~~~~
+../src/main.c:74:19: note: each undeclared identifier is reported only once for each function it appears in
+At top level:
+../src/main.c:34:13: warning: 'SW_intr_Handler' defined but not used [-Wunused-function]
+ static void SW_intr_Handler(void *param)
+             ^~~~~~~~~~~~~~~
+make: *** [src/main.o] ´íÎó 1
+19:52:38 **** Auto Build of configuration Debug for project display ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../display_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: display.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../display_bsp/ps7_cortexa9_0/lib -o "display.elf"  ./src/I2C_8bit.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: display.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size display.elf  |tee "display.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  29516	   1324	  22680	  53520	   d110	display.elf
+'Finished building: display.elf.size'
+' '
+19:52:41 **** Auto Build of configuration Debug for project display ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../display_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: display.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../display_bsp/ps7_cortexa9_0/lib -o "display.elf"  ./src/I2C_8bit.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: display.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size display.elf  |tee "display.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  29516	   1324	  22680	  53520	   d110	display.elf
+'Finished building: display.elf.size'
+' '
+19:53:08 **** Auto Build of configuration Debug for project display ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../display_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:55:8: error: expected expression before ')' token
+  while()
+        ^
+make: *** [src/main.o] ´íÎó 1
+19:53:10 **** Auto Build of configuration Debug for project display ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../display_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: display.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../display_bsp/ps7_cortexa9_0/lib -o "display.elf"  ./src/I2C_8bit.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: display.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size display.elf  |tee "display.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  29516	   1324	  22680	  53520	   d110	display.elf
+'Finished building: display.elf.size'
+' '
+19:53:15 **** Auto Build of configuration Debug for project display ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../display_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: display.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../display_bsp/ps7_cortexa9_0/lib -o "display.elf"  ./src/I2C_8bit.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: display.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size display.elf  |tee "display.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  29516	   1324	  22680	  53520	   d110	display.elf
+'Finished building: display.elf.size'
+' '
+19:53:17 **** Auto Build of configuration Debug for project display ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../display_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: display.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../display_bsp/ps7_cortexa9_0/lib -o "display.elf"  ./src/I2C_8bit.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: display.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size display.elf  |tee "display.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  29516	   1324	  22680	  53520	   d110	display.elf
+'Finished building: display.elf.size'
+' '
+19:53:22 **** Auto Build of configuration Debug for project display ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../display_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:58:9: error: 'sw_id' undeclared (first use in this function)
+      if(sw_id == 1)
+         ^~~~~
+../src/main.c:58:9: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/main.o] ´íÎó 1
+19:53:27 **** Auto Build of configuration Debug for project display ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../display_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:57:9: error: 'sw_id' undeclared (first use in this function)
+      if(sw_id == 1)
+         ^~~~~
+../src/main.c:57:9: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/main.o] ´íÎó 1
+19:53:35 **** Auto Build of configuration Debug for project display ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../display_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:57:9: error: 'sw_id' undeclared (first use in this function)
+      if(sw_id == 1)
+         ^~~~~
+../src/main.c:57:9: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/main.o] ´íÎó 1
+19:54:36 **** Auto Build of configuration Debug for project display ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../display_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:63:9: error: 'sw_id' undeclared (first use in this function)
+      if(sw_id == 1)
+         ^~~~~
+../src/main.c:63:9: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/main.o] ´íÎó 1
+19:54:46 **** Auto Build of configuration Debug for project display ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../display_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:61:9: error: 'sw_id' undeclared (first use in this function)
+      if(sw_id == 1)
+         ^~~~~
+../src/main.c:61:9: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/main.o] ´íÎó 1
+19:54:53 **** Auto Build of configuration Debug for project display ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../display_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:59:9: error: 'sw_id' undeclared (first use in this function)
+      if(sw_id == 1)
+         ^~~~~
+../src/main.c:59:9: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/main.o] ´íÎó 1
+19:54:55 **** Auto Build of configuration Debug for project display ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../display_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:60:9: error: 'sw_id' undeclared (first use in this function)
+      if(sw_id == 1)
+         ^~~~~
+../src/main.c:60:9: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/main.o] ´íÎó 1
+19:55:01 **** Auto Build of configuration Debug for project display ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../display_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:30:55: error: stray '\' in program
+ #define XGpio_axi_WriteReg(BaseAddr, RegOffset, Data) \Xil_Out32((BaseAddr) + (u32)(RegOffset), (u32)(Data))
+                                                       ^
+../src/main.c:51:2: note: in expansion of macro 'XGpio_axi_WriteReg'
+  XGpio_axi_WriteReg(XPAR_GPIO_LITE_ML_0,0,BufferPtr[0]);
+  ^~~~~~~~~~~~~~~~~~
+../src/main.c:30:55: error: stray '\' in program
+ #define XGpio_axi_WriteReg(BaseAddr, RegOffset, Data) \Xil_Out32((BaseAddr) + (u32)(RegOffset), (u32)(Data))
+                                                       ^
+../src/main.c:52:2: note: in expansion of macro 'XGpio_axi_WriteReg'
+  XGpio_axi_WriteReg(XPAR_GPIO_LITE_ML_0,4,image_length);
+  ^~~~~~~~~~~~~~~~~~
+../src/main.c:30:55: error: stray '\' in program
+ #define XGpio_axi_WriteReg(BaseAddr, RegOffset, Data) \Xil_Out32((BaseAddr) + (u32)(RegOffset), (u32)(Data))
+                                                       ^
+../src/main.c:54:2: note: in expansion of macro 'XGpio_axi_WriteReg'
+  XGpio_axi_WriteReg(XPAR_GPIO_LITE_ML_0,8,BufferPtr[0]);
+  ^~~~~~~~~~~~~~~~~~
+../src/main.c:30:55: error: stray '\' in program
+ #define XGpio_axi_WriteReg(BaseAddr, RegOffset, Data) \Xil_Out32((BaseAddr) + (u32)(RegOffset), (u32)(Data))
+                                                       ^
+../src/main.c:55:2: note: in expansion of macro 'XGpio_axi_WriteReg'
+  XGpio_axi_WriteReg(XPAR_GPIO_LITE_ML_0,12,image_length);
+  ^~~~~~~~~~~~~~~~~~
+../src/main.c:59:9: error: 'sw_id' undeclared (first use in this function)
+      if(sw_id == 1)
+         ^~~~~
+../src/main.c:59:9: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:30:55: error: stray '\' in program
+ #define XGpio_axi_WriteReg(BaseAddr, RegOffset, Data) \Xil_Out32((BaseAddr) + (u32)(RegOffset), (u32)(Data))
+                                                       ^
+../src/main.c:66:7: note: in expansion of macro 'XGpio_axi_WriteReg'
+       XGpio_axi_WriteReg(XPAR_GPIO_LITE_ML_0,8,BufferPtr[mm2s_count]);
+       ^~~~~~~~~~~~~~~~~~
+../src/main.c:30:55: error: stray '\' in program
+ #define XGpio_axi_WriteReg(BaseAddr, RegOffset, Data) \Xil_Out32((BaseAddr) + (u32)(RegOffset), (u32)(Data))
+                                                       ^
+../src/main.c:67:7: note: in expansion of macro 'XGpio_axi_WriteReg'
+       XGpio_axi_WriteReg(XPAR_GPIO_LITE_ML_0,12,image_length);
+       ^~~~~~~~~~~~~~~~~~
+../src/main.c:30:55: error: stray '\' in program
+ #define XGpio_axi_WriteReg(BaseAddr, RegOffset, Data) \Xil_Out32((BaseAddr) + (u32)(RegOffset), (u32)(Data))
+                                                       ^
+../src/main.c:79:7: note: in expansion of macro 'XGpio_axi_WriteReg'
+       XGpio_axi_WriteReg(XPAR_GPIO_LITE_ML_0,0,BufferPtr[s2mm_count]);
+       ^~~~~~~~~~~~~~~~~~
+../src/main.c:30:55: error: stray '\' in program
+ #define XGpio_axi_WriteReg(BaseAddr, RegOffset, Data) \Xil_Out32((BaseAddr) + (u32)(RegOffset), (u32)(Data))
+                                                       ^
+../src/main.c:80:7: note: in expansion of macro 'XGpio_axi_WriteReg'
+       XGpio_axi_WriteReg(XPAR_GPIO_LITE_ML_0,4,image_length);
+       ^~~~~~~~~~~~~~~~~~
+make: *** [src/main.o] ´íÎó 1
+19:55:04 **** Auto Build of configuration Debug for project display ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../display_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:60:9: error: 'sw_id' undeclared (first use in this function)
+      if(sw_id == 1)
+         ^~~~~
+../src/main.c:60:9: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/main.o] ´íÎó 1
+19:55:08 **** Auto Build of configuration Debug for project display ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../display_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:60:9: error: 'sw_id' undeclared (first use in this function)
+      if(sw_id == 1)
+         ^~~~~
+../src/main.c:60:9: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/main.o] ´íÎó 1
+19:56:15 **** Auto Build of configuration Debug for project display ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../display_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:60:9: error: 'sw_id' undeclared (first use in this function)
+      if(sw_id == 1)
+         ^~~~~
+../src/main.c:60:9: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/main.o] ´íÎó 1
+19:56:17 **** Auto Build of configuration Debug for project display ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../display_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:61:9: error: 'sw_id' undeclared (first use in this function)
+      if(sw_id == 1)
+         ^~~~~
+../src/main.c:61:9: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/main.o] ´íÎó 1
+19:56:30 **** Auto Build of configuration Debug for project display ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../display_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:62:9: error: 'sw_id' undeclared (first use in this function)
+      if(sw_id == 1)
+         ^~~~~
+../src/main.c:62:9: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/main.o] ´íÎó 1
+19:56:34 **** Auto Build of configuration Debug for project display ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../display_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:56:9: error: 'sw_id' undeclared (first use in this function)
+      if(sw_id == 1)
+         ^~~~~
+../src/main.c:56:9: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/main.o] ´íÎó 1
+19:57:25 **** Auto Build of configuration Debug for project display ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../display_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:72:9: error: 'sw_id' undeclared (first use in this function)
+      if(sw_id == 1)
+         ^~~~~
+../src/main.c:72:9: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/main.o] ´íÎó 1
+19:57:52 **** Auto Build of configuration Debug for project display ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../display_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:93:9: error: 'sw_id' undeclared (first use in this function)
+      if(sw_id == 1)
+         ^~~~~
+../src/main.c:93:9: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/main.o] ´íÎó 1
+19:58:31 **** Auto Build of configuration Debug for project display ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../display_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:96:9: error: 'sw_id' undeclared (first use in this function)
+      if(sw_id == 1)
+         ^~~~~
+../src/main.c:96:9: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/main.o] ´íÎó 1
+19:59:01 **** Auto Build of configuration Debug for project display ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../display_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:97:9: error: 'sw_id' undeclared (first use in this function)
+      if(sw_id == 1)
+         ^~~~~
+../src/main.c:97:9: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/main.o] ´íÎó 1
+19:59:05 **** Auto Build of configuration Debug for project display ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../display_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:97:9: error: 'sw_id' undeclared (first use in this function)
+      if(sw_id == 1)
+         ^~~~~
+../src/main.c:97:9: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/main.o] ´íÎó 1
+19:59:09 **** Auto Build of configuration Debug for project display ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../display_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:96:9: error: 'sw_id' undeclared (first use in this function)
+      if(sw_id == 1)
+         ^~~~~
+../src/main.c:96:9: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/main.o] ´íÎó 1
+19:59:14 **** Auto Build of configuration Debug for project display ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../display_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:75:9: error: 'sw_id' undeclared (first use in this function)
+      if(sw_id == 1)
+         ^~~~~
+../src/main.c:75:9: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/main.o] ´íÎó 1
+19:59:21 **** Auto Build of configuration Debug for project display ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../display_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:75:9: error: 'sw_id' undeclared (first use in this function)
+      if(sw_id == 1)
+         ^~~~~
+../src/main.c:75:9: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/main.o] ´íÎó 1
+19:59:24 **** Auto Build of configuration Debug for project display ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../display_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:76:9: error: 'sw_id' undeclared (first use in this function)
+      if(sw_id == 1)
+         ^~~~~
+../src/main.c:76:9: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/main.o] ´íÎó 1
+19:59:28 **** Auto Build of configuration Debug for project display ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../display_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:76:9: error: 'sw_id' undeclared (first use in this function)
+      if(sw_id == 1)
+         ^~~~~
+../src/main.c:76:9: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/main.o] ´íÎó 1
+19:59:37 **** Auto Build of configuration Debug for project display ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../display_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:76:9: error: 'sw_id' undeclared (first use in this function)
+      if(sw_id == 1)
+         ^~~~~
+../src/main.c:76:9: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/main.o] ´íÎó 1
+20:00:30 **** Auto Build of configuration Debug for project display ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../display_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:89:9: error: 'sw_id' undeclared (first use in this function)
+      if(sw_id == 2)
+         ^~~~~
+../src/main.c:89:9: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/main.o] ´íÎó 1
+20:00:33 **** Auto Build of configuration Debug for project display ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../display_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:89:9: error: 'sw_id' undeclared (first use in this function)
+      if(sw_id == 2)
+         ^~~~~
+../src/main.c:89:9: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/main.o] ´íÎó 1
+20:00:50 **** Auto Build of configuration Debug for project display ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../display_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:89:47: error: expected ')' before ';' token
+      if(XGpioPs_ReadPin(&psGpioInstancePtr,55);)
+                                               ^
+make: *** [src/main.o] ´íÎó 1
+20:00:57 **** Auto Build of configuration Debug for project display ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../display_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: display.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../display_bsp/ps7_cortexa9_0/lib -o "display.elf"  ./src/I2C_8bit.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: display.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size display.elf  |tee "display.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  36736	   1332	  22696	  60764	   ed5c	display.elf
+'Finished building: display.elf.size'
+' '
+20:01:46 **** Incremental Build of configuration Debug for project display ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for `main-build'.
+20:05:23 **** Auto Build of configuration Debug for project display ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../display_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: display.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../display_bsp/ps7_cortexa9_0/lib -o "display.elf"  ./src/I2C_8bit.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: display.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size display.elf  |tee "display.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  36736	   1332	  22696	  60764	   ed5c	display.elf
+'Finished building: display.elf.size'
+' '

@@ -2,12 +2,12 @@
 # Vivado v2017.4 (64-bit)
 # SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
 # IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
-# Start of session at: Tue Jan 15 22:52:07 2019
-# Process ID: 12932
-# Current directory: D:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.runs/system_processing_system7_0_0_synth_1
+# Start of session at: Wed Jan 16 19:02:45 2019
+# Process ID: 11124
+# Current directory: F:/project/DMA_video/Miz_sys.runs/system_processing_system7_0_0_synth_1
 # Command line: vivado.exe -log system_processing_system7_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source system_processing_system7_0_0.tcl
-# Log file: D:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.runs/system_processing_system7_0_0_synth_1/system_processing_system7_0_0.vds
-# Journal file: D:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.runs/system_processing_system7_0_0_synth_1\vivado.jou
+# Log file: F:/project/DMA_video/Miz_sys.runs/system_processing_system7_0_0_synth_1/system_processing_system7_0_0.vds
+# Journal file: F:/project/DMA_video/Miz_sys.runs/system_processing_system7_0_0_synth_1\vivado.jou
 #-----------------------------------------------------------
 source system_processing_system7_0_0.tcl -notrace
 Command: synth_design -top system_processing_system7_0_0 -part xc7z010clg400-1 -mode out_of_context
@@ -15,12 +15,12 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 9164 
+INFO: Helper process launched with PID 14980 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 415.105 ; gain = 103.754
+Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 414.473 ; gain = 104.254
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'system_processing_system7_0_0' [d:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/synth/system_processing_system7_0_0.v:60]
-INFO: [Synth 8-638] synthesizing module 'processing_system7_v5_5_processing_system7' [d:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:161]
+INFO: [Synth 8-638] synthesizing module 'system_processing_system7_0_0' [f:/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/synth/system_processing_system7_0_0.v:60]
+INFO: [Synth 8-638] synthesizing module 'processing_system7_v5_5_processing_system7' [f:/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:161]
 	Parameter C_USE_DEFAULT_ACP_USER_VAL bound to: 0 - type: integer 
 	Parameter C_S_AXI_ACP_ARUSER_VAL bound to: 31 - type: integer 
 	Parameter C_S_AXI_ACP_AWUSER_VAL bound to: 31 - type: integer 
@@ -47,7 +47,7 @@ INFO: [Synth 8-638] synthesizing module 'processing_system7_v5_5_processing_syst
 	Parameter C_FCLK_CLK1_BUF bound to: TRUE - type: string 
 	Parameter C_FCLK_CLK2_BUF bound to: FALSE - type: string 
 	Parameter C_FCLK_CLK3_BUF bound to: FALSE - type: string 
-	Parameter C_EMIO_GPIO_WIDTH bound to: 64 - type: integer 
+	Parameter C_EMIO_GPIO_WIDTH bound to: 2 - type: integer 
 	Parameter C_INCLUDE_TRACE_BUFFER bound to: 0 - type: integer 
 	Parameter C_TRACE_BUFFER_FIFO_SIZE bound to: 128 - type: integer 
 	Parameter C_TRACE_BUFFER_CLOCK_DELAY bound to: 12 - type: integer 
@@ -77,17 +77,17 @@ INFO: [Synth 8-638] synthesizing module 'processing_system7_v5_5_processing_syst
 	Parameter C_USE_S_AXI_ACP bound to: 0 - type: integer 
 	Parameter C_GP0_EN_MODIFIABLE_TXN bound to: 0 - type: integer 
 	Parameter C_GP1_EN_MODIFIABLE_TXN bound to: 0 - type: integer 
-INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [d:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:1347]
-INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [d:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:1348]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [f:/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:1347]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [f:/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:1348]
 INFO: [Synth 8-638] synthesizing module 'BUFG' [D:/xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:607]
 INFO: [Synth 8-256] done synthesizing module 'BUFG' (1#1) [D:/xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:607]
 INFO: [Synth 8-638] synthesizing module 'BIBUF' [D:/xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:268]
 INFO: [Synth 8-256] done synthesizing module 'BIBUF' (2#1) [D:/xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:268]
 INFO: [Synth 8-638] synthesizing module 'PS7' [D:/xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:40559]
 INFO: [Synth 8-256] done synthesizing module 'PS7' (3#1) [D:/xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:40559]
-INFO: [Synth 8-256] done synthesizing module 'processing_system7_v5_5_processing_system7' (4#1) [d:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:161]
-WARNING: [Synth 8-350] instance 'inst' of module 'processing_system7_v5_5_processing_system7' requires 685 connections, but only 672 given [d:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/synth/system_processing_system7_0_0.v:476]
-INFO: [Synth 8-256] done synthesizing module 'system_processing_system7_0_0' (5#1) [d:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/synth/system_processing_system7_0_0.v:60]
+INFO: [Synth 8-256] done synthesizing module 'processing_system7_v5_5_processing_system7' (4#1) [f:/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/hdl/verilog/processing_system7_v5_5_processing_system7.v:161]
+WARNING: [Synth 8-350] instance 'inst' of module 'processing_system7_v5_5_processing_system7' requires 685 connections, but only 672 given [f:/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/synth/system_processing_system7_0_0.v:481]
+INFO: [Synth 8-256] done synthesizing module 'system_processing_system7_0_0' (5#1) [f:/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/synth/system_processing_system7_0_0.v:60]
 WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port ENET0_GMII_COL
 WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port ENET0_GMII_CRS
 WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port ENET0_GMII_RX_DV
@@ -168,7 +168,7 @@ WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has un
 WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port FTMD_TRACEIN_ATID[1]
 WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port FTMD_TRACEIN_ATID[0]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 468.410 ; gain = 157.059
+Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 466.391 ; gain = 156.172
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -178,44 +178,44 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 468.410 ; gain = 157.059
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 466.391 ; gain = 156.172
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7z010clg400-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [d:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/system_processing_system7_0_0.xdc] for cell 'inst'
-Finished Parsing XDC File [d:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/system_processing_system7_0_0.xdc] for cell 'inst'
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [d:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/system_processing_system7_0_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/system_processing_system7_0_0_propImpl.xdc].
+Parsing XDC File [f:/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/system_processing_system7_0_0.xdc] for cell 'inst'
+Finished Parsing XDC File [f:/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/system_processing_system7_0_0.xdc] for cell 'inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [f:/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ip/system_processing_system7_0_0/system_processing_system7_0_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/system_processing_system7_0_0_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/system_processing_system7_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Parsing XDC File [D:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.runs/system_processing_system7_0_0_synth_1/dont_touch.xdc]
-Finished Parsing XDC File [D:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.runs/system_processing_system7_0_0_synth_1/dont_touch.xdc]
+Parsing XDC File [F:/project/DMA_video/Miz_sys.runs/system_processing_system7_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [F:/project/DMA_video/Miz_sys.runs/system_processing_system7_0_0_synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.090 . Memory (MB): peak = 741.703 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.035 . Memory (MB): peak = 728.547 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:59 ; elapsed = 00:01:07 . Memory (MB): peak = 741.703 ; gain = 430.352
+Finished Constraint Validation : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 728.547 ; gain = 418.328
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z010clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:59 ; elapsed = 00:01:07 . Memory (MB): peak = 741.703 ; gain = 430.352
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 728.547 ; gain = 418.328
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property DONT_TOUCH = true for inst. (constraint file  D:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.runs/system_processing_system7_0_0_synth_1/dont_touch.xdc, line 9).
+Applied set_property DONT_TOUCH = true for inst. (constraint file  F:/project/DMA_video/Miz_sys.runs/system_processing_system7_0_0_synth_1/dont_touch.xdc, line 9).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:00 ; elapsed = 00:01:08 . Memory (MB): peak = 741.703 ; gain = 430.352
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 728.547 ; gain = 418.328
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:01 ; elapsed = 00:01:10 . Memory (MB): peak = 741.703 ; gain = 430.352
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 728.547 ; gain = 418.328
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -272,7 +272,7 @@ WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has un
 WARNING: [Synth 8-3331] design processing_system7_v5_5_processing_system7 has unconnected port ENET1_GMII_RXD[3]
 INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:02 ; elapsed = 00:01:12 . Memory (MB): peak = 741.703 ; gain = 430.352
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 728.547 ; gain = 418.328
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -284,13 +284,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:28 ; elapsed = 00:01:39 . Memory (MB): peak = 957.543 ; gain = 646.191
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:51 ; elapsed = 00:00:53 . Memory (MB): peak = 946.676 ; gain = 636.457
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:01:28 ; elapsed = 00:01:40 . Memory (MB): peak = 977.688 ; gain = 666.336
+Finished Timing Optimization : Time (s): cpu = 00:00:51 ; elapsed = 00:00:53 . Memory (MB): peak = 966.746 ; gain = 656.527
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -302,7 +302,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:01:30 ; elapsed = 00:01:42 . Memory (MB): peak = 983.707 ; gain = 672.355
+Finished Technology Mapping : Time (s): cpu = 00:00:53 ; elapsed = 00:00:54 . Memory (MB): peak = 972.133 ; gain = 661.914
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -326,7 +326,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:34 ; elapsed = 00:01:46 . Memory (MB): peak = 983.707 ; gain = 672.355
+Finished IO Insertion : Time (s): cpu = 00:00:55 ; elapsed = 00:00:57 . Memory (MB): peak = 972.133 ; gain = 661.914
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -339,7 +339,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:34 ; elapsed = 00:01:46 . Memory (MB): peak = 983.707 ; gain = 672.355
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:55 ; elapsed = 00:00:57 . Memory (MB): peak = 972.133 ; gain = 661.914
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -351,25 +351,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:34 ; elapsed = 00:01:46 . Memory (MB): peak = 983.707 ; gain = 672.355
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:55 ; elapsed = 00:00:57 . Memory (MB): peak = 972.133 ; gain = 661.914
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:01:34 ; elapsed = 00:01:46 . Memory (MB): peak = 983.707 ; gain = 672.355
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:55 ; elapsed = 00:00:57 . Memory (MB): peak = 972.133 ; gain = 661.914
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:34 ; elapsed = 00:01:46 . Memory (MB): peak = 983.707 ; gain = 672.355
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:55 ; elapsed = 00:00:57 . Memory (MB): peak = 972.133 ; gain = 661.914
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:01:34 ; elapsed = 00:01:46 . Memory (MB): peak = 983.707 ; gain = 672.355
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:55 ; elapsed = 00:00:57 . Memory (MB): peak = 972.133 ; gain = 661.914
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -387,7 +387,7 @@ Report Cell Usage:
 +------+------+------+
 |1     |BIBUF |   130|
 |2     |BUFG  |     2|
-|3     |LUT1  |   112|
+|3     |LUT1  |    50|
 |4     |PS7   |     1|
 +------+------+------+
 
@@ -395,15 +395,15 @@ Report Instance Areas:
 +------+---------+-------------------------------------------+------+
 |      |Instance |Module                                     |Cells |
 +------+---------+-------------------------------------------+------+
-|1     |top      |                                           |   245|
-|2     |  inst   |processing_system7_v5_5_processing_system7 |   245|
+|1     |top      |                                           |   183|
+|2     |  inst   |processing_system7_v5_5_processing_system7 |   183|
 +------+---------+-------------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:34 ; elapsed = 00:01:46 . Memory (MB): peak = 983.707 ; gain = 672.355
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:55 ; elapsed = 00:00:57 . Memory (MB): peak = 972.133 ; gain = 661.914
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 79 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:49 ; elapsed = 00:01:15 . Memory (MB): peak = 983.707 ; gain = 399.063
-Synthesis Optimization Complete : Time (s): cpu = 00:01:34 ; elapsed = 00:01:46 . Memory (MB): peak = 983.707 ; gain = 672.355
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:33 ; elapsed = 00:00:45 . Memory (MB): peak = 972.133 ; gain = 399.758
+Synthesis Optimization Complete : Time (s): cpu = 00:00:55 ; elapsed = 00:00:57 . Memory (MB): peak = 972.133 ; gain = 661.914
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
@@ -413,8 +413,8 @@ No Unisim elements were transformed.
 INFO: [Common 17-83] Releasing license: Synthesis
 23 Infos, 101 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:37 ; elapsed = 00:01:51 . Memory (MB): peak = 992.906 ; gain = 688.699
-INFO: [Common 17-1381] The checkpoint 'D:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.runs/system_processing_system7_0_0_synth_1/system_processing_system7_0_0.dcp' has been generated.
+synth_design: Time (s): cpu = 00:00:58 ; elapsed = 00:01:05 . Memory (MB): peak = 981.391 ; gain = 678.316
+INFO: [Common 17-1381] The checkpoint 'F:/project/DMA_video/Miz_sys.runs/system_processing_system7_0_0_synth_1/system_processing_system7_0_0.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file system_processing_system7_0_0_utilization_synth.rpt -pb system_processing_system7_0_0_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.060 . Memory (MB): peak = 992.906 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Tue Jan 15 22:54:20 2019...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.086 . Memory (MB): peak = 981.391 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed Jan 16 19:04:03 2019...

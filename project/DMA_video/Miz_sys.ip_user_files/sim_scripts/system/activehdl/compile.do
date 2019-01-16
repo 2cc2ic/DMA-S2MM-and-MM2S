@@ -22,6 +22,10 @@ vlib activehdl/axi_register_slice_v2_1_15
 vlib activehdl/fifo_generator_v13_2_1
 vlib activehdl/axi_data_fifo_v2_1_14
 vlib activehdl/axi_crossbar_v2_1_16
+vlib activehdl/axi_protocol_converter_v2_1_15
+vlib activehdl/axi_clock_converter_v2_1_14
+vlib activehdl/blk_mem_gen_v8_4_1
+vlib activehdl/axi_dwidth_converter_v2_1_15
 
 vmap xil_defaultlib activehdl/xil_defaultlib
 vmap xpm activehdl/xpm
@@ -44,6 +48,10 @@ vmap axi_register_slice_v2_1_15 activehdl/axi_register_slice_v2_1_15
 vmap fifo_generator_v13_2_1 activehdl/fifo_generator_v13_2_1
 vmap axi_data_fifo_v2_1_14 activehdl/axi_data_fifo_v2_1_14
 vmap axi_crossbar_v2_1_16 activehdl/axi_crossbar_v2_1_16
+vmap axi_protocol_converter_v2_1_15 activehdl/axi_protocol_converter_v2_1_15
+vmap axi_clock_converter_v2_1_14 activehdl/axi_clock_converter_v2_1_14
+vmap blk_mem_gen_v8_4_1 activehdl/blk_mem_gen_v8_4_1
+vmap axi_dwidth_converter_v2_1_15 activehdl/axi_dwidth_converter_v2_1_15
 
 vlog -work xil_defaultlib  -sv2k12 "+incdir+../../../../Miz_sys.srcs/sources_1/bd/system/ipshared/ec67/hdl" "+incdir+../../../../Miz_sys.srcs/sources_1/bd/system/ipshared/02c8/hdl/verilog" "+incdir+../../../../Miz_sys.srcs/sources_1/bd/system/ipshared/1313/hdl" "+incdir+../../../../Miz_sys.srcs/sources_1/bd/system/ipshared/4868" "+incdir+D:/xilinx/Vivado/2017.4/data/xilinx_vip/include" "+incdir+../../../../Miz_sys.srcs/sources_1/bd/system/ipshared/ec67/hdl" "+incdir+../../../../Miz_sys.srcs/sources_1/bd/system/ipshared/02c8/hdl/verilog" "+incdir+../../../../Miz_sys.srcs/sources_1/bd/system/ipshared/1313/hdl" "+incdir+../../../../Miz_sys.srcs/sources_1/bd/system/ipshared/4868" "+incdir+D:/xilinx/Vivado/2017.4/data/xilinx_vip/include" \
 "D:/xilinx/Vivado/2017.4/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv" \
@@ -164,9 +172,26 @@ vlog -work xil_defaultlib  -v2k5 "+incdir+../../../../Miz_sys.srcs/sources_1/bd/
 "../../../bd/system/ipshared/1122/src/fifo.v" \
 "../../../bd/system/ipshared/1122/hdl/User_DMA_v1_0.v" \
 "../../../bd/system/ip/system_User_DMA_0_0/sim/system_User_DMA_0_0.v" \
-"d:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ip/system_auto_pc_1/system_auto_pc_1_sim_netlist.v" \
-"d:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ip/system_auto_pc_0/system_auto_pc_0_sim_netlist.v" \
-"d:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ip/system_auto_us_0/system_auto_us_0_sim_netlist.v" \
+"../../../bd/system/sim/system.v" \
+
+vlog -work axi_protocol_converter_v2_1_15  -v2k5 "+incdir+../../../../Miz_sys.srcs/sources_1/bd/system/ipshared/ec67/hdl" "+incdir+../../../../Miz_sys.srcs/sources_1/bd/system/ipshared/02c8/hdl/verilog" "+incdir+../../../../Miz_sys.srcs/sources_1/bd/system/ipshared/1313/hdl" "+incdir+../../../../Miz_sys.srcs/sources_1/bd/system/ipshared/4868" "+incdir+D:/xilinx/Vivado/2017.4/data/xilinx_vip/include" "+incdir+../../../../Miz_sys.srcs/sources_1/bd/system/ipshared/ec67/hdl" "+incdir+../../../../Miz_sys.srcs/sources_1/bd/system/ipshared/02c8/hdl/verilog" "+incdir+../../../../Miz_sys.srcs/sources_1/bd/system/ipshared/1313/hdl" "+incdir+../../../../Miz_sys.srcs/sources_1/bd/system/ipshared/4868" "+incdir+D:/xilinx/Vivado/2017.4/data/xilinx_vip/include" \
+"../../../../Miz_sys.srcs/sources_1/bd/system/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v" \
+
+vlog -work xil_defaultlib  -v2k5 "+incdir+../../../../Miz_sys.srcs/sources_1/bd/system/ipshared/ec67/hdl" "+incdir+../../../../Miz_sys.srcs/sources_1/bd/system/ipshared/02c8/hdl/verilog" "+incdir+../../../../Miz_sys.srcs/sources_1/bd/system/ipshared/1313/hdl" "+incdir+../../../../Miz_sys.srcs/sources_1/bd/system/ipshared/4868" "+incdir+D:/xilinx/Vivado/2017.4/data/xilinx_vip/include" "+incdir+../../../../Miz_sys.srcs/sources_1/bd/system/ipshared/ec67/hdl" "+incdir+../../../../Miz_sys.srcs/sources_1/bd/system/ipshared/02c8/hdl/verilog" "+incdir+../../../../Miz_sys.srcs/sources_1/bd/system/ipshared/1313/hdl" "+incdir+../../../../Miz_sys.srcs/sources_1/bd/system/ipshared/4868" "+incdir+D:/xilinx/Vivado/2017.4/data/xilinx_vip/include" \
+"../../../bd/system/ip/system_auto_pc_1/sim/system_auto_pc_1.v" \
+"../../../bd/system/ip/system_auto_pc_0/sim/system_auto_pc_0.v" \
+
+vlog -work axi_clock_converter_v2_1_14  -v2k5 "+incdir+../../../../Miz_sys.srcs/sources_1/bd/system/ipshared/ec67/hdl" "+incdir+../../../../Miz_sys.srcs/sources_1/bd/system/ipshared/02c8/hdl/verilog" "+incdir+../../../../Miz_sys.srcs/sources_1/bd/system/ipshared/1313/hdl" "+incdir+../../../../Miz_sys.srcs/sources_1/bd/system/ipshared/4868" "+incdir+D:/xilinx/Vivado/2017.4/data/xilinx_vip/include" "+incdir+../../../../Miz_sys.srcs/sources_1/bd/system/ipshared/ec67/hdl" "+incdir+../../../../Miz_sys.srcs/sources_1/bd/system/ipshared/02c8/hdl/verilog" "+incdir+../../../../Miz_sys.srcs/sources_1/bd/system/ipshared/1313/hdl" "+incdir+../../../../Miz_sys.srcs/sources_1/bd/system/ipshared/4868" "+incdir+D:/xilinx/Vivado/2017.4/data/xilinx_vip/include" \
+"../../../../Miz_sys.srcs/sources_1/bd/system/ipshared/445f/hdl/axi_clock_converter_v2_1_vl_rfs.v" \
+
+vlog -work blk_mem_gen_v8_4_1  -v2k5 "+incdir+../../../../Miz_sys.srcs/sources_1/bd/system/ipshared/ec67/hdl" "+incdir+../../../../Miz_sys.srcs/sources_1/bd/system/ipshared/02c8/hdl/verilog" "+incdir+../../../../Miz_sys.srcs/sources_1/bd/system/ipshared/1313/hdl" "+incdir+../../../../Miz_sys.srcs/sources_1/bd/system/ipshared/4868" "+incdir+D:/xilinx/Vivado/2017.4/data/xilinx_vip/include" "+incdir+../../../../Miz_sys.srcs/sources_1/bd/system/ipshared/ec67/hdl" "+incdir+../../../../Miz_sys.srcs/sources_1/bd/system/ipshared/02c8/hdl/verilog" "+incdir+../../../../Miz_sys.srcs/sources_1/bd/system/ipshared/1313/hdl" "+incdir+../../../../Miz_sys.srcs/sources_1/bd/system/ipshared/4868" "+incdir+D:/xilinx/Vivado/2017.4/data/xilinx_vip/include" \
+"../../../../Miz_sys.srcs/sources_1/bd/system/ipshared/67d8/simulation/blk_mem_gen_v8_4.v" \
+
+vlog -work axi_dwidth_converter_v2_1_15  -v2k5 "+incdir+../../../../Miz_sys.srcs/sources_1/bd/system/ipshared/ec67/hdl" "+incdir+../../../../Miz_sys.srcs/sources_1/bd/system/ipshared/02c8/hdl/verilog" "+incdir+../../../../Miz_sys.srcs/sources_1/bd/system/ipshared/1313/hdl" "+incdir+../../../../Miz_sys.srcs/sources_1/bd/system/ipshared/4868" "+incdir+D:/xilinx/Vivado/2017.4/data/xilinx_vip/include" "+incdir+../../../../Miz_sys.srcs/sources_1/bd/system/ipshared/ec67/hdl" "+incdir+../../../../Miz_sys.srcs/sources_1/bd/system/ipshared/02c8/hdl/verilog" "+incdir+../../../../Miz_sys.srcs/sources_1/bd/system/ipshared/1313/hdl" "+incdir+../../../../Miz_sys.srcs/sources_1/bd/system/ipshared/4868" "+incdir+D:/xilinx/Vivado/2017.4/data/xilinx_vip/include" \
+"../../../../Miz_sys.srcs/sources_1/bd/system/ipshared/1cdc/hdl/axi_dwidth_converter_v2_1_vl_rfs.v" \
+
+vlog -work xil_defaultlib  -v2k5 "+incdir+../../../../Miz_sys.srcs/sources_1/bd/system/ipshared/ec67/hdl" "+incdir+../../../../Miz_sys.srcs/sources_1/bd/system/ipshared/02c8/hdl/verilog" "+incdir+../../../../Miz_sys.srcs/sources_1/bd/system/ipshared/1313/hdl" "+incdir+../../../../Miz_sys.srcs/sources_1/bd/system/ipshared/4868" "+incdir+D:/xilinx/Vivado/2017.4/data/xilinx_vip/include" "+incdir+../../../../Miz_sys.srcs/sources_1/bd/system/ipshared/ec67/hdl" "+incdir+../../../../Miz_sys.srcs/sources_1/bd/system/ipshared/02c8/hdl/verilog" "+incdir+../../../../Miz_sys.srcs/sources_1/bd/system/ipshared/1313/hdl" "+incdir+../../../../Miz_sys.srcs/sources_1/bd/system/ipshared/4868" "+incdir+D:/xilinx/Vivado/2017.4/data/xilinx_vip/include" \
+"../../../bd/system/ip/system_auto_us_0/sim/system_auto_us_0.v" \
 
 vlog -work xil_defaultlib \
 "glbl.v"

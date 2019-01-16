@@ -649,7 +649,7 @@
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.PCW_EN_EMIO_CD_SDIO1">0</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.PCW_EN_EMIO_ENET0">0</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.PCW_EN_EMIO_ENET1">0</spirit:configurableElementValue>
-        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.PCW_EN_EMIO_GPIO">0</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.PCW_EN_EMIO_GPIO">1</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.PCW_EN_EMIO_I2C0">1</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.PCW_EN_EMIO_I2C1">0</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.PCW_EN_EMIO_MODEM_UART0">0</spirit:configurableElementValue>
@@ -735,9 +735,9 @@
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.PCW_GP1_NUM_READ_THREADS">4</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.PCW_GP1_NUM_WRITE_THREADS">4</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.PCW_GPIO_BASEADDR">0xE000A000</spirit:configurableElementValue>
-        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.PCW_GPIO_EMIO_GPIO_ENABLE">0</spirit:configurableElementValue>
-        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.PCW_GPIO_EMIO_GPIO_IO">&lt;Select></spirit:configurableElementValue>
-        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.PCW_GPIO_EMIO_GPIO_WIDTH">64</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.PCW_GPIO_EMIO_GPIO_ENABLE">1</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.PCW_GPIO_EMIO_GPIO_IO">2</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.PCW_GPIO_EMIO_GPIO_WIDTH">2</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.PCW_GPIO_HIGHADDR">0xE000AFFF</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.PCW_GPIO_MIO_GPIO_ENABLE">0</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.PCW_GPIO_MIO_GPIO_IO">&lt;Select></spirit:configurableElementValue>
@@ -1364,7 +1364,7 @@ ssigned#mdc#mdio</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.PCW_USE_DMA3">0</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.PCW_USE_EXPANDED_IOP">0</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.PCW_USE_EXPANDED_PS_SLCR_REGISTERS">0</spirit:configurableElementValue>
-        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.PCW_USE_FABRIC_INTERRUPT">1</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.PCW_USE_FABRIC_INTERRUPT">0</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.PCW_USE_HIGH_OCM">0</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.PCW_USE_M_AXI_GP0">1</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.PCW_USE_M_AXI_GP1">0</spirit:configurableElementValue>

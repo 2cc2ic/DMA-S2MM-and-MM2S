@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:39 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Tue Dec 26 16:29:52 2017
+# Process ID: 13136
+# Current directory: F:/MZ7X/MZ701-MINI/S03/S03_CH03_AXI_DMA_OV7725_HDMI/Miz_sys
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16140 F:\MZ7X\MZ701-MINI\S03\S03_CH03_AXI_DMA_OV7725_HDMI\Miz_sys\Miz_sys.xpr
+# Log file: F:/MZ7X/MZ701-MINI/S03/S03_CH03_AXI_DMA_OV7725_HDMI/Miz_sys/vivado.log
+# Journal file: F:/MZ7X/MZ701-MINI/S03/S03_CH03_AXI_DMA_OV7725_HDMI/Miz_sys\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/MZ7X/MZ701-MINI/S03/S03_CH03_AXI_DMA_OV7725_HDMI/Miz_sys/Miz_sys.xpr
+set_property  ip_repo_paths  {f:/MZ7X/MZ701-MINI/S03/S03_CH03_AXI_DMA_OV7725_HDMI/Miz_ip_lib/rgb2vga_v1_0 f:/MZ7X/MZ701-MINI/S03/S03_CH03_AXI_DMA_OV7725_HDMI/Miz_ip_lib/OV_Sensor_ML f:/MZ7X/MZ701-MINI/S03/S03_CH03_AXI_DMA_OV7725_HDMI/Miz_ip_lib/HDMI_FPGA_ML} [current_project]
+update_ip_catalog
+set_property  ip_repo_paths  {f:/MZ7X/MZ701-MINI/S03/S03_CH03_AXI_DMA_OV7725_HDMI/Miz_ip_lib/OV_Sensor_ML f:/MZ7X/MZ701-MINI/S03/S03_CH03_AXI_DMA_OV7725_HDMI/Miz_ip_lib/HDMI_FPGA_ML} [current_project]
+update_ip_catalog
+set_property  ip_repo_paths  f:/MZ7X/MZ701-MINI/S03/S03_CH03_AXI_DMA_OV7725_HDMI/Miz_ip_lib/HDMI_FPGA_ML [current_project]
+update_ip_catalog
+set_property  ip_repo_paths  {} [current_project]
+update_ip_catalog
+set_property  ip_repo_paths  F:/MZ7X/MZ701-MINI/S03/S03_CH03_AXI_DMA_OV7725_HDMI/DOC/Miz_ip_lib [current_project]
+update_ip_catalog
+open_bd_design {F:/MZ7X/MZ701-MINI/S03/S03_CH03_AXI_DMA_OV7725_HDMI/Miz_sys/Miz_sys.srcs/sources_1/bd/system/system.bd}

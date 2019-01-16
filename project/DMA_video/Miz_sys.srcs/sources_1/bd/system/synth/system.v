@@ -1,8 +1,8 @@
 //Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
-//Date        : Tue Jan 15 23:04:32 2019
-//Host        : hubbery running 64-bit major release  (build 9200)
+//Date        : Wed Jan 16 18:59:56 2019
+//Host        : DESKTOP-0CQ9E4M running 64-bit major release  (build 9200)
 //Command     : generate_target system.bd
 //Design      : system
 //Purpose     : IP block netlist
@@ -1705,13 +1705,13 @@ module system
         .FCLK_CLK0(processing_system7_0_FCLK_CLK0),
         .FCLK_CLK1(processing_system7_0_FCLK_CLK1),
         .FCLK_RESET0_N(processing_system7_0_FCLK_RESET0_N),
+        .GPIO_I(xlconcat_0_dout),
         .I2C0_SCL_I(processing_system7_0_IIC_0_SCL_I),
         .I2C0_SCL_O(processing_system7_0_IIC_0_SCL_O),
         .I2C0_SCL_T(processing_system7_0_IIC_0_SCL_T),
         .I2C0_SDA_I(processing_system7_0_IIC_0_SDA_I),
         .I2C0_SDA_O(processing_system7_0_IIC_0_SDA_O),
         .I2C0_SDA_T(processing_system7_0_IIC_0_SDA_T),
-        .IRQ_F2P(xlconcat_0_dout),
         .MIO(FIXED_IO_mio[53:0]),
         .M_AXI_GP0_ACLK(processing_system7_0_FCLK_CLK0),
         .M_AXI_GP0_ARADDR(processing_system7_0_M_AXI_GP0_ARADDR),
