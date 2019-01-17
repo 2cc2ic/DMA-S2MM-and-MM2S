@@ -1,20 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="system_auto_pc_1_synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1547636560">
+<GenRun Id="system_auto_pc_1_synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1547645607">
   <File Type="PA-TCL" Name="system_auto_pc_1.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="system_auto_pc_1_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="system_auto_pc_1_reports.tcl"/>
   <File Type="RDS-RDS" Name="system_auto_pc_1.vds"/>
   <File Type="RDS-UTIL" Name="system_auto_pc_1_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="system_auto_pc_1_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="system_auto_pc_1.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="system_auto_pc_1_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="system_auto_pc_1_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/system_auto_pc_1">
     <File Path="$PSRCDIR/sources_1/bd/system/ip/system_auto_pc_1/system_auto_pc_1.xci">
       <FileInfo>
+        <Attr Name="Library" Val="xil_defaultlib"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
+        <Attr Name="ProcessingOrder" Val="EARLY"/>
       </FileInfo>
     </File>
     <Config>
@@ -25,9 +24,11 @@
   <FileSet Name="constrs_in" Type="BlockSrcs" RelSrcDir="$PSRCDIR/system_auto_pc_1">
     <File Path="$PSRCDIR/sources_1/bd/system/ip/system_auto_pc_1/system_auto_pc_1.xci">
       <FileInfo>
+        <Attr Name="Library" Val="xil_defaultlib"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
+        <Attr Name="ProcessingOrder" Val="EARLY"/>
       </FileInfo>
     </File>
     <Config>
@@ -36,9 +37,7 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017">
-      <Desc>Vivado Synthesis Defaults</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
     <Step Id="synth_design"/>
   </Strategy>
 </GenRun>

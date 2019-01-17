@@ -2,20 +2,20 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="sys_intr" key="selection"/>
+		<item value="" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="xx"/>
+			<item value="0xFF04b000"/>
+			<item value="0x40400000"/>
+			<item value="&#x09;I2C_config_init();"/>
 			<item value="sys_intr"/>
 			<item value="I2C_8bit"/>
 			<item value="XPAR_PS7_I2C"/>
 			<item value="XPAR_GPIO_LITE_ML_0"/>
-			<item value="BufferPtr"/>
-			<item value="XPAR_GPIO_LITE_ML_0,8"/>
-			<item value="tx_buffer_index"/>
-			<item value="INT_TYPE_RISING_EDGE"/>
 		</list>
 		<list key="replacehistory">
 			<item value="},"/>

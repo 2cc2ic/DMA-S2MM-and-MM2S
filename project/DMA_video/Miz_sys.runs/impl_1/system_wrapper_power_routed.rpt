@@ -1,8 +1,8 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
-| Date             : Wed Jan 16 19:25:31 2019
-| Host             : DESKTOP-0CQ9E4M running 64-bit major release  (build 9200)
+| Date             : Wed Jan 16 23:51:46 2019
+| Host             : hubbery running 64-bit major release  (build 9200)
 | Command          : report_power -file system_wrapper_power_routed.rpt -pb system_wrapper_power_summary_routed.pb -rpx system_wrapper_power_routed.rpx
 | Design           : system_wrapper
 | Device           : xc7z010clg400-1
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 1.779        |
+| Total On-Chip Power (W)  | 1.781        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 1.657        |
+| Dynamic (W)              | 1.658        |
 | Device Static (W)        | 0.122        |
 | Effective TJA (C/W)      | 11.5         |
 | Max Ambient (C)          | 64.5         |
@@ -53,8 +53,8 @@ Table of Contents
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
 | Clocks                   |     0.010 |        8 |       --- |             --- |
-| Slice Logic              |     0.004 |     6474 |       --- |             --- |
-|   LUT as Logic           |     0.003 |     2181 |     17600 |           12.39 |
+| Slice Logic              |     0.004 |     6476 |       --- |             --- |
+|   LUT as Logic           |     0.003 |     2182 |     17600 |           12.40 |
 |   CARRY4                 |    <0.001 |      172 |      4400 |            3.91 |
 |   Register               |    <0.001 |     3127 |     35200 |            8.88 |
 |   LUT as Distributed RAM |    <0.001 |       50 |      6000 |            0.83 |
@@ -62,13 +62,13 @@ Table of Contents
 |   LUT as Shift Register  |    <0.001 |      105 |      6000 |            1.75 |
 |   F7/F8 Muxes            |    <0.001 |        4 |     17600 |            0.02 |
 |   Others                 |     0.000 |      388 |       --- |             --- |
-| Signals                  |     0.005 |     4697 |       --- |             --- |
+| Signals                  |     0.005 |     4705 |       --- |             --- |
 | Block RAM                |     0.001 |      2.5 |        60 |            4.17 |
 | MMCM                     |     0.106 |        1 |         2 |           50.00 |
-| I/O                      |     0.003 |       20 |       100 |           20.00 |
+| I/O                      |     0.005 |       22 |       100 |           22.00 |
 | PS7                      |     1.527 |        1 |       --- |             --- |
 | Static Power             |     0.122 |          |           |                 |
-| Total                    |     1.779 |          |           |                 |
+| Total                    |     1.781 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -159,7 +159,9 @@ Table of Contents
 +-----------------------------------------------------------------------------------+-----------+
 | Name                                                                              | Power (W) |
 +-----------------------------------------------------------------------------------+-----------+
-| system_wrapper                                                                    |     1.657 |
+| system_wrapper                                                                    |     1.658 |
+|   iic_0_scl_iobuf                                                                 |    <0.001 |
+|   iic_0_sda_iobuf                                                                 |    <0.001 |
 |   system_i                                                                        |     1.653 |
 |     HDMI_FPGA_ML_0                                                                |     0.001 |
 |       U0                                                                          |     0.001 |

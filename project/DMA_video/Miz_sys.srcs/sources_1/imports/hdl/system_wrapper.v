@@ -10,43 +10,46 @@
 `timescale 1 ps / 1 ps
 
 module system_wrapper
-   (DDR_addr,
-    DDR_ba,
-    DDR_cas_n,
-    DDR_ck_n,
-    DDR_ck_p,
-    DDR_cke,
-    DDR_cs_n,
-    DDR_dm,
-    DDR_dq,
-    DDR_dqs_n,
-    DDR_dqs_p,
-    DDR_odt,
-    DDR_ras_n,
-    DDR_reset_n,
-    DDR_we_n,
-    FIXED_IO_ddr_vrn,
-    FIXED_IO_ddr_vrp,
-    FIXED_IO_mio,
-    FIXED_IO_ps_clk,
-    FIXED_IO_ps_porb,
-    FIXED_IO_ps_srstb,
-    cmos_data_i,
-    cmos_href_i,
-    cmos_pclk_i,
-    cmos_vsync_i,
-    cmos_xclk_o,
-    gpio_0_tri_io,
-    
-    HDMI_CLK_N,
-    HDMI_CLK_P,
-    HDMI_D0_N,
-    HDMI_D0_P,
-    HDMI_D1_N,
-    HDMI_D1_P,
-    HDMI_D2_N,
-    HDMI_D2_P
-    );
+    (DDR_addr,
+ DDR_ba,
+ DDR_cas_n,
+ DDR_ck_n,
+ DDR_ck_p,
+ DDR_cke,
+ DDR_cs_n,
+ DDR_dm,
+ DDR_dq,
+ DDR_dqs_n,
+ DDR_dqs_p,
+ DDR_odt,
+ DDR_ras_n,
+ DDR_reset_n,
+ DDR_we_n,
+ FIXED_IO_ddr_vrn,
+ FIXED_IO_ddr_vrp,
+ FIXED_IO_mio,
+ FIXED_IO_ps_clk,
+ FIXED_IO_ps_porb,
+ FIXED_IO_ps_srstb,
+ cmos_data_i,
+ cmos_href_i,
+ cmos_pclk_i,
+ cmos_vsync_i,
+ cmos_xclk_o,
+ 
+ iic_0_scl_io,
+ iic_0_sda_io,
+ 
+ HDMI_CLK_N,
+ HDMI_CLK_P,
+ HDMI_D0_N,
+ HDMI_D0_P,
+ HDMI_D1_N,
+ HDMI_D1_P,
+ HDMI_D2_N,
+ HDMI_D2_P
+ );
+ 
   inout [14:0]DDR_addr;
   inout [2:0]DDR_ba;
   inout DDR_cas_n;
@@ -73,7 +76,9 @@ module system_wrapper
   input cmos_pclk_i;
   input cmos_vsync_i;
   output cmos_xclk_o;
-  inout [1:0]gpio_0_tri_io;
+  
+  inout iic_0_scl_io;
+  inout iic_0_sda_io;
 
   output HDMI_CLK_N;
   output HDMI_CLK_P;
@@ -122,9 +127,7 @@ module system_wrapper
   wire s_axis_video_tlast;
   wire s_axis_video_tready;
   wire s_axis_video_tuser;
-  wire [23:0]vga_data;
-  wire vga_hs;
-  wire vga_vs;
+
   wire vid_io_rst_i;
 
 wire pclk_i;
@@ -133,9 +136,7 @@ BUFG buf_pclk_i
 .O(pclk_i),
 .I(cmos_pclk_i)
 );
-assign vga_r = vga_data[7:3];
-assign vga_g = vga_data[15:10];
-assign vga_b = vga_data[23:19];
+
 
 
   wire [0:0]gpio_0_tri_i_0;
@@ -208,7 +209,16 @@ assign s_axis_video_tlast = m_axis_mm2s_tvalid & s_axis_video_tready & (vid_out_
 
 assign s_axis_s2mm_tlast = m_axis_video_tvalid & s_axis_s2mm_tready & m_axis_video_tlast &(vid_in_v_cnt == VID_IN_VS);// dma in last signal
 
-
+  IOBUF iic_0_scl_iobuf
+       (.I(iic_0_scl_o),
+        .IO(iic_0_scl_io),
+        .O(iic_0_scl_i),
+        .T(iic_0_scl_t));
+  IOBUF iic_0_sda_iobuf
+       (.I(iic_0_sda_o),
+        .IO(iic_0_sda_io),
+        .O(iic_0_sda_i),
+        .T(iic_0_sda_t));
 
   system system_i
        (.DDR_addr(DDR_addr),
@@ -233,14 +243,20 @@ assign s_axis_s2mm_tlast = m_axis_video_tvalid & s_axis_s2mm_tready & m_axis_vid
         .FIXED_IO_ps_clk(FIXED_IO_ps_clk),
         .FIXED_IO_ps_porb(FIXED_IO_ps_porb),
         .FIXED_IO_ps_srstb(FIXED_IO_ps_srstb),
-        .gpio_rtl_tri_i(gpio_rtl_tri_i_0),
-        .gpio_rtl_tri_o(gpio_rtl_tri_o_0),
-        .gpio_rtl_tri_t(gpio_rtl_tri_t_0),
+        .IIC_0_scl_i(iic_0_scl_i),
+        .IIC_0_scl_o(iic_0_scl_o),
+        .IIC_0_scl_t(iic_0_scl_t),
+        .IIC_0_sda_i(iic_0_sda_i),
+        .IIC_0_sda_o(iic_0_sda_o),
+        .IIC_0_sda_t(iic_0_sda_t),
         .cmos_data_i(cmos_data_i),
         .cmos_href_i(cmos_href_i),
         .cmos_pclk_i(pclk_i),
         .cmos_vsync_i(cmos_vsync_i),
         .cmos_xclk_o(cmos_xclk_o),
+        .gpio_rtl_tri_i(gpio_rtl_tri_i_0),
+        .gpio_rtl_tri_o(gpio_rtl_tri_o_0),
+        .gpio_rtl_tri_t(gpio_rtl_tri_t_0),
         .m_axis_mm2s_tvalid(m_axis_mm2s_tvalid),
         .m_axis_video_tlast(m_axis_video_tlast),
         .m_axis_video_tvalid(m_axis_video_tvalid),

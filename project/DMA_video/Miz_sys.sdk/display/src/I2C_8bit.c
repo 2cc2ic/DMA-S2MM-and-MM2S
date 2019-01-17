@@ -190,6 +190,7 @@ int I2C_write(XIicPs *InstancePtr,u8 addr,u8 data)
 	return XST_SUCCESS;
 }
 
+
 int I2C_config_init(void)
 {
 	int Status;
@@ -206,6 +207,8 @@ int I2C_config_init(void)
 		I2C_write(&Iic,ov_7725_config_table[i].addr,ov_7725_config_table[i].data);
 		i++;
 	}
+
+
 
 	return XST_SUCCESS;
 }

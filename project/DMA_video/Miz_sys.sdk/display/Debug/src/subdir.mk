@@ -8,15 +8,18 @@ LD_SRCS += \
 
 C_SRCS += \
 ../src/I2C_8bit.c \
-../src/main.c 
+../src/main.c \
+../src/sys_intr.c 
 
 OBJS += \
 ./src/I2C_8bit.o \
-./src/main.o 
+./src/main.o \
+./src/sys_intr.o 
 
 C_DEPS += \
 ./src/I2C_8bit.d \
-./src/main.d 
+./src/main.d \
+./src/sys_intr.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes
