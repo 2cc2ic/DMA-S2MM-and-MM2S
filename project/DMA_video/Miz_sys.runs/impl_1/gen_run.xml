@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7z010clg400-1" LaunchTime="1547653624">
+<GenRun Id="impl_1" LaunchPart="xc7z010clg400-1" LaunchTime="1547699033">
   <File Type="PWROPT-DCP" Name="system_wrapper_pwropt.dcp"/>
   <File Type="ROUTE-PWR" Name="system_wrapper_power_routed.rpt"/>
   <File Type="PA-TCL" Name="system_wrapper.tcl"/>
@@ -75,7 +75,7 @@
     <File Path="$PSRCDIR/sources_1/imports/hdl/system_wrapper.v">
       <FileInfo>
         <Attr Name="ImportPath" Val="$PSRCDIR/sources_1/bd/system/hdl/system_wrapper.v"/>
-        <Attr Name="ImportTime" Val="1547636396"/>
+        <Attr Name="ImportTime" Val="1547698513"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -137,7 +137,7 @@
   <BlockFileSet Type="BlockSrcs" Name="system_axi_gpio_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="system_xbar_0"/>
   <BlockFileSet Type="BlockSrcs" Name="system_User_DMA_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="system_auto_us_0"/>
   <BlockFileSet Type="BlockSrcs" Name="system_auto_pc_1"/>
   <BlockFileSet Type="BlockSrcs" Name="system_auto_pc_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="system_auto_us_0"/>
 </GenRun>

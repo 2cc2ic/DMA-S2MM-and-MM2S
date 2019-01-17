@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Wed Jan 16 19:00:17 2019" VIVADOVERSION="2017.4">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Thu Jan 17 12:15:15 2019" VIVADOVERSION="2017.4">
 
   <SYSTEMINFO ARCH="zynq" DEVICE="7z010" NAME="system" PACKAGE="clg400" SPEEDGRADE="-1"/>
 
@@ -4144,10 +4144,6 @@
             <CONNECTION INSTANCE="rst_processing_system7_0_50M" PORT="slowest_sync_clk"/>
             <CONNECTION INSTANCE="v_axi4s_vid_out_0" PORT="aclk"/>
             <CONNECTION INSTANCE="v_vid_in_axi4s_0" PORT="aclk"/>
-            <CONNECTION INSTANCE="User_DMA_0" PORT="s_axi_lite_aclk"/>
-            <CONNECTION INSTANCE="User_DMA_0" PORT="s_axis_s2mm_aclk"/>
-            <CONNECTION INSTANCE="User_DMA_0" PORT="m_axi_full_aclk"/>
-            <CONNECTION INSTANCE="User_DMA_0" PORT="m_axis_mm2s_aclk"/>
             <CONNECTION INSTANCE="axi_mem_intercon" PORT="ACLK"/>
             <CONNECTION INSTANCE="axi_mem_intercon" PORT="S00_ACLK"/>
             <CONNECTION INSTANCE="axi_mem_intercon" PORT="M00_ACLK"/>
@@ -4155,6 +4151,10 @@
             <CONNECTION INSTANCE="processing_system7_0_axi_periph" PORT="S00_ACLK"/>
             <CONNECTION INSTANCE="processing_system7_0_axi_periph" PORT="M00_ACLK"/>
             <CONNECTION INSTANCE="processing_system7_0_axi_periph" PORT="M01_ACLK"/>
+            <CONNECTION INSTANCE="User_DMA_0" PORT="s_axi_lite_aclk"/>
+            <CONNECTION INSTANCE="User_DMA_0" PORT="s_axis_s2mm_aclk"/>
+            <CONNECTION INSTANCE="User_DMA_0" PORT="m_axi_full_aclk"/>
+            <CONNECTION INSTANCE="User_DMA_0" PORT="m_axis_mm2s_aclk"/>
           </CONNECTIONS>
         </PORT>
         <PORT CLKFREQUENCY="25000000" DIR="O" NAME="FCLK_CLK1" SIGIS="clk" SIGNAME="processing_system7_0_FCLK_CLK1">
@@ -5284,15 +5284,15 @@
           <CONNECTIONS>
             <CONNECTION INSTANCE="axi_gpio_0" PORT="s_axi_aresetn"/>
             <CONNECTION INSTANCE="clk_wiz_0" PORT="resetn"/>
-            <CONNECTION INSTANCE="User_DMA_0" PORT="s_axi_lite_aresetn"/>
-            <CONNECTION INSTANCE="User_DMA_0" PORT="s_axis_s2mm_aresetn"/>
-            <CONNECTION INSTANCE="User_DMA_0" PORT="m_axi_full_aresetn"/>
-            <CONNECTION INSTANCE="User_DMA_0" PORT="m_axis_mm2s_aresetn"/>
             <CONNECTION INSTANCE="axi_mem_intercon" PORT="S00_ARESETN"/>
             <CONNECTION INSTANCE="axi_mem_intercon" PORT="M00_ARESETN"/>
             <CONNECTION INSTANCE="processing_system7_0_axi_periph" PORT="S00_ARESETN"/>
             <CONNECTION INSTANCE="processing_system7_0_axi_periph" PORT="M00_ARESETN"/>
             <CONNECTION INSTANCE="processing_system7_0_axi_periph" PORT="M01_ARESETN"/>
+            <CONNECTION INSTANCE="User_DMA_0" PORT="s_axi_lite_aresetn"/>
+            <CONNECTION INSTANCE="User_DMA_0" PORT="s_axis_s2mm_aresetn"/>
+            <CONNECTION INSTANCE="User_DMA_0" PORT="m_axi_full_aresetn"/>
+            <CONNECTION INSTANCE="User_DMA_0" PORT="m_axis_mm2s_aresetn"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>

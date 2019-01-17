@@ -1,10 +1,10 @@
 -- Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
--- Date        : Wed Jan 16 19:05:36 2019
+-- Date        : Thu Jan 17 12:19:12 2019
 -- Host        : DESKTOP-0CQ9E4M running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode synth_stub
---               f:/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ip/system_auto_us_0/system_auto_us_0_stub.vhdl
+--               c:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ip/system_auto_us_0/system_auto_us_0_stub.vhdl
 -- Design      : system_auto_us_0
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7z010clg400-1

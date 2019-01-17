@@ -1,12 +1,3 @@
-//Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
-//--------------------------------------------------------------------------------
-//Tool Version: Vivado v.2015.4 (win64) Build 1412921 Wed Nov 18 09:43:45 MST 2015
-//Date        : Sun Dec 04 10:02:18 2016
-//Host        : Administrator running 64-bit Service Pack 1  (build 7601)
-//Command     : generate_target system_wrapper.bd
-//Design      : system_wrapper
-//Purpose     : IP block netlist
-//--------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
 module system_wrapper

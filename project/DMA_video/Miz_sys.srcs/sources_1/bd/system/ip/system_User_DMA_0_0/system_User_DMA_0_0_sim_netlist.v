@@ -1,10 +1,10 @@
 // Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
-// Date        : Tue Jan 15 22:58:49 2019
-// Host        : hubbery running 64-bit major release  (build 9200)
+// Date        : Thu Jan 17 12:17:10 2019
+// Host        : DESKTOP-0CQ9E4M running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim
-//               d:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ip/system_User_DMA_0_0/system_User_DMA_0_0_sim_netlist.v
+//               C:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ip/system_User_DMA_0_0/system_User_DMA_0_0_sim_netlist.v
 // Design      : system_User_DMA_0_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -386,13 +386,13 @@ module system_User_DMA_0_0_User_DMA_v1_0
     s_axi_lite_awvalid,
     s_axi_lite_wvalid,
     s_axi_lite_wdata,
+    s_axis_s2mm_aresetn,
     m_axi_full_wready,
     m_axi_full_aresetn,
     m_axi_full_awready,
     m_axi_full_rlast,
     m_axis_mm2s_tready,
     m_axi_full_arready,
-    s_axis_s2mm_aresetn,
     m_axis_mm2s_aresetn,
     s_axi_lite_aresetn,
     s_axi_lite_bready,
@@ -435,13 +435,13 @@ module system_User_DMA_0_0_User_DMA_v1_0
   input s_axi_lite_awvalid;
   input s_axi_lite_wvalid;
   input [31:0]s_axi_lite_wdata;
+  input s_axis_s2mm_aresetn;
   input m_axi_full_wready;
   input m_axi_full_aresetn;
   input m_axi_full_awready;
   input m_axi_full_rlast;
   input m_axis_mm2s_tready;
   input m_axi_full_arready;
-  input s_axis_s2mm_aresetn;
   input m_axis_mm2s_aresetn;
   input s_axi_lite_aresetn;
   input s_axi_lite_bready;
@@ -452,6 +452,7 @@ module system_User_DMA_0_0_User_DMA_v1_0
   wire User_DMA_v1_0_M_AXI_FULL_mm2s_inst_n_0;
   wire User_DMA_v1_0_M_AXI_FULL_mm2s_inst_n_36;
   wire User_DMA_v1_0_M_AXI_FULL_mm2s_inst_n_37;
+  wire User_DMA_v1_0_M_AXI_FULL_s2mm_inst_n_37;
   wire User_DMA_v1_0_S_AXIS_S2MM_inst_n_1;
   wire User_DMA_v1_0_S_AXI_LITE_inst_n_63;
   wire User_DMA_v1_0_S_AXI_LITE_inst_n_64;
@@ -563,6 +564,7 @@ module system_User_DMA_0_0_User_DMA_v1_0
   system_User_DMA_0_0_User_DMA_v1_0_M_AXI_FULL_s2mm User_DMA_v1_0_M_AXI_FULL_s2mm_inst
        (.Q({INIT_AXI_TXN,User_DMA_v1_0_S_AXI_LITE_inst_n_63,User_DMA_v1_0_S_AXI_LITE_inst_n_64,User_DMA_v1_0_S_AXI_LITE_inst_n_65,User_DMA_v1_0_S_AXI_LITE_inst_n_66,User_DMA_v1_0_S_AXI_LITE_inst_n_67,User_DMA_v1_0_S_AXI_LITE_inst_n_68,User_DMA_v1_0_S_AXI_LITE_inst_n_69,User_DMA_v1_0_S_AXI_LITE_inst_n_70,User_DMA_v1_0_S_AXI_LITE_inst_n_71,User_DMA_v1_0_S_AXI_LITE_inst_n_72,User_DMA_v1_0_S_AXI_LITE_inst_n_73,User_DMA_v1_0_S_AXI_LITE_inst_n_74,User_DMA_v1_0_S_AXI_LITE_inst_n_75,User_DMA_v1_0_S_AXI_LITE_inst_n_76,User_DMA_v1_0_S_AXI_LITE_inst_n_77,User_DMA_v1_0_S_AXI_LITE_inst_n_78,User_DMA_v1_0_S_AXI_LITE_inst_n_79,User_DMA_v1_0_S_AXI_LITE_inst_n_80,User_DMA_v1_0_S_AXI_LITE_inst_n_81,User_DMA_v1_0_S_AXI_LITE_inst_n_82,User_DMA_v1_0_S_AXI_LITE_inst_n_83,User_DMA_v1_0_S_AXI_LITE_inst_n_84,User_DMA_v1_0_S_AXI_LITE_inst_n_85,User_DMA_v1_0_S_AXI_LITE_inst_n_86}),
         .SR(User_DMA_v1_0_M_AXI_FULL_mm2s_inst_n_0),
+        .axis_tready_reg(User_DMA_v1_0_M_AXI_FULL_s2mm_inst_n_37),
         .\fifo_cnt_reg[1] (User_DMA_v1_0_S_AXIS_S2MM_inst_n_1),
         .m_axi_full_aclk(m_axi_full_aclk),
         .m_axi_full_aresetn(m_axi_full_aresetn),
@@ -576,9 +578,11 @@ module system_User_DMA_0_0_User_DMA_v1_0
         .m_axi_full_wlast(m_axi_full_wlast),
         .m_axi_full_wready(m_axi_full_wready),
         .m_axi_full_wvalid(m_axi_full_wvalid),
+        .s_axis_s2mm_aresetn(s_axis_s2mm_aresetn),
         .\slv_reg0_reg[31] (slv_reg0));
   system_User_DMA_0_0_User_DMA_v1_0_S_AXIS_S2MM User_DMA_v1_0_S_AXIS_S2MM_inst
-       (.axi_wvalid_reg(User_DMA_v1_0_S_AXIS_S2MM_inst_n_1),
+       (.\FSM_sequential_state_ctrl_reg[1] (User_DMA_v1_0_M_AXI_FULL_s2mm_inst_n_37),
+        .axi_wvalid_reg(User_DMA_v1_0_S_AXIS_S2MM_inst_n_1),
         .axi_wvalid_reg_0(m_axi_full_wvalid),
         .m_axi_full_wdata(m_axi_full_wdata),
         .m_axi_full_wready(m_axi_full_wready),
@@ -3955,11 +3959,13 @@ module system_User_DMA_0_0_User_DMA_v1_0_M_AXI_FULL_s2mm
     m_axi_full_s2mm_done,
     m_axi_full_wvalid,
     m_axi_full_wlast,
+    axis_tready_reg,
     m_axi_full_awlen,
     SR,
     Q,
     m_axi_full_aclk,
     m_axi_full_bvalid,
+    s_axis_s2mm_aresetn,
     m_axi_full_wready,
     \fifo_cnt_reg[1] ,
     m_axi_full_aresetn,
@@ -3971,11 +3977,13 @@ module system_User_DMA_0_0_User_DMA_v1_0_M_AXI_FULL_s2mm
   output m_axi_full_s2mm_done;
   output m_axi_full_wvalid;
   output m_axi_full_wlast;
+  output axis_tready_reg;
   output [5:0]m_axi_full_awlen;
   input [0:0]SR;
   input [24:0]Q;
   input m_axi_full_aclk;
   input m_axi_full_bvalid;
+  input s_axis_s2mm_aresetn;
   input m_axi_full_wready;
   input \fifo_cnt_reg[1] ;
   input m_axi_full_aresetn;
@@ -4168,6 +4176,7 @@ module system_User_DMA_0_0_User_DMA_v1_0_M_AXI_FULL_s2mm
   wire axi_wlast_i_1_n_0;
   wire axi_wlast_i_2_n_0;
   wire axi_wvalid_i_1_n_0;
+  wire axis_tready_reg;
   wire [19:0]burst_count;
   wire \burst_count[19]_i_10_n_0 ;
   wire \burst_count[19]_i_1_n_0 ;
@@ -4212,6 +4221,7 @@ module system_User_DMA_0_0_User_DMA_v1_0_M_AXI_FULL_s2mm
   wire p_1_in;
   wire p_2_in;
   wire p_3_in;
+  wire s_axis_s2mm_aresetn;
   wire [31:0]\slv_reg0_reg[31] ;
   wire start_single_burst_write;
   wire start_single_burst_write_i_1_n_0;
@@ -5705,6 +5715,15 @@ module system_User_DMA_0_0_User_DMA_v1_0_M_AXI_FULL_s2mm
         .D(axi_wvalid_i_1_n_0),
         .Q(m_axi_full_wvalid),
         .R(1'b0));
+  LUT5 #(
+    .INIT(32'hFFFE0000)) 
+    axis_tready_i_2
+       (.I0(state_ctrl[1]),
+        .I1(state_ctrl[0]),
+        .I2(state_ctrl[2]),
+        .I3(state_ctrl[3]),
+        .I4(s_axis_s2mm_aresetn),
+        .O(axis_tready_reg));
   LUT3 #(
     .INIT(8'hFE)) 
     \burst_count[0]_i_1 
@@ -7154,6 +7173,7 @@ module system_User_DMA_0_0_User_DMA_v1_0_S_AXIS_S2MM
     m_axi_full_wdata,
     s_axis_s2mm_aclk,
     s_axis_s2mm_tvalid,
+    \FSM_sequential_state_ctrl_reg[1] ,
     axi_wvalid_reg_0,
     m_axi_full_wready,
     s_axis_s2mm_aresetn,
@@ -7163,14 +7183,16 @@ module system_User_DMA_0_0_User_DMA_v1_0_S_AXIS_S2MM
   output [31:0]m_axi_full_wdata;
   input s_axis_s2mm_aclk;
   input s_axis_s2mm_tvalid;
+  input \FSM_sequential_state_ctrl_reg[1] ;
   input axi_wvalid_reg_0;
   input m_axi_full_wready;
   input s_axis_s2mm_aresetn;
   input [31:0]s_axis_s2mm_tdata;
 
+  wire \FSM_sequential_state_ctrl_reg[1] ;
   wire axi_wvalid_reg;
   wire axi_wvalid_reg_0;
-  wire fifo_s2mm_inst_n_1;
+  wire fifo_s2mm_inst_n_0;
   wire [31:0]m_axi_full_wdata;
   wire m_axi_full_wready;
   wire s_axis_s2mm_aclk;
@@ -7182,13 +7204,14 @@ module system_User_DMA_0_0_User_DMA_v1_0_S_AXIS_S2MM
   FDRE axis_tready_reg
        (.C(s_axis_s2mm_aclk),
         .CE(1'b1),
-        .D(fifo_s2mm_inst_n_1),
+        .D(fifo_s2mm_inst_n_0),
         .Q(s_axis_s2mm_tready),
         .R(1'b0));
   system_User_DMA_0_0_fifo fifo_s2mm_inst
-       (.axi_wvalid_reg(axi_wvalid_reg),
+       (.\FSM_sequential_state_ctrl_reg[1] (\FSM_sequential_state_ctrl_reg[1] ),
+        .axi_wvalid_reg(axi_wvalid_reg),
         .axi_wvalid_reg_0(axi_wvalid_reg_0),
-        .axis_tready_reg(fifo_s2mm_inst_n_1),
+        .axis_tready_reg(fifo_s2mm_inst_n_0),
         .axis_tready_reg_0(s_axis_s2mm_tready),
         .m_axi_full_wdata(m_axi_full_wdata),
         .m_axi_full_wready(m_axi_full_wready),
@@ -8888,31 +8911,34 @@ endmodule
 
 (* ORIG_REF_NAME = "fifo" *) 
 module system_User_DMA_0_0_fifo
-   (axi_wvalid_reg,
-    axis_tready_reg,
+   (axis_tready_reg,
+    axi_wvalid_reg,
     m_axi_full_wdata,
     s_axis_s2mm_aclk,
     axis_tready_reg_0,
     s_axis_s2mm_tvalid,
+    \FSM_sequential_state_ctrl_reg[1] ,
     axi_wvalid_reg_0,
     m_axi_full_wready,
     s_axis_s2mm_aresetn,
     s_axis_s2mm_tdata);
-  output axi_wvalid_reg;
   output axis_tready_reg;
+  output axi_wvalid_reg;
   output [31:0]m_axi_full_wdata;
   input s_axis_s2mm_aclk;
   input axis_tready_reg_0;
   input s_axis_s2mm_tvalid;
+  input \FSM_sequential_state_ctrl_reg[1] ;
   input axi_wvalid_reg_0;
   input m_axi_full_wready;
   input s_axis_s2mm_aresetn;
   input [31:0]s_axis_s2mm_tdata;
 
+  wire \FSM_sequential_state_ctrl_reg[1] ;
   wire axi_wvalid_i_3_n_0;
   wire axi_wvalid_reg;
   wire axi_wvalid_reg_0;
-  wire axis_tready_i_2_n_0;
+  wire axis_tready_i_3_n_0;
   wire axis_tready_reg;
   wire axis_tready_reg_0;
   wire fifo_cnt;
@@ -8973,23 +8999,23 @@ module system_User_DMA_0_0_fifo
         .I2(fifo_cnt_reg__0[4]),
         .O(axi_wvalid_i_3_n_0));
   LUT4 #(
-    .INIT(16'hF090)) 
+    .INIT(16'hA88A)) 
     axis_tready_i_1
-       (.I0(fifo_cnt_reg__0[5]),
-        .I1(fifo_cnt_reg__0[1]),
-        .I2(s_axis_s2mm_aresetn),
-        .I3(axis_tready_i_2_n_0),
+       (.I0(\FSM_sequential_state_ctrl_reg[1] ),
+        .I1(axis_tready_i_3_n_0),
+        .I2(fifo_cnt_reg__0[5]),
+        .I3(fifo_cnt_reg__0[1]),
         .O(axis_tready_reg));
   LUT6 #(
     .INIT(64'hBFFFFFFFFFFFFFFC)) 
-    axis_tready_i_2
+    axis_tready_i_3
        (.I0(\fifo_cnt[5]_i_5__0_n_0 ),
         .I1(fifo_cnt_reg__0[1]),
         .I2(fifo_cnt_reg__0[4]),
         .I3(fifo_cnt_reg__0[2]),
         .I4(fifo_cnt_reg__0[3]),
         .I5(fifo_cnt_reg__0[0]),
-        .O(axis_tready_i_2_n_0));
+        .O(axis_tready_i_3_n_0));
   (* SOFT_HLUTNM = "soft_lutpair20" *) 
   LUT1 #(
     .INIT(2'h1)) 

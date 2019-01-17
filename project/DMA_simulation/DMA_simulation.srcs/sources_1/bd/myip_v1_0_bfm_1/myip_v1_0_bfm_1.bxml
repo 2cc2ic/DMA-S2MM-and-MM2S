@@ -2,10 +2,10 @@
 <Root MajorVersion="0" MinorVersion="33">
   <CompositeFile CompositeFileTopName="myip_v1_0_bfm_1" CanBeSetAsTop="false" CanDisplayChildGraph="true">
     <Description>Composite Fileset</Description>
-    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1547036473"/>
-    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1547036473"/>
-    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1547036473"/>
-    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1547036473"/>
+    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1547698713"/>
+    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1547698713"/>
+    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1547698713"/>
+    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1547698713"/>
     <FileCollection Name="SOURCES" Type="SOURCES">
       <File Name="ip\myip_v1_0_bfm_1_myip_0_0\myip_v1_0_bfm_1_myip_0_0.xci" Type="IP">
         <Instance HierarchyPath="myip_0"/>
@@ -43,6 +43,7 @@
         <UsedIn Val="SIMULATION"/>
       </File>
       <File Name="ip\myip_v1_0_bfm_1_axi_interconnect_0_0\myip_v1_0_bfm_1_axi_interconnect_0_0.xci" Type="IP">
+        <Instance HierarchyPath="axi_interconnect_0"/>
         <Properties IsEditable="false" IsVisible="false" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>
@@ -82,6 +83,7 @@
         <UsedIn Val="SIMULATION"/>
       </File>
       <File Name="ip\myip_v1_0_bfm_1_axi_interconnect_1_0\myip_v1_0_bfm_1_axi_interconnect_1_0.xci" Type="IP">
+        <Instance HierarchyPath="axi_interconnect_1"/>
         <Properties IsEditable="false" IsVisible="false" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>

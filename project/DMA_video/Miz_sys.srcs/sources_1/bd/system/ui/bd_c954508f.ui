@@ -42,57 +42,57 @@ preplace inst clk_wiz_0 -pg 1 -lvl 2 -y 890 -defaultsOSRD
 preplace inst axi_mem_intercon -pg 1 -lvl 4 -y 290 -defaultsOSRD
 preplace inst processing_system7_0_axi_periph -pg 1 -lvl 2 -y 590 -defaultsOSRD
 preplace inst processing_system7_0 -pg 1 -lvl 5 -y 360 -defaultsOSRD
-preplace netloc processing_system7_0_DDR 1 5 1 2410J
+preplace netloc processing_system7_0_DDR 1 5 1 2400J
 preplace netloc User_DMA_0_m_axi_full_mm2s_done 1 3 1 1200
-preplace netloc v_axi4s_vid_out_0_vid_data 1 4 1 1770J
+preplace netloc v_axi4s_vid_out_0_vid_data 1 4 1 1780J
 preplace netloc cmos_href_i_1 1 0 4 -50J 1130 NJ 1130 NJ 1130 1210J
-preplace netloc OV_Sensor_ML_0_vs_o 1 4 1 1860
-preplace netloc clk_wiz_0_locked 1 2 3 710 890 1270 960 1820
-preplace netloc processing_system7_0_axi_periph_M00_AXI 1 2 3 660J 490 1310J 580 1780J
-preplace netloc v_axi4s_vid_out_0_vid_hsync 1 4 1 1740
-preplace netloc v_vid_in_axi4s_0_m_axis_video_tvalid 1 2 4 720 1070 1310 1030 1810 700 2390
+preplace netloc OV_Sensor_ML_0_vs_o 1 4 1 1870
+preplace netloc clk_wiz_0_locked 1 2 3 710 890 1270 960 1830
+preplace netloc processing_system7_0_axi_periph_M00_AXI 1 2 3 660J 490 1310J 580 1800J
+preplace netloc v_axi4s_vid_out_0_vid_hsync 1 4 1 1750
+preplace netloc v_vid_in_axi4s_0_m_axis_video_tvalid 1 2 4 720 1070 1310 1030 1820 700 2400
 preplace netloc rst_processing_system7_0_50M_interconnect_aresetn 1 1 3 310 270 NJ 270 NJ
-preplace netloc processing_system7_0_M_AXI_GP0 1 1 5 330 450 NJ 450 NJ 450 1790J 510 2380
+preplace netloc processing_system7_0_M_AXI_GP0 1 1 5 330 170 NJ 170 NJ 170 1740J 220 2370
 preplace netloc User_DMA_0_m_axis_mm2s_tdata 1 3 1 1310
-preplace netloc HDMI_FPGA_ML_0_HDMI_D2_N 1 5 1 2400J
-preplace netloc HDMI_FPGA_ML_0_HDMI_CLK_N 1 5 1 2400J
-preplace netloc OV_Sensor_ML_0_hs_o 1 4 1 1750
-preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 6 -50 420 NJ 420 NJ 420 NJ 420 1800J 520 2370
-preplace netloc processing_system7_0_IIC_0 1 5 1 2440
-preplace netloc axi_mem_intercon_M00_AXI 1 4 1 1840
-preplace netloc HDMI_FPGA_ML_0_HDMI_D1_N 1 5 1 2400J
-preplace netloc HDMI_FPGA_ML_0_HDMI_D2_P 1 5 1 2400J
-preplace netloc HDMI_FPGA_ML_0_HDMI_CLK_P 1 5 1 2400J
-preplace netloc v_axi4s_vid_out_0_vid_active_video 1 4 1 1750
+preplace netloc HDMI_FPGA_ML_0_HDMI_D2_N 1 5 1 2370J
+preplace netloc HDMI_FPGA_ML_0_HDMI_CLK_N 1 5 1 2370J
+preplace netloc OV_Sensor_ML_0_hs_o 1 4 1 1770
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 6 -50 450 NJ 450 NJ 450 NJ 450 1790J 490 2370
+preplace netloc processing_system7_0_IIC_0 1 5 1 N
+preplace netloc axi_mem_intercon_M00_AXI 1 4 1 1790
+preplace netloc HDMI_FPGA_ML_0_HDMI_D1_N 1 5 1 2370J
+preplace netloc HDMI_FPGA_ML_0_HDMI_D2_P 1 5 1 2370J
+preplace netloc HDMI_FPGA_ML_0_HDMI_CLK_P 1 5 1 2370J
+preplace netloc v_axi4s_vid_out_0_vid_active_video 1 4 1 1760
 preplace netloc axi_dma_0_m_axis_mm2s_tvalid 1 3 3 1330 570 NJ 570 NJ
-preplace netloc rst_processing_system7_0_50M_peripheral_aresetn 1 1 4 330 730 700 840 1300 990 1760J
-preplace netloc HDMI_FPGA_ML_0_HDMI_D0_N 1 5 1 2400J
-preplace netloc OV_Sensor_ML_0_cmos_xclk_o 1 4 2 1830J 1030 2390J
-preplace netloc cmos_pclk_i_1 1 0 5 NJ 1140 NJ 1140 NJ 1140 1200 980 1830
+preplace netloc rst_processing_system7_0_50M_peripheral_aresetn 1 1 4 330 730 700 840 1300 990 1780J
+preplace netloc HDMI_FPGA_ML_0_HDMI_D0_N 1 5 1 2370J
+preplace netloc OV_Sensor_ML_0_cmos_xclk_o 1 4 2 1840J 1030 2380J
+preplace netloc cmos_pclk_i_1 1 0 5 NJ 1140 NJ 1140 NJ 1140 1200 980 1840
 preplace netloc axi_dma_0_s_axis_s2mm_tready 1 2 4 740 860 1290 940 1790 690 2410
-preplace netloc xlconcat_0_dout 1 4 2 1780 530 2400
-preplace netloc HDMI_FPGA_ML_0_HDMI_D1_P 1 5 1 2400J
-preplace netloc v_vid_in_axi4s_0_m_axis_video_tlast 1 5 1 2430J
+preplace netloc xlconcat_0_dout 1 4 2 N 510 2390
+preplace netloc HDMI_FPGA_ML_0_HDMI_D1_P 1 5 1 2370J
+preplace netloc v_vid_in_axi4s_0_m_axis_video_tlast 1 5 1 2420J
 preplace netloc v_axi4s_vid_out_0_vtg_ce 1 2 3 740 1060 1250J 1000 1740
-preplace netloc processing_system7_0_FIXED_IO 1 5 1 2420J
-preplace netloc HDMI_FPGA_ML_0_HDMI_D0_P 1 5 1 2400J
-preplace netloc OV_Sensor_ML_0_rgb_o 1 4 1 1850
-preplace netloc vid_io_in_reset_1 1 0 5 -40J 820 NJ 820 680J 880 1280 950 1770J
-preplace netloc axi_gpio_0_GPIO 1 5 1 2430J
+preplace netloc processing_system7_0_FIXED_IO 1 5 1 2410J
+preplace netloc HDMI_FPGA_ML_0_HDMI_D0_P 1 5 1 2370J
+preplace netloc OV_Sensor_ML_0_rgb_o 1 4 1 1860
+preplace netloc vid_io_in_reset_1 1 0 5 -40J 820 NJ 820 680J 880 1280 950 1780J
+preplace netloc axi_gpio_0_GPIO 1 5 1 2410J
 preplace netloc User_DMA_0_M_AXI_FULL 1 3 1 1190
-preplace netloc v_vid_in_axi4s_0_m_axis_video_tdata 1 2 4 730 1050 1280J 1020 NJ 1020 2370
+preplace netloc v_vid_in_axi4s_0_m_axis_video_tdata 1 2 4 730 1050 1280J 1020 NJ 1020 2380
 preplace netloc cmos_vsync_i_1 1 0 4 -40J 1120 NJ 1120 NJ 1120 NJ
-preplace netloc OV_Sensor_ML_0_vid_clk_ce 1 4 1 1870
-preplace netloc v_axi4s_vid_out_0_s_axis_video_tready 1 3 3 1220 1230 NJ 1230 2400J
+preplace netloc OV_Sensor_ML_0_vid_clk_ce 1 4 1 1880
+preplace netloc v_axi4s_vid_out_0_s_axis_video_tready 1 3 3 1220 1230 NJ 1230 2390J
 preplace netloc clk_wiz_0_clk_out2 1 2 3 690 850 1230 30 NJ
 preplace netloc User_DMA_0_m_axi_full_s2mm_done 1 3 1 1210
-preplace netloc vga_vs 1 4 1 1760
+preplace netloc vga_vs 1 4 1 1770
 preplace netloc clk_wiz_0_clk_out3 1 2 3 670J 50 NJ 50 NJ
 preplace netloc cmos_data_i_1 1 0 4 NJ 1160 NJ 1160 NJ 1160 1190J
 preplace netloc s_axis_video_tlast_1 1 0 4 NJ 970 NJ 970 700J 870 1240J
-preplace netloc processing_system7_0_FCLK_CLK0 1 0 6 -40 630 320 440 690 440 1320 440 1840 540 2430
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 6 -40 630 320 440 690 440 1320 410 1850 500 2420
 preplace netloc v_tc_0_vtiming_out 1 3 1 1260
-preplace netloc processing_system7_0_FCLK_CLK1 1 3 3 1330 970 1800J 650 2390
+preplace netloc processing_system7_0_FCLK_CLK1 1 3 3 1330 970 1810J 650 2380
 preplace netloc processing_system7_0_axi_periph_M01_AXI 1 2 1 680
 preplace netloc s_axis_video_tuser_1 1 0 4 -50J 810 NJ 810 690J 830 1250J
 levelinfo -pg 1 -70 140 530 980 1560 2140 2460 -top -20 -bot 1320

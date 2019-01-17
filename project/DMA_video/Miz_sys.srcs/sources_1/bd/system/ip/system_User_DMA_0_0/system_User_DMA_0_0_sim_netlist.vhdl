@@ -1,10 +1,10 @@
 -- Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
--- Date        : Tue Jan 15 22:58:49 2019
--- Host        : hubbery running 64-bit major release  (build 9200)
+-- Date        : Thu Jan 17 12:17:11 2019
+-- Host        : DESKTOP-0CQ9E4M running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode funcsim
---               d:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ip/system_User_DMA_0_0/system_User_DMA_0_0_sim_netlist.vhdl
+--               C:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ip/system_User_DMA_0_0/system_User_DMA_0_0_sim_netlist.vhdl
 -- Design      : system_User_DMA_0_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -4486,11 +4486,13 @@ entity system_User_DMA_0_0_User_DMA_v1_0_M_AXI_FULL_s2mm is
     m_axi_full_s2mm_done : out STD_LOGIC;
     m_axi_full_wvalid : out STD_LOGIC;
     m_axi_full_wlast : out STD_LOGIC;
+    axis_tready_reg : out STD_LOGIC;
     m_axi_full_awlen : out STD_LOGIC_VECTOR ( 5 downto 0 );
     SR : in STD_LOGIC_VECTOR ( 0 to 0 );
     Q : in STD_LOGIC_VECTOR ( 24 downto 0 );
     m_axi_full_aclk : in STD_LOGIC;
     m_axi_full_bvalid : in STD_LOGIC;
+    s_axis_s2mm_aresetn : in STD_LOGIC;
     m_axi_full_wready : in STD_LOGIC;
     \fifo_cnt_reg[1]\ : in STD_LOGIC;
     m_axi_full_aresetn : in STD_LOGIC;
@@ -6843,6 +6845,18 @@ axi_wvalid_reg: unisim.vcomponents.FDRE
       D => axi_wvalid_i_1_n_0,
       Q => \^m_axi_full_wvalid\,
       R => '0'
+    );
+axis_tready_i_2: unisim.vcomponents.LUT5
+    generic map(
+      INIT => X"FFFE0000"
+    )
+        port map (
+      I0 => state_ctrl(1),
+      I1 => state_ctrl(0),
+      I2 => state_ctrl(2),
+      I3 => state_ctrl(3),
+      I4 => s_axis_s2mm_aresetn,
+      O => axis_tready_reg
     );
 \burst_count[0]_i_1\: unisim.vcomponents.LUT3
     generic map(
@@ -11055,12 +11069,13 @@ library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
 entity system_User_DMA_0_0_fifo is
   port (
-    axi_wvalid_reg : out STD_LOGIC;
     axis_tready_reg : out STD_LOGIC;
+    axi_wvalid_reg : out STD_LOGIC;
     m_axi_full_wdata : out STD_LOGIC_VECTOR ( 31 downto 0 );
     s_axis_s2mm_aclk : in STD_LOGIC;
     axis_tready_reg_0 : in STD_LOGIC;
     s_axis_s2mm_tvalid : in STD_LOGIC;
+    \FSM_sequential_state_ctrl_reg[1]\ : in STD_LOGIC;
     axi_wvalid_reg_0 : in STD_LOGIC;
     m_axi_full_wready : in STD_LOGIC;
     s_axis_s2mm_aresetn : in STD_LOGIC;
@@ -11072,7 +11087,7 @@ end system_User_DMA_0_0_fifo;
 
 architecture STRUCTURE of system_User_DMA_0_0_fifo is
   signal axi_wvalid_i_3_n_0 : STD_LOGIC;
-  signal axis_tready_i_2_n_0 : STD_LOGIC;
+  signal axis_tready_i_3_n_0 : STD_LOGIC;
   signal fifo_cnt : STD_LOGIC;
   signal fifo_cnt20_in : STD_LOGIC;
   signal \fifo_cnt[0]_i_1__0_n_0\ : STD_LOGIC;
@@ -11154,16 +11169,16 @@ axi_wvalid_i_3: unisim.vcomponents.LUT3
     );
 axis_tready_i_1: unisim.vcomponents.LUT4
     generic map(
-      INIT => X"F090"
+      INIT => X"A88A"
     )
         port map (
-      I0 => \fifo_cnt_reg__0\(5),
-      I1 => \fifo_cnt_reg__0\(1),
-      I2 => s_axis_s2mm_aresetn,
-      I3 => axis_tready_i_2_n_0,
+      I0 => \FSM_sequential_state_ctrl_reg[1]\,
+      I1 => axis_tready_i_3_n_0,
+      I2 => \fifo_cnt_reg__0\(5),
+      I3 => \fifo_cnt_reg__0\(1),
       O => axis_tready_reg
     );
-axis_tready_i_2: unisim.vcomponents.LUT6
+axis_tready_i_3: unisim.vcomponents.LUT6
     generic map(
       INIT => X"BFFFFFFFFFFFFFFC"
     )
@@ -11174,7 +11189,7 @@ axis_tready_i_2: unisim.vcomponents.LUT6
       I3 => \fifo_cnt_reg__0\(2),
       I4 => \fifo_cnt_reg__0\(3),
       I5 => \fifo_cnt_reg__0\(0),
-      O => axis_tready_i_2_n_0
+      O => axis_tready_i_3_n_0
     );
 \fifo_cnt[0]_i_1__0\: unisim.vcomponents.LUT1
     generic map(
@@ -12371,6 +12386,7 @@ entity system_User_DMA_0_0_User_DMA_v1_0_S_AXIS_S2MM is
     m_axi_full_wdata : out STD_LOGIC_VECTOR ( 31 downto 0 );
     s_axis_s2mm_aclk : in STD_LOGIC;
     s_axis_s2mm_tvalid : in STD_LOGIC;
+    \FSM_sequential_state_ctrl_reg[1]\ : in STD_LOGIC;
     axi_wvalid_reg_0 : in STD_LOGIC;
     m_axi_full_wready : in STD_LOGIC;
     s_axis_s2mm_aresetn : in STD_LOGIC;
@@ -12381,7 +12397,7 @@ entity system_User_DMA_0_0_User_DMA_v1_0_S_AXIS_S2MM is
 end system_User_DMA_0_0_User_DMA_v1_0_S_AXIS_S2MM;
 
 architecture STRUCTURE of system_User_DMA_0_0_User_DMA_v1_0_S_AXIS_S2MM is
-  signal fifo_s2mm_inst_n_1 : STD_LOGIC;
+  signal fifo_s2mm_inst_n_0 : STD_LOGIC;
   signal \^s_axis_s2mm_tready\ : STD_LOGIC;
 begin
   s_axis_s2mm_tready <= \^s_axis_s2mm_tready\;
@@ -12389,15 +12405,16 @@ axis_tready_reg: unisim.vcomponents.FDRE
      port map (
       C => s_axis_s2mm_aclk,
       CE => '1',
-      D => fifo_s2mm_inst_n_1,
+      D => fifo_s2mm_inst_n_0,
       Q => \^s_axis_s2mm_tready\,
       R => '0'
     );
 fifo_s2mm_inst: entity work.system_User_DMA_0_0_fifo
      port map (
+      \FSM_sequential_state_ctrl_reg[1]\ => \FSM_sequential_state_ctrl_reg[1]\,
       axi_wvalid_reg => axi_wvalid_reg,
       axi_wvalid_reg_0 => axi_wvalid_reg_0,
-      axis_tready_reg => fifo_s2mm_inst_n_1,
+      axis_tready_reg => fifo_s2mm_inst_n_0,
       axis_tready_reg_0 => \^s_axis_s2mm_tready\,
       m_axi_full_wdata(31 downto 0) => m_axi_full_wdata(31 downto 0),
       m_axi_full_wready => m_axi_full_wready,
@@ -12451,13 +12468,13 @@ entity system_User_DMA_0_0_User_DMA_v1_0 is
     s_axi_lite_awvalid : in STD_LOGIC;
     s_axi_lite_wvalid : in STD_LOGIC;
     s_axi_lite_wdata : in STD_LOGIC_VECTOR ( 31 downto 0 );
+    s_axis_s2mm_aresetn : in STD_LOGIC;
     m_axi_full_wready : in STD_LOGIC;
     m_axi_full_aresetn : in STD_LOGIC;
     m_axi_full_awready : in STD_LOGIC;
     m_axi_full_rlast : in STD_LOGIC;
     m_axis_mm2s_tready : in STD_LOGIC;
     m_axi_full_arready : in STD_LOGIC;
-    s_axis_s2mm_aresetn : in STD_LOGIC;
     m_axis_mm2s_aresetn : in STD_LOGIC;
     s_axi_lite_aresetn : in STD_LOGIC;
     s_axi_lite_bready : in STD_LOGIC;
@@ -12473,6 +12490,7 @@ architecture STRUCTURE of system_User_DMA_0_0_User_DMA_v1_0 is
   signal User_DMA_v1_0_M_AXI_FULL_mm2s_inst_n_0 : STD_LOGIC;
   signal User_DMA_v1_0_M_AXI_FULL_mm2s_inst_n_36 : STD_LOGIC;
   signal User_DMA_v1_0_M_AXI_FULL_mm2s_inst_n_37 : STD_LOGIC;
+  signal User_DMA_v1_0_M_AXI_FULL_s2mm_inst_n_37 : STD_LOGIC;
   signal User_DMA_v1_0_S_AXIS_S2MM_inst_n_1 : STD_LOGIC;
   signal User_DMA_v1_0_S_AXI_LITE_inst_n_63 : STD_LOGIC;
   signal User_DMA_v1_0_S_AXI_LITE_inst_n_64 : STD_LOGIC;
@@ -12569,6 +12587,7 @@ User_DMA_v1_0_M_AXI_FULL_s2mm_inst: entity work.system_User_DMA_0_0_User_DMA_v1_
       Q(1) => User_DMA_v1_0_S_AXI_LITE_inst_n_85,
       Q(0) => User_DMA_v1_0_S_AXI_LITE_inst_n_86,
       SR(0) => User_DMA_v1_0_M_AXI_FULL_mm2s_inst_n_0,
+      axis_tready_reg => User_DMA_v1_0_M_AXI_FULL_s2mm_inst_n_37,
       \fifo_cnt_reg[1]\ => User_DMA_v1_0_S_AXIS_S2MM_inst_n_1,
       m_axi_full_aclk => m_axi_full_aclk,
       m_axi_full_aresetn => m_axi_full_aresetn,
@@ -12582,10 +12601,12 @@ User_DMA_v1_0_M_AXI_FULL_s2mm_inst: entity work.system_User_DMA_0_0_User_DMA_v1_
       m_axi_full_wlast => m_axi_full_wlast,
       m_axi_full_wready => m_axi_full_wready,
       m_axi_full_wvalid => \^m_axi_full_wvalid\,
+      s_axis_s2mm_aresetn => s_axis_s2mm_aresetn,
       \slv_reg0_reg[31]\(31 downto 0) => slv_reg0(31 downto 0)
     );
 User_DMA_v1_0_S_AXIS_S2MM_inst: entity work.system_User_DMA_0_0_User_DMA_v1_0_S_AXIS_S2MM
      port map (
+      \FSM_sequential_state_ctrl_reg[1]\ => User_DMA_v1_0_M_AXI_FULL_s2mm_inst_n_37,
       axi_wvalid_reg => User_DMA_v1_0_S_AXIS_S2MM_inst_n_1,
       axi_wvalid_reg_0 => \^m_axi_full_wvalid\,
       m_axi_full_wdata(31 downto 0) => m_axi_full_wdata(31 downto 0),

@@ -109,13 +109,13 @@
 -endlib
 -makelib ies_lib/xil_defaultlib \
   "../../../bd/system/ip/system_xbar_0/sim/system_xbar_0.v" \
-  "../../../bd/system/ipshared/1122/hdl/User_DMA_v1_0_S_AXI_LITE.v" \
-  "../../../bd/system/ipshared/1122/src/User_DMA_v1_0_M_AXI_FULL_mm2s.v" \
-  "../../../bd/system/ipshared/1122/src/User_DMA_v1_0_M_AXI_FULL_s2mm.v" \
-  "../../../bd/system/ipshared/1122/hdl/User_DMA_v1_0_S_AXIS_S2MM.v" \
-  "../../../bd/system/ipshared/1122/hdl/User_DMA_v1_0_M_AXIS_MM2S.v" \
-  "../../../bd/system/ipshared/1122/src/fifo.v" \
-  "../../../bd/system/ipshared/1122/hdl/User_DMA_v1_0.v" \
+  "../../../bd/system/ipshared/fd9d/hdl/User_DMA_v1_0_S_AXI_LITE.v" \
+  "../../../bd/system/ipshared/fd9d/src/User_DMA_v1_0_M_AXI_FULL_mm2s.v" \
+  "../../../bd/system/ipshared/fd9d/src/User_DMA_v1_0_M_AXI_FULL_s2mm.v" \
+  "../../../bd/system/ipshared/fd9d/hdl/User_DMA_v1_0_S_AXIS_S2MM.v" \
+  "../../../bd/system/ipshared/fd9d/hdl/User_DMA_v1_0_M_AXIS_MM2S.v" \
+  "../../../bd/system/ipshared/fd9d/src/fifo.v" \
+  "../../../bd/system/ipshared/fd9d/hdl/User_DMA_v1_0.v" \
   "../../../bd/system/ip/system_User_DMA_0_0/sim/system_User_DMA_0_0.v" \
   "../../../bd/system/sim/system.v" \
 -endlib

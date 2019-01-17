@@ -1,8 +1,8 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
-| Date         : Wed Jan 16 23:51:00 2019
-| Host         : hubbery running 64-bit major release  (build 9200)
+| Date         : Thu Jan 17 12:26:08 2019
+| Host         : DESKTOP-0CQ9E4M running 64-bit major release  (build 9200)
 | Command      : report_utilization -file system_wrapper_utilization_placed.rpt -pb system_wrapper_utilization_placed.pb
 | Design       : system_wrapper
 | Device       : 7z010clg400-1
@@ -31,8 +31,8 @@ Table of Contents
 +----------------------------+------+-------+-----------+-------+
 |          Site Type         | Used | Fixed | Available | Util% |
 +----------------------------+------+-------+-----------+-------+
-| Slice LUTs                 | 2337 |     0 |     17600 | 13.28 |
-|   LUT as Logic             | 2182 |     0 |     17600 | 12.40 |
+| Slice LUTs                 | 2335 |     0 |     17600 | 13.27 |
+|   LUT as Logic             | 2180 |     0 |     17600 | 12.39 |
 |   LUT as Memory            |  155 |     0 |      6000 |  2.58 |
 |     LUT as Distributed RAM |   50 |     0 |           |       |
 |     LUT as Shift Register  |  105 |     0 |           |       |
@@ -69,13 +69,13 @@ Table of Contents
 +-------------------------------------------+------+-------+-----------+-------+
 |                 Site Type                 | Used | Fixed | Available | Util% |
 +-------------------------------------------+------+-------+-----------+-------+
-| Slice                                     |  970 |     0 |      4400 | 22.05 |
-|   SLICEL                                  |  612 |     0 |           |       |
-|   SLICEM                                  |  358 |     0 |           |       |
-| LUT as Logic                              | 2182 |     0 |     17600 | 12.40 |
+| Slice                                     |  949 |     0 |      4400 | 21.57 |
+|   SLICEL                                  |  583 |     0 |           |       |
+|   SLICEM                                  |  366 |     0 |           |       |
+| LUT as Logic                              | 2180 |     0 |     17600 | 12.39 |
 |   using O5 output only                    |    0 |       |           |       |
-|   using O6 output only                    | 1787 |       |           |       |
-|   using O5 and O6                         |  395 |       |           |       |
+|   using O6 output only                    | 1782 |       |           |       |
+|   using O5 and O6                         |  398 |       |           |       |
 | LUT as Memory                             |  155 |     0 |      6000 |  2.58 |
 |   LUT as Distributed RAM                  |   50 |     0 |           |       |
 |     using O5 output only                  |    0 |       |           |       |
@@ -85,10 +85,10 @@ Table of Contents
 |     using O5 output only                  |    3 |       |           |       |
 |     using O6 output only                  |   98 |       |           |       |
 |     using O5 and O6                       |    4 |       |           |       |
-| LUT Flip Flop Pairs                       | 1322 |     0 |     17600 |  7.51 |
+| LUT Flip Flop Pairs                       | 1308 |     0 |     17600 |  7.43 |
 |   fully used LUT-FF pairs                 |  226 |       |           |       |
-|   LUT-FF pairs with one unused LUT output | 1024 |       |           |       |
-|   LUT-FF pairs with one unused Flip Flop  |  976 |       |           |       |
+|   LUT-FF pairs with one unused LUT output | 1019 |       |           |       |
+|   LUT-FF pairs with one unused Flip Flop  |  942 |       |           |       |
 | Unique Control Sets                       |  164 |       |           |       |
 +-------------------------------------------+------+-------+-----------+-------+
 * Note: Review the Control Sets Report for more information regarding control sets.
@@ -187,7 +187,7 @@ Table of Contents
 | FDRE       | 2901 |         Flop & Latch |
 | LUT6       |  603 |                  LUT |
 | LUT3       |  549 |                  LUT |
-| LUT5       |  485 |                  LUT |
+| LUT5       |  486 |                  LUT |
 | LUT4       |  449 |                  LUT |
 | LUT2       |  400 |                  LUT |
 | CARRY4     |  172 |           CarryLogic |

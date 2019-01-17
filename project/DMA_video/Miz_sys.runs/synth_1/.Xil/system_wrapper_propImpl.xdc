@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:D:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/constrs_1/new/Miz_sys_pin.xdc rfile:../../../Miz_sys.srcs/constrs_1/new/Miz_sys_pin.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:C:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/constrs_1/new/Miz_sys_pin.xdc rfile:../../../Miz_sys.srcs/constrs_1/new/Miz_sys_pin.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:9 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN K17 [get_ports HDMI_CLK_P]
 set_property src_info {type:XDC file:1 line:10 export:INPUT save:INPUT read:READ} [current_design]

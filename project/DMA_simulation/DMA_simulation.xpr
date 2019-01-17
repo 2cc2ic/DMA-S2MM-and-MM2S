@@ -34,20 +34,20 @@
     <Option Name="EnableBDX" Val="FALSE"/>
     <Option Name="DSAVendor" Val="xilinx"/>
     <Option Name="DSANumComputeUnits" Val="60"/>
-    <Option Name="WTXSimLaunchSim" Val="16"/>
+    <Option Name="WTXSimLaunchSim" Val="17"/>
     <Option Name="WTModelSimLaunchSim" Val="0"/>
     <Option Name="WTQuestaLaunchSim" Val="0"/>
     <Option Name="WTIesLaunchSim" Val="0"/>
     <Option Name="WTVcsLaunchSim" Val="0"/>
     <Option Name="WTRivieraLaunchSim" Val="0"/>
     <Option Name="WTActivehdlLaunchSim" Val="0"/>
-    <Option Name="WTXSimExportSim" Val="7"/>
-    <Option Name="WTModelSimExportSim" Val="7"/>
-    <Option Name="WTQuestaExportSim" Val="7"/>
-    <Option Name="WTIesExportSim" Val="7"/>
-    <Option Name="WTVcsExportSim" Val="7"/>
-    <Option Name="WTRivieraExportSim" Val="7"/>
-    <Option Name="WTActivehdlExportSim" Val="7"/>
+    <Option Name="WTXSimExportSim" Val="8"/>
+    <Option Name="WTModelSimExportSim" Val="8"/>
+    <Option Name="WTQuestaExportSim" Val="8"/>
+    <Option Name="WTIesExportSim" Val="8"/>
+    <Option Name="WTVcsExportSim" Val="8"/>
+    <Option Name="WTRivieraExportSim" Val="8"/>
+    <Option Name="WTActivehdlExportSim" Val="8"/>
     <Option Name="GenerateIPUpgradeLog" Val="TRUE"/>
     <Option Name="XSimRadix" Val="hex"/>
     <Option Name="XSimTimeUnit" Val="ns"/>
@@ -64,17 +64,14 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
-        <CompFileExtendedInfo CompFileName="myip_v1_0_bfm_1.bd" FileRelPathName="ip/myip_v1_0_bfm_1_axis_data_fifo_0_0/myip_v1_0_bfm_1_axis_data_fifo_0_0.xci">
-          <Proxy FileSetName="myip_v1_0_bfm_1_axis_data_fifo_0_0"/>
-        </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="myip_v1_0_bfm_1.bd" FileRelPathName="ip/myip_v1_0_bfm_1_AXI_LITE_master_IP_0_0/myip_v1_0_bfm_1_AXI_LITE_master_IP_0_0.xci">
           <Proxy FileSetName="myip_v1_0_bfm_1_AXI_LITE_master_IP_0_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="myip_v1_0_bfm_1.bd" FileRelPathName="ip/myip_v1_0_bfm_1_AXI_LITE_master_IP_1_0/myip_v1_0_bfm_1_AXI_LITE_master_IP_1_0.xci">
           <Proxy FileSetName="myip_v1_0_bfm_1_AXI_LITE_master_IP_1_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="myip_v1_0_bfm_1.bd" FileRelPathName="ip/myip_v1_0_bfm_1_User_DMA_0_1/myip_v1_0_bfm_1_User_DMA_0_1.xci">
-          <Proxy FileSetName="myip_v1_0_bfm_1_User_DMA_0_1"/>
+        <CompFileExtendedInfo CompFileName="myip_v1_0_bfm_1.bd" FileRelPathName="ip/myip_v1_0_bfm_1_axis_data_fifo_0_0/myip_v1_0_bfm_1_axis_data_fifo_0_0.xci">
+          <Proxy FileSetName="myip_v1_0_bfm_1_axis_data_fifo_0_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="myip_v1_0_bfm_1.bd" FileRelPathName="ip/myip_v1_0_bfm_1_xbar_0/myip_v1_0_bfm_1_xbar_0.xci">
           <Proxy FileSetName="myip_v1_0_bfm_1_xbar_0"/>
@@ -84,6 +81,9 @@
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="myip_v1_0_bfm_1.bd" FileRelPathName="ip/myip_v1_0_bfm_1_slave_0_0/myip_v1_0_bfm_1_slave_0_0.xci">
           <Proxy FileSetName="myip_v1_0_bfm_1_slave_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="myip_v1_0_bfm_1.bd" FileRelPathName="ip/myip_v1_0_bfm_1_User_DMA_0_1/myip_v1_0_bfm_1_User_DMA_0_1.xci">
+          <Proxy FileSetName="myip_v1_0_bfm_1_User_DMA_0_1"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="myip_v1_0_bfm_1.bd" FileRelPathName="ip/myip_v1_0_bfm_1_xbar_1/myip_v1_0_bfm_1_xbar_1.xci">
           <Proxy FileSetName="myip_v1_0_bfm_1_xbar_1"/>

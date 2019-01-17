@@ -1,10 +1,10 @@
 // Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
-// Date        : Tue Jan 15 22:58:49 2019
-// Host        : hubbery running 64-bit major release  (build 9200)
+// Date        : Thu Jan 17 12:17:10 2019
+// Host        : DESKTOP-0CQ9E4M running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode synth_stub
-//               d:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ip/system_User_DMA_0_0/system_User_DMA_0_0_stub.v
+//               C:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ip/system_User_DMA_0_0/system_User_DMA_0_0_stub.v
 // Design      : system_User_DMA_0_0
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7z010clg400-1
