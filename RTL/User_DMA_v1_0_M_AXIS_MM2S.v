@@ -51,7 +51,7 @@
 		else if( (!fifo_mm2s_empty) && (!axis_tvalid) && M_AXIS_TREADY )
 			axis_tvalid<=1'b1;
 		else
-			axis_tvalid<=1'b1;
+			axis_tvalid<=axis_tvalid;
 	end
 
 	always@(posedge M_AXIS_ACLK)

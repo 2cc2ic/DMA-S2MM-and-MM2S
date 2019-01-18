@@ -143,6 +143,7 @@
     wire fifo_mm2s_full,fifo_mm2s_almost_full;
     wire fifo_s2mm_empty,fifo_s2mm_almost_empty;
 
+    wire work_signal;
 	assign init_s2mm_signal = ctrl_s2mm_init_len[C_S_AXI_LITE_DATA_WIDTH-1];
 	assign init_mm2s_signal = ctrl_mm2s_init_len[C_S_AXI_LITE_DATA_WIDTH-1];
 	assign s2mm_length_register = ctrl_s2mm_init_len[C_S_AXI_LITE_DATA_WIDTH-9 : 0];
@@ -200,6 +201,8 @@
 
 		.length_register(s2mm_length_register),
 		.addr_register(ctrl_s2mm_addr),
+
+        .work_signal(work_signal),
 
 		.INIT_AXI_TXN(init_s2mm_signal),
 		.TXN_DONE(m_axi_full_s2mm_done),
@@ -319,6 +322,8 @@ assign wnext = m_axi_full_wvalid && m_axi_full_wready;
 		.wnext(wnext),
 		.fifo_s2mm_empty(fifo_s2mm_empty),
 		.fifo_s2mm_almost_empty(fifo_s2mm_almost_empty),
+
+        .work_signal(work_signal),
 
 		.S_AXIS_ACLK(s_axis_s2mm_aclk),
 		.S_AXIS_ARESETN(s_axis_s2mm_aresetn),

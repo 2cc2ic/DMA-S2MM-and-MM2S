@@ -3,9 +3,6 @@
 Build an open-source, extremely simple AXI DMA.
 
 ***
-[TOC]
-
-***
 
 ## 一、设计概述
 

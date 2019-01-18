@@ -12,6 +12,8 @@
 		output wire  fifo_s2mm_empty,
 		output wire  fifo_s2mm_almost_empty,
 
+        input work_signal,
+        
 		input wire  S_AXIS_ACLK,
 		input wire  S_AXIS_ARESETN,
 		output wire  S_AXIS_TREADY,
@@ -33,6 +35,8 @@
 	begin
 		if(!S_AXIS_ARESETN)
 			axis_tready<=1'b0;
+		else if(work_signal==0)
+		    axis_tready<=1'b0;
 		else if(fifo_s2mm_full)
 			axis_tready<=1'b0;
 		else if( fifo_s2mm_almost_full && rx_en )

@@ -38,6 +38,7 @@
 		input [23:0] length_register,
 		input [31:0] addr_register,
 
+        output work_signal,
 		// User ports ends
 		// Do not modify the ports beyond this line
 
@@ -177,7 +178,6 @@
 
 	  always @(posedge M_AXI_ACLK)
 	  begin
-
 	    if (M_AXI_ARESETN == 0 || init_txn_pulse == 1'b1 )
 	      begin
 	        axi_awvalid <= 1'b0;
@@ -212,24 +212,30 @@
 
 	  always @(posedge M_AXI_ACLK)
 	  begin
-	    if (M_AXI_ARESETN == 0 || init_txn_pulse == 1'b1 )
-	      begin
-	        axi_wvalid <= 1'b0;
-	      end
-			else if (fifo_s2mm_empty)
-				begin
-					axi_wvalid <= 1'b0;
-				end
-			else if (fifo_s2mm_almost_empty && wnext)
-				begin
-					axi_wvalid <= 1'b0;
-				end
-	    else if (~axi_wvalid && start_single_burst_write)
-	      begin
-	        axi_wvalid <= 1'b1;
-	      end
-	    else if (wnext && axi_wlast)
-	      axi_wvalid <= 1'b0;
+	   if (M_AXI_ARESETN == 0 || init_txn_pulse == 1'b1 )
+	     begin
+	       axi_wvalid <= 1'b0;
+	     end
+	   else if (fifo_s2mm_empty)
+	     begin
+		   axi_wvalid <= 1'b0;
+		 end
+	   else if (fifo_s2mm_almost_empty && wnext)
+		 begin
+		   axi_wvalid <= 1'b0;
+		 end
+	   else if (~axi_wvalid && start_single_burst_write)
+	     begin
+	       axi_wvalid <= 1'b1;
+	     end
+       else if (wnext && axi_wlast)
+         begin
+           axi_wvalid <= 1'b0;
+         end
+       else if(burst_write_active && !axi_wvalid && (write_index != burst_len) ) //ÖØÆôÐ´
+         begin
+            axi_wvalid<=1'b1;
+         end
 	    else
 	      axi_wvalid <= axi_wvalid;
 	  end
@@ -246,8 +252,6 @@
 	      end
 	    else if (wnext)
 	      axi_wlast <= 1'b0;
-	    else if (axi_wlast && burst_len == 1)
-	      axi_wlast <= 1'b0;
 	    else
 	      axi_wlast <= axi_wlast;
 	  end
@@ -258,7 +262,7 @@
 	      begin
 	        write_index <= 0;
 	      end
-	    else if (wnext && (write_index != burst_len-1))
+	    else if (wnext && (write_index != burst_len))
 	      begin
 	        write_index <= write_index + 1;
 	      end
@@ -357,7 +361,7 @@
 	      end
 	  end
 
-
+    assign work_signal = (state_ctrl==0) ? 0 : 1;
 
 			always @(posedge M_AXI_ACLK)
 			  begin
