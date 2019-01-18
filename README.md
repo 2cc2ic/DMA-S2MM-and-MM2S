@@ -14,7 +14,7 @@ Build an open-source, extremely simple AXI DMA.
 
 ​	该IP核，支持传输任意长度32位数据 **(最大为`2^24-1`个)**，通过状态机控制，读写通道突发传输主要使用的突发长度为 16 ,其余分别使用突发长度为 8、4、2、1 进行补全。
 
-![ip](./Picture/ip.JPG)
+![ip](./Picture/ip.jpg)
 
 ***
 ## 二、系统组成
