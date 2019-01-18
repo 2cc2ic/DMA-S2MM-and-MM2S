@@ -3,37 +3,74 @@
    <wave_state>
    </wave_state>
    <db_ref_list>
-      <db_ref path="D:/MIZ_SOC/SEASON_03/CH03_AXI_DMA_CMOS/Miz_sys/Miz_sys.hw/hw_1/wave/hw_ila_data_2/hw_ila_data_2.wdb" id="1">
+      <db_ref path="D:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.hw/hw_1/wave/hw_ila_data_2/hw_ila_data_2.wdb" id="1">
          <top_modules>
          </top_modules>
       </db_ref>
    </db_ref_list>
    <zoom_setting>
       <ZoomStartTime time="0fs"></ZoomStartTime>
-      <ZoomEndTime time="1024001fs"></ZoomEndTime>
-      <Cursor1Time time="76000fs"></Cursor1Time>
+      <ZoomEndTime time="30560001fs"></ZoomEndTime>
+      <Cursor1Time time="1127000fs"></Cursor1Time>
    </zoom_setting>
-   <WVObjectSize size="5" />
+   <column_width_setting>
+      <NameColumnWidth column_width="175"></NameColumnWidth>
+      <ValueColumnWidth column_width="76"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="7" />
    <wave_markers>
    </wave_markers>
-   <wvobject db_ref_id="1" fp_name="system_i/v_axi4s_vid_out_0_vid_hsync" type="logic">
-      <obj_property name="ElementShortName">system_i/v_axi4s_vid_out_0_vid_hsync</obj_property>
-      <obj_property name="ObjectShortName">system_i/v_axi4s_vid_out_0_vid_hsync</obj_property>
+   <wvobject fp_name="system_i/OV_Sensor_ML_0/inst/rgb_o" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">system_i/OV_Sensor_ML_0/inst/rgb_o[15:0]</obj_property>
+      <obj_property name="ObjectShortName">rgb_o[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
    </wvobject>
-   <wvobject db_ref_id="1" fp_name="system_i/v_axi4s_vid_out_0_vid_vsync" type="logic">
-      <obj_property name="ElementShortName">system_i/v_axi4s_vid_out_0_vid_vsync</obj_property>
-      <obj_property name="ObjectShortName">system_i/v_axi4s_vid_out_0_vid_vsync</obj_property>
+   <wvobject fp_name="system_i/OV_Sensor_ML_0/vs_o" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">system_i/OV_Sensor_ML_0/vs_o</obj_property>
+      <obj_property name="ObjectShortName">vs_o</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
    </wvobject>
-   <wvobject db_ref_id="1" fp_name="system_i/v_tc_0_active_video_out" type="logic">
-      <obj_property name="ElementShortName">system_i/v_tc_0_active_video_out</obj_property>
-      <obj_property name="ObjectShortName">system_i/v_tc_0_active_video_out</obj_property>
+   <wvobject fp_name="system_i/v_vid_in_axi4s_0/vid_data" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">system_i/v_vid_in_axi4s_0/vid_data[23:19]</obj_property>
+      <obj_property name="ObjectShortName">vid_data[23:19]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
    </wvobject>
-   <wvobject db_ref_id="1" fp_name="system_i/v_tc_0_hsync_out" type="logic">
-      <obj_property name="ElementShortName">system_i/v_tc_0_hsync_out</obj_property>
-      <obj_property name="ObjectShortName">system_i/v_tc_0_hsync_out</obj_property>
+   <wvobject fp_name="system_i/v_vid_in_axi4s_0/vid_data_1" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">system_i/v_vid_in_axi4s_0/vid_data_1[7:3]</obj_property>
+      <obj_property name="ObjectShortName">vid_data_1[7:3]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
    </wvobject>
-   <wvobject db_ref_id="1" fp_name="system_i/v_tc_0_vsync_out" type="logic">
-      <obj_property name="ElementShortName">system_i/v_tc_0_vsync_out</obj_property>
-      <obj_property name="ObjectShortName">system_i/v_tc_0_vsync_out</obj_property>
+   <wvobject fp_name="system_i/v_vid_in_axi4s_0/vid_data_2" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">system_i/v_vid_in_axi4s_0/vid_data_2[15:10]</obj_property>
+      <obj_property name="ObjectShortName">vid_data_2[15:10]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="u_ila_1_hs_o" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">u_ila_1_hs_o</obj_property>
+      <obj_property name="ObjectShortName">u_ila_1_hs_o</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="u_ila_1_vid_clk_ce" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">u_ila_1_vid_clk_ce</obj_property>
+      <obj_property name="ObjectShortName">u_ila_1_vid_clk_ce</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
    </wvobject>
 </wave_config>

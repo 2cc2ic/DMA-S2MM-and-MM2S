@@ -62,13 +62,13 @@ vlog -work xil_defaultlib -64 -sv -L smartconnect_v1_0 -L axi_protocol_checker_v
 
 vlog -work xil_defaultlib -64 "+incdir+../../../../DMA_simulation.srcs/sources_1/bd/myip_v1_0_bfm_1/ipshared/ec67/hdl" "+incdir+../../../../DMA_simulation.srcs/sources_1/bd/myip_v1_0_bfm_1/ipshared/02c8/hdl/verilog" "+incdir+../../../../DMA_simulation.srcs/sources_1/bd/myip_v1_0_bfm_1/ipshared/0ab1/hdl" "+incdir+D:/xilinx/Vivado/2017.4/data/xilinx_vip/include" "+incdir+../../../../DMA_simulation.srcs/sources_1/bd/myip_v1_0_bfm_1/ipshared/ec67/hdl" "+incdir+../../../../DMA_simulation.srcs/sources_1/bd/myip_v1_0_bfm_1/ipshared/02c8/hdl/verilog" "+incdir+../../../../DMA_simulation.srcs/sources_1/bd/myip_v1_0_bfm_1/ipshared/0ab1/hdl" "+incdir+D:/xilinx/Vivado/2017.4/data/xilinx_vip/include" \
 "../../../bd/myip_v1_0_bfm_1/sim/myip_v1_0_bfm_1.v" \
-"../../../bd/myip_v1_0_bfm_1/ipshared/fd9d/hdl/User_DMA_v1_0_S_AXI_LITE.v" \
-"../../../bd/myip_v1_0_bfm_1/ipshared/fd9d/src/User_DMA_v1_0_M_AXI_FULL_mm2s.v" \
-"../../../bd/myip_v1_0_bfm_1/ipshared/fd9d/src/User_DMA_v1_0_M_AXI_FULL_s2mm.v" \
-"../../../bd/myip_v1_0_bfm_1/ipshared/fd9d/hdl/User_DMA_v1_0_S_AXIS_S2MM.v" \
-"../../../bd/myip_v1_0_bfm_1/ipshared/fd9d/hdl/User_DMA_v1_0_M_AXIS_MM2S.v" \
-"../../../bd/myip_v1_0_bfm_1/ipshared/fd9d/src/fifo.v" \
-"../../../bd/myip_v1_0_bfm_1/ipshared/fd9d/hdl/User_DMA_v1_0.v" \
+"../../../bd/myip_v1_0_bfm_1/ipshared/90ae/hdl/User_DMA_v1_0_S_AXI_LITE.v" \
+"../../../bd/myip_v1_0_bfm_1/ipshared/90ae/src/User_DMA_v1_0_M_AXI_FULL_mm2s.v" \
+"../../../bd/myip_v1_0_bfm_1/ipshared/90ae/src/User_DMA_v1_0_M_AXI_FULL_s2mm.v" \
+"../../../bd/myip_v1_0_bfm_1/ipshared/90ae/hdl/User_DMA_v1_0_S_AXIS_S2MM.v" \
+"../../../bd/myip_v1_0_bfm_1/ipshared/90ae/hdl/User_DMA_v1_0_M_AXIS_MM2S.v" \
+"../../../bd/myip_v1_0_bfm_1/ipshared/90ae/src/fifo.v" \
+"../../../bd/myip_v1_0_bfm_1/ipshared/90ae/hdl/User_DMA_v1_0.v" \
 "../../../bd/myip_v1_0_bfm_1/ip/myip_v1_0_bfm_1_User_DMA_0_1/sim/myip_v1_0_bfm_1_User_DMA_0_1.v" \
 
 vlog -work axis_infrastructure_v1_1_0 -64 "+incdir+../../../../DMA_simulation.srcs/sources_1/bd/myip_v1_0_bfm_1/ipshared/ec67/hdl" "+incdir+../../../../DMA_simulation.srcs/sources_1/bd/myip_v1_0_bfm_1/ipshared/02c8/hdl/verilog" "+incdir+../../../../DMA_simulation.srcs/sources_1/bd/myip_v1_0_bfm_1/ipshared/0ab1/hdl" "+incdir+D:/xilinx/Vivado/2017.4/data/xilinx_vip/include" "+incdir+../../../../DMA_simulation.srcs/sources_1/bd/myip_v1_0_bfm_1/ipshared/ec67/hdl" "+incdir+../../../../DMA_simulation.srcs/sources_1/bd/myip_v1_0_bfm_1/ipshared/02c8/hdl/verilog" "+incdir+../../../../DMA_simulation.srcs/sources_1/bd/myip_v1_0_bfm_1/ipshared/0ab1/hdl" "+incdir+D:/xilinx/Vivado/2017.4/data/xilinx_vip/include" \

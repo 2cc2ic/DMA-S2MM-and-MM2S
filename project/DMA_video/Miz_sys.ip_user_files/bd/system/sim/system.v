@@ -1,8 +1,8 @@
 //Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
-//Date        : Thu Jan 17 12:15:13 2019
-//Host        : DESKTOP-0CQ9E4M running 64-bit major release  (build 9200)
+//Date        : Fri Jan 18 17:57:21 2019
+//Host        : hubbery running 64-bit major release  (build 9200)
 //Command     : generate_target system.bd
 //Design      : system
 //Purpose     : IP block netlist
@@ -1099,7 +1099,7 @@ module s00_couplers_imp_IK3G2O
         .s_axi_wvalid(s00_couplers_to_auto_pc_WVALID));
 endmodule
 
-(* CORE_GENERATION_INFO = "system,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=system,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=21,numReposBlks=15,numNonXlnxBlks=1,numHierBlks=6,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=6,da_board_cnt=2,da_ps7_cnt=1,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "system.hwdef" *) 
+(* CORE_GENERATION_INFO = "system,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=system,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=22,numReposBlks=16,numNonXlnxBlks=1,numHierBlks=6,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=6,da_board_cnt=2,da_ps7_cnt=1,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "system.hwdef" *) 
 module system
    (DDR_addr,
     DDR_ba,
@@ -1265,8 +1265,8 @@ module system
   wire User_DMA_0_m_axi_full_mm2s_done;
   wire User_DMA_0_m_axi_full_s2mm_done;
   wire [31:0]User_DMA_0_m_axis_mm2s_tdata;
+  wire User_DMA_0_s_axis_s2mm_tready;
   wire axi_dma_0_m_axis_mm2s_tvalid;
-  wire axi_dma_0_s_axis_s2mm_tready;
   wire [0:0]axi_gpio_0_GPIO_TRI_I;
   wire [0:0]axi_gpio_0_GPIO_TRI_O;
   wire [0:0]axi_gpio_0_GPIO_TRI_T;
@@ -1303,6 +1303,9 @@ module system
   wire axi_mem_intercon_M00_AXI_WREADY;
   wire [7:0]axi_mem_intercon_M00_AXI_WSTRB;
   wire axi_mem_intercon_M00_AXI_WVALID;
+  wire [23:0]axis_data_fifo_0_m_axis_tdata;
+  wire axis_data_fifo_0_m_axis_tvalid;
+  wire axis_data_fifo_0_s_axis_tready;
   wire clk_wiz_0_clk_out2;
   wire clk_wiz_0_clk_out3;
   wire clk_wiz_0_locked;
@@ -1461,7 +1464,7 @@ module system
   assign m_axis_video_tvalid = v_vid_in_axi4s_0_m_axis_video_tvalid;
   assign processing_system7_0_IIC_0_SCL_I = IIC_0_scl_i;
   assign processing_system7_0_IIC_0_SDA_I = IIC_0_sda_i;
-  assign s_axis_s2mm_tready = axi_dma_0_s_axis_s2mm_tready;
+  assign s_axis_s2mm_tready = axis_data_fifo_0_s_axis_tready;
   assign s_axis_video_tlast_1 = s_axis_video_tlast;
   assign s_axis_video_tready = v_axi4s_vid_out_0_s_axis_video_tready;
   assign s_axis_video_tuser_1 = s_axis_video_tuser;
@@ -1569,11 +1572,11 @@ module system
         .s_axi_lite_wvalid(processing_system7_0_axi_periph_M01_AXI_WVALID),
         .s_axis_s2mm_aclk(processing_system7_0_FCLK_CLK0),
         .s_axis_s2mm_aresetn(rst_processing_system7_0_50M_peripheral_aresetn),
-        .s_axis_s2mm_tdata(v_vid_in_axi4s_0_m_axis_video_tdata),
+        .s_axis_s2mm_tdata(axis_data_fifo_0_m_axis_tdata),
         .s_axis_s2mm_tlast(1'b0),
-        .s_axis_s2mm_tready(axi_dma_0_s_axis_s2mm_tready),
+        .s_axis_s2mm_tready(User_DMA_0_s_axis_s2mm_tready),
         .s_axis_s2mm_tstrb({1'b1,1'b1,1'b1,1'b1}),
-        .s_axis_s2mm_tvalid(v_vid_in_axi4s_0_m_axis_video_tvalid));
+        .s_axis_s2mm_tvalid(axis_data_fifo_0_m_axis_tvalid));
   system_axi_gpio_0_0 axi_gpio_0
        (.gpio_io_i(axi_gpio_0_GPIO_TRI_I),
         .gpio_io_o(axi_gpio_0_GPIO_TRI_O),
@@ -1678,6 +1681,15 @@ module system
         .S00_AXI_wstrb(User_DMA_0_M_AXI_FULL_WSTRB),
         .S00_AXI_wuser(User_DMA_0_M_AXI_FULL_WUSER),
         .S00_AXI_wvalid(User_DMA_0_M_AXI_FULL_WVALID));
+  system_axis_data_fifo_0_0 axis_data_fifo_0
+       (.m_axis_tdata(axis_data_fifo_0_m_axis_tdata),
+        .m_axis_tready(User_DMA_0_s_axis_s2mm_tready),
+        .m_axis_tvalid(axis_data_fifo_0_m_axis_tvalid),
+        .s_axis_aclk(processing_system7_0_FCLK_CLK0),
+        .s_axis_aresetn(rst_processing_system7_0_50M_peripheral_aresetn),
+        .s_axis_tdata(v_vid_in_axi4s_0_m_axis_video_tdata),
+        .s_axis_tready(axis_data_fifo_0_s_axis_tready),
+        .s_axis_tvalid(v_vid_in_axi4s_0_m_axis_video_tvalid));
   system_clk_wiz_0_0 clk_wiz_0
        (.clk_in1(processing_system7_0_FCLK_CLK0),
         .clk_out1(clk_wiz_0_clk_out2),
@@ -1926,7 +1938,7 @@ module system
         .axis_enable(clk_wiz_0_locked),
         .m_axis_video_tdata(v_vid_in_axi4s_0_m_axis_video_tdata),
         .m_axis_video_tlast(v_vid_in_axi4s_0_m_axis_video_tlast),
-        .m_axis_video_tready(axi_dma_0_s_axis_s2mm_tready),
+        .m_axis_video_tready(axis_data_fifo_0_s_axis_tready),
         .m_axis_video_tvalid(v_vid_in_axi4s_0_m_axis_video_tvalid),
         .vid_active_video(OV_Sensor_ML_0_hs_o),
         .vid_data(OV_Sensor_ML_0_rgb_o),

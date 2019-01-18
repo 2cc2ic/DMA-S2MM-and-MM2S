@@ -1,8 +1,8 @@
 //Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
-//Date        : Thu Jan 17 12:18:31 2019
-//Host        : DESKTOP-0CQ9E4M running 64-bit major release  (build 9200)
+//Date        : Fri Jan 18 18:07:49 2019
+//Host        : hubbery running 64-bit major release  (build 9200)
 //Command     : generate_target myip_v1_0_bfm_1.bd
 //Design      : myip_v1_0_bfm_1
 //Purpose     : IP block netlist

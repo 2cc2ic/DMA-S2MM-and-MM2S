@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="35" Path="C:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_simulation/DMA_simulation.xpr">
+<Project Version="7" Minor="35" Path="D:/git/DMA-S2MM-and-MM2S/project/DMA_simulation/DMA_simulation.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="4c404d95a55f422095d408513219dd8c"/>
@@ -34,20 +34,20 @@
     <Option Name="EnableBDX" Val="FALSE"/>
     <Option Name="DSAVendor" Val="xilinx"/>
     <Option Name="DSANumComputeUnits" Val="60"/>
-    <Option Name="WTXSimLaunchSim" Val="17"/>
+    <Option Name="WTXSimLaunchSim" Val="29"/>
     <Option Name="WTModelSimLaunchSim" Val="0"/>
     <Option Name="WTQuestaLaunchSim" Val="0"/>
     <Option Name="WTIesLaunchSim" Val="0"/>
     <Option Name="WTVcsLaunchSim" Val="0"/>
     <Option Name="WTRivieraLaunchSim" Val="0"/>
     <Option Name="WTActivehdlLaunchSim" Val="0"/>
-    <Option Name="WTXSimExportSim" Val="8"/>
-    <Option Name="WTModelSimExportSim" Val="8"/>
-    <Option Name="WTQuestaExportSim" Val="8"/>
-    <Option Name="WTIesExportSim" Val="8"/>
-    <Option Name="WTVcsExportSim" Val="8"/>
-    <Option Name="WTRivieraExportSim" Val="8"/>
-    <Option Name="WTActivehdlExportSim" Val="8"/>
+    <Option Name="WTXSimExportSim" Val="11"/>
+    <Option Name="WTModelSimExportSim" Val="11"/>
+    <Option Name="WTQuestaExportSim" Val="11"/>
+    <Option Name="WTIesExportSim" Val="11"/>
+    <Option Name="WTVcsExportSim" Val="11"/>
+    <Option Name="WTRivieraExportSim" Val="11"/>
+    <Option Name="WTActivehdlExportSim" Val="11"/>
     <Option Name="GenerateIPUpgradeLog" Val="TRUE"/>
     <Option Name="XSimRadix" Val="hex"/>
     <Option Name="XSimTimeUnit" Val="ns"/>
@@ -64,29 +64,29 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
-        <CompFileExtendedInfo CompFileName="myip_v1_0_bfm_1.bd" FileRelPathName="ip/myip_v1_0_bfm_1_AXI_LITE_master_IP_0_0/myip_v1_0_bfm_1_AXI_LITE_master_IP_0_0.xci">
-          <Proxy FileSetName="myip_v1_0_bfm_1_AXI_LITE_master_IP_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="myip_v1_0_bfm_1.bd" FileRelPathName="ip/myip_v1_0_bfm_1_AXI_LITE_master_IP_1_0/myip_v1_0_bfm_1_AXI_LITE_master_IP_1_0.xci">
-          <Proxy FileSetName="myip_v1_0_bfm_1_AXI_LITE_master_IP_1_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="myip_v1_0_bfm_1.bd" FileRelPathName="ip/myip_v1_0_bfm_1_axis_data_fifo_0_0/myip_v1_0_bfm_1_axis_data_fifo_0_0.xci">
-          <Proxy FileSetName="myip_v1_0_bfm_1_axis_data_fifo_0_0"/>
-        </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="myip_v1_0_bfm_1.bd" FileRelPathName="ip/myip_v1_0_bfm_1_xbar_0/myip_v1_0_bfm_1_xbar_0.xci">
           <Proxy FileSetName="myip_v1_0_bfm_1_xbar_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="myip_v1_0_bfm_1.bd" FileRelPathName="ip/myip_v1_0_bfm_1_myip_0_0/myip_v1_0_bfm_1_myip_0_0.xci">
-          <Proxy FileSetName="myip_v1_0_bfm_1_myip_0_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="myip_v1_0_bfm_1.bd" FileRelPathName="ip/myip_v1_0_bfm_1_slave_0_0/myip_v1_0_bfm_1_slave_0_0.xci">
           <Proxy FileSetName="myip_v1_0_bfm_1_slave_0_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="myip_v1_0_bfm_1.bd" FileRelPathName="ip/myip_v1_0_bfm_1_User_DMA_0_1/myip_v1_0_bfm_1_User_DMA_0_1.xci">
-          <Proxy FileSetName="myip_v1_0_bfm_1_User_DMA_0_1"/>
+        <CompFileExtendedInfo CompFileName="myip_v1_0_bfm_1.bd" FileRelPathName="ip/myip_v1_0_bfm_1_AXI_LITE_master_IP_1_0/myip_v1_0_bfm_1_AXI_LITE_master_IP_1_0.xci">
+          <Proxy FileSetName="myip_v1_0_bfm_1_AXI_LITE_master_IP_1_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="myip_v1_0_bfm_1.bd" FileRelPathName="ip/myip_v1_0_bfm_1_xbar_1/myip_v1_0_bfm_1_xbar_1.xci">
           <Proxy FileSetName="myip_v1_0_bfm_1_xbar_1"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="myip_v1_0_bfm_1.bd" FileRelPathName="ip/myip_v1_0_bfm_1_AXI_LITE_master_IP_0_0/myip_v1_0_bfm_1_AXI_LITE_master_IP_0_0.xci">
+          <Proxy FileSetName="myip_v1_0_bfm_1_AXI_LITE_master_IP_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="myip_v1_0_bfm_1.bd" FileRelPathName="ip/myip_v1_0_bfm_1_User_DMA_0_1/myip_v1_0_bfm_1_User_DMA_0_1.xci">
+          <Proxy FileSetName="myip_v1_0_bfm_1_User_DMA_0_1"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="myip_v1_0_bfm_1.bd" FileRelPathName="ip/myip_v1_0_bfm_1_axis_data_fifo_0_0/myip_v1_0_bfm_1_axis_data_fifo_0_0.xci">
+          <Proxy FileSetName="myip_v1_0_bfm_1_axis_data_fifo_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="myip_v1_0_bfm_1.bd" FileRelPathName="ip/myip_v1_0_bfm_1_myip_0_0/myip_v1_0_bfm_1_myip_0_0.xci">
+          <Proxy FileSetName="myip_v1_0_bfm_1_myip_0_0"/>
         </CompFileExtendedInfo>
       </File>
       <File Path="$PSRCDIR/sources_1/imports/hdl/myip_v1_0_bfm_1_wrapper.v">
@@ -256,19 +256,21 @@
       <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2017"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>
-    <Run Id="myip_v1_0_bfm_1_AXI_LITE_master_IP_0_0_synth_1" Type="Ft3:Synth" SrcSet="myip_v1_0_bfm_1_AXI_LITE_master_IP_0_0" Part="xc7z010clg400-1" ConstrsSet="myip_v1_0_bfm_1_AXI_LITE_master_IP_0_0" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" IncludeInArchive="true">
+    <Run Id="myip_v1_0_bfm_1_AXI_LITE_master_IP_0_0_synth_1" Type="Ft3:Synth" SrcSet="myip_v1_0_bfm_1_AXI_LITE_master_IP_0_0" Part="xc7z010clg400-1" ConstrsSet="myip_v1_0_bfm_1_AXI_LITE_master_IP_0_0" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" Dir="$PRUNDIR/myip_v1_0_bfm_1_AXI_LITE_master_IP_0_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
         <Step Id="synth_design"/>
       </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
       <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2017"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>
-    <Run Id="myip_v1_0_bfm_1_AXI_LITE_master_IP_1_0_synth_1" Type="Ft3:Synth" SrcSet="myip_v1_0_bfm_1_AXI_LITE_master_IP_1_0" Part="xc7z010clg400-1" ConstrsSet="myip_v1_0_bfm_1_AXI_LITE_master_IP_1_0" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" IncludeInArchive="true">
+    <Run Id="myip_v1_0_bfm_1_AXI_LITE_master_IP_1_0_synth_1" Type="Ft3:Synth" SrcSet="myip_v1_0_bfm_1_AXI_LITE_master_IP_1_0" Part="xc7z010clg400-1" ConstrsSet="myip_v1_0_bfm_1_AXI_LITE_master_IP_1_0" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" Dir="$PRUNDIR/myip_v1_0_bfm_1_AXI_LITE_master_IP_1_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
         <Step Id="synth_design"/>
       </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
       <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2017"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>
@@ -281,13 +283,14 @@
       <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2017"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>
-    <Run Id="myip_v1_0_bfm_1_User_DMA_0_1_synth_1" Type="Ft3:Synth" SrcSet="myip_v1_0_bfm_1_User_DMA_0_1" Part="xc7z010clg400-1" ConstrsSet="myip_v1_0_bfm_1_User_DMA_0_1" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" IncludeInArchive="true">
+    <Run Id="myip_v1_0_bfm_1_User_DMA_0_1_synth_1" Type="Ft3:Synth" SrcSet="myip_v1_0_bfm_1_User_DMA_0_1" Part="xc7z010clg400-1" ConstrsSet="myip_v1_0_bfm_1_User_DMA_0_1" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" Dir="$PRUNDIR/myip_v1_0_bfm_1_User_DMA_0_1_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017">
           <Desc>Vivado Synthesis Defaults</Desc>
         </StratHandle>
         <Step Id="synth_design"/>
       </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
       <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2017"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>

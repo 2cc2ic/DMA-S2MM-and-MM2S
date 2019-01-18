@@ -1,8 +1,8 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
-| Date         : Thu Jan 17 12:24:51 2019
-| Host         : DESKTOP-0CQ9E4M running 64-bit major release  (build 9200)
+| Date         : Fri Jan 18 18:11:18 2019
+| Host         : hubbery running 64-bit major release  (build 9200)
 | Command      : report_utilization -file system_wrapper_utilization_synth.rpt -pb system_wrapper_utilization_synth.pb
 | Design       : system_wrapper
 | Device       : 7z010clg400-1
@@ -174,6 +174,7 @@ Table of Contents
 | system_rst_processing_system7_0_50M_0 |    1 |
 | system_processing_system7_0_0         |    1 |
 | system_clk_wiz_0_0                    |    1 |
+| system_axis_data_fifo_0_0             |    1 |
 | system_axi_gpio_0_0                   |    1 |
 | system_auto_us_0                      |    1 |
 | system_auto_pc_1                      |    1 |

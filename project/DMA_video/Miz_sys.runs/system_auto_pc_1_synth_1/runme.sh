@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.runs/system_auto_pc_1_synth_1'
+HD_PWD='D:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.runs/system_auto_pc_1_synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

@@ -3,6 +3,8 @@
 
 # XDC: new/Miz_sys_pin.xdc
 
+# XDC: imports/Desktop/debug.xdc
+
 # Block Designs: bd/system/system.bd
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system || ORIG_REF_NAME==system} -quiet] -quiet
 
@@ -47,6 +49,9 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_xbar_0 |
 
 # IP: bd/system/ip/system_User_DMA_0_0/system_User_DMA_0_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_User_DMA_0_0 || ORIG_REF_NAME==system_User_DMA_0_0} -quiet] -quiet
+
+# IP: bd/system/ip/system_axis_data_fifo_0_0/system_axis_data_fifo_0_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_axis_data_fifo_0_0 || ORIG_REF_NAME==system_axis_data_fifo_0_0} -quiet] -quiet
 
 # IP: bd/system/ip/system_auto_pc_1/system_auto_pc_1.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_auto_pc_1 || ORIG_REF_NAME==system_auto_pc_1} -quiet] -quiet

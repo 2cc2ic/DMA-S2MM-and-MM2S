@@ -9,6 +9,8 @@
 #include "xdevcfg.h"
 #include "xgpiops.h"
 
+
+
 #define DDR_BASEARDDR  0x01000000
 #define XGpio_axi_WriteReg(BaseAddr, RegOffset, Data)	\
 		Xil_Out32((BaseAddr) + (u32)(RegOffset), (u32)(Data))
@@ -27,7 +29,7 @@ void disablecache()
 
 int main()
 {
-	    print(" hello \n");
+	    printf(" hello \n");
 		static XGpioPs psGpioInstancePtr;
 		XGpioPs_Config* GpioConfigPtr;
 		int xStatus;
@@ -36,7 +38,7 @@ int main()
 
 
 		if(XST_SUCCESS != xStatus)
-			print(" PS GPIO INIT FAILED \n\r");
+			printf(" PS GPIO INIT FAILED \n\r");
 
 		XGpioPs_SetDirectionPin(&psGpioInstancePtr, 54,0);
 		XGpioPs_SetOutputEnablePin(&psGpioInstancePtr, 54,0);

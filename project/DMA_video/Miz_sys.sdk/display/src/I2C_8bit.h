@@ -11,7 +11,6 @@
 #include "xiicps.h"
 #include "xil_types.h"
 
-
 #define OV_CAM 0x21
 
 struct	config_table{

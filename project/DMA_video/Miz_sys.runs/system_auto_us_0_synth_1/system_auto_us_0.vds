@@ -2,12 +2,12 @@
 # Vivado v2017.4 (64-bit)
 # SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
 # IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
-# Start of session at: Thu Jan 17 12:15:21 2019
-# Process ID: 13628
-# Current directory: C:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.runs/system_auto_us_0_synth_1
+# Start of session at: Fri Jan 18 17:57:38 2019
+# Process ID: 9156
+# Current directory: D:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.runs/system_auto_us_0_synth_1
 # Command line: vivado.exe -log system_auto_us_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source system_auto_us_0.tcl
-# Log file: C:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.runs/system_auto_us_0_synth_1/system_auto_us_0.vds
-# Journal file: C:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.runs/system_auto_us_0_synth_1\vivado.jou
+# Log file: D:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.runs/system_auto_us_0_synth_1/system_auto_us_0.vds
+# Journal file: D:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.runs/system_auto_us_0_synth_1\vivado.jou
 #-----------------------------------------------------------
 source system_auto_us_0.tcl -notrace
 Command: synth_design -top system_auto_us_0 -part xc7z010clg400-1 -mode out_of_context
@@ -15,12 +15,12 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 6336 
+INFO: Helper process launched with PID 11452 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 417.223 ; gain = 112.035
+Starting RTL Elaboration : Time (s): cpu = 00:00:21 ; elapsed = 00:00:28 . Memory (MB): peak = 416.750 ; gain = 111.609
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'system_auto_us_0' [c:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ip/system_auto_us_0/synth/system_auto_us_0.v:58]
-INFO: [Synth 8-638] synthesizing module 'axi_dwidth_converter_v2_1_15_top' [c:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/1cdc/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:14462]
+INFO: [Synth 8-638] synthesizing module 'system_auto_us_0' [d:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ip/system_auto_us_0/synth/system_auto_us_0.v:58]
+INFO: [Synth 8-638] synthesizing module 'axi_dwidth_converter_v2_1_15_top' [d:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/1cdc/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:14462]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_AXI_PROTOCOL bound to: 1 - type: integer 
 	Parameter C_S_AXI_ID_WIDTH bound to: 1 - type: integer 
@@ -46,11 +46,11 @@ INFO: [Synth 8-638] synthesizing module 'axi_dwidth_converter_v2_1_15_top' [c:/U
 	Parameter P_AXILITE bound to: 2 - type: integer 
 	Parameter P_CONVERSION bound to: 2 - type: integer 
 	Parameter P_MAX_SPLIT_BEATS bound to: 16 - type: integer 
-INFO: [Synth 8-5534] Detected attribute (* KEEP = "TRUE" *) [c:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/1cdc/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:14513]
-INFO: [Synth 8-5534] Detected attribute (* KEEP = "TRUE" *) [c:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/1cdc/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:14514]
-INFO: [Synth 8-5534] Detected attribute (* KEEP = "TRUE" *) [c:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/1cdc/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:14562]
-INFO: [Synth 8-5534] Detected attribute (* KEEP = "TRUE" *) [c:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/1cdc/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:14563]
-INFO: [Synth 8-638] synthesizing module 'axi_dwidth_converter_v2_1_15_axi_upsizer' [c:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/1cdc/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:7038]
+INFO: [Synth 8-5534] Detected attribute (* KEEP = "TRUE" *) [d:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/1cdc/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:14513]
+INFO: [Synth 8-5534] Detected attribute (* KEEP = "TRUE" *) [d:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/1cdc/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:14514]
+INFO: [Synth 8-5534] Detected attribute (* KEEP = "TRUE" *) [d:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/1cdc/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:14562]
+INFO: [Synth 8-5534] Detected attribute (* KEEP = "TRUE" *) [d:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/1cdc/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:14563]
+INFO: [Synth 8-638] synthesizing module 'axi_dwidth_converter_v2_1_15_axi_upsizer' [d:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/1cdc/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:7038]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_AXI_PROTOCOL bound to: 1 - type: integer 
 	Parameter C_S_AXI_ID_WIDTH bound to: 1 - type: integer 
@@ -90,7 +90,7 @@ INFO: [Synth 8-638] synthesizing module 'axi_dwidth_converter_v2_1_15_axi_upsize
 	Parameter C_S_AXI_R_REGISTER bound to: 0 - type: integer 
 	Parameter C_M_AXI_R_REGISTER bound to: 1 - type: integer 
 	Parameter P_RID_QUEUE bound to: 1 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'axi_dwidth_converter_v2_1_15_w_upsizer' [c:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/1cdc/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:5563]
+INFO: [Synth 8-638] synthesizing module 'axi_dwidth_converter_v2_1_15_w_upsizer' [d:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/1cdc/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:5563]
 	Parameter C_FAMILY bound to: rtl - type: string 
 	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_M_AXI_DATA_WIDTH bound to: 64 - type: integer 
@@ -103,8 +103,8 @@ INFO: [Synth 8-638] synthesizing module 'axi_dwidth_converter_v2_1_15_w_upsizer'
 	Parameter C_NEVER_PACK bound to: 0 - type: integer 
 	Parameter C_DEFAULT_PACK bound to: 1 - type: integer 
 	Parameter C_ALWAYS_PACK bound to: 2 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'axi_dwidth_converter_v2_1_15_w_upsizer' (1#1) [c:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/1cdc/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:5563]
-INFO: [Synth 8-638] synthesizing module 'axi_dwidth_converter_v2_1_15_a_upsizer' [c:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/1cdc/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:3603]
+INFO: [Synth 8-256] done synthesizing module 'axi_dwidth_converter_v2_1_15_w_upsizer' (1#1) [d:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/1cdc/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:5563]
+INFO: [Synth 8-638] synthesizing module 'axi_dwidth_converter_v2_1_15_a_upsizer' [d:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/1cdc/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:3603]
 	Parameter C_FAMILY bound to: rtl - type: string 
 	Parameter C_AXI_PROTOCOL bound to: 1 - type: integer 
 	Parameter C_AXI_ID_WIDTH bound to: 1 - type: integer 
@@ -132,22 +132,22 @@ INFO: [Synth 8-638] synthesizing module 'axi_dwidth_converter_v2_1_15_a_upsizer'
 	Parameter C_BURST_BYTES_LOG bound to: 6 - type: integer 
 	Parameter C_SI_UNUSED_LOG bound to: 30 - type: integer 
 	Parameter C_MI_UNUSED_LOG bound to: 29 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_0_command_fifo' [c:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:655]
+INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_0_command_fifo' [d:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:655]
 	Parameter C_FAMILY bound to: rtl - type: string 
 	Parameter C_ENABLE_S_VALID_CARRY bound to: 0 - type: integer 
 	Parameter C_ENABLE_REGISTERED_OUTPUT bound to: 1 - type: integer 
 	Parameter C_FIFO_DEPTH_LOG bound to: 5 - type: integer 
 	Parameter C_FIFO_WIDTH bound to: 1 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_0_command_fifo' (2#1) [c:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:655]
-INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_0_command_fifo__parameterized0' [c:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:655]
+INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_0_command_fifo' (2#1) [d:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:655]
+INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_0_command_fifo__parameterized0' [d:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:655]
 	Parameter C_FAMILY bound to: rtl - type: string 
 	Parameter C_ENABLE_S_VALID_CARRY bound to: 1 - type: integer 
 	Parameter C_ENABLE_REGISTERED_OUTPUT bound to: 1 - type: integer 
 	Parameter C_FIFO_DEPTH_LOG bound to: 5 - type: integer 
 	Parameter C_FIFO_WIDTH bound to: 30 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_0_command_fifo__parameterized0' (2#1) [c:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:655]
-INFO: [Synth 8-256] done synthesizing module 'axi_dwidth_converter_v2_1_15_a_upsizer' (3#1) [c:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/1cdc/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:3603]
-INFO: [Synth 8-638] synthesizing module 'axi_dwidth_converter_v2_1_15_r_upsizer' [c:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/1cdc/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:4653]
+INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_0_command_fifo__parameterized0' (2#1) [d:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:655]
+INFO: [Synth 8-256] done synthesizing module 'axi_dwidth_converter_v2_1_15_a_upsizer' (3#1) [d:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/1cdc/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:3603]
+INFO: [Synth 8-638] synthesizing module 'axi_dwidth_converter_v2_1_15_r_upsizer' [d:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/1cdc/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:4653]
 	Parameter C_FAMILY bound to: rtl - type: string 
 	Parameter C_AXI_ID_WIDTH bound to: 1 - type: integer 
 	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
@@ -161,8 +161,8 @@ INFO: [Synth 8-638] synthesizing module 'axi_dwidth_converter_v2_1_15_r_upsizer'
 	Parameter C_NEVER_PACK bound to: 0 - type: integer 
 	Parameter C_DEFAULT_PACK bound to: 1 - type: integer 
 	Parameter C_ALWAYS_PACK bound to: 2 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'axi_dwidth_converter_v2_1_15_r_upsizer' (4#1) [c:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/1cdc/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:4653]
-INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_15_axi_register_slice' [c:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/3ed1/hdl/axi_register_slice_v2_1_vl_rfs.v:2300]
+INFO: [Synth 8-256] done synthesizing module 'axi_dwidth_converter_v2_1_15_r_upsizer' (4#1) [d:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/1cdc/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:4653]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_15_axi_register_slice' [d:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/3ed1/hdl/axi_register_slice_v2_1_vl_rfs.v:2300]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_AXI_PROTOCOL bound to: 0 - type: integer 
 	Parameter C_AXI_ID_WIDTH bound to: 1 - type: integer 
@@ -273,27 +273,27 @@ INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_15_axi_register
 	Parameter G_AXI_RUSER_INDEX bound to: 68 - type: integer 
 	Parameter G_AXI_RUSER_WIDTH bound to: 0 - type: integer 
 	Parameter G_AXI_RPAYLOAD_WIDTH bound to: 68 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_15_axic_register_slice' [c:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/3ed1/hdl/axi_register_slice_v2_1_vl_rfs.v:189]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_15_axic_register_slice' [d:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/3ed1/hdl/axi_register_slice_v2_1_vl_rfs.v:189]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_DATA_WIDTH bound to: 62 - type: integer 
 	Parameter C_REG_CONFIG bound to: 7 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_15_axic_register_slice' (5#1) [c:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/3ed1/hdl/axi_register_slice_v2_1_vl_rfs.v:189]
-INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_15_axic_register_slice__parameterized0' [c:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/3ed1/hdl/axi_register_slice_v2_1_vl_rfs.v:189]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_15_axic_register_slice' (5#1) [d:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/3ed1/hdl/axi_register_slice_v2_1_vl_rfs.v:189]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_15_axic_register_slice__parameterized0' [d:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/3ed1/hdl/axi_register_slice_v2_1_vl_rfs.v:189]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_DATA_WIDTH bound to: 73 - type: integer 
 	Parameter C_REG_CONFIG bound to: 1 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_15_axic_register_slice__parameterized0' (5#1) [c:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/3ed1/hdl/axi_register_slice_v2_1_vl_rfs.v:189]
-INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_15_axic_register_slice__parameterized1' [c:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/3ed1/hdl/axi_register_slice_v2_1_vl_rfs.v:189]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_15_axic_register_slice__parameterized0' (5#1) [d:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/3ed1/hdl/axi_register_slice_v2_1_vl_rfs.v:189]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_15_axic_register_slice__parameterized1' [d:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/3ed1/hdl/axi_register_slice_v2_1_vl_rfs.v:189]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_DATA_WIDTH bound to: 3 - type: integer 
 	Parameter C_REG_CONFIG bound to: 7 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_15_axic_register_slice__parameterized1' (5#1) [c:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/3ed1/hdl/axi_register_slice_v2_1_vl_rfs.v:189]
-INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_15_axic_register_slice__parameterized2' [c:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/3ed1/hdl/axi_register_slice_v2_1_vl_rfs.v:189]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_15_axic_register_slice__parameterized1' (5#1) [d:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/3ed1/hdl/axi_register_slice_v2_1_vl_rfs.v:189]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_15_axic_register_slice__parameterized2' [d:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/3ed1/hdl/axi_register_slice_v2_1_vl_rfs.v:189]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_DATA_WIDTH bound to: 68 - type: integer 
 	Parameter C_REG_CONFIG bound to: 1 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_15_axic_register_slice__parameterized2' (5#1) [c:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/3ed1/hdl/axi_register_slice_v2_1_vl_rfs.v:189]
-INFO: [Synth 8-638] synthesizing module 'axi_infrastructure_v1_1_0_axi2vector' [c:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:60]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_15_axic_register_slice__parameterized2' (5#1) [d:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/3ed1/hdl/axi_register_slice_v2_1_vl_rfs.v:189]
+INFO: [Synth 8-638] synthesizing module 'axi_infrastructure_v1_1_0_axi2vector' [d:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:60]
 	Parameter C_AXI_PROTOCOL bound to: 0 - type: integer 
 	Parameter C_AXI_ID_WIDTH bound to: 1 - type: integer 
 	Parameter C_AXI_ADDR_WIDTH bound to: 32 - type: integer 
@@ -385,8 +385,8 @@ INFO: [Synth 8-638] synthesizing module 'axi_infrastructure_v1_1_0_axi2vector' [
 	Parameter G_AXI_RUSER_INDEX bound to: 68 - type: integer 
 	Parameter G_AXI_RUSER_WIDTH bound to: 0 - type: integer 
 	Parameter G_AXI_RPAYLOAD_WIDTH bound to: 68 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'axi_infrastructure_v1_1_0_axi2vector' (6#1) [c:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:60]
-INFO: [Synth 8-638] synthesizing module 'axi_infrastructure_v1_1_0_vector2axi' [c:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:474]
+INFO: [Synth 8-256] done synthesizing module 'axi_infrastructure_v1_1_0_axi2vector' (6#1) [d:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:60]
+INFO: [Synth 8-638] synthesizing module 'axi_infrastructure_v1_1_0_vector2axi' [d:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:474]
 	Parameter C_AXI_PROTOCOL bound to: 0 - type: integer 
 	Parameter C_AXI_ID_WIDTH bound to: 1 - type: integer 
 	Parameter C_AXI_ADDR_WIDTH bound to: 32 - type: integer 
@@ -478,10 +478,10 @@ INFO: [Synth 8-638] synthesizing module 'axi_infrastructure_v1_1_0_vector2axi' [
 	Parameter G_AXI_RUSER_INDEX bound to: 68 - type: integer 
 	Parameter G_AXI_RUSER_WIDTH bound to: 0 - type: integer 
 	Parameter G_AXI_RPAYLOAD_WIDTH bound to: 68 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'axi_infrastructure_v1_1_0_vector2axi' (7#1) [c:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:474]
-INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_15_axi_register_slice' (8#1) [c:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/3ed1/hdl/axi_register_slice_v2_1_vl_rfs.v:2300]
-WARNING: [Synth 8-350] instance 'mi_register_slice_inst' of module 'axi_register_slice_v2_1_15_axi_register_slice' requires 93 connections, but only 92 given [c:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/1cdc/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:8475]
-INFO: [Synth 8-638] synthesizing module 'axi_dwidth_converter_v2_1_15_a_upsizer__parameterized0' [c:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/1cdc/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:3603]
+INFO: [Synth 8-256] done synthesizing module 'axi_infrastructure_v1_1_0_vector2axi' (7#1) [d:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:474]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_15_axi_register_slice' (8#1) [d:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/3ed1/hdl/axi_register_slice_v2_1_vl_rfs.v:2300]
+WARNING: [Synth 8-350] instance 'mi_register_slice_inst' of module 'axi_register_slice_v2_1_15_axi_register_slice' requires 93 connections, but only 92 given [d:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/1cdc/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:8475]
+INFO: [Synth 8-638] synthesizing module 'axi_dwidth_converter_v2_1_15_a_upsizer__parameterized0' [d:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/1cdc/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:3603]
 	Parameter C_FAMILY bound to: rtl - type: string 
 	Parameter C_AXI_PROTOCOL bound to: 1 - type: integer 
 	Parameter C_AXI_ID_WIDTH bound to: 1 - type: integer 
@@ -509,8 +509,8 @@ INFO: [Synth 8-638] synthesizing module 'axi_dwidth_converter_v2_1_15_a_upsizer_
 	Parameter C_BURST_BYTES_LOG bound to: 6 - type: integer 
 	Parameter C_SI_UNUSED_LOG bound to: 30 - type: integer 
 	Parameter C_MI_UNUSED_LOG bound to: 29 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'axi_dwidth_converter_v2_1_15_a_upsizer__parameterized0' (8#1) [c:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/1cdc/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:3603]
-INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_15_axi_register_slice__parameterized0' [c:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/3ed1/hdl/axi_register_slice_v2_1_vl_rfs.v:2300]
+INFO: [Synth 8-256] done synthesizing module 'axi_dwidth_converter_v2_1_15_a_upsizer__parameterized0' (8#1) [d:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/1cdc/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:3603]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_15_axi_register_slice__parameterized0' [d:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/3ed1/hdl/axi_register_slice_v2_1_vl_rfs.v:2300]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_AXI_PROTOCOL bound to: 1 - type: integer 
 	Parameter C_AXI_ID_WIDTH bound to: 1 - type: integer 
@@ -621,22 +621,22 @@ INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_15_axi_register
 	Parameter G_AXI_RUSER_INDEX bound to: 36 - type: integer 
 	Parameter G_AXI_RUSER_WIDTH bound to: 0 - type: integer 
 	Parameter G_AXI_RPAYLOAD_WIDTH bound to: 36 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_15_axic_register_slice__parameterized3' [c:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/3ed1/hdl/axi_register_slice_v2_1_vl_rfs.v:189]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_15_axic_register_slice__parameterized3' [d:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/3ed1/hdl/axi_register_slice_v2_1_vl_rfs.v:189]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_DATA_WIDTH bound to: 55 - type: integer 
 	Parameter C_REG_CONFIG bound to: 7 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_15_axic_register_slice__parameterized3' (8#1) [c:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/3ed1/hdl/axi_register_slice_v2_1_vl_rfs.v:189]
-INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_15_axic_register_slice__parameterized4' [c:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/3ed1/hdl/axi_register_slice_v2_1_vl_rfs.v:189]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_15_axic_register_slice__parameterized3' (8#1) [d:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/3ed1/hdl/axi_register_slice_v2_1_vl_rfs.v:189]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_15_axic_register_slice__parameterized4' [d:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/3ed1/hdl/axi_register_slice_v2_1_vl_rfs.v:189]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_DATA_WIDTH bound to: 38 - type: integer 
 	Parameter C_REG_CONFIG bound to: 1 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_15_axic_register_slice__parameterized4' (8#1) [c:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/3ed1/hdl/axi_register_slice_v2_1_vl_rfs.v:189]
-INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_15_axic_register_slice__parameterized5' [c:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/3ed1/hdl/axi_register_slice_v2_1_vl_rfs.v:189]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_15_axic_register_slice__parameterized4' (8#1) [d:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/3ed1/hdl/axi_register_slice_v2_1_vl_rfs.v:189]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_15_axic_register_slice__parameterized5' [d:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/3ed1/hdl/axi_register_slice_v2_1_vl_rfs.v:189]
 	Parameter C_FAMILY bound to: zynq - type: string 
 	Parameter C_DATA_WIDTH bound to: 36 - type: integer 
 	Parameter C_REG_CONFIG bound to: 1 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_15_axic_register_slice__parameterized5' (8#1) [c:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/3ed1/hdl/axi_register_slice_v2_1_vl_rfs.v:189]
-INFO: [Synth 8-638] synthesizing module 'axi_infrastructure_v1_1_0_axi2vector__parameterized0' [c:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:60]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_15_axic_register_slice__parameterized5' (8#1) [d:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/3ed1/hdl/axi_register_slice_v2_1_vl_rfs.v:189]
+INFO: [Synth 8-638] synthesizing module 'axi_infrastructure_v1_1_0_axi2vector__parameterized0' [d:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:60]
 	Parameter C_AXI_PROTOCOL bound to: 1 - type: integer 
 	Parameter C_AXI_ID_WIDTH bound to: 1 - type: integer 
 	Parameter C_AXI_ADDR_WIDTH bound to: 32 - type: integer 
@@ -728,8 +728,8 @@ INFO: [Synth 8-638] synthesizing module 'axi_infrastructure_v1_1_0_axi2vector__p
 	Parameter G_AXI_RUSER_INDEX bound to: 36 - type: integer 
 	Parameter G_AXI_RUSER_WIDTH bound to: 0 - type: integer 
 	Parameter G_AXI_RPAYLOAD_WIDTH bound to: 36 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'axi_infrastructure_v1_1_0_axi2vector__parameterized0' (8#1) [c:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:60]
-INFO: [Synth 8-638] synthesizing module 'axi_infrastructure_v1_1_0_vector2axi__parameterized0' [c:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:474]
+INFO: [Synth 8-256] done synthesizing module 'axi_infrastructure_v1_1_0_axi2vector__parameterized0' (8#1) [d:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:60]
+INFO: [Synth 8-638] synthesizing module 'axi_infrastructure_v1_1_0_vector2axi__parameterized0' [d:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:474]
 	Parameter C_AXI_PROTOCOL bound to: 1 - type: integer 
 	Parameter C_AXI_ID_WIDTH bound to: 1 - type: integer 
 	Parameter C_AXI_ADDR_WIDTH bound to: 32 - type: integer 
@@ -821,12 +821,12 @@ INFO: [Synth 8-638] synthesizing module 'axi_infrastructure_v1_1_0_vector2axi__p
 	Parameter G_AXI_RUSER_INDEX bound to: 36 - type: integer 
 	Parameter G_AXI_RUSER_WIDTH bound to: 0 - type: integer 
 	Parameter G_AXI_RPAYLOAD_WIDTH bound to: 36 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'axi_infrastructure_v1_1_0_vector2axi__parameterized0' (8#1) [c:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:474]
-INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_15_axi_register_slice__parameterized0' (8#1) [c:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/3ed1/hdl/axi_register_slice_v2_1_vl_rfs.v:2300]
-WARNING: [Synth 8-350] instance 'si_register_slice_inst' of module 'axi_register_slice_v2_1_15_axi_register_slice' requires 93 connections, but only 92 given [c:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/1cdc/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:7379]
-INFO: [Synth 8-256] done synthesizing module 'axi_dwidth_converter_v2_1_15_axi_upsizer' (9#1) [c:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/1cdc/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:7038]
-INFO: [Synth 8-256] done synthesizing module 'axi_dwidth_converter_v2_1_15_top' (10#1) [c:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/1cdc/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:14462]
-INFO: [Synth 8-256] done synthesizing module 'system_auto_us_0' (11#1) [c:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ip/system_auto_us_0/synth/system_auto_us_0.v:58]
+INFO: [Synth 8-256] done synthesizing module 'axi_infrastructure_v1_1_0_vector2axi__parameterized0' (8#1) [d:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:474]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_15_axi_register_slice__parameterized0' (8#1) [d:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/3ed1/hdl/axi_register_slice_v2_1_vl_rfs.v:2300]
+WARNING: [Synth 8-350] instance 'si_register_slice_inst' of module 'axi_register_slice_v2_1_15_axi_register_slice' requires 93 connections, but only 92 given [d:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/1cdc/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:7379]
+INFO: [Synth 8-256] done synthesizing module 'axi_dwidth_converter_v2_1_15_axi_upsizer' (9#1) [d:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/1cdc/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:7038]
+INFO: [Synth 8-256] done synthesizing module 'axi_dwidth_converter_v2_1_15_top' (10#1) [d:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/1cdc/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:14462]
+INFO: [Synth 8-256] done synthesizing module 'system_auto_us_0' (11#1) [d:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ip/system_auto_us_0/synth/system_auto_us_0.v:58]
 WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_vector2axi__parameterized0 has unconnected port m_axi_buser[0]
 WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_vector2axi__parameterized0 has unconnected port m_axi_ruser[0]
 WARNING: [Synth 8-3331] design axi_infrastructure_v1_1_0_axi2vector__parameterized0 has unconnected port s_axi_awregion[3]
@@ -867,7 +867,7 @@ WARNING: [Synth 8-3331] design axi_dwidth_converter_v2_1_15_top has unconnected 
 WARNING: [Synth 8-3331] design axi_dwidth_converter_v2_1_15_top has unconnected port s_axi_arregion[1]
 WARNING: [Synth 8-3331] design axi_dwidth_converter_v2_1_15_top has unconnected port s_axi_arregion[0]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:02:40 ; elapsed = 00:02:48 . Memory (MB): peak = 568.633 ; gain = 263.445
+Finished RTL Elaboration : Time (s): cpu = 00:03:10 ; elapsed = 00:03:33 . Memory (MB): peak = 568.539 ; gain = 263.398
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -877,112 +877,112 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:02:40 ; elapsed = 00:02:48 . Memory (MB): peak = 568.633 ; gain = 263.445
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:03:10 ; elapsed = 00:03:34 . Memory (MB): peak = 568.539 ; gain = 263.398
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7z010clg400-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [c:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ip/system_auto_us_0/system_auto_us_0_ooc.xdc] for cell 'inst'
-Finished Parsing XDC File [c:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ip/system_auto_us_0/system_auto_us_0_ooc.xdc] for cell 'inst'
-Parsing XDC File [C:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.runs/system_auto_us_0_synth_1/dont_touch.xdc]
-Finished Parsing XDC File [C:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.runs/system_auto_us_0_synth_1/dont_touch.xdc]
+Parsing XDC File [d:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ip/system_auto_us_0/system_auto_us_0_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [d:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ip/system_auto_us_0/system_auto_us_0_ooc.xdc] for cell 'inst'
+Parsing XDC File [D:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.runs/system_auto_us_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.runs/system_auto_us_0_synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.068 . Memory (MB): peak = 815.676 ; gain = 1.188
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.110 . Memory (MB): peak = 826.375 ; gain = 1.266
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:02:58 ; elapsed = 00:03:08 . Memory (MB): peak = 815.676 ; gain = 510.488
+Finished Constraint Validation : Time (s): cpu = 00:03:39 ; elapsed = 00:04:04 . Memory (MB): peak = 826.375 ; gain = 521.234
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z010clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:02:58 ; elapsed = 00:03:08 . Memory (MB): peak = 815.676 ; gain = 510.488
+Finished Loading Part and Timing Information : Time (s): cpu = 00:03:39 ; elapsed = 00:04:04 . Memory (MB): peak = 826.375 ; gain = 521.234
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property DONT_TOUCH = true for inst. (constraint file  C:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.runs/system_auto_us_0_synth_1/dont_touch.xdc, line 9).
+Applied set_property DONT_TOUCH = true for inst. (constraint file  D:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.runs/system_auto_us_0_synth_1/dont_touch.xdc, line 9).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:02:58 ; elapsed = 00:03:08 . Memory (MB): peak = 815.676 ; gain = 510.488
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:03:39 ; elapsed = 00:04:04 . Memory (MB): peak = 826.375 ; gain = 521.234
 ---------------------------------------------------------------------------------
-WARNING: [Synth 8-6014] Unused sequential element USE_RTL_LENGTH.length_counter_q_reg was removed.  [c:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/1cdc/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:6271]
-INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:868]
-WARNING: [Synth 8-6014] Unused sequential element USE_RTL_ADDR.addr_q_reg was removed.  [c:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:866]
-WARNING: [Synth 8-6014] Unused sequential element USE_RTL_FIFO.data_srl_reg[31] was removed.  [c:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:933]
-WARNING: [Synth 8-6014] Unused sequential element USE_RTL_FIFO.data_srl_reg[30] was removed.  [c:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:933]
-WARNING: [Synth 8-6014] Unused sequential element USE_RTL_FIFO.data_srl_reg[29] was removed.  [c:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:933]
-WARNING: [Synth 8-6014] Unused sequential element USE_RTL_FIFO.data_srl_reg[28] was removed.  [c:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:933]
-WARNING: [Synth 8-6014] Unused sequential element USE_RTL_FIFO.data_srl_reg[27] was removed.  [c:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:933]
-WARNING: [Synth 8-6014] Unused sequential element USE_RTL_FIFO.data_srl_reg[26] was removed.  [c:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:933]
-WARNING: [Synth 8-6014] Unused sequential element USE_RTL_FIFO.data_srl_reg[25] was removed.  [c:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:933]
-WARNING: [Synth 8-6014] Unused sequential element USE_RTL_FIFO.data_srl_reg[24] was removed.  [c:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:933]
-WARNING: [Synth 8-6014] Unused sequential element USE_RTL_FIFO.data_srl_reg[23] was removed.  [c:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:933]
-WARNING: [Synth 8-6014] Unused sequential element USE_RTL_FIFO.data_srl_reg[22] was removed.  [c:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:933]
-WARNING: [Synth 8-6014] Unused sequential element USE_RTL_FIFO.data_srl_reg[21] was removed.  [c:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:933]
-WARNING: [Synth 8-6014] Unused sequential element USE_RTL_FIFO.data_srl_reg[20] was removed.  [c:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:933]
-WARNING: [Synth 8-6014] Unused sequential element USE_RTL_FIFO.data_srl_reg[19] was removed.  [c:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:933]
-WARNING: [Synth 8-6014] Unused sequential element USE_RTL_FIFO.data_srl_reg[18] was removed.  [c:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:933]
-WARNING: [Synth 8-6014] Unused sequential element USE_RTL_FIFO.data_srl_reg[17] was removed.  [c:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:933]
-WARNING: [Synth 8-6014] Unused sequential element USE_RTL_FIFO.data_srl_reg[16] was removed.  [c:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:933]
-WARNING: [Synth 8-6014] Unused sequential element USE_RTL_FIFO.data_srl_reg[15] was removed.  [c:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:933]
-WARNING: [Synth 8-6014] Unused sequential element USE_RTL_FIFO.data_srl_reg[14] was removed.  [c:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:933]
-WARNING: [Synth 8-6014] Unused sequential element USE_RTL_FIFO.data_srl_reg[13] was removed.  [c:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:933]
-WARNING: [Synth 8-6014] Unused sequential element USE_RTL_FIFO.data_srl_reg[12] was removed.  [c:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:933]
-WARNING: [Synth 8-6014] Unused sequential element USE_RTL_FIFO.data_srl_reg[11] was removed.  [c:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:933]
-WARNING: [Synth 8-6014] Unused sequential element USE_RTL_FIFO.data_srl_reg[10] was removed.  [c:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:933]
-WARNING: [Synth 8-6014] Unused sequential element USE_RTL_FIFO.data_srl_reg[9] was removed.  [c:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:933]
-WARNING: [Synth 8-6014] Unused sequential element USE_RTL_FIFO.data_srl_reg[8] was removed.  [c:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:933]
-WARNING: [Synth 8-6014] Unused sequential element USE_RTL_FIFO.data_srl_reg[7] was removed.  [c:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:933]
-WARNING: [Synth 8-6014] Unused sequential element USE_RTL_FIFO.data_srl_reg[6] was removed.  [c:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:933]
-WARNING: [Synth 8-6014] Unused sequential element USE_RTL_FIFO.data_srl_reg[5] was removed.  [c:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:933]
-WARNING: [Synth 8-6014] Unused sequential element USE_RTL_FIFO.data_srl_reg[4] was removed.  [c:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:933]
-WARNING: [Synth 8-6014] Unused sequential element USE_RTL_FIFO.data_srl_reg[3] was removed.  [c:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:933]
-WARNING: [Synth 8-6014] Unused sequential element USE_RTL_FIFO.data_srl_reg[2] was removed.  [c:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:933]
-WARNING: [Synth 8-6014] Unused sequential element USE_RTL_FIFO.data_srl_reg[1] was removed.  [c:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:933]
-WARNING: [Synth 8-6014] Unused sequential element USE_RTL_FIFO.data_srl_reg[0] was removed.  [c:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:933]
-INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:868]
-WARNING: [Synth 8-6014] Unused sequential element USE_RTL_ADDR.addr_q_reg was removed.  [c:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:866]
-WARNING: [Synth 8-6014] Unused sequential element USE_RTL_FIFO.data_srl_reg[31] was removed.  [c:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:933]
-WARNING: [Synth 8-6014] Unused sequential element USE_RTL_FIFO.data_srl_reg[30] was removed.  [c:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:933]
-WARNING: [Synth 8-6014] Unused sequential element USE_RTL_FIFO.data_srl_reg[29] was removed.  [c:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:933]
-WARNING: [Synth 8-6014] Unused sequential element USE_RTL_FIFO.data_srl_reg[28] was removed.  [c:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:933]
-WARNING: [Synth 8-6014] Unused sequential element USE_RTL_FIFO.data_srl_reg[27] was removed.  [c:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:933]
-WARNING: [Synth 8-6014] Unused sequential element USE_RTL_FIFO.data_srl_reg[26] was removed.  [c:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:933]
-WARNING: [Synth 8-6014] Unused sequential element USE_RTL_FIFO.data_srl_reg[25] was removed.  [c:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:933]
-WARNING: [Synth 8-6014] Unused sequential element USE_RTL_FIFO.data_srl_reg[24] was removed.  [c:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:933]
-WARNING: [Synth 8-6014] Unused sequential element USE_RTL_FIFO.data_srl_reg[23] was removed.  [c:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:933]
-WARNING: [Synth 8-6014] Unused sequential element USE_RTL_FIFO.data_srl_reg[22] was removed.  [c:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:933]
-WARNING: [Synth 8-6014] Unused sequential element USE_RTL_FIFO.data_srl_reg[21] was removed.  [c:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:933]
-WARNING: [Synth 8-6014] Unused sequential element USE_RTL_FIFO.data_srl_reg[20] was removed.  [c:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:933]
-WARNING: [Synth 8-6014] Unused sequential element USE_RTL_FIFO.data_srl_reg[19] was removed.  [c:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:933]
-WARNING: [Synth 8-6014] Unused sequential element USE_RTL_FIFO.data_srl_reg[18] was removed.  [c:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:933]
-WARNING: [Synth 8-6014] Unused sequential element USE_RTL_FIFO.data_srl_reg[17] was removed.  [c:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:933]
-WARNING: [Synth 8-6014] Unused sequential element USE_RTL_FIFO.data_srl_reg[16] was removed.  [c:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:933]
-WARNING: [Synth 8-6014] Unused sequential element USE_RTL_FIFO.data_srl_reg[15] was removed.  [c:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:933]
-WARNING: [Synth 8-6014] Unused sequential element USE_RTL_FIFO.data_srl_reg[14] was removed.  [c:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:933]
-WARNING: [Synth 8-6014] Unused sequential element USE_RTL_FIFO.data_srl_reg[13] was removed.  [c:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:933]
-WARNING: [Synth 8-6014] Unused sequential element USE_RTL_FIFO.data_srl_reg[12] was removed.  [c:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:933]
-WARNING: [Synth 8-6014] Unused sequential element USE_RTL_FIFO.data_srl_reg[11] was removed.  [c:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:933]
-WARNING: [Synth 8-6014] Unused sequential element USE_RTL_FIFO.data_srl_reg[10] was removed.  [c:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:933]
-WARNING: [Synth 8-6014] Unused sequential element USE_RTL_FIFO.data_srl_reg[9] was removed.  [c:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:933]
-WARNING: [Synth 8-6014] Unused sequential element USE_RTL_FIFO.data_srl_reg[8] was removed.  [c:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:933]
-WARNING: [Synth 8-6014] Unused sequential element USE_RTL_FIFO.data_srl_reg[7] was removed.  [c:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:933]
-WARNING: [Synth 8-6014] Unused sequential element USE_RTL_FIFO.data_srl_reg[6] was removed.  [c:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:933]
-WARNING: [Synth 8-6014] Unused sequential element USE_RTL_FIFO.data_srl_reg[5] was removed.  [c:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:933]
-WARNING: [Synth 8-6014] Unused sequential element USE_RTL_FIFO.data_srl_reg[4] was removed.  [c:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:933]
-WARNING: [Synth 8-6014] Unused sequential element USE_RTL_FIFO.data_srl_reg[3] was removed.  [c:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:933]
-WARNING: [Synth 8-6014] Unused sequential element USE_RTL_FIFO.data_srl_reg[2] was removed.  [c:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:933]
-WARNING: [Synth 8-6014] Unused sequential element USE_RTL_FIFO.data_srl_reg[1] was removed.  [c:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:933]
-WARNING: [Synth 8-6014] Unused sequential element USE_RTL_FIFO.data_srl_reg[0] was removed.  [c:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:933]
-WARNING: [Synth 8-6014] Unused sequential element USE_RTL_LENGTH.length_counter_q_reg was removed.  [c:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/1cdc/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:5162]
+WARNING: [Synth 8-6014] Unused sequential element USE_RTL_LENGTH.length_counter_q_reg was removed.  [d:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/1cdc/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:6271]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [d:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:868]
+WARNING: [Synth 8-6014] Unused sequential element USE_RTL_ADDR.addr_q_reg was removed.  [d:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:866]
+WARNING: [Synth 8-6014] Unused sequential element USE_RTL_FIFO.data_srl_reg[31] was removed.  [d:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:933]
+WARNING: [Synth 8-6014] Unused sequential element USE_RTL_FIFO.data_srl_reg[30] was removed.  [d:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:933]
+WARNING: [Synth 8-6014] Unused sequential element USE_RTL_FIFO.data_srl_reg[29] was removed.  [d:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:933]
+WARNING: [Synth 8-6014] Unused sequential element USE_RTL_FIFO.data_srl_reg[28] was removed.  [d:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:933]
+WARNING: [Synth 8-6014] Unused sequential element USE_RTL_FIFO.data_srl_reg[27] was removed.  [d:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:933]
+WARNING: [Synth 8-6014] Unused sequential element USE_RTL_FIFO.data_srl_reg[26] was removed.  [d:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:933]
+WARNING: [Synth 8-6014] Unused sequential element USE_RTL_FIFO.data_srl_reg[25] was removed.  [d:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:933]
+WARNING: [Synth 8-6014] Unused sequential element USE_RTL_FIFO.data_srl_reg[24] was removed.  [d:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:933]
+WARNING: [Synth 8-6014] Unused sequential element USE_RTL_FIFO.data_srl_reg[23] was removed.  [d:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:933]
+WARNING: [Synth 8-6014] Unused sequential element USE_RTL_FIFO.data_srl_reg[22] was removed.  [d:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:933]
+WARNING: [Synth 8-6014] Unused sequential element USE_RTL_FIFO.data_srl_reg[21] was removed.  [d:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:933]
+WARNING: [Synth 8-6014] Unused sequential element USE_RTL_FIFO.data_srl_reg[20] was removed.  [d:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:933]
+WARNING: [Synth 8-6014] Unused sequential element USE_RTL_FIFO.data_srl_reg[19] was removed.  [d:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:933]
+WARNING: [Synth 8-6014] Unused sequential element USE_RTL_FIFO.data_srl_reg[18] was removed.  [d:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:933]
+WARNING: [Synth 8-6014] Unused sequential element USE_RTL_FIFO.data_srl_reg[17] was removed.  [d:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:933]
+WARNING: [Synth 8-6014] Unused sequential element USE_RTL_FIFO.data_srl_reg[16] was removed.  [d:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:933]
+WARNING: [Synth 8-6014] Unused sequential element USE_RTL_FIFO.data_srl_reg[15] was removed.  [d:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:933]
+WARNING: [Synth 8-6014] Unused sequential element USE_RTL_FIFO.data_srl_reg[14] was removed.  [d:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:933]
+WARNING: [Synth 8-6014] Unused sequential element USE_RTL_FIFO.data_srl_reg[13] was removed.  [d:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:933]
+WARNING: [Synth 8-6014] Unused sequential element USE_RTL_FIFO.data_srl_reg[12] was removed.  [d:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:933]
+WARNING: [Synth 8-6014] Unused sequential element USE_RTL_FIFO.data_srl_reg[11] was removed.  [d:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:933]
+WARNING: [Synth 8-6014] Unused sequential element USE_RTL_FIFO.data_srl_reg[10] was removed.  [d:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:933]
+WARNING: [Synth 8-6014] Unused sequential element USE_RTL_FIFO.data_srl_reg[9] was removed.  [d:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:933]
+WARNING: [Synth 8-6014] Unused sequential element USE_RTL_FIFO.data_srl_reg[8] was removed.  [d:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:933]
+WARNING: [Synth 8-6014] Unused sequential element USE_RTL_FIFO.data_srl_reg[7] was removed.  [d:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:933]
+WARNING: [Synth 8-6014] Unused sequential element USE_RTL_FIFO.data_srl_reg[6] was removed.  [d:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:933]
+WARNING: [Synth 8-6014] Unused sequential element USE_RTL_FIFO.data_srl_reg[5] was removed.  [d:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:933]
+WARNING: [Synth 8-6014] Unused sequential element USE_RTL_FIFO.data_srl_reg[4] was removed.  [d:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:933]
+WARNING: [Synth 8-6014] Unused sequential element USE_RTL_FIFO.data_srl_reg[3] was removed.  [d:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:933]
+WARNING: [Synth 8-6014] Unused sequential element USE_RTL_FIFO.data_srl_reg[2] was removed.  [d:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:933]
+WARNING: [Synth 8-6014] Unused sequential element USE_RTL_FIFO.data_srl_reg[1] was removed.  [d:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:933]
+WARNING: [Synth 8-6014] Unused sequential element USE_RTL_FIFO.data_srl_reg[0] was removed.  [d:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:933]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [d:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:868]
+WARNING: [Synth 8-6014] Unused sequential element USE_RTL_ADDR.addr_q_reg was removed.  [d:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:866]
+WARNING: [Synth 8-6014] Unused sequential element USE_RTL_FIFO.data_srl_reg[31] was removed.  [d:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:933]
+WARNING: [Synth 8-6014] Unused sequential element USE_RTL_FIFO.data_srl_reg[30] was removed.  [d:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:933]
+WARNING: [Synth 8-6014] Unused sequential element USE_RTL_FIFO.data_srl_reg[29] was removed.  [d:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:933]
+WARNING: [Synth 8-6014] Unused sequential element USE_RTL_FIFO.data_srl_reg[28] was removed.  [d:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:933]
+WARNING: [Synth 8-6014] Unused sequential element USE_RTL_FIFO.data_srl_reg[27] was removed.  [d:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:933]
+WARNING: [Synth 8-6014] Unused sequential element USE_RTL_FIFO.data_srl_reg[26] was removed.  [d:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:933]
+WARNING: [Synth 8-6014] Unused sequential element USE_RTL_FIFO.data_srl_reg[25] was removed.  [d:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:933]
+WARNING: [Synth 8-6014] Unused sequential element USE_RTL_FIFO.data_srl_reg[24] was removed.  [d:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:933]
+WARNING: [Synth 8-6014] Unused sequential element USE_RTL_FIFO.data_srl_reg[23] was removed.  [d:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:933]
+WARNING: [Synth 8-6014] Unused sequential element USE_RTL_FIFO.data_srl_reg[22] was removed.  [d:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:933]
+WARNING: [Synth 8-6014] Unused sequential element USE_RTL_FIFO.data_srl_reg[21] was removed.  [d:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:933]
+WARNING: [Synth 8-6014] Unused sequential element USE_RTL_FIFO.data_srl_reg[20] was removed.  [d:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:933]
+WARNING: [Synth 8-6014] Unused sequential element USE_RTL_FIFO.data_srl_reg[19] was removed.  [d:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:933]
+WARNING: [Synth 8-6014] Unused sequential element USE_RTL_FIFO.data_srl_reg[18] was removed.  [d:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:933]
+WARNING: [Synth 8-6014] Unused sequential element USE_RTL_FIFO.data_srl_reg[17] was removed.  [d:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:933]
+WARNING: [Synth 8-6014] Unused sequential element USE_RTL_FIFO.data_srl_reg[16] was removed.  [d:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:933]
+WARNING: [Synth 8-6014] Unused sequential element USE_RTL_FIFO.data_srl_reg[15] was removed.  [d:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:933]
+WARNING: [Synth 8-6014] Unused sequential element USE_RTL_FIFO.data_srl_reg[14] was removed.  [d:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:933]
+WARNING: [Synth 8-6014] Unused sequential element USE_RTL_FIFO.data_srl_reg[13] was removed.  [d:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:933]
+WARNING: [Synth 8-6014] Unused sequential element USE_RTL_FIFO.data_srl_reg[12] was removed.  [d:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:933]
+WARNING: [Synth 8-6014] Unused sequential element USE_RTL_FIFO.data_srl_reg[11] was removed.  [d:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:933]
+WARNING: [Synth 8-6014] Unused sequential element USE_RTL_FIFO.data_srl_reg[10] was removed.  [d:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:933]
+WARNING: [Synth 8-6014] Unused sequential element USE_RTL_FIFO.data_srl_reg[9] was removed.  [d:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:933]
+WARNING: [Synth 8-6014] Unused sequential element USE_RTL_FIFO.data_srl_reg[8] was removed.  [d:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:933]
+WARNING: [Synth 8-6014] Unused sequential element USE_RTL_FIFO.data_srl_reg[7] was removed.  [d:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:933]
+WARNING: [Synth 8-6014] Unused sequential element USE_RTL_FIFO.data_srl_reg[6] was removed.  [d:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:933]
+WARNING: [Synth 8-6014] Unused sequential element USE_RTL_FIFO.data_srl_reg[5] was removed.  [d:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:933]
+WARNING: [Synth 8-6014] Unused sequential element USE_RTL_FIFO.data_srl_reg[4] was removed.  [d:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:933]
+WARNING: [Synth 8-6014] Unused sequential element USE_RTL_FIFO.data_srl_reg[3] was removed.  [d:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:933]
+WARNING: [Synth 8-6014] Unused sequential element USE_RTL_FIFO.data_srl_reg[2] was removed.  [d:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:933]
+WARNING: [Synth 8-6014] Unused sequential element USE_RTL_FIFO.data_srl_reg[1] was removed.  [d:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:933]
+WARNING: [Synth 8-6014] Unused sequential element USE_RTL_FIFO.data_srl_reg[0] was removed.  [d:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:933]
+WARNING: [Synth 8-6014] Unused sequential element USE_RTL_LENGTH.length_counter_q_reg was removed.  [d:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/1cdc/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:5162]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:03:00 ; elapsed = 00:03:09 . Memory (MB): peak = 815.676 ; gain = 510.488
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:03:40 ; elapsed = 00:04:05 . Memory (MB): peak = 826.375 ; gain = 521.234
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1186,23 +1186,23 @@ Finished Part Resource Summary
 ---------------------------------------------------------------------------------
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
-WARNING: [Synth 8-6014] Unused sequential element gen_upsizer.gen_full_upsizer.axi_upsizer_inst/USE_READ.gen_non_fifo_r_upsizer.mi_register_slice_inst/aw.aw_pipe/m_payload_i_reg was removed.  [c:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/3ed1/hdl/axi_register_slice_v2_1_vl_rfs.v:788]
-WARNING: [Synth 8-6014] Unused sequential element gen_upsizer.gen_full_upsizer.axi_upsizer_inst/USE_READ.gen_non_fifo_r_upsizer.mi_register_slice_inst/w.w_pipe/skid_buffer_reg was removed.  [c:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/3ed1/hdl/axi_register_slice_v2_1_vl_rfs.v:447]
-WARNING: [Synth 8-6014] Unused sequential element gen_upsizer.gen_full_upsizer.axi_upsizer_inst/USE_READ.gen_non_fifo_r_upsizer.mi_register_slice_inst/w.w_pipe/m_payload_i_reg was removed.  [c:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/3ed1/hdl/axi_register_slice_v2_1_vl_rfs.v:422]
-WARNING: [Synth 8-6014] Unused sequential element gen_upsizer.gen_full_upsizer.axi_upsizer_inst/USE_READ.gen_non_fifo_r_upsizer.mi_register_slice_inst/b.b_pipe/m_payload_i_reg was removed.  [c:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/3ed1/hdl/axi_register_slice_v2_1_vl_rfs.v:788]
-WARNING: [Synth 8-6014] Unused sequential element gen_upsizer.gen_full_upsizer.axi_upsizer_inst/USE_READ.gen_non_fifo_r_upsizer.mi_register_slice_inst/ar.ar_pipe/m_payload_i_reg was removed.  [c:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/3ed1/hdl/axi_register_slice_v2_1_vl_rfs.v:788]
-WARNING: [Synth 8-6014] Unused sequential element gen_upsizer.gen_full_upsizer.axi_upsizer_inst/si_register_slice_inst/w.w_pipe/skid_buffer_reg was removed.  [c:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/3ed1/hdl/axi_register_slice_v2_1_vl_rfs.v:447]
-WARNING: [Synth 8-6014] Unused sequential element gen_upsizer.gen_full_upsizer.axi_upsizer_inst/si_register_slice_inst/w.w_pipe/m_payload_i_reg was removed.  [c:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/3ed1/hdl/axi_register_slice_v2_1_vl_rfs.v:422]
-WARNING: [Synth 8-6014] Unused sequential element gen_upsizer.gen_full_upsizer.axi_upsizer_inst/si_register_slice_inst/b.b_pipe/m_payload_i_reg was removed.  [c:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/3ed1/hdl/axi_register_slice_v2_1_vl_rfs.v:788]
-WARNING: [Synth 8-6014] Unused sequential element gen_upsizer.gen_full_upsizer.axi_upsizer_inst/si_register_slice_inst/r.r_pipe/skid_buffer_reg was removed.  [c:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/3ed1/hdl/axi_register_slice_v2_1_vl_rfs.v:447]
-WARNING: [Synth 8-6014] Unused sequential element gen_upsizer.gen_full_upsizer.axi_upsizer_inst/si_register_slice_inst/r.r_pipe/m_payload_i_reg was removed.  [c:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/3ed1/hdl/axi_register_slice_v2_1_vl_rfs.v:422]
-INFO: [Synth 8-3936] Found unconnected internal register 'gen_upsizer.gen_full_upsizer.axi_upsizer_inst/USE_READ.gen_non_fifo_r_upsizer.mi_register_slice_inst/r.r_pipe/m_payload_i_reg' and it is trimmed from '68' to '67' bits. [c:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/3ed1/hdl/axi_register_slice_v2_1_vl_rfs.v:422]
-WARNING: [Synth 8-6014] Unused sequential element gen_upsizer.gen_full_upsizer.axi_upsizer_inst/USE_WRITE.gen_non_fifo_w_upsizer.write_data_inst/USE_RTL_LENGTH.length_counter_q_reg was removed.  [c:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/1cdc/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:6271]
-WARNING: [Synth 8-6014] Unused sequential element gen_upsizer.gen_full_upsizer.axi_upsizer_inst/USE_WRITE.write_addr_inst/gen_id_queue.id_queue/USE_RTL_ADDR.addr_q_reg was removed.  [c:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:866]
-WARNING: [Synth 8-6014] Unused sequential element gen_upsizer.gen_full_upsizer.axi_upsizer_inst/USE_WRITE.write_addr_inst/GEN_CMD_QUEUE.cmd_queue/USE_RTL_ADDR.addr_q_reg was removed.  [c:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:866]
-WARNING: [Synth 8-6014] Unused sequential element gen_upsizer.gen_full_upsizer.axi_upsizer_inst/USE_READ.gen_non_fifo_r_upsizer.read_data_inst/USE_RTL_LENGTH.length_counter_q_reg was removed.  [c:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/1cdc/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:5162]
-WARNING: [Synth 8-6014] Unused sequential element gen_upsizer.gen_full_upsizer.axi_upsizer_inst/USE_READ.read_addr_inst/gen_id_queue.id_queue/USE_RTL_ADDR.addr_q_reg was removed.  [c:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:866]
-WARNING: [Synth 8-6014] Unused sequential element gen_upsizer.gen_full_upsizer.axi_upsizer_inst/USE_READ.read_addr_inst/GEN_CMD_QUEUE.cmd_queue/USE_RTL_ADDR.addr_q_reg was removed.  [c:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:866]
+WARNING: [Synth 8-6014] Unused sequential element gen_upsizer.gen_full_upsizer.axi_upsizer_inst/USE_READ.gen_non_fifo_r_upsizer.mi_register_slice_inst/aw.aw_pipe/m_payload_i_reg was removed.  [d:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/3ed1/hdl/axi_register_slice_v2_1_vl_rfs.v:788]
+WARNING: [Synth 8-6014] Unused sequential element gen_upsizer.gen_full_upsizer.axi_upsizer_inst/USE_READ.gen_non_fifo_r_upsizer.mi_register_slice_inst/w.w_pipe/skid_buffer_reg was removed.  [d:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/3ed1/hdl/axi_register_slice_v2_1_vl_rfs.v:447]
+WARNING: [Synth 8-6014] Unused sequential element gen_upsizer.gen_full_upsizer.axi_upsizer_inst/USE_READ.gen_non_fifo_r_upsizer.mi_register_slice_inst/w.w_pipe/m_payload_i_reg was removed.  [d:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/3ed1/hdl/axi_register_slice_v2_1_vl_rfs.v:422]
+WARNING: [Synth 8-6014] Unused sequential element gen_upsizer.gen_full_upsizer.axi_upsizer_inst/USE_READ.gen_non_fifo_r_upsizer.mi_register_slice_inst/b.b_pipe/m_payload_i_reg was removed.  [d:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/3ed1/hdl/axi_register_slice_v2_1_vl_rfs.v:788]
+WARNING: [Synth 8-6014] Unused sequential element gen_upsizer.gen_full_upsizer.axi_upsizer_inst/USE_READ.gen_non_fifo_r_upsizer.mi_register_slice_inst/ar.ar_pipe/m_payload_i_reg was removed.  [d:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/3ed1/hdl/axi_register_slice_v2_1_vl_rfs.v:788]
+WARNING: [Synth 8-6014] Unused sequential element gen_upsizer.gen_full_upsizer.axi_upsizer_inst/si_register_slice_inst/w.w_pipe/skid_buffer_reg was removed.  [d:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/3ed1/hdl/axi_register_slice_v2_1_vl_rfs.v:447]
+WARNING: [Synth 8-6014] Unused sequential element gen_upsizer.gen_full_upsizer.axi_upsizer_inst/si_register_slice_inst/w.w_pipe/m_payload_i_reg was removed.  [d:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/3ed1/hdl/axi_register_slice_v2_1_vl_rfs.v:422]
+WARNING: [Synth 8-6014] Unused sequential element gen_upsizer.gen_full_upsizer.axi_upsizer_inst/si_register_slice_inst/b.b_pipe/m_payload_i_reg was removed.  [d:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/3ed1/hdl/axi_register_slice_v2_1_vl_rfs.v:788]
+WARNING: [Synth 8-6014] Unused sequential element gen_upsizer.gen_full_upsizer.axi_upsizer_inst/si_register_slice_inst/r.r_pipe/skid_buffer_reg was removed.  [d:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/3ed1/hdl/axi_register_slice_v2_1_vl_rfs.v:447]
+WARNING: [Synth 8-6014] Unused sequential element gen_upsizer.gen_full_upsizer.axi_upsizer_inst/si_register_slice_inst/r.r_pipe/m_payload_i_reg was removed.  [d:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/3ed1/hdl/axi_register_slice_v2_1_vl_rfs.v:422]
+INFO: [Synth 8-3936] Found unconnected internal register 'gen_upsizer.gen_full_upsizer.axi_upsizer_inst/USE_READ.gen_non_fifo_r_upsizer.mi_register_slice_inst/r.r_pipe/m_payload_i_reg' and it is trimmed from '68' to '67' bits. [d:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/3ed1/hdl/axi_register_slice_v2_1_vl_rfs.v:422]
+WARNING: [Synth 8-6014] Unused sequential element gen_upsizer.gen_full_upsizer.axi_upsizer_inst/USE_WRITE.gen_non_fifo_w_upsizer.write_data_inst/USE_RTL_LENGTH.length_counter_q_reg was removed.  [d:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/1cdc/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:6271]
+WARNING: [Synth 8-6014] Unused sequential element gen_upsizer.gen_full_upsizer.axi_upsizer_inst/USE_WRITE.write_addr_inst/gen_id_queue.id_queue/USE_RTL_ADDR.addr_q_reg was removed.  [d:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:866]
+WARNING: [Synth 8-6014] Unused sequential element gen_upsizer.gen_full_upsizer.axi_upsizer_inst/USE_WRITE.write_addr_inst/GEN_CMD_QUEUE.cmd_queue/USE_RTL_ADDR.addr_q_reg was removed.  [d:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:866]
+WARNING: [Synth 8-6014] Unused sequential element gen_upsizer.gen_full_upsizer.axi_upsizer_inst/USE_READ.gen_non_fifo_r_upsizer.read_data_inst/USE_RTL_LENGTH.length_counter_q_reg was removed.  [d:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/1cdc/hdl/axi_dwidth_converter_v2_1_vlsyn_rfs.v:5162]
+WARNING: [Synth 8-6014] Unused sequential element gen_upsizer.gen_full_upsizer.axi_upsizer_inst/USE_READ.read_addr_inst/gen_id_queue.id_queue/USE_RTL_ADDR.addr_q_reg was removed.  [d:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:866]
+WARNING: [Synth 8-6014] Unused sequential element gen_upsizer.gen_full_upsizer.axi_upsizer_inst/USE_READ.read_addr_inst/GEN_CMD_QUEUE.cmd_queue/USE_RTL_ADDR.addr_q_reg was removed.  [d:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:866]
 WARNING: [Synth 8-3331] design axi_dwidth_converter_v2_1_15_top has unconnected port s_axi_awregion[3]
 WARNING: [Synth 8-3331] design axi_dwidth_converter_v2_1_15_top has unconnected port s_axi_awregion[2]
 WARNING: [Synth 8-3331] design axi_dwidth_converter_v2_1_15_top has unconnected port s_axi_awregion[1]
@@ -1257,7 +1257,7 @@ INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\gen
 INFO: [Synth 8-3332] Sequential element (gen_upsizer.gen_full_upsizer.axi_upsizer_inst/USE_WRITE.write_addr_inst/GEN_CMD_QUEUE.cmd_queue/USE_FF_OUT.USE_RTL_OUTPUT_PIPELINE.M_MESG_Q_reg[6]) is unused and will be removed from module axi_dwidth_converter_v2_1_15_top.
 INFO: [Synth 8-3332] Sequential element (gen_upsizer.gen_full_upsizer.axi_upsizer_inst/USE_READ.read_addr_inst/GEN_CMD_QUEUE.cmd_queue/USE_FF_OUT.USE_RTL_OUTPUT_PIPELINE.M_MESG_Q_reg[5]) is unused and will be removed from module axi_dwidth_converter_v2_1_15_top.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:03:07 ; elapsed = 00:03:17 . Memory (MB): peak = 815.676 ; gain = 510.488
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:03:48 ; elapsed = 00:04:13 . Memory (MB): peak = 826.375 ; gain = 521.234
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1269,7 +1269,7 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:03:20 ; elapsed = 00:03:30 . Memory (MB): peak = 815.883 ; gain = 510.695
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:04:05 ; elapsed = 00:04:30 . Memory (MB): peak = 829.758 ; gain = 524.617
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
@@ -1279,7 +1279,7 @@ INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\gen
 INFO: [Synth 8-3332] Sequential element (gen_upsizer.gen_full_upsizer.axi_upsizer_inst/USE_WRITE.write_addr_inst/GEN_CMD_QUEUE.cmd_queue/USE_FF_OUT.USE_RTL_OUTPUT_PIPELINE.M_MESG_Q_reg[4]) is unused and will be removed from module axi_dwidth_converter_v2_1_15_top.
 INFO: [Synth 8-3332] Sequential element (gen_upsizer.gen_full_upsizer.axi_upsizer_inst/USE_READ.read_addr_inst/GEN_CMD_QUEUE.cmd_queue/USE_FF_OUT.USE_RTL_OUTPUT_PIPELINE.M_MESG_Q_reg[4]) is unused and will be removed from module axi_dwidth_converter_v2_1_15_top.
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:03:21 ; elapsed = 00:03:31 . Memory (MB): peak = 841.023 ; gain = 535.836
+Finished Timing Optimization : Time (s): cpu = 00:04:06 ; elapsed = 00:04:31 . Memory (MB): peak = 854.723 ; gain = 549.582
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1291,7 +1291,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:03:22 ; elapsed = 00:03:32 . Memory (MB): peak = 846.625 ; gain = 541.438
+Finished Technology Mapping : Time (s): cpu = 00:04:07 ; elapsed = 00:04:32 . Memory (MB): peak = 859.980 ; gain = 554.840
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1315,7 +1315,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:03:23 ; elapsed = 00:03:33 . Memory (MB): peak = 846.625 ; gain = 541.438
+Finished IO Insertion : Time (s): cpu = 00:04:08 ; elapsed = 00:04:33 . Memory (MB): peak = 859.980 ; gain = 554.840
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -1328,7 +1328,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:03:23 ; elapsed = 00:03:33 . Memory (MB): peak = 846.625 ; gain = 541.438
+Finished Renaming Generated Instances : Time (s): cpu = 00:04:08 ; elapsed = 00:04:33 . Memory (MB): peak = 859.980 ; gain = 554.840
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1340,25 +1340,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:03:23 ; elapsed = 00:03:33 . Memory (MB): peak = 846.625 ; gain = 541.438
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:04:09 ; elapsed = 00:04:34 . Memory (MB): peak = 859.980 ; gain = 554.840
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:03:23 ; elapsed = 00:03:33 . Memory (MB): peak = 846.625 ; gain = 541.438
+Finished Renaming Generated Ports : Time (s): cpu = 00:04:09 ; elapsed = 00:04:34 . Memory (MB): peak = 859.980 ; gain = 554.840
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:03:23 ; elapsed = 00:03:33 . Memory (MB): peak = 846.625 ; gain = 541.438
+Finished Handling Custom Attributes : Time (s): cpu = 00:04:09 ; elapsed = 00:04:34 . Memory (MB): peak = 859.980 ; gain = 554.840
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:03:23 ; elapsed = 00:03:33 . Memory (MB): peak = 846.625 ; gain = 541.438
+Finished Renaming Generated Nets : Time (s): cpu = 00:04:09 ; elapsed = 00:04:34 . Memory (MB): peak = 859.980 ; gain = 554.840
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -1423,11 +1423,11 @@ Report Instance Areas:
 |16    |        \aw.aw_pipe                                            |axi_register_slice_v2_1_15_axic_register_slice__parameterized3_0 |   120|
 +------+---------------------------------------------------------------+-----------------------------------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:03:23 ; elapsed = 00:03:33 . Memory (MB): peak = 846.625 ; gain = 541.438
+Finished Writing Synthesis Report : Time (s): cpu = 00:04:09 ; elapsed = 00:04:34 . Memory (MB): peak = 859.980 ; gain = 554.840
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 92 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:33 ; elapsed = 00:03:22 . Memory (MB): peak = 846.625 ; gain = 294.395
-Synthesis Optimization Complete : Time (s): cpu = 00:03:23 ; elapsed = 00:03:33 . Memory (MB): peak = 846.625 ; gain = 541.438
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:40 ; elapsed = 00:04:14 . Memory (MB): peak = 859.980 ; gain = 297.004
+Synthesis Optimization Complete : Time (s): cpu = 00:04:09 ; elapsed = 00:04:34 . Memory (MB): peak = 859.980 ; gain = 554.840
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
@@ -1437,9 +1437,11 @@ No Unisim elements were transformed.
 INFO: [Common 17-83] Releasing license: Synthesis
 109 Infos, 133 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:03:26 ; elapsed = 00:03:37 . Memory (MB): peak = 846.625 ; gain = 553.551
+synth_design: Time (s): cpu = 00:04:12 ; elapsed = 00:04:38 . Memory (MB): peak = 859.980 ; gain = 567.145
+INFO: [Common 17-600] The following parameters have non-default value.
+tcl.collectionResultDisplayLimit
 INFO: [Coretcl 2-1174] Renamed 15 cell refs.
-INFO: [Common 17-1381] The checkpoint 'C:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.runs/system_auto_us_0_synth_1/system_auto_us_0.dcp' has been generated.
+INFO: [Common 17-1381] The checkpoint 'D:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.runs/system_auto_us_0_synth_1/system_auto_us_0.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file system_auto_us_0_utilization_synth.rpt -pb system_auto_us_0_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 846.625 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Thu Jan 17 12:19:12 2019...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.050 . Memory (MB): peak = 859.980 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Fri Jan 18 18:02:37 2019...

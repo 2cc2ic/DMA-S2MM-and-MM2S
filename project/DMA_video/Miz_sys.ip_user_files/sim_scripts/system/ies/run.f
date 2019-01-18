@@ -109,15 +109,24 @@
 -endlib
 -makelib ies_lib/xil_defaultlib \
   "../../../bd/system/ip/system_xbar_0/sim/system_xbar_0.v" \
-  "../../../bd/system/ipshared/fd9d/hdl/User_DMA_v1_0_S_AXI_LITE.v" \
-  "../../../bd/system/ipshared/fd9d/src/User_DMA_v1_0_M_AXI_FULL_mm2s.v" \
-  "../../../bd/system/ipshared/fd9d/src/User_DMA_v1_0_M_AXI_FULL_s2mm.v" \
-  "../../../bd/system/ipshared/fd9d/hdl/User_DMA_v1_0_S_AXIS_S2MM.v" \
-  "../../../bd/system/ipshared/fd9d/hdl/User_DMA_v1_0_M_AXIS_MM2S.v" \
-  "../../../bd/system/ipshared/fd9d/src/fifo.v" \
-  "../../../bd/system/ipshared/fd9d/hdl/User_DMA_v1_0.v" \
+  "../../../bd/system/ipshared/90ae/hdl/User_DMA_v1_0_S_AXI_LITE.v" \
+  "../../../bd/system/ipshared/90ae/src/User_DMA_v1_0_M_AXI_FULL_mm2s.v" \
+  "../../../bd/system/ipshared/90ae/src/User_DMA_v1_0_M_AXI_FULL_s2mm.v" \
+  "../../../bd/system/ipshared/90ae/hdl/User_DMA_v1_0_S_AXIS_S2MM.v" \
+  "../../../bd/system/ipshared/90ae/hdl/User_DMA_v1_0_M_AXIS_MM2S.v" \
+  "../../../bd/system/ipshared/90ae/src/fifo.v" \
+  "../../../bd/system/ipshared/90ae/hdl/User_DMA_v1_0.v" \
   "../../../bd/system/ip/system_User_DMA_0_0/sim/system_User_DMA_0_0.v" \
   "../../../bd/system/sim/system.v" \
+-endlib
+-makelib ies_lib/axis_infrastructure_v1_1_0 \
+  "../../../../Miz_sys.srcs/sources_1/bd/system/ipshared/0ab1/hdl/axis_infrastructure_v1_1_vl_rfs.v" \
+-endlib
+-makelib ies_lib/axis_data_fifo_v1_1_16 \
+  "../../../../Miz_sys.srcs/sources_1/bd/system/ipshared/e3dd/hdl/axis_data_fifo_v1_1_vl_rfs.v" \
+-endlib
+-makelib ies_lib/xil_defaultlib \
+  "../../../bd/system/ip/system_axis_data_fifo_0_0/sim/system_axis_data_fifo_0_0.v" \
 -endlib
 -makelib ies_lib/axi_protocol_converter_v2_1_15 \
   "../../../../Miz_sys.srcs/sources_1/bd/system/ipshared/ff69/hdl/axi_protocol_converter_v2_1_vl_rfs.v" \

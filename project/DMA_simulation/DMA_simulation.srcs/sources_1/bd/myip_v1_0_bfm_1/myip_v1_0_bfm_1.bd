@@ -273,6 +273,10 @@
         <spirit:internalPortReference spirit:componentRef="axis_data_fifo_0" spirit:portRef="s_axis_aclk"/>
         <spirit:internalPortReference spirit:componentRef="AXI_LITE_master_IP_0" spirit:portRef="m00_axi_aclk"/>
         <spirit:internalPortReference spirit:componentRef="AXI_LITE_master_IP_1" spirit:portRef="m00_axi_aclk"/>
+        <spirit:internalPortReference spirit:componentRef="User_DMA_0" spirit:portRef="s_axi_lite_aclk"/>
+        <spirit:internalPortReference spirit:componentRef="User_DMA_0" spirit:portRef="s_axis_s2mm_aclk"/>
+        <spirit:internalPortReference spirit:componentRef="User_DMA_0" spirit:portRef="m_axi_full_aclk"/>
+        <spirit:internalPortReference spirit:componentRef="User_DMA_0" spirit:portRef="m_axis_mm2s_aclk"/>
         <spirit:internalPortReference spirit:componentRef="axi_interconnect_0" spirit:portRef="S00_ACLK"/>
         <spirit:internalPortReference spirit:componentRef="axi_interconnect_0" spirit:portRef="M01_ACLK"/>
         <spirit:internalPortReference spirit:componentRef="axi_interconnect_0" spirit:portRef="ACLK"/>
@@ -282,10 +286,6 @@
         <spirit:internalPortReference spirit:componentRef="axi_interconnect_1" spirit:portRef="ACLK"/>
         <spirit:internalPortReference spirit:componentRef="axi_interconnect_1" spirit:portRef="S00_ACLK"/>
         <spirit:internalPortReference spirit:componentRef="axi_interconnect_1" spirit:portRef="M00_ACLK"/>
-        <spirit:internalPortReference spirit:componentRef="User_DMA_0" spirit:portRef="s_axi_lite_aclk"/>
-        <spirit:internalPortReference spirit:componentRef="User_DMA_0" spirit:portRef="s_axis_s2mm_aclk"/>
-        <spirit:internalPortReference spirit:componentRef="User_DMA_0" spirit:portRef="m_axi_full_aclk"/>
-        <spirit:internalPortReference spirit:componentRef="User_DMA_0" spirit:portRef="m_axis_mm2s_aclk"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>aresetn_net</spirit:name>
@@ -295,6 +295,10 @@
         <spirit:internalPortReference spirit:componentRef="axis_data_fifo_0" spirit:portRef="s_axis_aresetn"/>
         <spirit:internalPortReference spirit:componentRef="AXI_LITE_master_IP_0" spirit:portRef="m00_axi_aresetn"/>
         <spirit:internalPortReference spirit:componentRef="AXI_LITE_master_IP_1" spirit:portRef="m00_axi_aresetn"/>
+        <spirit:internalPortReference spirit:componentRef="User_DMA_0" spirit:portRef="s_axi_lite_aresetn"/>
+        <spirit:internalPortReference spirit:componentRef="User_DMA_0" spirit:portRef="s_axis_s2mm_aresetn"/>
+        <spirit:internalPortReference spirit:componentRef="User_DMA_0" spirit:portRef="m_axi_full_aresetn"/>
+        <spirit:internalPortReference spirit:componentRef="User_DMA_0" spirit:portRef="m_axis_mm2s_aresetn"/>
         <spirit:internalPortReference spirit:componentRef="axi_interconnect_0" spirit:portRef="S00_ARESETN"/>
         <spirit:internalPortReference spirit:componentRef="axi_interconnect_0" spirit:portRef="M01_ARESETN"/>
         <spirit:internalPortReference spirit:componentRef="axi_interconnect_0" spirit:portRef="ARESETN"/>
@@ -304,10 +308,6 @@
         <spirit:internalPortReference spirit:componentRef="axi_interconnect_1" spirit:portRef="ARESETN"/>
         <spirit:internalPortReference spirit:componentRef="axi_interconnect_1" spirit:portRef="S00_ARESETN"/>
         <spirit:internalPortReference spirit:componentRef="axi_interconnect_1" spirit:portRef="M00_ARESETN"/>
-        <spirit:internalPortReference spirit:componentRef="User_DMA_0" spirit:portRef="s_axi_lite_aresetn"/>
-        <spirit:internalPortReference spirit:componentRef="User_DMA_0" spirit:portRef="s_axis_s2mm_aresetn"/>
-        <spirit:internalPortReference spirit:componentRef="User_DMA_0" spirit:portRef="m_axi_full_aresetn"/>
-        <spirit:internalPortReference spirit:componentRef="User_DMA_0" spirit:portRef="m_axis_mm2s_aresetn"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>init_axi_txn_00</spirit:name>

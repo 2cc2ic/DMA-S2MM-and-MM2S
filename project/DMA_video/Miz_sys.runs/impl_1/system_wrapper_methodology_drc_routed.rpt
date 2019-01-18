@@ -1,8 +1,8 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
-| Date         : Thu Jan 17 12:26:36 2019
-| Host         : DESKTOP-0CQ9E4M running 64-bit major release  (build 9200)
+| Date         : Fri Jan 18 18:13:56 2019
+| Host         : hubbery running 64-bit major release  (build 9200)
 | Command      : report_methodology -file system_wrapper_methodology_drc_routed.rpt -pb system_wrapper_methodology_drc_routed.pb -rpx system_wrapper_methodology_drc_routed.rpx
 | Design       : system_wrapper
 | Device       : xc7z010clg400-1
@@ -23,10 +23,11 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 241
+             Violations found: 242
 +-----------+----------+----------------------------------------------------+------------+
 | Rule      | Severity | Description                                        | Violations |
 +-----------+----------+----------------------------------------------------+------------+
+| PDRC-190  | Warning  | Suboptimally placed synchronized register chain    | 1          |
 | TIMING-4  | Warning  | Invalid primary clock redefinition on a clock tree | 1          |
 | TIMING-6  | Warning  | No common primary clock between related clocks     | 1          |
 | TIMING-7  | Warning  | No common node between related clocks              | 1          |
@@ -36,6 +37,11 @@ Table of Contents
 
 2. REPORT DETAILS
 -----------------
+PDRC-190#1 Warning
+Suboptimally placed synchronized register chain  
+The FDRE cell system_i/axis_data_fifo_0/inst/gen_fifo_generator.fifo_generator_inst/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d2_reg in site SLICE_X22Y1 is part of a synchronized register chain that is suboptimally placed as the load FDSE cell system_i/axis_data_fifo_0/inst/gen_fifo_generator.fifo_generator_inst/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/grstd1.grst_full.grst_f.rst_d3_reg is not placed in the same (SLICE) site.
+Related violations: <none>
+
 TIMING-4#1 Warning
 Invalid primary clock redefinition on a clock tree  
 Invalid clock redefinition on a clock tree. The primary clock system_i/clk_wiz_0/inst/clk_in1 is defined downstream of clock clk_fpga_0 and overrides its insertion delay and/or waveform definition

@@ -363,18 +363,6 @@
           </spirit:wire>
         </spirit:port>
         <spirit:port>
-          <spirit:name>s_axis_s2mm_tready</spirit:name>
-          <spirit:wire>
-            <spirit:direction>out</spirit:direction>
-          </spirit:wire>
-        </spirit:port>
-        <spirit:port>
-          <spirit:name>m_axis_video_tvalid</spirit:name>
-          <spirit:wire>
-            <spirit:direction>out</spirit:direction>
-          </spirit:wire>
-        </spirit:port>
-        <spirit:port>
           <spirit:name>s_axis_video_tlast</spirit:name>
           <spirit:wire>
             <spirit:direction>in</spirit:direction>
@@ -476,6 +464,18 @@
         </spirit:port>
         <spirit:port>
           <spirit:name>HDMI_D0_N</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>s_axis_s2mm_tready</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>m_axis_video_tvalid</spirit:name>
           <spirit:wire>
             <spirit:direction>out</spirit:direction>
           </spirit:wire>
@@ -1027,6 +1027,14 @@
         </spirit:configurableElementValues>
       </spirit:componentInstance>
       <spirit:componentInstance>
+        <spirit:instanceName>axis_data_fifo_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="ip" spirit:name="axis_data_fifo" spirit:vendor="xilinx.com" spirit:version="1.1"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">system_axis_data_fifo_0_0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="TDATA_NUM_BYTES">3</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
         <spirit:instanceName>User_DMA_0</spirit:instanceName>
         <spirit:componentRef spirit:library="user" spirit:name="User_DMA" spirit:vendor="user.org" spirit:version="1.0"/>
         <spirit:configurableElementValues>
@@ -1078,6 +1086,7 @@
         <spirit:internalPortReference spirit:componentRef="rst_processing_system7_0_50M" spirit:portRef="slowest_sync_clk"/>
         <spirit:internalPortReference spirit:componentRef="v_axi4s_vid_out_0" spirit:portRef="aclk"/>
         <spirit:internalPortReference spirit:componentRef="v_vid_in_axi4s_0" spirit:portRef="aclk"/>
+        <spirit:internalPortReference spirit:componentRef="axis_data_fifo_0" spirit:portRef="s_axis_aclk"/>
         <spirit:internalPortReference spirit:componentRef="axi_mem_intercon" spirit:portRef="ACLK"/>
         <spirit:internalPortReference spirit:componentRef="axi_mem_intercon" spirit:portRef="S00_ACLK"/>
         <spirit:internalPortReference spirit:componentRef="axi_mem_intercon" spirit:portRef="M00_ACLK"/>
@@ -1100,6 +1109,7 @@
         <spirit:internalPortReference spirit:componentRef="rst_processing_system7_0_50M" spirit:portRef="peripheral_aresetn"/>
         <spirit:internalPortReference spirit:componentRef="axi_gpio_0" spirit:portRef="s_axi_aresetn"/>
         <spirit:internalPortReference spirit:componentRef="clk_wiz_0" spirit:portRef="resetn"/>
+        <spirit:internalPortReference spirit:componentRef="axis_data_fifo_0" spirit:portRef="s_axis_aresetn"/>
         <spirit:internalPortReference spirit:componentRef="axi_mem_intercon" spirit:portRef="S00_ARESETN"/>
         <spirit:internalPortReference spirit:componentRef="axi_mem_intercon" spirit:portRef="M00_ARESETN"/>
         <spirit:internalPortReference spirit:componentRef="processing_system7_0_axi_periph" spirit:portRef="S00_ARESETN"/>
@@ -1152,18 +1162,6 @@
         <spirit:name>v_vid_in_axi4s_0_m_axis_video_tlast</spirit:name>
         <spirit:internalPortReference spirit:componentRef="v_vid_in_axi4s_0" spirit:portRef="m_axis_video_tlast"/>
         <spirit:externalPortReference spirit:portRef="m_axis_video_tlast"/>
-      </spirit:adHocConnection>
-      <spirit:adHocConnection>
-        <spirit:name>axi_dma_0_s_axis_s2mm_tready</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="User_DMA_0" spirit:portRef="s_axis_s2mm_tready"/>
-        <spirit:externalPortReference spirit:portRef="s_axis_s2mm_tready"/>
-        <spirit:internalPortReference spirit:componentRef="v_vid_in_axi4s_0" spirit:portRef="m_axis_video_tready"/>
-      </spirit:adHocConnection>
-      <spirit:adHocConnection>
-        <spirit:name>v_vid_in_axi4s_0_m_axis_video_tvalid</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="v_vid_in_axi4s_0" spirit:portRef="m_axis_video_tvalid"/>
-        <spirit:externalPortReference spirit:portRef="m_axis_video_tvalid"/>
-        <spirit:internalPortReference spirit:componentRef="User_DMA_0" spirit:portRef="s_axis_s2mm_tvalid"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>s_axis_video_tlast_1</spirit:name>
@@ -1320,14 +1318,41 @@
         <spirit:internalPortReference spirit:componentRef="xlconcat_0" spirit:portRef="In1"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
-        <spirit:name>v_vid_in_axi4s_0_m_axis_video_tdata</spirit:name>
-        <spirit:internalPortReference spirit:componentRef="v_vid_in_axi4s_0" spirit:portRef="m_axis_video_tdata"/>
-        <spirit:internalPortReference spirit:componentRef="User_DMA_0" spirit:portRef="s_axis_s2mm_tdata"/>
-      </spirit:adHocConnection>
-      <spirit:adHocConnection>
         <spirit:name>xlconcat_0_dout</spirit:name>
         <spirit:internalPortReference spirit:componentRef="xlconcat_0" spirit:portRef="dout"/>
         <spirit:internalPortReference spirit:componentRef="processing_system7_0" spirit:portRef="GPIO_I"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>v_vid_in_axi4s_0_m_axis_video_tdata</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="v_vid_in_axi4s_0" spirit:portRef="m_axis_video_tdata"/>
+        <spirit:internalPortReference spirit:componentRef="axis_data_fifo_0" spirit:portRef="s_axis_tdata"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>axis_data_fifo_0_s_axis_tready</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="axis_data_fifo_0" spirit:portRef="s_axis_tready"/>
+        <spirit:externalPortReference spirit:portRef="s_axis_s2mm_tready"/>
+        <spirit:internalPortReference spirit:componentRef="v_vid_in_axi4s_0" spirit:portRef="m_axis_video_tready"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>v_vid_in_axi4s_0_m_axis_video_tvalid</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="v_vid_in_axi4s_0" spirit:portRef="m_axis_video_tvalid"/>
+        <spirit:externalPortReference spirit:portRef="m_axis_video_tvalid"/>
+        <spirit:internalPortReference spirit:componentRef="axis_data_fifo_0" spirit:portRef="s_axis_tvalid"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>axis_data_fifo_0_m_axis_tvalid</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="axis_data_fifo_0" spirit:portRef="m_axis_tvalid"/>
+        <spirit:internalPortReference spirit:componentRef="User_DMA_0" spirit:portRef="s_axis_s2mm_tvalid"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>User_DMA_0_s_axis_s2mm_tready</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="User_DMA_0" spirit:portRef="s_axis_s2mm_tready"/>
+        <spirit:internalPortReference spirit:componentRef="axis_data_fifo_0" spirit:portRef="m_axis_tready"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>axis_data_fifo_0_m_axis_tdata</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="axis_data_fifo_0" spirit:portRef="m_axis_tdata"/>
+        <spirit:internalPortReference spirit:componentRef="User_DMA_0" spirit:portRef="s_axis_s2mm_tdata"/>
       </spirit:adHocConnection>
     </spirit:adHocConnections>
     <spirit:hierConnections>

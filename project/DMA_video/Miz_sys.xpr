@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="35" Path="C:/Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.xpr">
+<Project Version="7" Minor="35" Path="D:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="57d302ae21fa43468d872db97a777041"/>
@@ -37,13 +37,13 @@
     <Option Name="WTVcsLaunchSim" Val="0"/>
     <Option Name="WTRivieraLaunchSim" Val="0"/>
     <Option Name="WTActivehdlLaunchSim" Val="0"/>
-    <Option Name="WTXSimExportSim" Val="13"/>
-    <Option Name="WTModelSimExportSim" Val="13"/>
-    <Option Name="WTQuestaExportSim" Val="13"/>
-    <Option Name="WTIesExportSim" Val="13"/>
-    <Option Name="WTVcsExportSim" Val="13"/>
-    <Option Name="WTRivieraExportSim" Val="13"/>
-    <Option Name="WTActivehdlExportSim" Val="13"/>
+    <Option Name="WTXSimExportSim" Val="18"/>
+    <Option Name="WTModelSimExportSim" Val="18"/>
+    <Option Name="WTQuestaExportSim" Val="18"/>
+    <Option Name="WTIesExportSim" Val="18"/>
+    <Option Name="WTVcsExportSim" Val="18"/>
+    <Option Name="WTRivieraExportSim" Val="18"/>
+    <Option Name="WTActivehdlExportSim" Val="18"/>
     <Option Name="GenerateIPUpgradeLog" Val="TRUE"/>
     <Option Name="XSimRadix" Val="hex"/>
     <Option Name="XSimTimeUnit" Val="ns"/>
@@ -60,8 +60,23 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
-        <CompFileExtendedInfo CompFileName="system.bd" FileRelPathName="ip/system_auto_pc_1/system_auto_pc_1.xci">
-          <Proxy FileSetName="system_auto_pc_1"/>
+        <CompFileExtendedInfo CompFileName="system.bd" FileRelPathName="ip/system_axi_gpio_0_0/system_axi_gpio_0_0.xci">
+          <Proxy FileSetName="system_axi_gpio_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="system.bd" FileRelPathName="ip/system_axis_data_fifo_0_0/system_axis_data_fifo_0_0.xci">
+          <Proxy FileSetName="system_axis_data_fifo_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="system.bd" FileRelPathName="ip/system_xbar_0/system_xbar_0.xci">
+          <Proxy FileSetName="system_xbar_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="system.bd" FileRelPathName="ip/system_HDMI_FPGA_ML_0_0/system_HDMI_FPGA_ML_0_0.xci">
+          <Proxy FileSetName="system_HDMI_FPGA_ML_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="system.bd" FileRelPathName="ip/system_OV_Sensor_ML_0_2/system_OV_Sensor_ML_0_2.xci">
+          <Proxy FileSetName="system_OV_Sensor_ML_0_2"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="system.bd" FileRelPathName="ip/system_User_DMA_0_0/system_User_DMA_0_0.xci">
+          <Proxy FileSetName="system_User_DMA_0_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="system.bd" FileRelPathName="ip/system_auto_pc_0/system_auto_pc_0.xci">
           <Proxy FileSetName="system_auto_pc_0"/>
@@ -69,11 +84,23 @@
         <CompFileExtendedInfo CompFileName="system.bd" FileRelPathName="ip/system_auto_us_0/system_auto_us_0.xci">
           <Proxy FileSetName="system_auto_us_0"/>
         </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="system.bd" FileRelPathName="ip/system_auto_pc_1/system_auto_pc_1.xci">
+          <Proxy FileSetName="system_auto_pc_1"/>
+        </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="system.bd" FileRelPathName="ip/system_v_tc_0_0/system_v_tc_0_0.xci">
           <Proxy FileSetName="system_v_tc_0_0"/>
         </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="system.bd" FileRelPathName="ip/system_clk_wiz_0_0/system_clk_wiz_0_0.xci">
+          <Proxy FileSetName="system_clk_wiz_0_0"/>
+        </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="system.bd" FileRelPathName="ip/system_rst_processing_system7_0_50M_0/system_rst_processing_system7_0_50M_0.xci">
           <Proxy FileSetName="system_rst_processing_system7_0_50M_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="system.bd" FileRelPathName="ip/system_v_axi4s_vid_out_0_0/system_v_axi4s_vid_out_0_0.xci">
+          <Proxy FileSetName="system_v_axi4s_vid_out_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="system.bd" FileRelPathName="ip/system_v_vid_in_axi4s_0_0/system_v_vid_in_axi4s_0_0.xci">
+          <Proxy FileSetName="system_v_vid_in_axi4s_0_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="system.bd" FileRelPathName="ip/system_processing_system7_0_0/system_processing_system7_0_0.xci">
           <Proxy FileSetName="system_processing_system7_0_0"/>
@@ -81,35 +108,11 @@
         <CompFileExtendedInfo CompFileName="system.bd" FileRelPathName="ip/system_xlconcat_0_0/system_xlconcat_0_0.xci">
           <Proxy FileSetName="system_xlconcat_0_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="system.bd" FileRelPathName="ip/system_v_vid_in_axi4s_0_0/system_v_vid_in_axi4s_0_0.xci">
-          <Proxy FileSetName="system_v_vid_in_axi4s_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="system.bd" FileRelPathName="ip/system_v_axi4s_vid_out_0_0/system_v_axi4s_vid_out_0_0.xci">
-          <Proxy FileSetName="system_v_axi4s_vid_out_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="system.bd" FileRelPathName="ip/system_HDMI_FPGA_ML_0_0/system_HDMI_FPGA_ML_0_0.xci">
-          <Proxy FileSetName="system_HDMI_FPGA_ML_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="system.bd" FileRelPathName="ip/system_axi_gpio_0_0/system_axi_gpio_0_0.xci">
-          <Proxy FileSetName="system_axi_gpio_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="system.bd" FileRelPathName="ip/system_User_DMA_0_0/system_User_DMA_0_0.xci">
-          <Proxy FileSetName="system_User_DMA_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="system.bd" FileRelPathName="ip/system_xbar_0/system_xbar_0.xci">
-          <Proxy FileSetName="system_xbar_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="system.bd" FileRelPathName="ip/system_OV_Sensor_ML_0_2/system_OV_Sensor_ML_0_2.xci">
-          <Proxy FileSetName="system_OV_Sensor_ML_0_2"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="system.bd" FileRelPathName="ip/system_clk_wiz_0_0/system_clk_wiz_0_0.xci">
-          <Proxy FileSetName="system_clk_wiz_0_0"/>
-        </CompFileExtendedInfo>
       </File>
       <File Path="$PSRCDIR/sources_1/imports/hdl/system_wrapper.v">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PSRCDIR/sources_1/bd/system/hdl/system_wrapper.v"/>
-          <Attr Name="ImportTime" Val="1547698513"/>
+          <Attr Name="ImportTime" Val="1547805441"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -138,12 +141,19 @@
       <Filter Type="Constrs"/>
       <File Path="$PSRCDIR/constrs_1/new/Miz_sys_pin.xdc">
         <FileInfo>
+          <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="synthesis"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/constrs_1/imports/Desktop/debug.xdc">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="C:/Users/zhanglingli/Desktop/debug.xdc"/>
+          <Attr Name="ImportTime" Val="1547736287"/>
           <Attr Name="UsedIn" Val="implementation"/>
         </FileInfo>
       </File>
       <Config>
-        <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/new/Miz_sys_pin.xdc"/>
+        <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/imports/Desktop/debug.xdc"/>
         <Option Name="ConstrsType" Val="XDC"/>
       </Config>
     </FileSet>
@@ -222,6 +232,12 @@
     <FileSet Name="system_xbar_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/system_xbar_0">
       <Config>
         <Option Name="TopModule" Val="system_xbar_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="system_axis_data_fifo_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/system_axis_data_fifo_0_0">
+      <Config>
+        <Option Name="TopModule" Val="system_axis_data_fifo_0_0"/>
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
@@ -369,6 +385,15 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>
     <Run Id="system_xbar_0_synth_1" Type="Ft3:Synth" SrcSet="system_xbar_0" Part="xc7z010clg400-1" ConstrsSet="system_xbar_0" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" Dir="$PRUNDIR/system_xbar_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2017"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="system_axis_data_fifo_0_0_synth_1" Type="Ft3:Synth" SrcSet="system_axis_data_fifo_0_0" Part="xc7z010clg400-1" ConstrsSet="system_axis_data_fifo_0_0" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" Dir="$PRUNDIR/system_axis_data_fifo_0_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
         <Step Id="synth_design"/>
@@ -599,6 +624,22 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
     </Run>
     <Run Id="system_xbar_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="system_xbar_0" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="system_xbar_0_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2017"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="system_axis_data_fifo_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="system_axis_data_fifo_0_0" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="system_axis_data_fifo_0_0_synth_1" IncludeInArchive="false">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017"/>
         <Step Id="init_design"/>

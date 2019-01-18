@@ -2,10 +2,10 @@
 <Root MajorVersion="0" MinorVersion="33">
   <CompositeFile CompositeFileTopName="system" CanBeSetAsTop="false" CanDisplayChildGraph="true">
     <Description>Composite Fileset</Description>
-    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1547698515"/>
-    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1547698515"/>
-    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1547698515"/>
-    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1547698515"/>
+    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1547805446"/>
+    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1547805446"/>
+    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1547805446"/>
+    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1547805446"/>
     <FileCollection Name="SOURCES" Type="SOURCES">
       <File Name="ip\system_processing_system7_0_0\system_processing_system7_0_0.xci" Type="IP">
         <Instance HierarchyPath="processing_system7_0"/>
@@ -128,6 +128,14 @@
       <File Name="sim\system.v" Type="Verilog">
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
         <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip\system_axis_data_fifo_0_0\system_axis_data_fifo_0_0.xci" Type="IP">
+        <Instance HierarchyPath="axis_data_fifo_0"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
       <File Name="ip\system_auto_pc_1\system_auto_pc_1.xci" Type="IP">

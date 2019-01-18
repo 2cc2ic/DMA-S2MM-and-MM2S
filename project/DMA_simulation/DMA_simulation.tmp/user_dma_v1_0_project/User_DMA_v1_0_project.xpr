@@ -3,10 +3,10 @@
 <!--                                                         -->
 <!-- Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="35" Path="c:/users/silead/documents/github/dma-s2mm-and-mm2s/project/dma_simulation/dma_simulation.tmp/user_dma_v1_0_project/User_DMA_v1_0_project.xpr">
+<Project Version="7" Minor="35" Path="d:/git/dma-s2mm-and-mm2s/project/dma_simulation/dma_simulation.tmp/user_dma_v1_0_project/User_DMA_v1_0_project.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
-    <Option Name="Id" Val="a344d309a48d436ea41dfa2dfa93e7a6"/>
+    <Option Name="Id" Val="d0a8c643e1bf472fb20b29bfe0d55623"/>
     <Option Name="Part" Val="xc7z010clg400-1"/>
     <Option Name="CompiledLibDir" Val="$PCACHEDIR/compile_simlib"/>
     <Option Name="CompiledLibDirXSim" Val=""/>
@@ -21,9 +21,9 @@
     <Option Name="ActiveSimSet" Val="sim_1"/>
     <Option Name="DefaultLib" Val="xil_defaultlib"/>
     <Option Name="ProjectType" Val="Default"/>
-    <Option Name="IPRepoPath" Val="$PPRDIR/../../../../../../../../../Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/ip_repo/AXI_LITE_master_IP_1.0"/>
-    <Option Name="IPRepoPath" Val="$PPRDIR/../../../../../../../../../Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/ip_repo/myip_1.0"/>
-    <Option Name="IPRepoPath" Val="$PPRDIR/../../../../../../../../../Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/ip_repo"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/../../../../../DMA-S2MM-and-MM2S/project/ip_repo/AXI_LITE_master_IP_1.0"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/../../../../../DMA-S2MM-and-MM2S/project/ip_repo/myip_1.0"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/../../../../../DMA-S2MM-and-MM2S/project/ip_repo"/>
     <Option Name="IPOutputRepo" Val="$PCACHEDIR/ip"/>
     <Option Name="IPCachePermission" Val="read"/>
     <Option Name="IPCachePermission" Val="write"/>
@@ -58,55 +58,55 @@
   <FileSets Version="1" Minor="31">
     <FileSet Name="sources_1" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
       <Filter Type="Srcs"/>
-      <File Path="$PPRDIR/../../../../../../../../../Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/ip_repo/User_DMA_1.0/hdl/User_DMA_v1_0_M_AXIS_MM2S.v">
+      <File Path="$PPRDIR/../../../../../DMA-S2MM-and-MM2S/project/ip_repo/User_DMA_1.0/hdl/User_DMA_v1_0_M_AXIS_MM2S.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../../../../../../../../../Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/ip_repo/User_DMA_1.0/src/User_DMA_v1_0_M_AXI_FULL_mm2s.v">
+      <File Path="$PPRDIR/../../../../../DMA-S2MM-and-MM2S/project/ip_repo/User_DMA_1.0/src/User_DMA_v1_0_M_AXI_FULL_mm2s.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../../../../../../../../../Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/ip_repo/User_DMA_1.0/src/User_DMA_v1_0_M_AXI_FULL_s2mm.v">
+      <File Path="$PPRDIR/../../../../../DMA-S2MM-and-MM2S/project/ip_repo/User_DMA_1.0/src/User_DMA_v1_0_M_AXI_FULL_s2mm.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../../../../../../../../../Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/ip_repo/User_DMA_1.0/hdl/User_DMA_v1_0_S_AXIS_S2MM.v">
+      <File Path="$PPRDIR/../../../../../DMA-S2MM-and-MM2S/project/ip_repo/User_DMA_1.0/hdl/User_DMA_v1_0_S_AXIS_S2MM.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../../../../../../../../../Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/ip_repo/User_DMA_1.0/hdl/User_DMA_v1_0_S_AXI_LITE.v">
+      <File Path="$PPRDIR/../../../../../DMA-S2MM-and-MM2S/project/ip_repo/User_DMA_1.0/hdl/User_DMA_v1_0_S_AXI_LITE.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../../../../../../../../../Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/ip_repo/User_DMA_1.0/src/fifo.v">
+      <File Path="$PPRDIR/../../../../../DMA-S2MM-and-MM2S/project/ip_repo/User_DMA_1.0/src/fifo.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../../../../../../../../../Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/ip_repo/User_DMA_1.0/hdl/User_DMA_v1_0.v">
+      <File Path="$PPRDIR/../../../../../DMA-S2MM-and-MM2S/project/ip_repo/User_DMA_1.0/hdl/User_DMA_v1_0.v">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../../../../../../../../../Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/ip_repo/User_DMA_1.0/component.xml">
+      <File Path="$PPRDIR/../../../../../DMA-S2MM-and-MM2S/project/ip_repo/User_DMA_1.0/component.xml">
         <FileInfo SFType="IPXACT"/>
       </File>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
         <Option Name="TopModule" Val="User_DMA_v1_0"/>
-        <Option Name="TopRTLFile" Val="$PPRDIR/../../../../../../../../../Users/silead/Documents/GitHub/DMA-S2MM-and-MM2S/project/ip_repo/User_DMA_1.0/hdl/User_DMA_v1_0.v"/>
+        <Option Name="TopRTLFile" Val="$PPRDIR/../../../../../DMA-S2MM-and-MM2S/project/ip_repo/User_DMA_1.0/hdl/User_DMA_v1_0.v"/>
       </Config>
     </FileSet>
     <FileSet Name="constrs_1" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">

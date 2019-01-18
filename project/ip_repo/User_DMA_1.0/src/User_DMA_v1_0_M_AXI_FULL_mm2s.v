@@ -214,22 +214,22 @@
 	      end
 	    else if (M_AXI_RVALID)
 	      begin
-				   if (fifo_mm2s_full)
-					   begin
-						   axi_rready <= 1'b0;
-						 end
-					 else if (fifo_mm2s_almost_full && rnext)
-					   begin
-						   axi_rready <= 1'b0;
-					   end
-	         else if (M_AXI_RLAST && axi_rready)
-	           begin
-	             axi_rready <= 1'b0;
-	           end
-	         else
-	           begin
-	             axi_rready <= 1'b1;
-	           end
+            if (fifo_mm2s_full)
+              begin
+                axi_rready <= 1'b0;
+              end
+            else if (fifo_mm2s_almost_full && rnext)
+              begin
+                axi_rready <= 1'b0;
+              end
+	        else if (M_AXI_RLAST && axi_rready)
+	          begin
+	            axi_rready <= 1'b0;
+	          end
+	        else
+	          begin
+	            axi_rready <= 1'b1;
+	          end
 	      end
 	  end
 

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Thu Jan 17 12:18:33 2019" VIVADOVERSION="2017.4">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Fri Jan 18 18:07:50 2019" VIVADOVERSION="2017.4">
 
   <SYSTEMINFO ARCH="zynq" DEVICE="7z010" NAME="myip_v1_0_bfm_1" PACKAGE="clg400" SPEEDGRADE="-1"/>
 
@@ -11,6 +11,10 @@
         <CONNECTION INSTANCE="axis_data_fifo_0" PORT="s_axis_aclk"/>
         <CONNECTION INSTANCE="AXI_LITE_master_IP_0" PORT="m00_axi_aclk"/>
         <CONNECTION INSTANCE="AXI_LITE_master_IP_1" PORT="m00_axi_aclk"/>
+        <CONNECTION INSTANCE="User_DMA_0" PORT="s_axi_lite_aclk"/>
+        <CONNECTION INSTANCE="User_DMA_0" PORT="s_axis_s2mm_aclk"/>
+        <CONNECTION INSTANCE="User_DMA_0" PORT="m_axi_full_aclk"/>
+        <CONNECTION INSTANCE="User_DMA_0" PORT="m_axis_mm2s_aclk"/>
         <CONNECTION INSTANCE="axi_interconnect_0" PORT="S00_ACLK"/>
         <CONNECTION INSTANCE="axi_interconnect_0" PORT="M01_ACLK"/>
         <CONNECTION INSTANCE="axi_interconnect_0" PORT="ACLK"/>
@@ -20,10 +24,6 @@
         <CONNECTION INSTANCE="axi_interconnect_1" PORT="ACLK"/>
         <CONNECTION INSTANCE="axi_interconnect_1" PORT="S00_ACLK"/>
         <CONNECTION INSTANCE="axi_interconnect_1" PORT="M00_ACLK"/>
-        <CONNECTION INSTANCE="User_DMA_0" PORT="s_axi_lite_aclk"/>
-        <CONNECTION INSTANCE="User_DMA_0" PORT="s_axis_s2mm_aclk"/>
-        <CONNECTION INSTANCE="User_DMA_0" PORT="m_axi_full_aclk"/>
-        <CONNECTION INSTANCE="User_DMA_0" PORT="m_axis_mm2s_aclk"/>
       </CONNECTIONS>
     </PORT>
     <PORT DIR="I" NAME="ARESETN" SIGIS="rst" SIGNAME="External_Ports_ARESETN">
@@ -33,6 +33,10 @@
         <CONNECTION INSTANCE="axis_data_fifo_0" PORT="s_axis_aresetn"/>
         <CONNECTION INSTANCE="AXI_LITE_master_IP_0" PORT="m00_axi_aresetn"/>
         <CONNECTION INSTANCE="AXI_LITE_master_IP_1" PORT="m00_axi_aresetn"/>
+        <CONNECTION INSTANCE="User_DMA_0" PORT="s_axi_lite_aresetn"/>
+        <CONNECTION INSTANCE="User_DMA_0" PORT="s_axis_s2mm_aresetn"/>
+        <CONNECTION INSTANCE="User_DMA_0" PORT="m_axi_full_aresetn"/>
+        <CONNECTION INSTANCE="User_DMA_0" PORT="m_axis_mm2s_aresetn"/>
         <CONNECTION INSTANCE="axi_interconnect_0" PORT="S00_ARESETN"/>
         <CONNECTION INSTANCE="axi_interconnect_0" PORT="M01_ARESETN"/>
         <CONNECTION INSTANCE="axi_interconnect_0" PORT="ARESETN"/>
@@ -42,10 +46,6 @@
         <CONNECTION INSTANCE="axi_interconnect_1" PORT="ARESETN"/>
         <CONNECTION INSTANCE="axi_interconnect_1" PORT="S00_ARESETN"/>
         <CONNECTION INSTANCE="axi_interconnect_1" PORT="M00_ARESETN"/>
-        <CONNECTION INSTANCE="User_DMA_0" PORT="s_axi_lite_aresetn"/>
-        <CONNECTION INSTANCE="User_DMA_0" PORT="s_axis_s2mm_aresetn"/>
-        <CONNECTION INSTANCE="User_DMA_0" PORT="m_axi_full_aresetn"/>
-        <CONNECTION INSTANCE="User_DMA_0" PORT="m_axis_mm2s_aresetn"/>
       </CONNECTIONS>
     </PORT>
     <PORT DIR="I" NAME="M00_AXI_INIT_AXI_TXN" SIGIS="undef" SIGNAME="External_Ports_M00_AXI_INIT_AXI_TXN">

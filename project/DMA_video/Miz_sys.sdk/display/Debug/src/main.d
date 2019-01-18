@@ -22,11 +22,7 @@ src/main.o src/main.o: ../src/main.c ../src/I2C_8bit.h \
  ../../display_bsp/ps7_cortexa9_0/include/xdevcfg.h \
  ../../display_bsp/ps7_cortexa9_0/include/xdevcfg_hw.h \
  ../../display_bsp/ps7_cortexa9_0/include/xgpiops.h \
- ../../display_bsp/ps7_cortexa9_0/include/xgpiops_hw.h ../src/sys_intr.h \
- ../../display_bsp/ps7_cortexa9_0/include/xdebug.h \
- ../../display_bsp/ps7_cortexa9_0/include/xscugic.h \
- ../../display_bsp/ps7_cortexa9_0/include/xscugic_hw.h \
- ../../display_bsp/ps7_cortexa9_0/include/xil_exception.h
+ ../../display_bsp/ps7_cortexa9_0/include/xgpiops_hw.h
 
 ../src/I2C_8bit.h:
 
@@ -77,13 +73,3 @@ src/main.o src/main.o: ../src/main.c ../src/I2C_8bit.h \
 ../../display_bsp/ps7_cortexa9_0/include/xgpiops.h:
 
 ../../display_bsp/ps7_cortexa9_0/include/xgpiops_hw.h:
-
-../src/sys_intr.h:
-
-../../display_bsp/ps7_cortexa9_0/include/xdebug.h:
-
-../../display_bsp/ps7_cortexa9_0/include/xscugic.h:
-
-../../display_bsp/ps7_cortexa9_0/include/xscugic_hw.h:
-
-../../display_bsp/ps7_cortexa9_0/include/xil_exception.h:

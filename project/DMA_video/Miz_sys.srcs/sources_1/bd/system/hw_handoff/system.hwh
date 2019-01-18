@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Thu Jan 17 12:15:15 2019" VIVADOVERSION="2017.4">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Fri Jan 18 17:57:25 2019" VIVADOVERSION="2017.4">
 
   <SYSTEMINFO ARCH="zynq" DEVICE="7z010" NAME="system" PACKAGE="clg400" SPEEDGRADE="-1"/>
 
@@ -49,16 +49,6 @@
     <PORT DIR="O" NAME="m_axis_video_tlast" SIGIS="undef" SIGNAME="v_vid_in_axi4s_0_m_axis_video_tlast">
       <CONNECTIONS>
         <CONNECTION INSTANCE="v_vid_in_axi4s_0" PORT="m_axis_video_tlast"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="O" NAME="s_axis_s2mm_tready" SIGIS="undef" SIGNAME="User_DMA_0_s_axis_s2mm_tready">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="User_DMA_0" PORT="s_axis_s2mm_tready"/>
-      </CONNECTIONS>
-    </PORT>
-    <PORT DIR="O" NAME="m_axis_video_tvalid" SIGIS="undef" SIGNAME="v_vid_in_axi4s_0_m_axis_video_tvalid">
-      <CONNECTIONS>
-        <CONNECTION INSTANCE="v_vid_in_axi4s_0" PORT="m_axis_video_tvalid"/>
       </CONNECTIONS>
     </PORT>
     <PORT DIR="I" NAME="s_axis_video_tlast" SIGIS="undef" SIGNAME="External_Ports_s_axis_video_tlast">
@@ -145,6 +135,16 @@
     <PORT DIR="O" NAME="HDMI_D0_N" SIGIS="undef" SIGNAME="HDMI_FPGA_ML_0_HDMI_D0_N">
       <CONNECTIONS>
         <CONNECTION INSTANCE="HDMI_FPGA_ML_0" PORT="HDMI_D0_N"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="s_axis_s2mm_tready" SIGIS="undef" SIGNAME="axis_data_fifo_0_s_axis_tready">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="axis_data_fifo_0" PORT="s_axis_tready"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="m_axis_video_tvalid" SIGIS="undef" SIGNAME="v_vid_in_axi4s_0_m_axis_video_tvalid">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="v_vid_in_axi4s_0" PORT="m_axis_video_tvalid"/>
       </CONNECTIONS>
     </PORT>
   </EXTERNALPORTS>
@@ -497,16 +497,16 @@
             <CONNECTION INSTANCE="rst_processing_system7_0_50M" PORT="peripheral_aresetn"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="31" NAME="s_axis_s2mm_tdata" RIGHT="0" SIGIS="undef" SIGNAME="v_vid_in_axi4s_0_m_axis_video_tdata">
+        <PORT DIR="I" LEFT="31" NAME="s_axis_s2mm_tdata" RIGHT="0" SIGIS="undef" SIGNAME="axis_data_fifo_0_m_axis_tdata">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="v_vid_in_axi4s_0" PORT="m_axis_video_tdata"/>
+            <CONNECTION INSTANCE="axis_data_fifo_0" PORT="m_axis_tdata"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" LEFT="3" NAME="s_axis_s2mm_tstrb" RIGHT="0" SIGIS="undef"/>
         <PORT DIR="I" NAME="s_axis_s2mm_tlast" SIGIS="undef"/>
-        <PORT DIR="I" NAME="s_axis_s2mm_tvalid" SIGIS="undef" SIGNAME="v_vid_in_axi4s_0_m_axis_video_tvalid">
+        <PORT DIR="I" NAME="s_axis_s2mm_tvalid" SIGIS="undef" SIGNAME="axis_data_fifo_0_m_axis_tvalid">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="v_vid_in_axi4s_0" PORT="m_axis_video_tvalid"/>
+            <CONNECTION INSTANCE="axis_data_fifo_0" PORT="m_axis_tvalid"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" NAME="m_axi_full_s2mm_done" SIGIS="undef" SIGNAME="User_DMA_0_m_axi_full_s2mm_done">
@@ -521,8 +521,7 @@
         </PORT>
         <PORT DIR="O" NAME="s_axis_s2mm_tready" SIGIS="undef" SIGNAME="User_DMA_0_s_axis_s2mm_tready">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="External_Ports" PORT="s_axis_s2mm_tready"/>
-            <CONNECTION INSTANCE="v_vid_in_axi4s_0" PORT="m_axis_video_tready"/>
+            <CONNECTION INSTANCE="axis_data_fifo_0" PORT="m_axis_tready"/>
           </CONNECTIONS>
         </PORT>
         <PORT CLKFREQUENCY="100000000" DIR="I" NAME="s_axis_s2mm_aclk" SIGIS="clk" SIGNAME="processing_system7_0_FCLK_CLK0">
@@ -2165,6 +2164,125 @@
             <PORTMAP LOGICAL="WID" PHYSICAL="M00_AXI_wid"/>
             <PORTMAP LOGICAL="WDATA" PHYSICAL="M00_AXI_wdata"/>
             <PORTMAP LOGICAL="WSTRB" PHYSICAL="M00_AXI_wstrb"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+      </BUSINTERFACES>
+    </MODULE>
+    <MODULE FULLNAME="/axis_data_fifo_0" HWVERSION="1.1" INSTANCE="axis_data_fifo_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="axis_data_fifo" VLNV="xilinx.com:ip:axis_data_fifo:1.1">
+      <DOCUMENTS>
+        <DOCUMENT SOURCE="http://www.xilinx.com/cgi-bin/docs/ipdoc?c=axis_infrastructure_ip_suite;v=v1_1;d=pg085-axi4stream-infrastructure.pdf"/>
+      </DOCUMENTS>
+      <PARAMETERS>
+        <PARAMETER NAME="C_FAMILY" VALUE="zynq"/>
+        <PARAMETER NAME="C_AXIS_TDATA_WIDTH" VALUE="24"/>
+        <PARAMETER NAME="C_AXIS_TID_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="C_AXIS_TDEST_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="C_AXIS_TUSER_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="C_AXIS_SIGNAL_SET" VALUE="0b00000000000000000000000000000011"/>
+        <PARAMETER NAME="C_FIFO_DEPTH" VALUE="1024"/>
+        <PARAMETER NAME="C_FIFO_MODE" VALUE="1"/>
+        <PARAMETER NAME="C_IS_ACLK_ASYNC" VALUE="0"/>
+        <PARAMETER NAME="C_SYNCHRONIZER_STAGE" VALUE="2"/>
+        <PARAMETER NAME="C_ACLKEN_CONV_MODE" VALUE="0"/>
+        <PARAMETER NAME="TDATA_NUM_BYTES" VALUE="3"/>
+        <PARAMETER NAME="TID_WIDTH" VALUE="0"/>
+        <PARAMETER NAME="TDEST_WIDTH" VALUE="0"/>
+        <PARAMETER NAME="TUSER_WIDTH" VALUE="0"/>
+        <PARAMETER NAME="FIFO_DEPTH" VALUE="1024"/>
+        <PARAMETER NAME="FIFO_MODE" VALUE="1"/>
+        <PARAMETER NAME="IS_ACLK_ASYNC" VALUE="0"/>
+        <PARAMETER NAME="ACLKEN_CONV_MODE" VALUE="0"/>
+        <PARAMETER NAME="HAS_TREADY" VALUE="1"/>
+        <PARAMETER NAME="HAS_TSTRB" VALUE="0"/>
+        <PARAMETER NAME="HAS_TKEEP" VALUE="0"/>
+        <PARAMETER NAME="HAS_TLAST" VALUE="0"/>
+        <PARAMETER NAME="SYNCHRONIZATION_STAGES" VALUE="2"/>
+        <PARAMETER NAME="Component_Name" VALUE="system_axis_data_fifo_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="s_axis_aresetn" SIGIS="rst" SIGNAME="rst_processing_system7_0_50M_peripheral_aresetn">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="rst_processing_system7_0_50M" PORT="peripheral_aresetn"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="s_axis_aclk" SIGIS="clk" SIGNAME="processing_system7_0_FCLK_CLK0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="processing_system7_0" PORT="FCLK_CLK0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="s_axis_tvalid" SIGIS="undef" SIGNAME="v_vid_in_axi4s_0_m_axis_video_tvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="v_vid_in_axi4s_0" PORT="m_axis_video_tvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="s_axis_tready" SIGIS="undef" SIGNAME="axis_data_fifo_0_s_axis_tready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="s_axis_s2mm_tready"/>
+            <CONNECTION INSTANCE="v_vid_in_axi4s_0" PORT="m_axis_video_tready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="23" NAME="s_axis_tdata" RIGHT="0" SIGIS="undef" SIGNAME="v_vid_in_axi4s_0_m_axis_video_tdata">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="v_vid_in_axi4s_0" PORT="m_axis_video_tdata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="m_axis_tvalid" SIGIS="undef" SIGNAME="axis_data_fifo_0_m_axis_tvalid">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="User_DMA_0" PORT="s_axis_s2mm_tvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="m_axis_tready" SIGIS="undef" SIGNAME="User_DMA_0_s_axis_s2mm_tready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="User_DMA_0" PORT="s_axis_s2mm_tready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="23" NAME="m_axis_tdata" RIGHT="0" SIGIS="undef" SIGNAME="axis_data_fifo_0_m_axis_tdata">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="User_DMA_0" PORT="s_axis_s2mm_tdata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="axis_data_count" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" LEFT="31" NAME="axis_wr_data_count" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" LEFT="31" NAME="axis_rd_data_count" RIGHT="0" SIGIS="undef"/>
+      </PORTS>
+      <BUSINTERFACES>
+        <BUSINTERFACE BUSNAME="__NOC__" NAME="S_AXIS" TYPE="TARGET" VLNV="xilinx.com:interface:axis:1.0">
+          <PARAMETER NAME="TDATA_NUM_BYTES" VALUE="3"/>
+          <PARAMETER NAME="TDEST_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="TID_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="TUSER_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="HAS_TREADY" VALUE="1"/>
+          <PARAMETER NAME="HAS_TSTRB" VALUE="0"/>
+          <PARAMETER NAME="HAS_TKEEP" VALUE="0"/>
+          <PARAMETER NAME="HAS_TLAST" VALUE="0"/>
+          <PARAMETER NAME="FREQ_HZ" VALUE="100000000"/>
+          <PARAMETER NAME="PHASE" VALUE="0.000"/>
+          <PARAMETER NAME="CLK_DOMAIN" VALUE="system_processing_system7_0_0_FCLK_CLK0"/>
+          <PARAMETER NAME="LAYERED_METADATA" VALUE="undef"/>
+          <PORTMAPS>
+            <PORTMAP LOGICAL="TVALID" PHYSICAL="s_axis_tvalid"/>
+            <PORTMAP LOGICAL="TREADY" PHYSICAL="s_axis_tready"/>
+            <PORTMAP LOGICAL="TDATA" PHYSICAL="s_axis_tdata"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+        <BUSINTERFACE BUSNAME="__NOC__" NAME="M_AXIS" TYPE="INITIATOR" VLNV="xilinx.com:interface:axis:1.0">
+          <PARAMETER NAME="TDATA_NUM_BYTES" VALUE="3"/>
+          <PARAMETER NAME="TDEST_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="TID_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="TUSER_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="HAS_TREADY" VALUE="1"/>
+          <PARAMETER NAME="HAS_TSTRB" VALUE="0"/>
+          <PARAMETER NAME="HAS_TKEEP" VALUE="0"/>
+          <PARAMETER NAME="HAS_TLAST" VALUE="0"/>
+          <PARAMETER NAME="FREQ_HZ" VALUE="100000000"/>
+          <PARAMETER NAME="PHASE" VALUE="0.000"/>
+          <PARAMETER NAME="CLK_DOMAIN" VALUE="system_processing_system7_0_0_FCLK_CLK0"/>
+          <PARAMETER NAME="LAYERED_METADATA" VALUE="undef"/>
+          <PORTMAPS>
+            <PORTMAP LOGICAL="TVALID" PHYSICAL="m_axis_tvalid"/>
+            <PORTMAP LOGICAL="TREADY" PHYSICAL="m_axis_tready"/>
+            <PORTMAP LOGICAL="TDATA" PHYSICAL="m_axis_tdata"/>
           </PORTMAPS>
         </BUSINTERFACE>
       </BUSINTERFACES>
@@ -4144,6 +4262,7 @@
             <CONNECTION INSTANCE="rst_processing_system7_0_50M" PORT="slowest_sync_clk"/>
             <CONNECTION INSTANCE="v_axi4s_vid_out_0" PORT="aclk"/>
             <CONNECTION INSTANCE="v_vid_in_axi4s_0" PORT="aclk"/>
+            <CONNECTION INSTANCE="axis_data_fifo_0" PORT="s_axis_aclk"/>
             <CONNECTION INSTANCE="axi_mem_intercon" PORT="ACLK"/>
             <CONNECTION INSTANCE="axi_mem_intercon" PORT="S00_ACLK"/>
             <CONNECTION INSTANCE="axi_mem_intercon" PORT="M00_ACLK"/>
@@ -5284,6 +5403,7 @@
           <CONNECTIONS>
             <CONNECTION INSTANCE="axi_gpio_0" PORT="s_axi_aresetn"/>
             <CONNECTION INSTANCE="clk_wiz_0" PORT="resetn"/>
+            <CONNECTION INSTANCE="axis_data_fifo_0" PORT="s_axis_aresetn"/>
             <CONNECTION INSTANCE="axi_mem_intercon" PORT="S00_ARESETN"/>
             <CONNECTION INSTANCE="axi_mem_intercon" PORT="M00_ARESETN"/>
             <CONNECTION INSTANCE="processing_system7_0_axi_periph" PORT="S00_ARESETN"/>
@@ -5803,18 +5923,18 @@
         </PORT>
         <PORT DIR="O" LEFT="23" NAME="m_axis_video_tdata" RIGHT="0" SIGIS="undef" SIGNAME="v_vid_in_axi4s_0_m_axis_video_tdata">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="User_DMA_0" PORT="s_axis_s2mm_tdata"/>
+            <CONNECTION INSTANCE="axis_data_fifo_0" PORT="s_axis_tdata"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" NAME="m_axis_video_tvalid" SIGIS="undef" SIGNAME="v_vid_in_axi4s_0_m_axis_video_tvalid">
           <CONNECTIONS>
             <CONNECTION INSTANCE="External_Ports" PORT="m_axis_video_tvalid"/>
-            <CONNECTION INSTANCE="User_DMA_0" PORT="s_axis_s2mm_tvalid"/>
+            <CONNECTION INSTANCE="axis_data_fifo_0" PORT="s_axis_tvalid"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="m_axis_video_tready" SIGIS="undef" SIGNAME="User_DMA_0_s_axis_s2mm_tready">
+        <PORT DIR="I" NAME="m_axis_video_tready" SIGIS="undef" SIGNAME="axis_data_fifo_0_s_axis_tready">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="User_DMA_0" PORT="s_axis_s2mm_tready"/>
+            <CONNECTION INSTANCE="axis_data_fifo_0" PORT="s_axis_tready"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" NAME="m_axis_video_tuser" SIGIS="undef"/>

@@ -3,53 +3,272 @@
    <wave_state>
    </wave_state>
    <db_ref_list>
-      <db_ref path="D:/MIZ_SOC/SEASON_03/CH03_AXI_DMA_CMOS/Miz_sys/Miz_sys.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wdb" id="1">
+      <db_ref path="D:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wdb" id="1">
          <top_modules>
          </top_modules>
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="458800fs"></ZoomStartTime>
-      <ZoomEndTime time="610001fs"></ZoomEndTime>
-      <Cursor1Time time="474000fs"></Cursor1Time>
+      <ZoomStartTime time="1086000fs"></ZoomStartTime>
+      <ZoomEndTime time="1656001fs"></ZoomEndTime>
+      <Cursor1Time time="1181000fs"></Cursor1Time>
    </zoom_setting>
-   <WVObjectSize size="9" />
+   <column_width_setting>
+      <NameColumnWidth column_width="563"></NameColumnWidth>
+      <ValueColumnWidth column_width="76"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="33" />
    <wave_markers>
    </wave_markers>
-   <wvobject db_ref_id="1" fp_name="system_i/axi_dma_0_m_axis_mm2s_tlast" type="logic">
-      <obj_property name="ElementShortName">system_i/axi_dma_0_m_axis_mm2s_tlast</obj_property>
-      <obj_property name="ObjectShortName">system_i/axi_dma_0_m_axis_mm2s_tlast</obj_property>
+   <wvobject fp_name="FCLK_CLK0" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">FCLK_CLK0</obj_property>
+      <obj_property name="ObjectShortName">FCLK_CLK0</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
    </wvobject>
-   <wvobject db_ref_id="1" fp_name="system_i/axi_dma_0_m_axis_mm2s_tvalid" type="logic">
-      <obj_property name="ElementShortName">system_i/axi_dma_0_m_axis_mm2s_tvalid</obj_property>
-      <obj_property name="ObjectShortName">system_i/axi_dma_0_m_axis_mm2s_tvalid</obj_property>
+   <wvobject fp_name="gpio_rtl_tri_o_0" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">gpio_rtl_tri_o_0</obj_property>
+      <obj_property name="ObjectShortName">gpio_rtl_tri_o_0</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
    </wvobject>
-   <wvobject db_ref_id="1" fp_name="system_i/axi_dma_0_s2mm_introut" type="logic">
-      <obj_property name="ElementShortName">system_i/axi_dma_0_s2mm_introut</obj_property>
-      <obj_property name="ObjectShortName">system_i/axi_dma_0_s2mm_introut</obj_property>
+   <wvobject fp_name="lopt" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">lopt</obj_property>
+      <obj_property name="ObjectShortName">lopt</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
    </wvobject>
-   <wvobject db_ref_id="1" fp_name="system_i/s_axis_video_tuser_1" type="logic">
-      <obj_property name="ElementShortName">system_i/s_axis_video_tuser_1</obj_property>
-      <obj_property name="ObjectShortName">system_i/s_axis_video_tuser_1</obj_property>
+   <wvobject fp_name="lopt_1" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">lopt_1</obj_property>
+      <obj_property name="ObjectShortName">lopt_1</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
    </wvobject>
-   <wvobject db_ref_id="1" fp_name="system_i/v_axi4s_vid_out_0_locked" type="logic">
-      <obj_property name="ElementShortName">system_i/v_axi4s_vid_out_0_locked</obj_property>
-      <obj_property name="ObjectShortName">system_i/v_axi4s_vid_out_0_locked</obj_property>
+   <wvobject fp_name="m_axis_video_tlast" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">m_axis_video_tlast</obj_property>
+      <obj_property name="ObjectShortName">m_axis_video_tlast</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
    </wvobject>
-   <wvobject db_ref_id="1" fp_name="system_i/v_axi4s_vid_out_0_s_axis_video_tready" type="logic">
-      <obj_property name="ElementShortName">system_i/v_axi4s_vid_out_0_s_axis_video_tready</obj_property>
-      <obj_property name="ObjectShortName">system_i/v_axi4s_vid_out_0_s_axis_video_tready</obj_property>
+   <wvobject fp_name="s_axis_s2mm_tready" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">s_axis_s2mm_tready</obj_property>
+      <obj_property name="ObjectShortName">s_axis_s2mm_tready</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
    </wvobject>
-   <wvobject db_ref_id="1" fp_name="system_i/v_axi4s_vid_out_0_vid_hsync" type="logic">
-      <obj_property name="ElementShortName">system_i/v_axi4s_vid_out_0_vid_hsync</obj_property>
-      <obj_property name="ObjectShortName">system_i/v_axi4s_vid_out_0_vid_hsync</obj_property>
+   <wvobject fp_name="s_axis_s2mm_tready_1" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">s_axis_s2mm_tready_1</obj_property>
+      <obj_property name="ObjectShortName">s_axis_s2mm_tready_1</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
    </wvobject>
-   <wvobject db_ref_id="1" fp_name="system_i/v_axi4s_vid_out_0_vid_vsync" type="logic">
-      <obj_property name="ElementShortName">system_i/v_axi4s_vid_out_0_vid_vsync</obj_property>
-      <obj_property name="ObjectShortName">system_i/v_axi4s_vid_out_0_vid_vsync</obj_property>
+   <wvobject fp_name="system_i/axis_data_fifo_0/axis_data_count" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">system_i/axis_data_fifo_0/axis_data_count[31:11]</obj_property>
+      <obj_property name="ObjectShortName">axis_data_count[31:11]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
    </wvobject>
-   <wvobject db_ref_id="1" fp_name="system_i/v_vid_in_axi4s_0_m_axis_video_tuser" type="logic">
-      <obj_property name="ElementShortName">system_i/v_vid_in_axi4s_0_m_axis_video_tuser</obj_property>
-      <obj_property name="ObjectShortName">system_i/v_vid_in_axi4s_0_m_axis_video_tuser</obj_property>
+   <wvobject fp_name="system_i/axis_data_fifo_0/axis_data_count_1" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">system_i/axis_data_fifo_0/axis_data_count_1[10:0]</obj_property>
+      <obj_property name="ObjectShortName">axis_data_count_1[10:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="system_i/axis_data_fifo_0/axis_rd_data_count" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">system_i/axis_data_fifo_0/axis_rd_data_count[31:11]</obj_property>
+      <obj_property name="ObjectShortName">axis_rd_data_count[31:11]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="system_i/axis_data_fifo_0/axis_rd_data_count_1" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">system_i/axis_data_fifo_0/axis_rd_data_count_1[10:0]</obj_property>
+      <obj_property name="ObjectShortName">axis_rd_data_count_1[10:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="system_i/axis_data_fifo_0/axis_wr_data_count" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">system_i/axis_data_fifo_0/axis_wr_data_count[31:11]</obj_property>
+      <obj_property name="ObjectShortName">axis_wr_data_count[31:11]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="system_i/axis_data_fifo_0/axis_wr_data_count_1" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">system_i/axis_data_fifo_0/axis_wr_data_count_1[10:0]</obj_property>
+      <obj_property name="ObjectShortName">axis_wr_data_count_1[10:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="system_i/axis_data_fifo_0/m_axis_tdata" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">system_i/axis_data_fifo_0/m_axis_tdata[23:0]</obj_property>
+      <obj_property name="ObjectShortName">m_axis_tdata[23:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="system_i/axis_data_fifo_0/m_axis_tready" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">system_i/axis_data_fifo_0/m_axis_tready</obj_property>
+      <obj_property name="ObjectShortName">m_axis_tready</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="system_i/axis_data_fifo_0/m_axis_tvalid" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">system_i/axis_data_fifo_0/m_axis_tvalid</obj_property>
+      <obj_property name="ObjectShortName">m_axis_tvalid</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="system_i/axis_data_fifo_0/s_axis_tdata" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">system_i/axis_data_fifo_0/s_axis_tdata[23:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axis_tdata[23:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="system_i/User_DMA_0/inst/User_DMA_v1_0_S_AXIS_S2MM_inst/fifo_s2mm_inst/axis_tready_reg" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">system_i/User_DMA_0/inst/User_DMA_v1_0_S_AXIS_S2MM_inst/fifo_s2mm_inst/axis_tready_reg</obj_property>
+      <obj_property name="ObjectShortName">axis_tready_reg</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="system_i/User_DMA_0/inst/User_DMA_v1_0_S_AXIS_S2MM_inst/fifo_s2mm_inst/fifo_cnt" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">system_i/User_DMA_0/inst/User_DMA_v1_0_S_AXIS_S2MM_inst/fifo_s2mm_inst/fifo_cnt</obj_property>
+      <obj_property name="ObjectShortName">fifo_cnt</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="system_i/User_DMA_0/inst/User_DMA_v1_0_S_AXIS_S2MM_inst/fifo_s2mm_inst/fifo_cnt_reg__0" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">system_i/User_DMA_0/inst/User_DMA_v1_0_S_AXIS_S2MM_inst/fifo_s2mm_inst/fifo_cnt_reg__0[10:0]</obj_property>
+      <obj_property name="ObjectShortName">fifo_cnt_reg__0[10:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="system_i/User_DMA_0/inst/User_DMA_v1_0_S_AXIS_S2MM_inst/fifo_s2mm_inst/rd_p" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">system_i/User_DMA_0/inst/User_DMA_v1_0_S_AXIS_S2MM_inst/fifo_s2mm_inst/rd_p[9:6]</obj_property>
+      <obj_property name="ObjectShortName">rd_p[9:6]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="system_i/User_DMA_0/inst/User_DMA_v1_0_S_AXIS_S2MM_inst/fifo_s2mm_inst/rx_en" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">system_i/User_DMA_0/inst/User_DMA_v1_0_S_AXIS_S2MM_inst/fifo_s2mm_inst/rx_en</obj_property>
+      <obj_property name="ObjectShortName">rx_en</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="system_i/v_vid_in_axi4s_0/m_axis_video_tdata" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">system_i/v_vid_in_axi4s_0/m_axis_video_tdata[23:0]</obj_property>
+      <obj_property name="ObjectShortName">m_axis_video_tdata[23:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="u_ila_0_m_axi_full_wdata" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">u_ila_0_m_axi_full_wdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">u_ila_0_m_axi_full_wdata[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="u_ila_0_s_axis_aresetn" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">u_ila_0_s_axis_aresetn</obj_property>
+      <obj_property name="ObjectShortName">u_ila_0_s_axis_aresetn</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="u_ila_0_vid_data" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">u_ila_0_vid_data[0:0]</obj_property>
+      <obj_property name="ObjectShortName">u_ila_0_vid_data[0:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="u_ila_0_vid_data_1" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">u_ila_0_vid_data_1[0:0]</obj_property>
+      <obj_property name="ObjectShortName">u_ila_0_vid_data_1[0:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="u_ila_0_vid_data_2" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">u_ila_0_vid_data_2[0:0]</obj_property>
+      <obj_property name="ObjectShortName">u_ila_0_vid_data_2[0:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="u_ila_0_vid_data_3" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">u_ila_0_vid_data_3[0:0]</obj_property>
+      <obj_property name="ObjectShortName">u_ila_0_vid_data_3[0:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="u_ila_0_vid_data_4" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">u_ila_0_vid_data_4[0:0]</obj_property>
+      <obj_property name="ObjectShortName">u_ila_0_vid_data_4[0:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="u_ila_0_vid_data_5" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">u_ila_0_vid_data_5[0:0]</obj_property>
+      <obj_property name="ObjectShortName">u_ila_0_vid_data_5[0:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="u_ila_0_vid_data_6" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">u_ila_0_vid_data_6[0:0]</obj_property>
+      <obj_property name="ObjectShortName">u_ila_0_vid_data_6[0:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="u_ila_0_vid_data_7" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">u_ila_0_vid_data_7[0:0]</obj_property>
+      <obj_property name="ObjectShortName">u_ila_0_vid_data_7[0:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
    </wvobject>
 </wave_config>
