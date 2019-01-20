@@ -1,0 +1,17 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Thu Jan 17 21:28:50 2019
+# Process ID: 15404
+# Current directory: D:/git/DMA-S2MM-and-MM2S/project/DMA_simulation
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5208 D:\git\DMA-S2MM-and-MM2S\project\DMA_simulation\DMA_simulation.xpr
+# Log file: D:/git/DMA-S2MM-and-MM2S/project/DMA_simulation/vivado.log
+# Journal file: D:/git/DMA-S2MM-and-MM2S/project/DMA_simulation\vivado.jou
+#-----------------------------------------------------------
+sstart_guiopen_project D:/git/DMA-S2MM-and-MM2S/project/DMA_simulation/DMA_simulation.xpr
+update_compile_order -fileset sources_1
+lopen_bd_design {D:/git/DMA-S2MM-and-MM2S/project/DMA_simulation/DMA_simulation.srcs/sources_1/bd/myip_v1_0_bfm_1/myip_v1_0_bfm_1.bd}
+n_bd_design {D:/git/DMA-S2MM-and-MM2S/project/DMA_simulation/DMA_simulation.srcs/sources_1/bd/myip_v1_0_bfm_1/myip_v1_0_bfm_1.bd}
+open_bd_design {D:/git/DMA-S2MM-and-MM2S/project/DMA_simulation/DMA_simulation.srcs/sources_1/bd/myip_v1_0_bfm_1/myip_v1_0_bfm_1.bd}
+close_sim

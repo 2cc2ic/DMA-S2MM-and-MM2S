@@ -2,10 +2,10 @@
 # Vivado v2017.4 (64-bit)
 # SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
 # IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
-# Start of session at: Fri Jan 18 19:16:53 2019
-# Process ID: 2600
+# Start of session at: Sat Jan 19 13:19:25 2019
+# Process ID: 10620
 # Current directory: D:/git/DMA-S2MM-and-MM2S/project/DMA_video
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4860 D:\git\DMA-S2MM-and-MM2S\project\DMA_video\Miz_sys.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8712 D:\git\DMA-S2MM-and-MM2S\project\DMA_video\Miz_sys.xpr
 # Log file: D:/git/DMA-S2MM-and-MM2S/project/DMA_video/vivado.log
 # Journal file: D:/git/DMA-S2MM-and-MM2S/project/DMA_video\vivado.jou
 #-----------------------------------------------------------
@@ -13,3 +13,13 @@ start_gui
 open_project D:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.xpr
 update_compile_order -fileset sources_1
 open_bd_design {D:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/system.bd}
+ipx::edit_ip_in_project -upgrade true -name User_DMA_v1_0_project -directory D:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.tmp/User_DMA_v1_0_project d:/git/DMA-S2MM-and-MM2S/project/ip_repo/User_DMA_1.0/component.xml
+update_compile_order -fileset sources_1
+current_project Miz_sys
+open_bd_design {D:/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.srcs/sources_1/bd/system/system.bd}
+write_bd_layout -format pdf -orientation portrait D:/git/DMA-S2MM-and-MM2S/Picture/diagram_DMA_video.pdf
+open_run impl_1
+report_utilization -name utilization_1
+current_project User_DMA_v1_0_project
+current_project Miz_sys
+close_project
