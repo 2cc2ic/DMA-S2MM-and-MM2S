@@ -5,6 +5,7 @@
 	(
 		// Users to add parameters here
 
+
 		// User parameters ends
 		// Do not modify the parameters beyond this line
 
@@ -35,32 +36,13 @@
 	(
 		// Users to add ports here
 
+        input wire [C_S_AXI_LITE_DATA_WIDTH-1:0] ctrl_s2mm_addr,
+        input wire [C_S_AXI_LITE_DATA_WIDTH-1:0] ctrl_s2mm_init_len,
+        input wire [C_S_AXI_LITE_DATA_WIDTH-1:0] ctrl_mm2s_addr,
+        input wire [C_S_AXI_LITE_DATA_WIDTH-1:0] ctrl_mm2s_init_len,
+
 		// User ports ends
 		// Do not modify the ports beyond this line
-
-
-		// Ports of Axi Slave Bus Interface S_AXI_LITE
-		input wire  s_axi_lite_aclk,
-		input wire  s_axi_lite_aresetn,
-		input wire [C_S_AXI_LITE_ADDR_WIDTH-1 : 0] s_axi_lite_awaddr,
-		input wire [2 : 0] s_axi_lite_awprot,
-		input wire  s_axi_lite_awvalid,
-		output wire  s_axi_lite_awready,
-		input wire [C_S_AXI_LITE_DATA_WIDTH-1 : 0] s_axi_lite_wdata,
-		input wire [(C_S_AXI_LITE_DATA_WIDTH/8)-1 : 0] s_axi_lite_wstrb,
-		input wire  s_axi_lite_wvalid,
-		output wire  s_axi_lite_wready,
-		output wire [1 : 0] s_axi_lite_bresp,
-		output wire  s_axi_lite_bvalid,
-		input wire  s_axi_lite_bready,
-		input wire [C_S_AXI_LITE_ADDR_WIDTH-1 : 0] s_axi_lite_araddr,
-		input wire [2 : 0] s_axi_lite_arprot,
-		input wire  s_axi_lite_arvalid,
-		output wire  s_axi_lite_arready,
-		output wire [C_S_AXI_LITE_DATA_WIDTH-1 : 0] s_axi_lite_rdata,
-		output wire [1 : 0] s_axi_lite_rresp,
-		output wire  s_axi_lite_rvalid,
-		input wire  s_axi_lite_rready,
 
 		// Ports of Axi Slave Bus Interface S_AXIS_S2MM
 		input wire  s_axis_s2mm_aclk,
@@ -131,11 +113,6 @@
 	);
 // Instantiation of Axi Bus Interface S_AXI_LITE
 
-	wire [C_S_AXI_LITE_DATA_WIDTH-1:0] ctrl_s2mm_addr;
-	wire [C_S_AXI_LITE_DATA_WIDTH-1:0] ctrl_s2mm_init_len;
-	wire [C_S_AXI_LITE_DATA_WIDTH-1:0] ctrl_mm2s_addr;
-	wire [C_S_AXI_LITE_DATA_WIDTH-1:0] ctrl_mm2s_init_len;
-
 	wire init_s2mm_signal,init_mm2s_signal;
 	wire [C_S_AXI_LITE_DATA_WIDTH-9:0] s2mm_length_register;
 	wire [C_S_AXI_LITE_DATA_WIDTH-9:0] mm2s_length_register;
@@ -148,39 +125,6 @@
 	assign init_mm2s_signal = ctrl_mm2s_init_len[C_S_AXI_LITE_DATA_WIDTH-1];
 	assign s2mm_length_register = ctrl_s2mm_init_len[C_S_AXI_LITE_DATA_WIDTH-9 : 0];
 	assign mm2s_length_register = ctrl_mm2s_init_len[C_S_AXI_LITE_DATA_WIDTH-9 : 0];
-
-
-	User_DMA_v1_0_S_AXI_LITE # (
-		.C_S_AXI_DATA_WIDTH(C_S_AXI_LITE_DATA_WIDTH),
-		.C_S_AXI_ADDR_WIDTH(C_S_AXI_LITE_ADDR_WIDTH)
-	) User_DMA_v1_0_S_AXI_LITE_inst (
-		.slv_reg0(ctrl_s2mm_addr),
-		.slv_reg1(ctrl_s2mm_init_len),
-		.slv_reg2(ctrl_mm2s_addr),
-		.slv_reg3(ctrl_mm2s_init_len),
-
-		.S_AXI_ACLK(s_axi_lite_aclk),
-		.S_AXI_ARESETN(s_axi_lite_aresetn),
-		.S_AXI_AWADDR(s_axi_lite_awaddr),
-		.S_AXI_AWPROT(s_axi_lite_awprot),
-		.S_AXI_AWVALID(s_axi_lite_awvalid),
-		.S_AXI_AWREADY(s_axi_lite_awready),
-		.S_AXI_WDATA(s_axi_lite_wdata),
-		.S_AXI_WSTRB(s_axi_lite_wstrb),
-		.S_AXI_WVALID(s_axi_lite_wvalid),
-		.S_AXI_WREADY(s_axi_lite_wready),
-		.S_AXI_BRESP(s_axi_lite_bresp),
-		.S_AXI_BVALID(s_axi_lite_bvalid),
-		.S_AXI_BREADY(s_axi_lite_bready),
-		.S_AXI_ARADDR(s_axi_lite_araddr),
-		.S_AXI_ARPROT(s_axi_lite_arprot),
-		.S_AXI_ARVALID(s_axi_lite_arvalid),
-		.S_AXI_ARREADY(s_axi_lite_arready),
-		.S_AXI_RDATA(s_axi_lite_rdata),
-		.S_AXI_RRESP(s_axi_lite_rresp),
-		.S_AXI_RVALID(s_axi_lite_rvalid),
-		.S_AXI_RREADY(s_axi_lite_rready)
-	);
 
 // Instantiation of Axi Bus Interface M_AXI_FULL
 	User_DMA_v1_0_M_AXI_FULL_s2mm # (

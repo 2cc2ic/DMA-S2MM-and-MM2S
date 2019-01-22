@@ -1,6 +1,129 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Wed Jan 23 00:11:38 2019
+| Host         : hubbery running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'myip_v1_0_bfm_1_User_DMA_0_1'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of myip_v1_0_bfm_1_User_DMA_0_1 (user.org:user:User_DMA:1.0) from (Rev. 25) to (Rev. 26)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Interface Information
+------------------------
+
+Detected external interface differences while upgrading 'myip_v1_0_bfm_1_User_DMA_0_1'.
+
+
+-Upgrade has removed interface 'S_AXI_LITE'
+
+-Upgrade has removed interface 'S_AXI_LITE_CLK'
+
+-Upgrade has removed interface 'S_AXI_LITE_RST'
+
+
+3. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'myip_v1_0_bfm_1_User_DMA_0_1'. These changes may impact your design.
+
+
+-Upgrade has removed port 's_axi_lite_aclk'
+
+-Upgrade has removed port 's_axi_lite_araddr'
+
+-Upgrade has removed port 's_axi_lite_aresetn'
+
+-Upgrade has removed port 's_axi_lite_arprot'
+
+-Upgrade has removed port 's_axi_lite_arready'
+
+-Upgrade has removed port 's_axi_lite_arvalid'
+
+-Upgrade has removed port 's_axi_lite_awaddr'
+
+-Upgrade has removed port 's_axi_lite_awprot'
+
+-Upgrade has removed port 's_axi_lite_awready'
+
+-Upgrade has removed port 's_axi_lite_awvalid'
+
+-Upgrade has removed port 's_axi_lite_bready'
+
+-Upgrade has removed port 's_axi_lite_bresp'
+
+-Upgrade has removed port 's_axi_lite_bvalid'
+
+-Upgrade has removed port 's_axi_lite_rdata'
+
+-Upgrade has removed port 's_axi_lite_rready'
+
+-Upgrade has removed port 's_axi_lite_rresp'
+
+-Upgrade has removed port 's_axi_lite_rvalid'
+
+-Upgrade has removed port 's_axi_lite_wdata'
+
+-Upgrade has removed port 's_axi_lite_wready'
+
+-Upgrade has removed port 's_axi_lite_wstrb'
+
+-Upgrade has removed port 's_axi_lite_wvalid'
+
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Wed Jan 23 00:08:33 2019
+| Host         : hubbery running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'myip_v1_0_bfm_1_User_DMA_0_1'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of myip_v1_0_bfm_1_User_DMA_0_1 (user.org:user:User_DMA:1.0) from (Rev. 24) to (Rev. 25)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'myip_v1_0_bfm_1_User_DMA_0_1'. These changes may impact your design.
+
+
+-Upgrade has added port 'ctrl_mm2s_addr'
+
+-Upgrade has added port 'ctrl_mm2s_init_len'
+
+-Upgrade has added port 'ctrl_s2mm_addr'
+
+-Upgrade has added port 'ctrl_s2mm_init_len'
+
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
 | Date         : Fri Jan 18 17:57:30 2019
 | Host         : hubbery running 64-bit major release  (build 9200)
 | Command      : upgrade_ip
