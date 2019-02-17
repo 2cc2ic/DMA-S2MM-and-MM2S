@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="system_User_DMA_0_0_synth_1" LaunchDir="E:/work/git/DMA-S2MM-and-MM2S/project/DMA_test/DMA_test.runs/system_User_DMA_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+</Runs>
+
