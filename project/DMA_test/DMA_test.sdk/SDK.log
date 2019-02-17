@@ -3141,3 +3141,15 @@ con
 
 23:29:37 INFO  : Launch script is exported to file 'D:\git\DMA-S2MM-and-MM2S\project\DMA_test\DMA_test.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_dma_test.elf_on_local.tcl'
 23:31:03 INFO  : Disconnected from the channel tcfchan#3.
+13:19:23 INFO  : Registering command handlers for SDK TCF services
+13:19:25 INFO  : Launching XSCT server: xsct.bat -interactive E:\work\git\DMA-S2MM-and-MM2S\project\DMA_test\DMA_test.sdk\temp_xsdb_launch_script.tcl
+13:19:37 INFO  : XSCT server has started successfully.
+13:19:37 INFO  : Successfully done setting XSCT server connection channel  
+13:19:46 INFO  : Successfully done setting SDK workspace  
+13:19:46 INFO  : Processing command line option -hwspec E:/work/git/DMA-S2MM-and-MM2S/project/DMA_test/DMA_test.sdk/system_wrapper.hdf.
+14:49:24 INFO  : Registering command handlers for SDK TCF services
+14:49:25 INFO  : Launching XSCT server: xsct.bat -interactive E:\work\git\DMA-S2MM-and-MM2S\project\DMA_test\DMA_test.sdk\temp_xsdb_launch_script.tcl
+14:49:30 INFO  : XSCT server has started successfully.
+14:49:32 INFO  : Successfully done setting XSCT server connection channel  
+14:49:32 INFO  : Processing command line option -hwspec E:/work/git/DMA-S2MM-and-MM2S/project/DMA_test/DMA_test.sdk/system_wrapper.hdf.
+14:49:32 INFO  : Successfully done setting SDK workspace  

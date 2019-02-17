@@ -1,6 +1,27 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Sun Feb 17 13:06:31 2019
+| Host         : hubbery running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'system_User_DMA_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of system_User_DMA_0_0 (user.org:user:User_DMA:1.0) from (Rev. 16) to (Rev. 24)
+
+
+
+
+
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
 | Date         : Wed Jan  9 20:32:56 2019
 | Host         : DESKTOP-0CQ9E4M running 64-bit major release  (build 9200)
 | Command      : upgrade_ip

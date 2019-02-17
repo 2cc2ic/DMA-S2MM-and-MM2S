@@ -7439,3 +7439,9 @@ con
 
 18:33:23 INFO  : Launch script is exported to file 'D:\git\DMA-S2MM-and-MM2S\project\DMA_video\Miz_sys.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_display.elf_on_local.tcl'
 18:36:11 INFO  : Disconnected from the channel tcfchan#3.
+15:07:12 INFO  : Registering command handlers for SDK TCF services
+15:07:13 INFO  : Launching XSCT server: xsct.bat -interactive E:\work\git\DMA-S2MM-and-MM2S\project\DMA_video\Miz_sys.sdk\temp_xsdb_launch_script.tcl
+15:07:19 INFO  : XSCT server has started successfully.
+15:07:20 INFO  : Successfully done setting XSCT server connection channel  
+15:07:20 INFO  : Processing command line option -hwspec E:/work/git/DMA-S2MM-and-MM2S/project/DMA_video/Miz_sys.sdk/system_wrapper.hdf.
+15:07:20 INFO  : Successfully done setting SDK workspace  

@@ -29,9 +29,9 @@ Build an open-source, extremely simple AXI DMA.
 
 
 
-数据传输流程：
+**数据传输流程：**
 
-​	外部通过AXI4-lite接口写入IP内部的控制寄存器，启动对应通道的状态机完成相应的连续读写操作。读写通道均包含一个同步FIFO用于数据缓冲，从而实现AXI4与Stream数据之间的转换。
+​	外部通过AXI4-lite接口写入IP内部控制寄存器，启动对应通道的状态机完成相应的连续读写操作。读写通道均包含一个同步FIFO用于数据缓冲，从而实现AXI4与Stream数据之间的转换。
 
 
 
@@ -41,61 +41,11 @@ Build an open-source, extremely simple AXI DMA.
 
 ![代码结构](./Picture/代码结构.jpg)
 
-#### 2.1.3 参数配置
 
-（待完善）
-
-1. 数据宽度：
-
-   支持32/64bit切换。
-
-2. 内部fifo大小
-
-   支持参数配置内部fifo深度。
-
-#### 2.1.4 内部接口介绍
-
-（待完善）
-
-介绍user_dma顶层信号：
-
-1. full_s2mm
-2. stream_s2mm
-3. full_mm2s
-4. stream_mm2s
-5. fifo
-
-### 2.2 详细介绍
-
-（待完善）
-
-#### 2.2.1 控制寄存器
-
-1. 寄存器组成:
-2. 传递控制:
-   * 启动
-   * 地址
-   * 突发长度
-
-#### 2.2.2 AXI4接口
-
-1. 单次突发传输状态机
-2. 顶层控制状态机
-3. 关键信号分析
-
-#### 2.2.3 AXIS接口
-
-1. fifo控制
-
-2. 关键信号控制
 
 ***
 ## 三、性能参数
-### 3.1 时序分析
-
-（待补充）
-
-### 3.2 资源消耗
+### 3.1 资源消耗
 
 ![代码结构](./Picture/utilization.jpg)
 
@@ -105,7 +55,7 @@ Build an open-source, extremely simple AXI DMA.
 
 ### 4.1 环路仅仿真
 
-DMA_simulation
+**DMA_simulation**
 
 1. 工程结构：
 
@@ -115,76 +65,79 @@ DMA_simulation
 
 ![imulation结构](./Picture/simulation.jpg)
 
-2. 波形分析：
+2. 仿真结果：
 
-（待补充）
+   读通道：
+
+
+![imulation结构](./Picture/仿真r.jpg)
+
+​       写通道：
+
+![imulation结构](./Picture/仿真w.jpg)
 
 ### 4.2 环路开发板验证
 
  1. 工程结构：
 
-    在型号为`xc7z010clg400-1`的米联客`MZ701Amini`开发板完成实际验证。
+    在型号为`xc7z010clg400-1`的米联客`MZ701Amini`开发板完成实际验证。通过EMIO对IP启动与完成信号控制或接收，调用`AXI4-Stream Data FIFO`IP用于验证读写通道的缓存。
 
-
-
-    结构示意图如下:
+​	结构示意图如下:
 
 ![simulation结构](./Picture/test.jpg)
 
-2. SDK：
+2. 验证结果：
 
-   （待补充）
-
-3. 串口打印信号：
-
-   （待补充）
+   读写数据符合。
 
 ### 4.3 摄像头采集系统
 
-​	在型号为`xc7z010clg400-1`的米联客`MZ701Amini`开发板完成实际验证。
+1. 工程结构：
 
-​	
+​	在型号为`xc7z010clg400-1`的米联客`MZ701Amini`开发板实现DMAOV7725 DMA三缓存图像采集显示。
 
 ​	结构示意图如下:
 
 ![simulation结构](./Picture/video.jpg)
 
+2. 测试结果：
+
+   输出HDMI实时显示30帧，图像均匀不断裂。
+
 ## 五、总结与拓展
 
 ### 5.1 历程总结
 
-问题集中程度
+​	代码编写为时一个多月，从18年12月到19年1月，因为白天上班实习的原因，所以coding是在晚上回家以后以及周末空闲时间，所以进度不是很快，断断续续的完成了。
+
+
+
+​	在开发过程中，在视频采集中遇到一个BUG，摄像头数据始终未被写到DDR，最后发现原因是负责S2MM的AXIS接口信号控制中，FIFO满信号将axis_tready置0，但是并未重启，所以将这边添加重启控制后得以work了。
+
+​	修改后的信号控制：
+
+```verilog
+	always @(posedge S_AXIS_ACLK)
+	begin
+		if(!S_AXIS_ARESETN)
+			axis_tready<=1'b0;
+		else if(work_signal==0)
+		    axis_tready<=1'b0;
+		else if(fifo_s2mm_full)
+			axis_tready<=1'b0;
+		else if( fifo_s2mm_almost_full && rx_en )
+			axis_tready<=1'b0;
+		else if( (!fifo_s2mm_full) && (!axis_tready) && S_AXIS_TVALID )
+			axis_tready<=1'b1;
+		else
+			axis_tready<=1'b1;
+	end
+```
+
+
 
 ### 5.2 拓展之处 
 
-通过以下扩展，方便使用者使用。
+​	方便使用者灵活配置该IP，可将写入控制寄存器的AXI4-lite接口独立出来。
 
-#### 5.2.1 纯逻辑配置
-
-（待完善）
-
-​	为了方便使用者灵活配置该IP，将写入控制寄存器的AXI4-lite接口独立出来，可供增减。
-
-​	效果图：
-
-
-
-​	如果去除5.2.1独立的AXI4-lite接口，可以自主编写RTL逻辑，从DMA IP外部直接输入`4×32bit`控制寄存器信号，完成传输控制。
-
-​	效果图：
-
-
-
-#### 5.2.2 视频帧管理
-
-（待完善）
-
-
-
-## 六、参考文献
-
-参考博客：
-
-
-
-参考文档：
+​	如果将独立的AXI4-lite接口去掉，自主编写RTL逻辑，从DMA IP外部直接输入`4×32bit`控制寄存器信号，完成传输控制。

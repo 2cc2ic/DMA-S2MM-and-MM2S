@@ -1,8 +1,8 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
-| Date             : Wed Jan  9 20:38:08 2019
-| Host             : DESKTOP-0CQ9E4M running 64-bit major release  (build 9200)
+| Date             : Sun Feb 17 13:17:37 2019
+| Host             : hubbery running 64-bit major release  (build 9200)
 | Command          : report_power -file system_wrapper_power_routed.rpt -pb system_wrapper_power_summary_routed.pb -rpx system_wrapper_power_routed.rpx
 | Design           : system_wrapper
 | Device           : xc7z010clg400-1
@@ -30,7 +30,7 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 1.662        |
+| Total On-Chip Power (W)  | 1.663        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
 | Dynamic (W)              | 1.546        |
@@ -53,11 +53,11 @@ Table of Contents
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
 | Clocks                   |     0.006 |        3 |       --- |             --- |
-| Slice Logic              |     0.005 |     7356 |       --- |             --- |
-|   LUT as Logic           |     0.004 |     2540 |     17600 |           14.43 |
+| Slice Logic              |     0.005 |     7342 |       --- |             --- |
+|   LUT as Logic           |     0.004 |     2524 |     17600 |           14.34 |
 |   LUT as Distributed RAM |    <0.001 |      232 |      6000 |            3.87 |
 |   Register               |    <0.001 |     3316 |     35200 |            9.42 |
-|   CARRY4                 |    <0.001 |       98 |      4400 |            2.23 |
+|   CARRY4                 |    <0.001 |       95 |      4400 |            2.16 |
 |   LUT as Shift Register  |    <0.001 |      188 |      6000 |            3.13 |
 |   F7/F8 Muxes            |    <0.001 |        6 |     17600 |            0.03 |
 |   Others                 |     0.000 |      369 |       --- |             --- |
@@ -65,7 +65,7 @@ Table of Contents
 | Block RAM                |    <0.001 |      1.5 |        60 |            2.50 |
 | PS7                      |     1.528 |        1 |       --- |             --- |
 | Static Power             |     0.117 |          |           |                 |
-| Total                    |     1.662 |          |           |                 |
+| Total                    |     1.663 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -216,7 +216,7 @@ Table of Contents
 |                       gen_srls[4].srl_nx1                                                         |    <0.001 |
 |                   USE_WRITE.write_data_inst                                                       |    <0.001 |
 |               w_reg                                                                               |    <0.001 |
-|         s00_entry_pipeline                                                                        |     0.006 |
+|         s00_entry_pipeline                                                                        |     0.007 |
 |           s00_mmu                                                                                 |     0.003 |
 |             inst                                                                                  |     0.003 |
 |               ar_reg_stall                                                                        |    <0.001 |
@@ -229,7 +229,7 @@ Table of Contents
 |               w_sreg                                                                              |    <0.001 |
 |           s00_si_converter                                                                        |     0.004 |
 |             inst                                                                                  |     0.004 |
-|               converter.wrap_narrow_inst                                                          |     0.003 |
+|               converter.wrap_narrow_inst                                                          |     0.004 |
 |                 ar_reg_slice                                                                      |    <0.001 |
 |                 aw_reg_slice                                                                      |    <0.001 |
 |                 gen_thread_loop[0].r_cmd_fifo                                                     |    <0.001 |
